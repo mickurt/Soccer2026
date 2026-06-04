@@ -1,0 +1,32 @@
+name: Update Live Scores
+
+on:
+  schedule:
+    # S'exécute toutes les 5 minutes
+    - cron: '*/5 * * * *'
+  # Permet également de lancer la mise à jour manuellement depuis l'interface GitHub
+  workflow_dispatch:
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Requis pour pouvoir push le fichier CSV mis à jour
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run update script
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: |
+          # Exécute le script avec la boucle haute fréquence.
+          # S'il y a un match en direct, le script bouclera 5 fois (1 fois par minute).
+          # Sinon, il fera une unique exécution immédiate pour économiser les ressources.
+          python3 update_scores.py --live-loop
