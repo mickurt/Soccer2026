@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import AppTrackingTransparency
 import AdSupport
 import GoogleMobileAds
@@ -28,7 +29,7 @@ class AdManager: ObservableObject {
                 self.updateTrackingStatus()
                 
                 // Initialise le SDK AdMob (avec ou sans personnalisation selon le choix de l'utilisateur)
-                GADMobileAds.sharedInstance().start(completionHandler: nil)
+                MobileAds.shared.start()
                 
                 print("Demande ATT terminée. Statut : \(status.rawValue)")
                 DispatchQueue.main.async {

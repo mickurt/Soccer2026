@@ -11,8 +11,8 @@ struct BannerAdView: UIViewRepresentable {
     let adUnitID: String = "ca-app-pub-9925772968209181/7128705659" // ID réel de production
     #endif
     
-    func makeUIView(context: Context) -> GADBannerView {
-        let bannerView = GADBannerView(adSize: GADAdSizeBanner)
+    func makeUIView(context: Context) -> BannerView {
+        let bannerView = BannerView(adSize: AdSize.banner)
         bannerView.adUnitID = adUnitID
         
         // Recherche de la fenêtre principale et de son RootViewController pour présenter l'annonce
@@ -21,11 +21,11 @@ struct BannerAdView: UIViewRepresentable {
             bannerView.rootViewController = rootViewController
         }
         
-        bannerView.load(GADRequest())
+        bannerView.load(GoogleMobileAds.Request())
         return bannerView
     }
     
-    func updateUIView(_ uiView: GADBannerView, context: Context) {}
+    func updateUIView(_ uiView: BannerView, context: Context) {}
 }
 
 #Preview {
