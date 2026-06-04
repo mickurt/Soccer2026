@@ -25,6 +25,7 @@ struct WorldCup2026App: App {
                 .onAppear {
                     DataSeeder.shared.seed(context: sharedModelContainer.mainContext)
                     DataSeeder.shared.startPollingUpdates(context: sharedModelContainer.mainContext)
+                    AdManager.shared.requestTrackingAuthorization()
                 }
         }
         .modelContainer(sharedModelContainer)

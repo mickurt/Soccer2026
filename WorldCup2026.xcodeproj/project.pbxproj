@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C30B87BB2FD14B6600E6626B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C30B87BA2FD14B6600E6626B /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C3FDAF7E2F45A8F9000E0FEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		C3FDAF872F45A8F9000E0FEE /* WorldCup2026UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCup2026UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C30B87BD2FD14B9400E6626B /* Exceptions for "WorldCup2026" folder in "WorldCup2026" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C3FDAF6F2F45A8F6000E0FEE /* WorldCup2026 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C3FDAF722F45A8F6000E0FEE /* WorldCup2026 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C30B87BD2FD14B9400E6626B /* Exceptions for "WorldCup2026" folder in "WorldCup2026" target */,
+			);
 			path = WorldCup2026;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30B87BB2FD14B6600E6626B /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = WorldCup2026;
 			packageProductDependencies = (
+				C30B87BA2FD14B6600E6626B /* GoogleMobileAds */,
 			);
 			productName = WorldCup2026;
 			productReference = C3FDAF702F45A8F6000E0FEE /* WorldCup2026.app */;
@@ -203,6 +222,9 @@
 			);
 			mainGroup = C3FDAF672F45A8F6000E0FEE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C30B87B92FD14B6600E6626B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3FDAF712F45A8F6000E0FEE /* Products */;
 			projectDirPath = "";
@@ -408,6 +430,7 @@
 				DEVELOPMENT_TEAM = H9A369XBG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldCup2026/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Football 2026";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -448,6 +471,7 @@
 				DEVELOPMENT_TEAM = H9A369XBG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldCup2026/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Football 2026";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -602,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C30B87B92FD14B6600E6626B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C30B87BA2FD14B6600E6626B /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C30B87B92FD14B6600E6626B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3FDAF682F45A8F6000E0FEE /* Project object */;
 }
