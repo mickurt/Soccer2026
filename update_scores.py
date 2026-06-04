@@ -278,8 +278,8 @@ def main():
     args = parser.parse_args()
     
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    teams_path = os.path.join(base_dir, 'WorldCup2026', 'Resources', 'teams.csv')
-    matches_path = os.path.join(base_dir, 'WorldCup2026', 'Resources', 'matches.csv')
+    teams_path = os.path.join(base_dir, 'teams.csv')
+    matches_path = os.path.join(base_dir, 'matches.csv')
     output_path = os.path.join(base_dir, 'matches_update.csv')
     
     teams = load_teams(teams_path)

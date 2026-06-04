@@ -4,3 +4,9 @@
 **/xcuserdata/
 **/DerivedData/
 *.xcuserstate
+
+# Exclude iOS App folders from GitHub repository
+WorldCup2026/
+WorldCup2026.xcodeproj/
+WorldCup2026Tests/
+WorldCup2026UITests/
