@@ -7,6 +7,10 @@ on:
   # Permet également de lancer la mise à jour manuellement depuis l'interface GitHub
   workflow_dispatch:
 
+env:
+  # Force l'utilisation de Node.js 24 pour éviter les avertissements de dépréciation de Node 20
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   update-scores:
     runs-on: ubuntu-latest

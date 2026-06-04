@@ -280,7 +280,7 @@ def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     teams_path = os.path.join(base_dir, 'WorldCup2026', 'Resources', 'teams.csv')
     matches_path = os.path.join(base_dir, 'WorldCup2026', 'Resources', 'matches.csv')
-    output_path = os.path.join(base_dir, 'WorldCup2026', 'matches_update.csv')
+    output_path = os.path.join(base_dir, 'matches_update.csv')
     
     teams = load_teams(teams_path)
     local_matches = load_matches(matches_path)
