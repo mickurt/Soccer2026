@@ -124,8 +124,7 @@ def fetch_api_updates(api_key, local_matches, teams):
         elif status_raw in ['IN_PLAY', 'PAUSED']:
             status = 'Live'
         else:
-            # On ignore les matchs planifiés (Scheduled) ou annulés
-            continue
+            status = 'Scheduled'
             
         local_m = find_local_match(api_m, local_matches, teams)
         if local_m:
@@ -137,11 +136,16 @@ def fetch_api_updates(api_key, local_matches, teams):
             if home_score is None: home_score = 0
             if away_score is None: away_score = 0
             
+            home_team_code = api_m.get('homeTeam', {}).get('tla') or ''
+            away_team_code = api_m.get('awayTeam', {}).get('tla') or ''
+            
             updates.append({
                 'id': local_m['id'],
                 'status': status,
                 'home_score': home_score,
-                'away_score': away_score
+                'away_score': away_score,
+                'home_team_code': home_team_code,
+                'away_team_code': away_team_code
             })
             matched_count += 1
         else:
@@ -191,7 +195,9 @@ def run_simulation(sim_date_str, local_matches):
                 'id': m['id'],
                 'status': 'Finished',
                 'home_score': home_score,
-                'away_score': away_score
+                'away_score': away_score,
+                'home_team_code': '',
+                'away_team_code': ''
             })
         elif kickoff <= sim_dt < end_time:
             # Match en cours (Live) : score progressif changeant toutes les 5 minutes réelles
@@ -208,7 +214,9 @@ def run_simulation(sim_date_str, local_matches):
                 'id': m['id'],
                 'status': 'Live',
                 'home_score': home_score,
-                'away_score': away_score
+                'away_score': away_score,
+                'home_team_code': '',
+                'away_team_code': ''
             })
             
     return updates
@@ -216,9 +224,16 @@ def run_simulation(sim_date_str, local_matches):
 def write_updates_to_csv(updates, output_path):
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['id', 'status', 'home_score', 'away_score'])
+        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code'])
         for u in updates:
-            writer.writerow([u['id'], u['status'], u['home_score'], u['away_score']])
+            writer.writerow([
+                u['id'],
+                u['status'],
+                u['home_score'],
+                u['away_score'],
+                u.get('home_team_code', ''),
+                u.get('away_team_code', '')
+            ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
 def commit_and_push(output_path):
