@@ -236,9 +236,197 @@ def write_updates_to_csv(updates, output_path):
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
-def commit_and_push(output_path):
-    # Vérifie si le dossier parent est un dépôt Git (pour éviter les erreurs en local si Git n'est pas configuré)
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+def load_teams_metadata(teams_csv_path):
+    teams_metadata = {}
+    if not os.path.exists(teams_csv_path):
+        print(f"Erreur : Fichier teams.csv introuvable à {teams_csv_path}")
+        return teams_metadata
+    with open(teams_csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                tid = int(row['id'])
+                teams_metadata[tid] = {
+                    'name': row['team_name'].strip(),
+                    'code': row['fifa_code'].strip(),
+                    'group': f"Group {row['group_letter'].strip()}"
+                }
+            except Exception as e:
+                print(f"Erreur parsing team: {e}")
+    return teams_metadata
+
+def fetch_api_standings(api_key):
+    print("Récupération des classements depuis l'API football-data.org...")
+    url = "https://api.football-data.org/v4/competitions/WC/standings"
+    req = urllib.request.Request(url)
+    req.add_header("X-Auth-Token", api_key)
+    
+    try:
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode('utf-8'))
+    except Exception as e:
+        print(f"Erreur lors de la requête API classement : {e}")
+        return None
+        
+    api_standings = data.get('standings', [])
+    print(f"Reçu {len(api_standings)} groupes de classement de l'API.")
+    
+    rows = []
+    for group_data in api_standings:
+        group_raw = group_data.get('group', '')
+        if not group_raw.startswith("Group ") and not group_raw.startswith("GROUP_"):
+            continue
+            
+        if group_raw.startswith("Group "):
+            group_name = group_raw
+        else:
+            group_letter = group_raw.split("_")[1]
+            group_name = f"Group {group_letter}"
+        
+        table = group_data.get('table', [])
+        for team_standing in table:
+            tla = team_standing.get('team', {}).get('tla') or ''
+            name = team_standing.get('team', {}).get('name') or ''
+            
+            rows.append({
+                'group': group_name,
+                'position': team_standing.get('position'),
+                'team_name': name,
+                'fifa_code': tla,
+                'played': team_standing.get('playedGames', 0),
+                'won': team_standing.get('won', 0),
+                'draw': team_standing.get('draw', 0),
+                'lost': team_standing.get('lost', 0),
+                'points': team_standing.get('points', 0),
+                'goals_for': team_standing.get('goalsFor', 0),
+                'goals_against': team_standing.get('goalsAgainst', 0),
+                'goal_difference': team_standing.get('goalDifference', 0)
+            })
+            
+    return rows
+
+def calculate_standings(local_matches, updates, teams_metadata):
+    scores = {}
+    for u in updates:
+        scores[u['id']] = u
+        
+    standings = {}
+    for tid in teams_metadata:
+        standings[tid] = {
+            'played': 0,
+            'won': 0,
+            'draw': 0,
+            'lost': 0,
+            'points': 0,
+            'goals_for': 0,
+            'goals_against': 0,
+            'goal_diff': 0
+        }
+        
+    for m in local_matches:
+        if not m['match_label'].startswith("Group"):
+            continue
+            
+        m_id = m['id']
+        update = scores.get(m_id)
+        if not update or update['status'] == 'Scheduled':
+            continue
+            
+        home_id = m['home_team_id']
+        away_id = m['away_team_id']
+        
+        if not home_id or not away_id:
+            continue
+            
+        home_score = int(update['home_score'])
+        away_score = int(update['away_score'])
+        
+        standings[home_id]['played'] += 1
+        standings[away_id]['played'] += 1
+        standings[home_id]['goals_for'] += home_score
+        standings[home_id]['goals_against'] += away_score
+        standings[away_id]['goals_for'] += away_score
+        standings[away_id]['goals_against'] += home_score
+        
+        if home_score > away_score:
+            standings[home_id]['won'] += 1
+            standings[home_id]['points'] += 3
+            standings[away_id]['lost'] += 1
+        elif home_score < away_score:
+            standings[away_id]['won'] += 1
+            standings[away_id]['points'] += 3
+            standings[home_id]['lost'] += 1
+        else:
+            standings[home_id]['draw'] += 1
+            standings[home_id]['points'] += 1
+            standings[away_id]['draw'] += 1
+            standings[away_id]['points'] += 1
+            
+    for tid in standings:
+        standings[tid]['goal_diff'] = standings[tid]['goals_for'] - standings[tid]['goals_against']
+        
+    groups = {}
+    for tid, meta in teams_metadata.items():
+        gname = meta['group']
+        if gname not in groups:
+            groups[gname] = []
+        groups[gname].append((tid, standings[tid]))
+        
+    for gname in groups:
+        groups[gname].sort(key=lambda x: (
+            -x[1]['points'],
+            -x[1]['goal_diff'],
+            -x[1]['goals_for'],
+            teams_metadata[x[0]]['name']
+        ))
+        
+    rows = []
+    for gname in sorted(groups.keys()):
+        for pos, (tid, stats) in enumerate(groups[gname], 1):
+            meta = teams_metadata[tid]
+            rows.append({
+                'group': gname,
+                'position': pos,
+                'team_name': meta['name'],
+                'fifa_code': meta['code'],
+                'played': stats['played'],
+                'won': stats['won'],
+                'draw': stats['draw'],
+                'lost': stats['lost'],
+                'points': stats['points'],
+                'goals_for': stats['goals_for'],
+                'goals_against': stats['goals_against'],
+                'goal_difference': stats['goal_diff']
+            })
+            
+    return rows
+
+def write_standings_to_csv(standings, output_path):
+    with open(output_path, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            'group', 'position', 'team_name', 'fifa_code', 
+            'played', 'won', 'draw', 'lost', 'points', 
+            'goals_for', 'goals_against', 'goal_difference'
+        ])
+        for s in standings:
+            writer.writerow([
+                s['group'],
+                s['position'],
+                s['team_name'],
+                s['fifa_code'],
+                s['played'],
+                s['won'],
+                s['draw'],
+                s['lost'],
+                s['points'],
+                s['goals_for'],
+                s['goals_against'],
+                s['goal_difference']
+            ])
+    print(f"Succès : Classements écrits dans {output_path}")
+
+def commit_and_push(base_dir):
     if not os.path.exists(os.path.join(base_dir, '.git')):
         print("Dossier non Git. Commit/Push ignoré.")
         return
@@ -247,24 +435,26 @@ def commit_and_push(output_path):
         subprocess.run(["git", "config", "--global", "user.name", "GitHub Actions Bot"], check=True)
         subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"], check=True)
         
-        # Obtenir le chemin relatif du fichier par rapport à la racine Git
-        rel_output_path = os.path.relpath(output_path, base_dir)
+        subprocess.run(["git", "add", "matches_update.csv", "standings.csv"], check=True)
         
-        subprocess.run(["git", "add", rel_output_path], check=True)
-        
-        # Vérifier si des modifications existent
-        res = subprocess.run(["git", "diff", "--cached", "--quiet"])
-        if res.returncode != 0:
-            subprocess.run(["git", "commit", "-m", "Auto-update matches scores [skip ci]"], check=True)
+        res = subprocess.run(["git", "diff", "--quiet"]) # check if modified
+        res2 = subprocess.run(["git", "diff", "--cached", "--quiet"])
+        if res.returncode != 0 or res2.returncode != 0:
+            # Stage again to be safe
+            subprocess.run(["git", "add", "matches_update.csv", "standings.csv"], check=True)
+            subprocess.run(["git", "commit", "-m", "Auto-update matches scores and standings [skip ci]"], check=True)
             subprocess.run(["git", "push"], check=True)
-            print("Scores committés et pushés avec succès sur GitHub.")
+            print("Scores et classements committés et pushés avec succès sur GitHub.")
         else:
-            print("Aucune modification de score à committer.")
+            print("Aucune modification à committer.")
     except Exception as e:
         print(f"Erreur lors du commit/push Git : {e}")
 
-def run_single_iteration(args, local_matches, teams, output_path):
+def run_single_iteration(args, local_matches, teams, teams_metadata, output_path, standings_path, base_dir):
     updates = []
+    standings = []
+    
+    # 1. Obtenir les scores de match
     if args.simulate:
         updates = run_simulation(args.sim_date, local_matches)
     else:
@@ -279,8 +469,21 @@ def run_single_iteration(args, local_matches, teams, output_path):
             print("Erreur de récupération API.")
             return False
             
+    # 2. Obtenir les classements
+    if args.simulate:
+        standings = calculate_standings(local_matches, updates, teams_metadata)
+    else:
+        api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or DEFAULT_API_KEY
+        fetched_standings = fetch_api_standings(api_key) if api_key else None
+        if fetched_standings is not None:
+            standings = fetched_standings
+        else:
+            print("Utilisation du calcul local pour le classement (de secours).")
+            standings = calculate_standings(local_matches, updates, teams_metadata)
+            
     write_updates_to_csv(updates, output_path)
-    commit_and_push(output_path)
+    write_standings_to_csv(standings, standings_path)
+    commit_and_push(base_dir)
     return any(u['status'] == 'Live' for u in updates)
 
 def main():
@@ -296,8 +499,10 @@ def main():
     teams_path = os.path.join(base_dir, 'teams.csv')
     matches_path = os.path.join(base_dir, 'matches.csv')
     output_path = os.path.join(base_dir, 'matches_update.csv')
+    standings_path = os.path.join(base_dir, 'standings.csv')
     
     teams = load_teams(teams_path)
+    teams_metadata = load_teams_metadata(teams_path)
     local_matches = load_matches(matches_path)
     
     if not teams or not local_matches:
@@ -306,8 +511,7 @@ def main():
         
     if args.live_loop:
         print("Mode boucle haute fréquence activé. Vérification initiale...")
-        # Exécute une première fois et regarde s'il y a un match en direct
-        is_live = run_single_iteration(args, local_matches, teams, output_path)
+        is_live = run_single_iteration(args, local_matches, teams, teams_metadata, output_path, standings_path, base_dir)
         
         if is_live:
             print("Match en cours détecté ! Lancement de la boucle de 5 minutes (mise à jour toutes les 60 secondes).")
@@ -315,11 +519,11 @@ def main():
             for i in range(4):
                 print(f"Attente de 60 secondes avant l'itération {i+2}/5...")
                 time.sleep(60)
-                run_single_iteration(args, local_matches, teams, output_path)
+                run_single_iteration(args, local_matches, teams, teams_metadata, output_path, standings_path, base_dir)
         else:
             print("Aucun match en cours. Fin de la tâche unique.")
     else:
-        run_single_iteration(args, local_matches, teams, output_path)
+        run_single_iteration(args, local_matches, teams, teams_metadata, output_path, standings_path, base_dir)
 
 if __name__ == '__main__':
     main()

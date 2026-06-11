@@ -1,49 +1,49 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
-Group A,1,Mexico,MEX,1,1,0,0,3,1,0,1
-Group A,2,Czech Republic,CZE,1,0,1,0,1,0,0,0
-Group A,3,South Korea,KOR,1,0,1,0,1,0,0,0
-Group A,4,South Africa,RSA,1,0,0,1,0,0,1,-1
-Group B,1,Bosnia and Herzegovina,BIH,0,0,0,0,0,0,0,0
+Group A,1,Czechia,CZE,0,0,0,0,0,0,0,0
+Group A,2,Mexico,MEX,0,0,0,0,0,0,0,0
+Group A,3,South Africa,RSA,0,0,0,0,0,0,0,0
+Group A,4,South Korea,KOR,0,0,0,0,0,0,0,0
+Group B,1,Bosnia-Herzegovina,BIH,0,0,0,0,0,0,0,0
 Group B,2,Canada,CAN,0,0,0,0,0,0,0,0
 Group B,3,Qatar,QAT,0,0,0,0,0,0,0,0
 Group B,4,Switzerland,SUI,0,0,0,0,0,0,0,0
 Group C,1,Brazil,BRA,0,0,0,0,0,0,0,0
-Group C,2,Haiti,HAI,0,0,0,0,0,0,0,0
-Group C,3,Morocco,MAR,0,0,0,0,0,0,0,0
+Group C,2,Morocco,MAR,0,0,0,0,0,0,0,0
+Group C,3,Haiti,HAI,0,0,0,0,0,0,0,0
 Group C,4,Scotland,SCO,0,0,0,0,0,0,0,0
-Group D,1,Australia,AUS,0,0,0,0,0,0,0,0
-Group D,2,Paraguay,PAR,0,0,0,0,0,0,0,0
-Group D,3,Turkey,TUR,0,0,0,0,0,0,0,0
-Group D,4,USA,USA,0,0,0,0,0,0,0,0
-Group E,1,Curaçao,CUR,0,0,0,0,0,0,0,0
-Group E,2,Côte d'Ivoire,CIV,0,0,0,0,0,0,0,0
-Group E,3,Ecuador,ECU,0,0,0,0,0,0,0,0
-Group E,4,Germany,GER,0,0,0,0,0,0,0,0
-Group F,1,Japan,JPN,0,0,0,0,0,0,0,0
+Group D,1,Turkey,TUR,0,0,0,0,0,0,0,0
+Group D,2,United States,USA,0,0,0,0,0,0,0,0
+Group D,3,Paraguay,PAR,0,0,0,0,0,0,0,0
+Group D,4,Australia,AUS,0,0,0,0,0,0,0,0
+Group E,1,Germany,GER,0,0,0,0,0,0,0,0
+Group E,2,Curaçao,CUW,0,0,0,0,0,0,0,0
+Group E,3,Ivory Coast,CIV,0,0,0,0,0,0,0,0
+Group E,4,Ecuador,ECU,0,0,0,0,0,0,0,0
+Group F,1,Sweden,SWE,0,0,0,0,0,0,0,0
 Group F,2,Netherlands,NED,0,0,0,0,0,0,0,0
-Group F,3,Sweden,SWE,0,0,0,0,0,0,0,0
+Group F,3,Japan,JPN,0,0,0,0,0,0,0,0
 Group F,4,Tunisia,TUN,0,0,0,0,0,0,0,0
 Group G,1,Belgium,BEL,0,0,0,0,0,0,0,0
 Group G,2,Egypt,EGY,0,0,0,0,0,0,0,0
-Group G,3,IR Iran,IRN,0,0,0,0,0,0,0,0
+Group G,3,Iran,IRN,0,0,0,0,0,0,0,0
 Group G,4,New Zealand,NZL,0,0,0,0,0,0,0,0
-Group H,1,Cabo Verde,CPV,0,0,0,0,0,0,0,0
-Group H,2,Saudi Arabia,KSA,0,0,0,0,0,0,0,0
-Group H,3,Spain,ESP,0,0,0,0,0,0,0,0
-Group H,4,Uruguay,URU,0,0,0,0,0,0,0,0
-Group I,1,France,FRA,0,0,0,0,0,0,0,0
-Group I,2,Iraq,IRQ,0,0,0,0,0,0,0,0
-Group I,3,Norway,NOR,0,0,0,0,0,0,0,0
-Group I,4,Senegal,SEN,0,0,0,0,0,0,0,0
-Group J,1,Algeria,ALG,0,0,0,0,0,0,0,0
-Group J,2,Argentina,ARG,0,0,0,0,0,0,0,0
+Group H,1,Spain,ESP,0,0,0,0,0,0,0,0
+Group H,2,Cape Verde Islands,CPV,0,0,0,0,0,0,0,0
+Group H,3,Saudi Arabia,KSA,0,0,0,0,0,0,0,0
+Group H,4,Uruguay,URY,0,0,0,0,0,0,0,0
+Group I,1,Iraq,IRQ,0,0,0,0,0,0,0,0
+Group I,2,France,FRA,0,0,0,0,0,0,0,0
+Group I,3,Senegal,SEN,0,0,0,0,0,0,0,0
+Group I,4,Norway,NOR,0,0,0,0,0,0,0,0
+Group J,1,Argentina,ARG,0,0,0,0,0,0,0,0
+Group J,2,Algeria,ALG,0,0,0,0,0,0,0,0
 Group J,3,Austria,AUT,0,0,0,0,0,0,0,0
 Group J,4,Jordan,JOR,0,0,0,0,0,0,0,0
-Group K,1,Colombia,COL,0,0,0,0,0,0,0,0
-Group K,2,DR Congo,COD,0,0,0,0,0,0,0,0
-Group K,3,Portugal,POR,0,0,0,0,0,0,0,0
-Group K,4,Uzbekistan,UZB,0,0,0,0,0,0,0,0
-Group L,1,Croatia,CRO,0,0,0,0,0,0,0,0
-Group L,2,England,ENG,0,0,0,0,0,0,0,0
+Group K,1,Congo DR,COD,0,0,0,0,0,0,0,0
+Group K,2,Portugal,POR,0,0,0,0,0,0,0,0
+Group K,3,Uzbekistan,UZB,0,0,0,0,0,0,0,0
+Group K,4,Colombia,COL,0,0,0,0,0,0,0,0
+Group L,1,England,ENG,0,0,0,0,0,0,0,0
+Group L,2,Croatia,CRO,0,0,0,0,0,0,0,0
 Group L,3,Ghana,GHA,0,0,0,0,0,0,0,0
 Group L,4,Panama,PAN,0,0,0,0,0,0,0,0
