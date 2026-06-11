@@ -516,10 +516,229 @@ struct MyTeamWidget: Widget {
     }
 }
 
+#if canImport(ActivityKit)
+import ActivityKit
+
+struct LiveScoreActivityWidget: Widget {
+    var body: some WidgetConfiguration {
+        ActivityConfiguration(for: LiveScoreAttributes.self) { context in
+            // Lock screen / banner UI
+            LockScreenLiveScoreView(context: context)
+        } dynamicIsland: { context in
+            DynamicIsland {
+                // Expanded UI
+                DynamicIslandExpandedRegion(.leading) {
+                    HStack(spacing: 8) {
+                        Text(context.attributes.homeTeamEmoji)
+                            .font(.system(size: 28))
+                        Text(context.attributes.homeTeamName)
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundStyle(.white)
+                    }
+                    .padding(.leading, 8)
+                }
+                
+                DynamicIslandExpandedRegion(.trailing) {
+                    HStack(spacing: 8) {
+                        Text(context.attributes.awayTeamName)
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundStyle(.white)
+                        Text(context.attributes.awayTeamEmoji)
+                            .font(.system(size: 28))
+                    }
+                    .padding(.trailing, 8)
+                }
+                
+                DynamicIslandExpandedRegion(.center) {
+                    VStack(spacing: 2) {
+                        Text("\(context.state.homeScore) - \(context.state.awayScore)")
+                            .font(.system(size: 26, weight: .black))
+                            .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5)) // Gold
+                        
+                        Text(context.state.status.uppercased())
+                            .font(.system(size: 9, weight: .bold))
+                            .foregroundStyle(.red)
+                    }
+                }
+                
+                DynamicIslandExpandedRegion(.bottom) {
+                    HStack {
+                        Text(context.attributes.stage)
+                            .font(.system(size: 10, weight: .semibold))
+                            .foregroundStyle(.white.opacity(0.6))
+                        Spacer()
+                        if context.state.matchStatusRawValue == "Live" {
+                            HStack(spacing: 4) {
+                                Circle().fill(Color.red).frame(width: 6, height: 6)
+                                Text(context.state.liveLabel)
+                                    .font(.system(size: 8, weight: .bold))
+                                    .foregroundStyle(.red)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 4)
+                }
+            } compactLeading: {
+                HStack(spacing: 4) {
+                    Text(context.attributes.homeTeamEmoji)
+                    Text("\(context.state.homeScore)")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                }
+            } compactTrailing: {
+                HStack(spacing: 4) {
+                    Text("\(context.state.awayScore)")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                    Text(context.attributes.awayTeamEmoji)
+                }
+            } minimal: {
+                Text(context.state.status == "LIVE" ? "⚽️" : "\(context.state.homeScore)-\(context.state.awayScore)")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+            }
+        }
+    }
+}
+
+struct MatchProgressBar: View {
+    let status: String
+    
+    private var elapsedMinutes: Int {
+        if status.lowercased().contains("ht") || status.lowercased().contains("mi-temp") || status.lowercased().contains("half") {
+            return 45
+        }
+        if status.lowercased().contains("finished") || status.lowercased().contains("termin") {
+            return 90
+        }
+        let clean = status.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        return Int(clean) ?? 0
+    }
+    
+    private var totalMinutes: Int {
+        elapsedMinutes > 90 ? 120 : 90
+    }
+    
+    var body: some View {
+        let total = totalMinutes
+        let elapsed = min(max(elapsedMinutes, 0), total)
+        let remaining = max(total - elapsed, 0)
+        
+        VStack(spacing: 4) {
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: 3)
+                        .fill(Color.white.opacity(0.15))
+                        .frame(height: 6)
+                    
+                    RoundedRectangle(cornerRadius: 3)
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(red: 0.9, green: 0.8, blue: 0.5), .green],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: geometry.size.width * CGFloat(elapsed) / CGFloat(total), height: 6)
+                }
+            }
+            .frame(height: 6)
+            
+            HStack {
+                Text("\(elapsed) min")
+                    .font(.system(size: 9, weight: .semibold))
+                    .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                Spacer()
+                Text("-\(remaining) min")
+                    .font(.system(size: 9, weight: .medium))
+                    .foregroundStyle(.white.opacity(0.6))
+            }
+        }
+        .padding(.horizontal, 4)
+    }
+}
+
+struct LockScreenLiveScoreView: View {
+    let context: ActivityViewContext<LiveScoreAttributes>
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            HStack(spacing: 12) {
+                // Home Team
+                VStack(spacing: 4) {
+                    Text(context.attributes.homeTeamEmoji)
+                        .font(.system(size: 34))
+                    Text(context.attributes.homeTeamName)
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(.white)
+                        .lineLimit(1)
+                }
+                .frame(maxWidth: .infinity)
+                
+                // Score Info
+                VStack(spacing: 4) {
+                    Text(context.attributes.stage)
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(.white.opacity(0.6))
+                        .lineLimit(1)
+                    
+                    Text("\(context.state.homeScore) - \(context.state.awayScore)")
+                        .font(.system(size: 26, weight: .black))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                    
+                    HStack(spacing: 4) {
+                        if context.state.matchStatusRawValue == "Live" {
+                            Circle().fill(Color.red).frame(width: 6, height: 6)
+                            Text(context.state.liveLabel)
+                                .font(.system(size: 9, weight: .bold))
+                                .foregroundStyle(.red)
+                        } else {
+                            Text(context.state.status.uppercased())
+                                .font(.system(size: 9, weight: .bold))
+                                .foregroundStyle(.white.opacity(0.5))
+                        }
+                    }
+                }
+                .frame(width: 100)
+                
+                // Away Team
+                VStack(spacing: 4) {
+                    Text(context.attributes.awayTeamEmoji)
+                        .font(.system(size: 34))
+                    Text(context.attributes.awayTeamName)
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(.white)
+                        .lineLimit(1)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            
+            // Progress Bar Section
+            if context.state.matchStatusRawValue == "Live" || context.state.matchStatusRawValue == "Finished" {
+                MatchProgressBar(status: context.state.status)
+            }
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color(red: 0.05, green: 0.20, blue: 0.10), Color(red: 0.02, green: 0.08, blue: 0.04)]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+        )
+    }
+}
+#endif
+
 @main
 struct WorldCupWidgetBundle: WidgetBundle {
     var body: some Widget {
         MatchOfTheDayWidget()
         MyTeamWidget()
+        #if canImport(ActivityKit)
+        LiveScoreActivityWidget()
+        #endif
     }
 }
+

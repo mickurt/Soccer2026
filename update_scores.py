@@ -20,6 +20,9 @@ def parse_kickoff_time(kickoff_str):
     iso_str = kickoff_str.replace(" ", "T")
     if len(iso_str) == 22: # Si le fuseau horaire est comme -06 au lieu de -06:00
         iso_str += ":00"
+    # Convert trailing +HHMM or -HHMM to +HH:MM for fromisoformat in older Python versions
+    if len(iso_str) >= 5 and (iso_str[-5] == '+' or iso_str[-5] == '-') and iso_str[-3] != ':':
+        iso_str = iso_str[:-2] + ':' + iso_str[-2:]
     dt = datetime.datetime.fromisoformat(iso_str)
     return dt.astimezone(datetime.timezone.utc)
 
@@ -63,6 +66,10 @@ def load_matches(matches_csv_path):
 def find_local_match(api_match, local_matches, teams):
     home_tla = api_match.get('homeTeam', {}).get('tla')
     away_tla = api_match.get('awayTeam', {}).get('tla')
+    
+    # Normalisation pour l'Uruguay (URY dans l'API, URU en local)
+    if home_tla == 'URY': home_tla = 'URU'
+    if away_tla == 'URY': away_tla = 'URU'
     
     api_home_id = teams.get(home_tla) if home_tla else None
     api_away_id = teams.get(away_tla) if away_tla else None
@@ -139,13 +146,18 @@ def fetch_api_updates(api_key, local_matches, teams):
             home_team_code = api_m.get('homeTeam', {}).get('tla') or ''
             away_team_code = api_m.get('awayTeam', {}).get('tla') or ''
             
+            # Normalisation pour l'Uruguay (URY dans l'API, URU en local)
+            if home_team_code == 'URY': home_team_code = 'URU'
+            if away_team_code == 'URY': away_team_code = 'URU'
+            
             updates.append({
                 'id': local_m['id'],
                 'status': status,
                 'home_score': home_score,
                 'away_score': away_score,
                 'home_team_code': home_team_code,
-                'away_team_code': away_team_code
+                'away_team_code': away_team_code,
+                'kickoff_utc': api_m.get('utcDate') or ''
             })
             matched_count += 1
         else:
@@ -185,6 +197,7 @@ def run_simulation(sim_date_str, local_matches):
     for m in local_matches:
         kickoff = m['kickoff_utc']
         end_time = kickoff + datetime.timedelta(hours=2) # Un match dure environ 2 heures
+        kickoff_utc_str = kickoff.strftime('%Y-%m-%dT%H:%M:%SZ')
         
         if sim_dt >= end_time:
             # Match terminé : score déterministe basé sur l'ID du match
@@ -197,7 +210,8 @@ def run_simulation(sim_date_str, local_matches):
                 'home_score': home_score,
                 'away_score': away_score,
                 'home_team_code': '',
-                'away_team_code': ''
+                'away_team_code': '',
+                'kickoff_utc': kickoff_utc_str
             })
         elif kickoff <= sim_dt < end_time:
             # Match en cours (Live) : score progressif changeant toutes les 5 minutes réelles
@@ -216,7 +230,8 @@ def run_simulation(sim_date_str, local_matches):
                 'home_score': home_score,
                 'away_score': away_score,
                 'home_team_code': '',
-                'away_team_code': ''
+                'away_team_code': '',
+                'kickoff_utc': kickoff_utc_str
             })
             
     return updates
@@ -224,7 +239,7 @@ def run_simulation(sim_date_str, local_matches):
 def write_updates_to_csv(updates, output_path):
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code'])
+        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc'])
         for u in updates:
             writer.writerow([
                 u['id'],
@@ -232,7 +247,8 @@ def write_updates_to_csv(updates, output_path):
                 u['home_score'],
                 u['away_score'],
                 u.get('home_team_code', ''),
-                u.get('away_team_code', '')
+                u.get('away_team_code', ''),
+                u.get('kickoff_utc', '')
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
@@ -286,6 +302,7 @@ def fetch_api_standings(api_key):
         table = group_data.get('table', [])
         for team_standing in table:
             tla = team_standing.get('team', {}).get('tla') or ''
+            if tla == 'URY': tla = 'URU'
             name = team_standing.get('team', {}).get('name') or ''
             
             rows.append({

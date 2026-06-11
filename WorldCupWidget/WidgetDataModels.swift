@@ -35,3 +35,25 @@ struct WidgetData: Codable, Equatable {
     let labelNotDefined: String
     let labelNoMatch: String
 }
+
+#if canImport(ActivityKit)
+import ActivityKit
+
+struct LiveScoreAttributes: ActivityAttributes {
+    public struct ContentState: Codable, Hashable {
+        var homeScore: Int
+        var awayScore: Int
+        var status: String // e.g. "12'", "HT", "Scheduled"
+        var matchStatusRawValue: String
+        var liveLabel: String
+    }
+
+    var matchId: String
+    var homeTeamName: String
+    var homeTeamEmoji: String
+    var awayTeamName: String
+    var awayTeamEmoji: String
+    var stage: String
+}
+#endif
+
