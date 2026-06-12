@@ -64,91 +64,101 @@ def load_matches(matches_csv_path):
     return local_matches
 
 def find_local_match(api_match, local_matches, teams):
-    home_tla = api_match.get('homeTeam', {}).get('tla')
-    away_tla = api_match.get('awayTeam', {}).get('tla')
+    home_obj = api_match.get('Home')
+    away_obj = api_match.get('Away')
     
-    # Normalisation pour l'Uruguay (URY dans l'API, URU en local)
+    home_tla = home_obj.get('Abbreviation') if home_obj else None
+    away_tla = away_obj.get('Abbreviation') if away_obj else None
+    
+    # Normalisation pour l'Uruguay (URY -> URU) et Curaçao (CUW -> CUR)
     if home_tla == 'URY': home_tla = 'URU'
     if away_tla == 'URY': away_tla = 'URU'
+    if home_tla == 'CUW': home_tla = 'CUR'
+    if away_tla == 'CUW': away_tla = 'CUR'
     
     api_home_id = teams.get(home_tla) if home_tla else None
     api_away_id = teams.get(away_tla) if away_tla else None
     
-    api_date_str = api_match['utcDate']
+    api_date_str = api_match.get('Date')
     # Normalisation du fuseau horaire Z -> +00:00
     if api_date_str.endswith('Z'):
         api_date_str = api_date_str[:-1] + '+00:00'
     api_dt = datetime.datetime.fromisoformat(api_date_str).astimezone(datetime.timezone.utc)
     
     # 1. Recherche par correspondance exacte des deux équipes (idéal pour la phase de groupes)
-    if api_home_id and api_away_id:
+    if api_home_id is not None and api_away_id is not None:
         for m in local_matches:
             if m['home_team_id'] == api_home_id and m['away_team_id'] == api_away_id:
                 return m
                 
-    # 2. Recherche par heure de coup d'envoi (tolérance d'une heure) - Utile pour les phases éliminatoires (knockouts)
+    # 2. Recherche par heure de coup d'envoi (tolérance de 12 heures pour les décalages de date/fuseau dans le calendrier)
     candidates = []
     for m in local_matches:
         diff_seconds = abs((m['kickoff_utc'] - api_dt).total_seconds())
-        if diff_seconds <= 3600:  # 1 heure
-            candidates.append(m)
+        if diff_seconds <= 43200:  # 12 heures
+            candidates.append((diff_seconds, m))
             
-    if len(candidates) == 1:
-        return candidates[0]
-    elif len(candidates) > 1:
-        # S'il y a plusieurs matchs en même temps, on filtre avec une des équipes
-        for m in candidates:
-            if m['home_team_id'] == api_home_id or m['away_team_id'] == api_away_id:
-                return m
-        return candidates[0]
+    if candidates:
+        candidates.sort(key=lambda x: x[0])
+        # Priorité aux matchs de type knockout (qui ont home/away team id à None dans matches.csv)
+        knockouts = [c for c in candidates if c[1]['home_team_id'] is None and c[1]['away_team_id'] is None]
+        if knockouts:
+            return knockouts[0][1]
+        return candidates[0][1]
         
     return None
 
 def fetch_api_updates(api_key, local_matches, teams):
-    print("Connexion à l'API football-data.org...")
-    req = urllib.request.Request(API_URL)
-    req.add_header("X-Auth-Token", api_key)
+    print("Connexion à l'API officielle FIFA...")
+    url = "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&idCompetition=17&language=fr&count=500"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    req = urllib.request.Request(url, headers=headers)
     
     try:
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode('utf-8'))
     except Exception as e:
-        print(f"Erreur lors de la requête API : {e}")
+        print(f"Erreur lors de la requête API FIFA : {e}")
         return None
         
-    api_matches = data.get('matches', [])
-    print(f"Reçu {len(api_matches)} matchs de l'API.")
+    api_matches = data.get('Results', [])
+    print(f"Reçu {len(api_matches)} matchs de l'API FIFA.")
     
     updates = []
     matched_count = 0
     
     for api_m in api_matches:
-        status_raw = api_m.get('status')
+        status_val = api_m.get('MatchStatus')
         
-        # Mappage des statuts
-        if status_raw in ['FINISHED', 'AWARDED']:
+        # Mappage des statuts (0: Finished, 3: Live, les autres: Scheduled)
+        if status_val == 0:
             status = 'Finished'
-        elif status_raw in ['IN_PLAY', 'PAUSED']:
+        elif status_val == 3:
             status = 'Live'
         else:
             status = 'Scheduled'
             
         local_m = find_local_match(api_m, local_matches, teams)
         if local_m:
-            score_obj = api_m.get('score', {})
-            full_time = score_obj.get('fullTime', {})
-            home_score = full_time.get('home')
-            away_score = full_time.get('away')
+            home_score = api_m.get('HomeTeamScore')
+            away_score = api_m.get('AwayTeamScore')
             
+            # Si le match n'a pas commencé, le score peut être None
             if home_score is None: home_score = 0
             if away_score is None: away_score = 0
             
-            home_team_code = api_m.get('homeTeam', {}).get('tla') or ''
-            away_team_code = api_m.get('awayTeam', {}).get('tla') or ''
+            home_obj = api_m.get('Home')
+            away_obj = api_m.get('Away')
             
-            # Normalisation pour l'Uruguay (URY dans l'API, URU en local)
+            home_team_code = home_obj.get('Abbreviation') if home_obj else ''
+            away_team_code = away_obj.get('Abbreviation') if away_obj else ''
+            
             if home_team_code == 'URY': home_team_code = 'URU'
             if away_team_code == 'URY': away_team_code = 'URU'
+            if home_team_code == 'CUW': home_team_code = 'CUR'
+            if away_team_code == 'CUW': away_team_code = 'CUR'
             
             updates.append({
                 'id': local_m['id'],
@@ -157,13 +167,15 @@ def fetch_api_updates(api_key, local_matches, teams):
                 'away_score': away_score,
                 'home_team_code': home_team_code,
                 'away_team_code': away_team_code,
-                'kickoff_utc': api_m.get('utcDate') or ''
+                'kickoff_utc': api_m.get('Date') or ''
             })
             matched_count += 1
         else:
-            h_name = api_m.get('homeTeam', {}).get('name')
-            a_name = api_m.get('awayTeam', {}).get('name')
-            print(f"Avertissement : Impossible de mapper le match de l'API {h_name} vs {a_name} ({api_m.get('utcDate')})")
+            home_obj = api_m.get('Home')
+            away_obj = api_m.get('Away')
+            h_name = home_obj.get('TeamName', [{}])[0].get('Description') if home_obj and home_obj.get('TeamName') else 'N/A'
+            a_name = away_obj.get('TeamName', [{}])[0].get('Description') if away_obj and away_obj.get('TeamName') else 'N/A'
+            print(f"Avertissement : Impossible de mapper le match de l'API {h_name} vs {a_name} ({api_m.get('Date')})")
             
     print(f"Mappage terminé : {matched_count} matchs mappés sur les matches locaux.")
     return updates
@@ -476,9 +488,7 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
         updates = run_simulation(args.sim_date, local_matches)
     else:
         api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or DEFAULT_API_KEY
-        if not api_key:
-            print("Erreur : Clé d'API non configurée.")
-            return False
+        # La clé API n'est plus obligatoire avec l'API FIFA
         fetched = fetch_api_updates(api_key, local_matches, teams)
         if fetched is not None:
             updates = fetched
