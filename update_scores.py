@@ -496,49 +496,6 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
             print("Erreur de récupération API.")
             return False
             
-    # Overrides manuels demandés par l'utilisateur
-    overrides = {
-        1: {
-            'status': 'Finished',
-            'home_score': 2,
-            'away_score': 0,
-            'home_team_code': 'MEX',
-            'away_team_code': 'RSA'
-        },
-        2: {
-            'status': 'Live',
-            'home_score': 0,
-            'away_score': 0,
-            'home_team_code': 'KOR',
-            'away_team_code': 'CZE'
-        }
-    }
-    
-    # Appliquer les overrides
-    for u in updates:
-        m_id = u['id']
-        if m_id in overrides:
-            u.update(overrides[m_id])
-            
-    # S'assurer que les matchs surchargés sont présents dans la liste updates
-    existing_ids = {u['id'] for u in updates}
-    for m_id, o_data in overrides.items():
-        if m_id not in existing_ids:
-            kickoff_str = ''
-            for lm in local_matches:
-                if lm['id'] == m_id:
-                    kickoff_str = lm['kickoff_utc'].strftime('%Y-%m-%dT%H:%M:%SZ')
-                    break
-            updates.append({
-                'id': m_id,
-                'status': o_data['status'],
-                'home_score': o_data['home_score'],
-                'away_score': o_data['away_score'],
-                'home_team_code': o_data['home_team_code'],
-                'away_team_code': o_data['away_team_code'],
-                'kickoff_utc': kickoff_str
-            })
-            
     # 2. Obtenir les classements
     standings = calculate_standings(local_matches, updates, teams_metadata)
             
