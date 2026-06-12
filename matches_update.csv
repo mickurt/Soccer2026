@@ -1,7 +1,7 @@
 id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc
 1,Finished,2,0,MEX,RSA,2026-06-11T19:00:00Z
 2,Finished,2,1,KOR,CZE,2026-06-12T02:00:00Z
-3,Scheduled,0,0,CAN,BIH,2026-06-12T19:00:00Z
+3,Live,0,0,CAN,BIH,2026-06-12T19:00:00Z
 4,Scheduled,0,0,USA,PAR,2026-06-13T01:00:00Z
 5,Scheduled,0,0,QAT,SUI,2026-06-13T19:00:00Z
 6,Scheduled,0,0,BRA,MAR,2026-06-13T22:00:00Z
