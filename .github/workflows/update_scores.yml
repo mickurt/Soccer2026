@@ -3,7 +3,7 @@ name: Update Live Scores
 on:
   schedule:
     # S'exécute une fois par jour à 02:00 UTC (04:00 heure française/locale)
-    - cron: '0 2 * * *'
+    - cron: '*/5 * * * *'
   # Permet également de lancer la mise à jour manuellement depuis l'interface GitHub
   workflow_dispatch:
 
