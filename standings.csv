@@ -3,10 +3,10 @@ Group A,1,Mexico,MEX,1,1,0,0,3,2,0,2
 Group A,2,South Korea,KOR,1,1,0,0,3,2,1,1
 Group A,3,Czech Republic,CZE,1,0,0,1,0,1,2,-1
 Group A,4,South Africa,RSA,1,0,0,1,0,0,2,-2
-Group B,1,Switzerland,SUI,1,1,0,0,3,1,0,1
-Group B,2,Bosnia and Herzegovina,BIH,1,0,1,0,1,1,1,0
-Group B,3,Canada,CAN,1,0,1,0,1,1,1,0
-Group B,4,Qatar,QAT,1,0,0,1,0,0,1,-1
+Group B,1,Bosnia and Herzegovina,BIH,1,0,1,0,1,1,1,0
+Group B,2,Canada,CAN,1,0,1,0,1,1,1,0
+Group B,3,Qatar,QAT,1,0,1,0,1,1,1,0
+Group B,4,Switzerland,SUI,1,0,1,0,1,1,1,0
 Group C,1,Brazil,BRA,0,0,0,0,0,0,0,0
 Group C,2,Haiti,HAI,0,0,0,0,0,0,0,0
 Group C,3,Morocco,MAR,0,0,0,0,0,0,0,0
