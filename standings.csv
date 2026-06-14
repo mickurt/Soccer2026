@@ -19,10 +19,10 @@ Group E,1,Germany,GER,1,1,0,0,3,7,1,6
 Group E,2,Côte d'Ivoire,CIV,0,0,0,0,0,0,0,0
 Group E,3,Ecuador,ECU,0,0,0,0,0,0,0,0
 Group E,4,Curaçao,CUR,1,0,0,1,0,1,7,-6
-Group F,1,Netherlands,NED,1,1,0,0,3,1,0,1
-Group F,2,Sweden,SWE,0,0,0,0,0,0,0,0
-Group F,3,Tunisia,TUN,0,0,0,0,0,0,0,0
-Group F,4,Japan,JPN,1,0,0,1,0,0,1,-1
+Group F,1,Japan,JPN,1,0,1,0,1,1,1,0
+Group F,2,Netherlands,NED,1,0,1,0,1,1,1,0
+Group F,3,Sweden,SWE,0,0,0,0,0,0,0,0
+Group F,4,Tunisia,TUN,0,0,0,0,0,0,0,0
 Group G,1,Belgium,BEL,0,0,0,0,0,0,0,0
 Group G,2,Egypt,EGY,0,0,0,0,0,0,0,0
 Group G,3,IR Iran,IRN,0,0,0,0,0,0,0,0
