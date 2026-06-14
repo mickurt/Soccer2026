@@ -5,7 +5,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc
 4,Finished,4,1,USA,PAR,2026-06-13T01:00:00Z
 5,Finished,1,1,QAT,SUI,2026-06-13T19:00:00Z
 6,Finished,1,1,BRA,MAR,2026-06-13T22:00:00Z
-7,Live,0,0,HAI,SCO,2026-06-14T01:00:00Z
+7,Live,0,1,HAI,SCO,2026-06-14T01:00:00Z
 8,Scheduled,0,0,AUS,TUR,2026-06-14T04:00:00Z
 9,Scheduled,0,0,GER,CUR,2026-06-14T17:00:00Z
 10,Scheduled,0,0,NED,JPN,2026-06-14T20:00:00Z
