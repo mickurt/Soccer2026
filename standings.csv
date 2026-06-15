@@ -27,9 +27,9 @@ Group G,1,Belgium,BEL,0,0,0,0,0,0,0,0
 Group G,2,Egypt,EGY,0,0,0,0,0,0,0,0
 Group G,3,IR Iran,IRN,0,0,0,0,0,0,0,0
 Group G,4,New Zealand,NZL,0,0,0,0,0,0,0,0
-Group H,1,Cabo Verde,CPV,0,0,0,0,0,0,0,0
-Group H,2,Saudi Arabia,KSA,0,0,0,0,0,0,0,0
-Group H,3,Spain,ESP,0,0,0,0,0,0,0,0
+Group H,1,Cabo Verde,CPV,1,0,1,0,1,0,0,0
+Group H,2,Spain,ESP,1,0,1,0,1,0,0,0
+Group H,3,Saudi Arabia,KSA,0,0,0,0,0,0,0,0
 Group H,4,Uruguay,URU,0,0,0,0,0,0,0,0
 Group I,1,France,FRA,0,0,0,0,0,0,0,0
 Group I,2,Iraq,IRQ,0,0,0,0,0,0,0,0
