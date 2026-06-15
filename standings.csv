@@ -21,8 +21,8 @@ Group E,3,Ecuador,ECU,1,0,0,1,0,0,1,-1
 Group E,4,Curaçao,CUR,1,0,0,1,0,1,7,-6
 Group F,1,Japan,JPN,1,0,1,0,1,2,2,0
 Group F,2,Netherlands,NED,1,0,1,0,1,2,2,0
-Group F,3,Sweden,SWE,0,0,0,0,0,0,0,0
-Group F,4,Tunisia,TUN,0,0,0,0,0,0,0,0
+Group F,3,Sweden,SWE,1,0,1,0,1,0,0,0
+Group F,4,Tunisia,TUN,1,0,1,0,1,0,0,0
 Group G,1,Belgium,BEL,0,0,0,0,0,0,0,0
 Group G,2,Egypt,EGY,0,0,0,0,0,0,0,0
 Group G,3,IR Iran,IRN,0,0,0,0,0,0,0,0
