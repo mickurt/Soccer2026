@@ -14,7 +14,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc
 13,Finished,0,0,ESP,CPV,2026-06-15T16:00:00Z
 14,Finished,1,1,BEL,EGY,2026-06-15T19:00:00Z
 15,Finished,1,1,KSA,URU,2026-06-15T22:00:00Z
-16,Scheduled,0,0,IRN,NZL,2026-06-16T01:00:00Z
+16,Live,0,0,IRN,NZL,2026-06-16T01:00:00Z
 17,Scheduled,0,0,FRA,SEN,2026-06-16T19:00:00Z
 18,Scheduled,0,0,IRQ,NOR,2026-06-16T22:00:00Z
 19,Scheduled,0,0,ARG,ALG,2026-06-17T01:00:00Z

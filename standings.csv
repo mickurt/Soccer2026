@@ -25,8 +25,8 @@ Group F,3,Netherlands,NED,1,0,1,0,1,2,2,0
 Group F,4,Tunisia,TUN,1,0,0,1,0,1,5,-4
 Group G,1,Belgium,BEL,1,0,1,0,1,1,1,0
 Group G,2,Egypt,EGY,1,0,1,0,1,1,1,0
-Group G,3,IR Iran,IRN,0,0,0,0,0,0,0,0
-Group G,4,New Zealand,NZL,0,0,0,0,0,0,0,0
+Group G,3,IR Iran,IRN,1,0,1,0,1,0,0,0
+Group G,4,New Zealand,NZL,1,0,1,0,1,0,0,0
 Group H,1,Saudi Arabia,KSA,1,0,1,0,1,1,1,0
 Group H,2,Uruguay,URU,1,0,1,0,1,1,1,0
 Group H,3,Cabo Verde,CPV,1,0,1,0,1,0,0,0
