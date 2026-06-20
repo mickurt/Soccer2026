@@ -80,7 +80,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc
 79,Scheduled,0,0,MEX,,2026-07-01T01:00:00Z
 80,Scheduled,0,0,,,2026-07-01T16:00:00Z
 81,Scheduled,0,0,,,2026-07-01T20:00:00Z
-82,Scheduled,0,0,,,2026-07-02T00:00:00Z
+82,Scheduled,0,0,USA,,2026-07-02T00:00:00Z
 83,Scheduled,0,0,,,2026-07-02T19:00:00Z
 84,Scheduled,0,0,,,2026-07-02T23:00:00Z
 85,Scheduled,0,0,,,2026-07-03T03:00:00Z
