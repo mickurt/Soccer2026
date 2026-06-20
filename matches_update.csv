@@ -30,7 +30,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc
 29,Finished,2,0,USA,AUS,2026-06-19T19:00:00Z
 30,Finished,0,1,SCO,MAR,2026-06-19T22:00:00Z
 31,Finished,3,0,BRA,HAI,2026-06-20T00:30:00Z
-32,Live,0,1,TUR,PAR,2026-06-20T03:00:00Z
+32,Finished,0,1,TUR,PAR,2026-06-20T03:00:00Z
 33,Scheduled,0,0,NED,SWE,2026-06-20T17:00:00Z
 34,Scheduled,0,0,GER,CIV,2026-06-20T20:00:00Z
 35,Scheduled,0,0,ECU,CUR,2026-06-21T00:00:00Z
