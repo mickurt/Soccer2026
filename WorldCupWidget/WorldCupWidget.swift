@@ -556,7 +556,7 @@ struct LiveScoreActivityWidget: Widget {
                             .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5)) // Gold
                         
                         Text(context.state.status.uppercased())
-                            .font(.system(size: 9, weight: .bold))
+                            .font(.system(size: 11, weight: .bold))
                             .foregroundStyle(.red)
                     }
                 }
@@ -604,6 +604,7 @@ struct LiveScoreActivityWidget: Widget {
 
 struct MatchProgressBar: View {
     let status: String
+    let timerStartDate: Date?
     
     private var elapsedMinutes: Int {
         if status.lowercased().contains("ht") || status.lowercased().contains("mi-temp") || status.lowercased().contains("half") {
@@ -621,41 +622,62 @@ struct MatchProgressBar: View {
     }
     
     var body: some View {
-        let total = totalMinutes
-        let elapsed = min(max(elapsedMinutes, 0), total)
-        let remaining = max(total - elapsed, 0)
-        
-        VStack(spacing: 4) {
-            GeometryReader { geometry in
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 3)
-                        .fill(Color.white.opacity(0.15))
-                        .frame(height: 6)
-                    
-                    RoundedRectangle(cornerRadius: 3)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(red: 0.9, green: 0.8, blue: 0.5), .green],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: geometry.size.width * CGFloat(elapsed) / CGFloat(total), height: 6)
+        if let startDate = timerStartDate, status.lowercased() != "ht", !status.lowercased().contains("mi-temp"), !status.lowercased().contains("finished"), !status.lowercased().contains("termin") {
+            // Live match with a running timer
+            let totalSeconds = Double(totalMinutes * 60)
+            VStack(spacing: 6) {
+                ProgressView(timerInterval: startDate...startDate.addingTimeInterval(totalSeconds), countsDown: false, label: { EmptyView() }, currentValueLabel: { EmptyView() })
+                    .tint(.green)
+                
+                HStack {
+                    Text(status)
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                    Spacer()
+                    Text("\(totalMinutes) min")
+                        .font(.system(size: 9, weight: .medium))
+                        .foregroundStyle(.white.opacity(0.6))
                 }
             }
-            .frame(height: 6)
+            .padding(.horizontal, 4)
+        } else {
+            // Fallback for static display (Halftime, Finished, Scheduled)
+            let total = totalMinutes
+            let elapsed = min(max(elapsedMinutes, 0), total)
+            let remaining = max(total - elapsed, 0)
             
-            HStack {
-                Text("\(elapsed) min")
-                    .font(.system(size: 9, weight: .semibold))
-                    .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
-                Spacer()
-                Text("-\(remaining) min")
-                    .font(.system(size: 9, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.6))
+            VStack(spacing: 4) {
+                GeometryReader { geometry in
+                    ZStack(alignment: .leading) {
+                        RoundedRectangle(cornerRadius: 3)
+                            .fill(Color.white.opacity(0.15))
+                            .frame(height: 6)
+                        
+                        RoundedRectangle(cornerRadius: 3)
+                            .fill(
+                                LinearGradient(
+                                    colors: [Color(red: 0.9, green: 0.8, blue: 0.5), .green],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .frame(width: geometry.size.width * CGFloat(elapsed) / CGFloat(total), height: 6)
+                    }
+                }
+                .frame(height: 6)
+                
+                HStack {
+                    Text("\(elapsed) min")
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
+                    Spacer()
+                    Text("-\(remaining) min")
+                        .font(.system(size: 9, weight: .medium))
+                        .foregroundStyle(.white.opacity(0.6))
+                }
             }
+            .padding(.horizontal, 4)
         }
-        .padding(.horizontal, 4)
     }
 }
 
@@ -716,7 +738,7 @@ struct LockScreenLiveScoreView: View {
             
             // Progress Bar Section
             if context.state.matchStatusRawValue == "Live" || context.state.matchStatusRawValue == "Finished" {
-                MatchProgressBar(status: context.state.status)
+                MatchProgressBar(status: context.state.status, timerStartDate: context.state.timerStartDate)
             }
         }
         .padding()

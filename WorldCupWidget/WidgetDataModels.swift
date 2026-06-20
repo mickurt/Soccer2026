@@ -46,6 +46,7 @@ struct LiveScoreAttributes: ActivityAttributes {
         var status: String // e.g. "12'", "HT", "Scheduled"
         var matchStatusRawValue: String
         var liveLabel: String
+        var timerStartDate: Date?
     }
 
     var matchId: String

@@ -11,9 +11,39 @@ import random
 import time
 import subprocess
 
-# Clé API par défaut (fournie par l'utilisateur)
-DEFAULT_API_KEY = "1218b63c64c442a7bc766cf9f802c090"
-API_URL = "https://api.football-data.org/v4/competitions/WC/matches"
+# Firebase & APNs imports
+try:
+    import firebase_admin
+    from firebase_admin import credentials, firestore
+except ImportError:
+    firebase_admin = None
+    print("Avertissement : firebase_admin non installé.")
+
+try:
+    import jwt
+except ImportError:
+    jwt = None
+    print("Avertissement : PyJWT non installé.")
+
+try:
+    import httpx
+except ImportError:
+    httpx = None
+    print("Avertissement : httpx non installé.")
+
+import re
+import base64
+
+def extract_player_name(description, event_type):
+    desc = description.strip()
+    # Nettoyage des préfixes selon la langue
+    if event_type == 0:  # Goal
+        desc = re.sub(r'^(But de|Goal by|But contre son camp de|Own goal by|Penalty marqué par|Penalty scored by)\s+', '', desc, flags=re.IGNORECASE)
+    # Chercher ce qui est avant la première parenthèse
+    match = re.match(r'^([^(\n]+)\s*\(', desc)
+    if match:
+        return match.group(1).strip()
+    return desc
 
 def parse_kickoff_time(kickoff_str):
     # Exemple: "2026-06-11 15:00:00-06" -> ISO format
@@ -160,6 +190,56 @@ def fetch_api_updates(api_key, local_matches, teams):
             if home_team_code == 'CUW': home_team_code = 'CUR'
             if away_team_code == 'CUW': away_team_code = 'CUR'
             
+            # Récupérer la timeline si le match est en cours ou terminé
+            id_comp = api_m.get('IdCompetition')
+            id_season = api_m.get('IdSeason')
+            id_stage = api_m.get('IdStage')
+            id_match = api_m.get('IdMatch')
+            home_team_id = home_obj.get('IdTeam') if home_obj else None
+            away_team_id = away_obj.get('IdTeam') if away_obj else None
+            
+            events_list = []
+            if status in ['Live', 'Finished'] and id_comp and id_season and id_stage and id_match:
+                timeline_url = f"https://api.fifa.com/api/v3/timelines/{id_comp}/{id_season}/{id_stage}/{id_match}?language=fr"
+                timeline_req = urllib.request.Request(timeline_url, headers=headers)
+                try:
+                    with urllib.request.urlopen(timeline_req) as t_resp:
+                        t_data = json.loads(t_resp.read().decode('utf-8'))
+                        for ev in t_data.get('Event', []):
+                            t_type = ev.get('Type')
+                            # 0: Goal (But!), 2: Yellow Card, 3: Red Card
+                            if t_type in [0, 2, 3]:
+                                ev_type = "goal" if t_type == 0 else ("yellow_card" if t_type == 2 else "red_card")
+                                minute = ev.get('MatchMinute') or ""
+                                ev_team_id = ev.get('IdTeam')
+                                
+                                team_mapping = "unknown"
+                                if ev_team_id == home_team_id:
+                                    team_mapping = "home"
+                                elif ev_team_id == away_team_id:
+                                    team_mapping = "away"
+                                    
+                                player_name = "Joueur"
+                                desc_list = ev.get('EventDescription') or []
+                                if desc_list:
+                                    description = desc_list[0].get('Description') or ""
+                                    player_name = extract_player_name(description, t_type)
+                                    
+                                events_list.append({
+                                    'minute': minute,
+                                    'type': ev_type,
+                                    'player': player_name,
+                                    'team': team_mapping
+                                })
+                except Exception as ex:
+                    print(f"Erreur de lecture timeline pour le match {id_match}: {ex}")
+            
+            events_base64 = ""
+            if events_list:
+                import base64
+                events_json = json.dumps(events_list)
+                events_base64 = base64.b64encode(events_json.encode('utf-8')).decode('utf-8')
+            
             updates.append({
                 'id': local_m['id'],
                 'status': status,
@@ -167,7 +247,8 @@ def fetch_api_updates(api_key, local_matches, teams):
                 'away_score': away_score,
                 'home_team_code': home_team_code,
                 'away_team_code': away_team_code,
-                'kickoff_utc': api_m.get('Date') or ''
+                'kickoff_utc': api_m.get('Date') or '',
+                'events': events_base64
             })
             matched_count += 1
         else:
@@ -180,7 +261,69 @@ def fetch_api_updates(api_key, local_matches, teams):
     print(f"Mappage terminé : {matched_count} matchs mappés sur les matches locaux.")
     return updates
 
-def run_simulation(sim_date_str, local_matches):
+def generate_mock_events(home_score, away_score, match_id, status, elapsed_minutes, home_code, away_code):
+    import random
+    # Utiliser une graine stable pour que les évènements ne changent pas à chaque rafraîchissement
+    # mais dépendent uniquement de l'ID du match et des scores actuels
+    random.seed(match_id * 1000 + home_score + away_score)
+    
+    events = []
+    
+    # Générer les buts à domicile
+    for i in range(home_score):
+        minute = random.randint(1, elapsed_minutes)
+        events.append({
+            'minute': f"{minute}'",
+            'type': 'goal',
+            'player': f"Buteur {home_code}",
+            'team': 'home'
+        })
+        
+    # Générer les buts à l'extérieur
+    for i in range(away_score):
+        minute = random.randint(1, elapsed_minutes)
+        events.append({
+            'minute': f"{minute}'",
+            'type': 'goal',
+            'player': f"Buteur {away_code}",
+            'team': 'away'
+        })
+        
+    # Générer des cartons jaunes aléatoires (entre 0 et 3)
+    num_yellow = random.randint(0, 3)
+    for i in range(num_yellow):
+        minute = random.randint(1, elapsed_minutes)
+        team = 'home' if random.random() < 0.5 else 'away'
+        code = home_code if team == 'home' else away_code
+        events.append({
+            'minute': f"{minute}'",
+            'type': 'yellow_card',
+            'player': f"Joueur {code}",
+            'team': team
+        })
+        
+    # 15% de chance d'avoir un carton rouge
+    if random.random() < 0.15:
+        minute = random.randint(1, elapsed_minutes)
+        team = 'home' if random.random() < 0.5 else 'away'
+        code = home_code if team == 'home' else away_code
+        events.append({
+            'minute': f"{minute}'",
+            'type': 'red_card',
+            'player': f"Exclu {code}",
+            'team': team
+        })
+        
+    # Trier les évènements par minute chronologiquement
+    def get_min_val(ev):
+        try:
+            return int(ev['minute'].replace("'", ""))
+        except:
+            return 0
+    events.sort(key=get_min_val)
+    return events
+
+def run_simulation(sim_date_str, local_matches, base_dir=None):
     if sim_date_str:
         try:
             # Format attendu: AAAA-MM-JJ ou AAAA-MM-JJTHH:MM:SS
@@ -204,6 +347,22 @@ def run_simulation(sim_date_str, local_matches):
             sim_dt = now
             print(f"Simulation basée sur la date réelle : {sim_dt}")
             
+    # Charger les codes d'équipes pour générer des évènements plus réalistes
+    teams_map = {}
+    if base_dir:
+        teams_csv_path = os.path.join(base_dir, 'teams.csv')
+        if os.path.exists(teams_csv_path):
+            try:
+                with open(teams_csv_path, 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        teams_map[int(row['id'])] = {
+                            'code': row['fifa_code'],
+                            'name': row['team_name']
+                        }
+            except Exception as e:
+                print(f"Avertissement: Impossible de charger teams.csv pour simulation: {e}")
+
     updates = []
     
     for m in local_matches:
@@ -211,23 +370,40 @@ def run_simulation(sim_date_str, local_matches):
         end_time = kickoff + datetime.timedelta(hours=2) # Un match dure environ 2 heures
         kickoff_utc_str = kickoff.strftime('%Y-%m-%dT%H:%M:%SZ')
         
+        home_code = teams_map.get(m.get('home_team_id'), {}).get('code') or ''
+        away_code = teams_map.get(m.get('away_team_id'), {}).get('code') or ''
+        
         if sim_dt >= end_time:
             # Match terminé : score déterministe basé sur l'ID du match
             random.seed(m['id'])
             home_score = random.randint(0, 4)
             away_score = random.randint(0, 3)
+            
+            # Générer les évènements de match simulés
+            sim_events = []
+            if home_score > 0 or away_score > 0:
+                sim_events = generate_mock_events(home_score, away_score, m['id'], 'Finished', 90, home_code or 'DOM', away_code or 'EXT')
+            
+            events_base64 = ""
+            if sim_events:
+                import base64
+                events_json = json.dumps(sim_events)
+                events_base64 = base64.b64encode(events_json.encode('utf-8')).decode('utf-8')
+                
             updates.append({
                 'id': m['id'],
                 'status': 'Finished',
                 'home_score': home_score,
                 'away_score': away_score,
-                'home_team_code': '',
-                'away_team_code': '',
-                'kickoff_utc': kickoff_utc_str
+                'home_team_code': home_code,
+                'away_team_code': away_code,
+                'kickoff_utc': kickoff_utc_str,
+                'events': events_base64
             })
         elif kickoff <= sim_dt < end_time:
             # Match en cours (Live) : score progressif changeant toutes les 5 minutes réelles
             elapsed_minutes = int((sim_dt - kickoff).total_seconds() / 60)
+            elapsed_minutes_capped = min(90, max(1, elapsed_minutes))
             
             # Pour que le score change en temps réel, on ajoute le bloc de minutes réelles à la graine aléatoire
             now_minute_block = int(datetime.datetime.now().minute / 5)
@@ -236,14 +412,26 @@ def run_simulation(sim_date_str, local_matches):
             home_score = random.randint(0, int(elapsed_minutes / 30) + 1)
             away_score = random.randint(0, int(elapsed_minutes / 40) + 1)
             
+            # Générer les évènements de match simulés
+            sim_events = []
+            if home_score > 0 or away_score > 0:
+                sim_events = generate_mock_events(home_score, away_score, m['id'], 'Live', elapsed_minutes_capped, home_code or 'DOM', away_code or 'EXT')
+            
+            events_base64 = ""
+            if sim_events:
+                import base64
+                events_json = json.dumps(sim_events)
+                events_base64 = base64.b64encode(events_json.encode('utf-8')).decode('utf-8')
+                
             updates.append({
                 'id': m['id'],
                 'status': 'Live',
                 'home_score': home_score,
                 'away_score': away_score,
-                'home_team_code': '',
-                'away_team_code': '',
-                'kickoff_utc': kickoff_utc_str
+                'home_team_code': home_code,
+                'away_team_code': away_code,
+                'kickoff_utc': kickoff_utc_str,
+                'events': events_base64
             })
             
     return updates
@@ -251,7 +439,7 @@ def run_simulation(sim_date_str, local_matches):
 def write_updates_to_csv(updates, output_path):
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc'])
+        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc', 'events'])
         for u in updates:
             writer.writerow([
                 u['id'],
@@ -260,7 +448,8 @@ def write_updates_to_csv(updates, output_path):
                 u['away_score'],
                 u.get('home_team_code', ''),
                 u.get('away_team_code', ''),
-                u.get('kickoff_utc', '')
+                u.get('kickoff_utc', ''),
+                u.get('events', '')
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
@@ -479,16 +668,221 @@ def commit_and_push(base_dir):
     except Exception as e:
         print(f"Erreur lors du commit/push Git : {e}")
 
+# --- APNS & Firestore Push Functions ---
+
+def init_firebase():
+    if firebase_admin is None:
+        return None
+        
+    try:
+        return firestore.client()
+    except ValueError:
+        pass
+        
+    service_account_env = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
+    if service_account_env:
+        try:
+            service_account_info = json.loads(service_account_env)
+            cred = credentials.Certificate(service_account_info)
+            firebase_admin.initialize_app(cred)
+            return firestore.client()
+        except Exception as e:
+            print(f"Erreur d'initialisation Firebase depuis l'environnement : {e}")
+    else:
+        local_key_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "serviceAccountKey.json")
+        if os.path.exists(local_key_path):
+            try:
+                cred = credentials.Certificate(local_key_path)
+                firebase_admin.initialize_app(cred)
+                return firestore.client()
+            except Exception as e:
+                print(f"Erreur d'initialisation Firebase depuis serviceAccountKey.json : {e}")
+    return None
+
+def generate_apns_token(key_id, team_id, private_key_pem):
+    if jwt is None:
+        return None
+    headers = {
+        "alg": "ES256",
+        "kid": key_id
+    }
+    payload = {
+        "iss": team_id,
+        "iat": int(time.time())
+    }
+    token = jwt.encode(payload, private_key_pem, algorithm="ES256", headers=headers)
+    if isinstance(token, bytes):
+        token = token.decode("ascii")
+    return token
+
+def send_apns_push(token, device_token, bundle_id, payload):
+    if httpx is None:
+        return False
+        
+    use_sandbox = os.environ.get("APNS_SANDBOX", "false").lower() == "true"
+    host = "api.sandbox.push.apple.com" if use_sandbox else "api.push.apple.com"
+    url = f"https://{host}/3/device/{device_token}"
+    
+    headers = {
+        "apns-topic": f"{bundle_id}.push-type.liveactivity",
+        "apns-push-type": "liveactivity",
+        "apns-expiration": "0",
+        "apns-priority": "10",
+        "authorization": f"bearer {token}"
+    }
+    
+    try:
+        with httpx.Client(http2=True) as client:
+            response = client.post(url, json=payload, headers=headers)
+            if response.status_code == 200:
+                print(f"Push envoyé avec succès au token {device_token[:8]}...")
+                return True
+            else:
+                print(f"Erreur APNs : Status {response.status_code}, Réponse : {response.text}")
+                return False
+    except Exception as e:
+        print(f"Erreur HTTP/2 client APNs pour {device_token[:8]} : {e}")
+        return False
+
+def load_previous_scores(output_path):
+    previous = {}
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    try:
+                        previous[int(row['id'])] = {
+                            'status': row['status'],
+                            'home_score': int(row['home_score']),
+                            'away_score': int(row['away_score'])
+                        }
+                    except:
+                        pass
+        except Exception as e:
+            print(f"Erreur lors du chargement des scores précédents : {e}")
+    return previous
+
+def send_apns_for_updates(changed_matches):
+    db = init_firebase()
+    if db is None:
+        print("Firebase non initialisé. Impossible de récupérer les tokens push.")
+        return
+        
+    key_id = os.environ.get("APNS_KEY_ID")
+    team_id = os.environ.get("APNS_TEAM_ID")
+    private_key_pem = os.environ.get("APNS_PRIVATE_KEY")
+    bundle_id = os.environ.get("APNS_BUNDLE_ID", "com.mm.WorldCup2026")
+    
+    if not (key_id and team_id and private_key_pem):
+        print("Identifiants APNs non configurés dans l'environnement. Envoi des pushs annulé.")
+        return
+        
+    private_key_pem = private_key_pem.replace("\\n", "\n")
+    
+    try:
+        apns_token = generate_apns_token(key_id, team_id, private_key_pem)
+    except Exception as e:
+        print(f"Erreur lors de la génération du token JWT APNs : {e}")
+        return
+        
+    for u in changed_matches:
+        match_id = str(u['id'])
+        status = u['status']
+        home_score = u['home_score']
+        away_score = u['away_score']
+        
+        if status not in ['Live', 'Finished']:
+            continue
+            
+        print(f"Recherche de tokens Live Activity pour le match {match_id} ({status})...")
+        
+        try:
+            activities_ref = db.collection("live_activities")
+            query = activities_ref.where("matchId", "==", match_id)
+            docs = query.stream()
+            
+            tokens = []
+            for doc in docs:
+                data = doc.to_dict()
+                token = data.get("pushToken")
+                if token:
+                    tokens.append(token)
+                    
+            if not tokens:
+                print(f"Aucun token Live Activity actif trouvé pour le match {match_id}.")
+                continue
+                
+            print(f"{len(tokens)} token(s) trouvé(s). Envoi de la mise à jour APNs...")
+            
+            status_text = "Live"
+            timer_start_date = None
+            
+            if u.get('kickoff_utc'):
+                try:
+                    utc_str = u['kickoff_utc']
+                    if utc_str.endswith('Z'):
+                        utc_str = utc_str[:-1] + '+00:00'
+                    dt = datetime.datetime.fromisoformat(utc_str)
+                    timer_start_date = dt.timestamp()
+                except Exception as e:
+                    print(f"Erreur lors du parsing de la date de coup d'envoi pour le chrono : {e}")
+                    
+            if status == "Live":
+                if timer_start_date:
+                    elapsed = max(0, int((time.time() - timer_start_date) / 60))
+                    if elapsed <= 45:
+                        status_text = f"{elapsed}'"
+                    elif elapsed <= 60:
+                        status_text = "HT"
+                        timer_start_date = None
+                    elif elapsed <= 105:
+                        status_text = f"{elapsed - 15}'"
+                        timer_start_date = time.time() - (elapsed - 15) * 60
+                    else:
+                        status_text = "90'"
+                        timer_start_date = time.time() - 90 * 60
+                else:
+                    status_text = "Live"
+            else:
+                status_text = "Finished"
+                timer_start_date = None
+                
+            payload = {
+                "aps": {
+                    "timestamp": int(time.time()),
+                    "event": "update",
+                    "content-state": {
+                        "homeScore": int(home_score),
+                        "awayScore": int(away_score),
+                        "status": status_text,
+                        "matchStatusRawValue": status.lower(),
+                        "liveLabel": "LIVE" if status == "Live" else "FINISHED",
+                        "timerStartDate": timer_start_date
+                    }
+                }
+            }
+            
+            for t in tokens:
+                send_apns_push(apns_token, t, bundle_id, payload)
+                
+        except Exception as e:
+            print(f"Erreur lors du traitement des pushs pour le match {match_id} : {e}")
+
+# --- End APNS & Firestore Push Functions ---
+
 def run_single_iteration(args, local_matches, teams, teams_metadata, output_path, standings_path, base_dir):
     updates = []
     standings = []
     
+    # Charger les scores précédents pour détecter les changements
+    previous_scores = load_previous_scores(output_path)
+    
     # 1. Obtenir les scores de match
     if args.simulate:
-        updates = run_simulation(args.sim_date, local_matches)
+        updates = run_simulation(args.sim_date, local_matches, base_dir)
     else:
         api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or DEFAULT_API_KEY
-        # La clé API n'est plus obligatoire avec l'API FIFA
         fetched = fetch_api_updates(api_key, local_matches, teams)
         if fetched is not None:
             updates = fetched
@@ -499,8 +893,24 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
     # 2. Obtenir les classements
     standings = calculate_standings(local_matches, updates, teams_metadata)
             
+    # Détecter les changements
+    changed_matches = []
+    for u in updates:
+        match_id = u['id']
+        prev = previous_scores.get(match_id)
+        if (not prev or 
+            prev['status'] != u['status'] or 
+            prev['home_score'] != u['home_score'] or 
+            prev['away_score'] != u['away_score']):
+            changed_matches.append(u)
+            
     write_updates_to_csv(updates, output_path)
     write_standings_to_csv(standings, standings_path)
+    
+    # Envoyer les notifications push APNs pour les matchs modifiés
+    if changed_matches:
+        send_apns_for_updates(changed_matches)
+        
     commit_and_push(base_dir)
     return any(u['status'] == 'Live' for u in updates)
 
