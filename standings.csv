@@ -45,5 +45,5 @@ Group K,3,DR Congo,COD,1,0,1,0,1,1,1,0
 Group K,4,Uzbekistan,UZB,2,0,0,2,0,1,8,-7
 Group L,1,England,ENG,2,1,1,0,4,4,2,2
 Group L,2,Ghana,GHA,2,1,1,0,4,1,0,1
-Group L,3,Panama,PAN,1,0,0,1,0,0,1,-1
-Group L,4,Croatia,CRO,1,0,0,1,0,2,4,-2
+Group L,3,Panama,PAN,2,0,1,1,1,0,1,-1
+Group L,4,Croatia,CRO,2,0,1,1,1,2,4,-2
