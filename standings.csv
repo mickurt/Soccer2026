@@ -37,8 +37,8 @@ Group I,3,Senegal,SEN,2,0,0,2,0,3,6,-3
 Group I,4,Iraq,IRQ,2,0,0,2,0,1,7,-6
 Group J,1,Argentina,ARG,2,2,0,0,6,5,0,5
 Group J,2,Austria,AUT,2,1,0,1,3,3,3,0
-Group J,3,Jordan,JOR,2,1,0,1,3,2,3,-1
-Group J,4,Algeria,ALG,2,0,0,2,0,0,4,-4
+Group J,3,Jordan,JOR,2,0,1,1,1,2,4,-2
+Group J,4,Algeria,ALG,2,0,1,1,1,1,4,-3
 Group K,1,Colombia,COL,1,1,0,0,3,3,1,2
 Group K,2,DR Congo,COD,1,0,1,0,1,1,1,0
 Group K,3,Portugal,POR,1,0,1,0,1,1,1,0
