@@ -1,8 +1,8 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
-Group A,1,Mexico,MEX,3,3,0,0,9,5,0,5
+Group A,1,Mexico,MEX,3,3,0,0,9,6,0,6
 Group A,2,South Africa,RSA,3,1,1,1,4,2,3,-1
 Group A,3,South Korea,KOR,3,1,0,2,3,2,3,-1
-Group A,4,Czech Republic,CZE,3,0,1,2,1,2,5,-3
+Group A,4,Czech Republic,CZE,3,0,1,2,1,2,6,-4
 Group B,1,Switzerland,SUI,3,2,1,0,7,7,3,4
 Group B,2,Canada,CAN,3,1,1,1,4,8,3,5
 Group B,3,Bosnia and Herzegovina,BIH,3,1,1,1,4,5,6,-1
