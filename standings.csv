@@ -31,8 +31,8 @@ Group H,1,Spain,ESP,2,1,1,0,4,4,0,4
 Group H,2,Uruguay,URU,2,0,2,0,2,3,3,0
 Group H,3,Cabo Verde,CPV,2,0,2,0,2,2,2,0
 Group H,4,Saudi Arabia,KSA,2,0,1,1,1,1,5,-4
-Group I,1,France,FRA,3,3,0,0,9,8,1,7
-Group I,2,Norway,NOR,3,2,0,1,6,7,5,2
+Group I,1,France,FRA,3,3,0,0,9,8,2,6
+Group I,2,Norway,NOR,3,2,0,1,6,8,5,3
 Group I,3,Senegal,SEN,3,1,0,2,3,4,6,-2
 Group I,4,Iraq,IRQ,3,0,0,3,0,1,8,-7
 Group J,1,Argentina,ARG,2,2,0,0,6,5,0,5
