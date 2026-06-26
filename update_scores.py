@@ -724,7 +724,7 @@ def send_apns_push(token, device_token, bundle_id, payload):
     url = f"https://{host}/3/device/{device_token}"
     
     headers = {
-        "apns-topic": f"{bundle_id}.push-type.liveactivity",
+        "apns-topic": bundle_id,
         "apns-push-type": "liveactivity",
         "apns-expiration": "0",
         "apns-priority": "10",
@@ -882,7 +882,7 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
     if args.simulate:
         updates = run_simulation(args.sim_date, local_matches, base_dir)
     else:
-        api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or DEFAULT_API_KEY
+        api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
         fetched = fetch_api_updates(api_key, local_matches, teams)
         if fetched is not None:
             updates = fetched
