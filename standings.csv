@@ -11,10 +11,10 @@ Group C,1,Brazil,BRA,3,2,1,0,7,7,1,6
 Group C,2,Morocco,MAR,3,2,1,0,7,6,3,3
 Group C,3,Scotland,SCO,3,1,0,2,3,1,4,-3
 Group C,4,Haiti,HAI,3,0,0,3,0,2,8,-6
-Group D,1,USA,USA,3,3,0,0,9,7,1,6
+Group D,1,USA,USA,3,2,1,0,7,7,2,5
 Group D,2,Australia,AUS,3,1,1,1,4,2,2,0
 Group D,3,Paraguay,PAR,3,1,1,1,4,2,4,-2
-Group D,4,Turkey,TUR,3,0,0,3,0,0,4,-4
+Group D,4,Turkey,TUR,3,0,1,2,1,1,4,-3
 Group E,1,Germany,GER,3,2,0,1,6,10,4,6
 Group E,2,Côte d'Ivoire,CIV,3,2,0,1,6,4,2,2
 Group E,3,Ecuador,ECU,3,1,1,1,4,2,2,0
