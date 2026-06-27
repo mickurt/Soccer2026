@@ -802,18 +802,19 @@ def send_apns_for_updates(changed_matches):
             query = activities_ref.where("matchId", "==", match_id)
             docs = query.stream()
             
-            tokens = []
+            activity_targets = []
             for doc in docs:
                 data = doc.to_dict()
                 token = data.get("pushToken")
+                t_bundle_id = data.get("bundleId") or bundle_id
                 if token:
-                    tokens.append(token)
+                    activity_targets.append((token, t_bundle_id))
                     
-            if not tokens:
+            if not activity_targets:
                 print(f"Aucun token Live Activity actif trouvé pour le match {match_id}.")
                 continue
                 
-            print(f"{len(tokens)} token(s) trouvé(s). Envoi de la mise à jour APNs...")
+            print(f"{len(activity_targets)} token(s) trouvé(s). Envoi de la mise à jour APNs...")
             
             status_text = "Live"
             timer_start_date = None
@@ -863,8 +864,8 @@ def send_apns_for_updates(changed_matches):
                 }
             }
             
-            for t in tokens:
-                send_apns_push(apns_token, t, bundle_id, payload)
+            for t, t_bundle_id in activity_targets:
+                send_apns_push(apns_token, t, t_bundle_id, payload)
                 
         except Exception as e:
             print(f"Erreur lors du traitement des pushs pour le match {match_id} : {e}")
