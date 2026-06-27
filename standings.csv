@@ -24,8 +24,8 @@ Group F,2,Japan,JPN,3,1,2,0,5,7,3,4
 Group F,3,Sweden,SWE,3,1,1,1,4,7,7,0
 Group F,4,Tunisia,TUN,3,0,0,3,0,2,12,-10
 Group G,1,Belgium,BEL,3,1,2,0,5,6,2,4
-Group G,2,IR Iran,IRN,3,1,2,0,5,4,3,1
-Group G,3,Egypt,EGY,3,1,1,1,4,5,4,1
+Group G,2,Egypt,EGY,3,1,2,0,5,5,3,2
+Group G,3,IR Iran,IRN,3,0,3,0,3,3,3,0
 Group G,4,New Zealand,NZL,3,0,1,2,1,4,10,-6
 Group H,1,Spain,ESP,3,2,1,0,7,5,0,5
 Group H,2,Cabo Verde,CPV,3,0,3,0,3,2,2,0
