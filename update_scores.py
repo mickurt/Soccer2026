@@ -873,7 +873,11 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                         }
                         
                         for t, t_bundle_id in start_targets:
-                            send_apns_push(apns_token, t, f"{t_bundle_id}.push-type.liveactivity", start_payload)
+                            # Assurer que le topic ne contient pas de doublon de suffixe
+                            topic = t_bundle_id
+                            if not topic.endswith(".push-type.liveactivity"):
+                                topic = f"{topic}.push-type.liveactivity"
+                            send_apns_push(apns_token, t, topic, start_payload)
                     else:
                         print(f"Aucun appareil abonné (Push to Start) pour le match {match_id}.")
             except Exception as ex:
@@ -949,7 +953,11 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
             }
             
             for t, t_bundle_id in activity_targets:
-                send_apns_push(apns_token, t, f"{t_bundle_id}.push-type.liveactivity", payload)
+                # Assurer que le topic ne contient pas de doublon de suffixe
+                topic = t_bundle_id
+                if not topic.endswith(".push-type.liveactivity"):
+                    topic = f"{topic}.push-type.liveactivity"
+                send_apns_push(apns_token, t, topic, payload)
                 
         except Exception as e:
             print(f"Erreur lors du traitement des pushs pour le match {match_id} : {e}")
