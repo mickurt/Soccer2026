@@ -763,7 +763,25 @@ def load_previous_scores(output_path):
             print(f"Erreur lors du chargement des scores précédents : {e}")
     return previous
 
-def send_apns_for_updates(changed_matches):
+def flag_emoji(code):
+    mappings = {
+        "MEX": "🇲🇽", "RSA": "🇿🇦", "KOR": "🇰🇷", "CAN": "🇨🇦",
+        "QAT": "🇶🇦", "SUI": "🇨🇭", "BRA": "🇧🇷", "MAR": "🇲🇦",
+        "HAI": "🇭🇹", "SCO": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "USA": "🇺🇸", "PAR": "🇵🇾",
+        "AUS": "🇦🇺", "GER": "🇩🇪", "CUR": "🇨🇼", "CIV": "🇨🇮",
+        "ECU": "🇪🇨", "NED": "🇳🇱", "JPN": "🇯🇵", "TUN": "🇹🇳",
+        "BEL": "🇧🇪", "EGY": "🇪🇬", "IRN": "🇮🇷", "NZL": "🇳🇿",
+        "ESP": "🇪🇸", "CPV": "🇨🇻", "KSA": "🇸🇦", "URU": "🇺🇾",
+        "FRA": "🇫🇷", "SEN": "🇸🇳", "NOR": "🇳🇴", "ARG": "🇦🇷",
+        "ALG": "🇩🇿", "AUT": "🇦🇹", "JOR": "🇯🇴", "POR": "🇵🇹",
+        "UZB": "🇺🇿", "COL": "🇨🇴", "ENG": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "CRO": "🇭🇷",
+        "GHA": "🇬🇭", "PAN": "🇵🇦",
+        "BIH": "🇧🇦", "SWE": "🇸🇪", "TUR": "🇹🇷", "CZE": "🇨🇿",
+        "COD": "🇨🇩", "IRQ": "🇮🇶"
+    }
+    return mappings.get(code, "🏳️")
+
+def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previous_scores):
     db = init_firebase()
     if db is None:
         print("Firebase non initialisé. Impossible de récupérer les tokens push.")
@@ -795,8 +813,73 @@ def send_apns_for_updates(changed_matches):
         if status not in ['Live', 'Finished']:
             continue
             
-        print(f"Recherche de tokens Live Activity pour le match {match_id} ({status})...")
+        prev = previous_scores.get(u['id'])
+        is_new_live = (not prev or prev['status'] == 'Scheduled') and status == 'Live'
         
+        # 1. ENVOI DU PUSH DE DÉMARRAGE ("start") AU TOUT DEBUT DU MATCH (PUSH TO START)
+        if is_new_live:
+            print(f"Match {match_id} commence (Live) ! Envoi des pushs de démarrage APNs (Push to Start)...")
+            try:
+                local_m = next((m for m in local_matches if m['id'] == u['id']), None)
+                if local_m:
+                    home_code = u.get('home_team_code') or ''
+                    away_code = u.get('away_team_code') or ''
+                    
+                    home_name = teams_metadata.get(local_m.get('home_team_id', 0), {}).get('name') or home_code or "TBD"
+                    away_name = teams_metadata.get(local_m.get('away_team_id', 0), {}).get('name') or away_code or "TBD"
+                    stage = local_m.get('match_label', 'Knockout')
+                    
+                    # Récupérer les tokens de démarrage des appareils
+                    start_tokens_ref = db.collection("device_start_tokens")
+                    start_docs = start_tokens_ref.stream()
+                    
+                    start_targets = []
+                    for doc in start_docs:
+                        data = doc.to_dict()
+                        token = data.get("pushToStartToken")
+                        fav_team = data.get("favoriteTeamId") or ""
+                        t_bundle_id = data.get("bundleId") or bundle_id
+                        
+                        # Cible : tous les appareils enregistrés pour tous les matchs en direct
+                        if token:
+                            start_targets.append((token, t_bundle_id))
+                                
+                    if start_targets:
+                        print(f"{len(start_targets)} appareil(s) éligible(s) pour le Push to Start du match {match_id}.")
+                        
+                        start_payload = {
+                            "aps": {
+                                "timestamp": int(time.time()),
+                                "event": "start",
+                                "content-state": {
+                                    "homeScore": int(home_score),
+                                    "awayScore": int(away_score),
+                                    "status": "0'",
+                                    "matchStatusRawValue": status.lower(),
+                                    "liveLabel": "LIVE",
+                                    "timerStartDate": time.time()
+                                },
+                                "attributes-type": "LiveScoreAttributes",
+                                "attributes": {
+                                    "matchId": match_id,
+                                    "homeTeamName": home_name,
+                                    "homeTeamEmoji": flag_emoji(home_code),
+                                    "awayTeamName": away_name,
+                                    "awayTeamEmoji": flag_emoji(away_code),
+                                    "stage": stage
+                                }
+                            }
+                        }
+                        
+                        for t, t_bundle_id in start_targets:
+                            send_apns_push(apns_token, t, f"{t_bundle_id}.push-type.liveactivity", start_payload)
+                    else:
+                        print(f"Aucun appareil abonné (Push to Start) pour le match {match_id}.")
+            except Exception as ex:
+                print(f"Erreur d'envoi du Push to Start pour le match {match_id} : {ex}")
+        
+        # 2. ENVOI DES MISES A JOUR CLASSIQUES ("update")
+        print(f"Recherche de tokens Live Activity actifs pour le match {match_id} ({status})...")
         try:
             activities_ref = db.collection("live_activities")
             query = activities_ref.where("matchId", "==", match_id)
@@ -814,7 +897,7 @@ def send_apns_for_updates(changed_matches):
                 print(f"Aucun token Live Activity actif trouvé pour le match {match_id}.")
                 continue
                 
-            print(f"{len(activity_targets)} token(s) trouvé(s). Envoi de la mise à jour APNs...")
+            print(f"{len(activity_targets)} token(s) actif(s) trouvé(s). Envoi de la mise à jour APNs...")
             
             status_text = "Live"
             timer_start_date = None
@@ -911,7 +994,7 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
     
     # Envoyer les notifications push APNs pour les matchs modifiés
     if changed_matches:
-        send_apns_for_updates(changed_matches)
+        send_apns_for_updates(changed_matches, local_matches, teams_metadata, previous_scores)
         
     commit_and_push(base_dir)
     return any(u['status'] == 'Live' for u in updates)
