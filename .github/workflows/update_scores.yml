@@ -43,5 +43,4 @@ jobs:
         run: |
           # Exécute le script avec la boucle haute fréquence.
           # S'il y a un match en direct, le script bouclera 5 fois (1 fois par minute).
-          # Sinon, il fera une unique exécution immédiate pour économiser les ressources.
-          python3 update_scores.py --live-loop --simulate --sim-date "2026-06-28T19:00:05"
+          python3 update_scores.py --live-loop
