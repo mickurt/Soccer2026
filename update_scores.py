@@ -901,7 +901,8 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
         if (not prev or 
             prev['status'] != u['status'] or 
             prev['home_score'] != u['home_score'] or 
-            prev['away_score'] != u['away_score']):
+            prev['away_score'] != u['away_score'] or
+            u['status'] == 'Live'):
             changed_matches.append(u)
             
     write_updates_to_csv(updates, output_path)
