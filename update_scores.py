@@ -865,7 +865,7 @@ def send_apns_for_updates(changed_matches):
             }
             
             for t, t_bundle_id in activity_targets:
-                send_apns_push(apns_token, t, t_bundle_id, payload)
+                send_apns_push(apns_token, t, f"{t_bundle_id}.push-type.liveactivity", payload)
                 
         except Exception as e:
             print(f"Erreur lors du traitement des pushs pour le match {match_id} : {e}")
