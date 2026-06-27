@@ -44,6 +44,6 @@ Group K,2,Portugal,POR,2,1,1,0,4,6,1,5
 Group K,3,DR Congo,COD,2,0,1,1,1,1,2,-1
 Group K,4,Uzbekistan,UZB,2,0,0,2,0,1,8,-7
 Group L,1,England,ENG,3,2,1,0,7,6,2,4
-Group L,2,Croatia,CRO,3,2,0,1,6,4,4,0
-Group L,3,Ghana,GHA,3,1,1,1,4,1,1,0
+Group L,2,Ghana,GHA,3,1,2,0,5,2,1,1
+Group L,3,Croatia,CRO,3,1,1,1,4,4,5,-1
 Group L,4,Panama,PAN,3,0,0,3,0,0,4,-4
