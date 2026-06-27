@@ -38,6 +38,7 @@ jobs:
           APNS_TEAM_ID: ${{ secrets.APNS_TEAM_ID }}
           APNS_PRIVATE_KEY: ${{ secrets.APNS_PRIVATE_KEY }}
           APNS_BUNDLE_ID: ${{ secrets.APNS_BUNDLE_ID }}
+          PYTHONUNBUFFERED: 1
         run: |
           # Exécute le script avec la boucle haute fréquence.
           # S'il y a un match en direct, le script bouclera 5 fois (1 fois par minute).
