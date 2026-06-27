@@ -731,6 +731,7 @@ def send_apns_push(token, device_token, bundle_id, payload):
         "authorization": f"bearer {token}"
     }
     
+    print(f"APNs Request -> URL: {url} | Topic: {headers['apns-topic']}")
     try:
         with httpx.Client(http2=True) as client:
             response = client.post(url, json=payload, headers=headers)
