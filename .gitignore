@@ -10,3 +10,8 @@ WorldCup2026/
 WorldCup2026.xcodeproj/
 WorldCup2026Tests/
 WorldCup2026UITests/
+
+# Build caches
+build_cache/
+build_cache.noindex/
+DerivedData/
