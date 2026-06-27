@@ -772,7 +772,7 @@ def send_apns_for_updates(changed_matches):
     key_id = os.environ.get("APNS_KEY_ID")
     team_id = os.environ.get("APNS_TEAM_ID")
     private_key_pem = os.environ.get("APNS_PRIVATE_KEY")
-    bundle_id = os.environ.get("APNS_BUNDLE_ID", "com.mm.WorldCup2026")
+    bundle_id = os.environ.get("APNS_BUNDLE_ID") or "com.mm.WorldCup2026"
     
     if not (key_id and team_id and private_key_pem):
         print("Identifiants APNs non configurés dans l'environnement. Envoi des pushs annulé.")
