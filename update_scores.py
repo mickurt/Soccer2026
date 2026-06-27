@@ -788,10 +788,10 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
         print("Firebase non initialisé. Impossible de récupérer les tokens push.")
         return
         
-    key_id = os.environ.get("APNS_KEY_ID")
-    team_id = os.environ.get("APNS_TEAM_ID")
-    private_key_pem = os.environ.get("APNS_PRIVATE_KEY")
-    bundle_id = os.environ.get("APNS_BUNDLE_ID") or "com.mm.WorldCup2026"
+    key_id = os.environ.get("APNS_KEY_ID", "").strip()
+    team_id = os.environ.get("APNS_TEAM_ID", "").strip()
+    private_key_pem = os.environ.get("APNS_PRIVATE_KEY", "").strip()
+    bundle_id = (os.environ.get("APNS_BUNDLE_ID") or "com.mm.WorldCup2026").strip()
     
     if not (key_id and team_id and private_key_pem):
         print("Identifiants APNs non configurés dans l'environnement. Envoi des pushs annulé.")
