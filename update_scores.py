@@ -93,7 +93,7 @@ def load_matches(matches_csv_path):
                 print(f"Erreur de parsing pour le match ID {row.get('id')}: {e}")
     return local_matches
 
-def find_local_match(api_match, local_matches, teams):
+def find_local_match(api_match, local_matches, teams, matched_ids):
     home_obj = api_match.get('Home')
     away_obj = api_match.get('Away')
     
@@ -118,20 +118,24 @@ def find_local_match(api_match, local_matches, teams):
     # 1. Recherche par correspondance exacte des deux équipes (idéal pour la phase de groupes)
     if api_home_id is not None and api_away_id is not None:
         for m in local_matches:
+            if m['id'] in matched_ids:
+                continue
             if m['home_team_id'] == api_home_id and m['away_team_id'] == api_away_id:
                 return m
                 
     # 2. Recherche par heure de coup d'envoi (tolérance de 12 heures pour les décalages de date/fuseau dans le calendrier)
     candidates = []
     for m in local_matches:
+        if m['id'] in matched_ids:
+            continue
         diff_seconds = abs((m['kickoff_utc'] - api_dt).total_seconds())
         if diff_seconds <= 43200:  # 12 heures
             candidates.append((diff_seconds, m))
             
     if candidates:
         candidates.sort(key=lambda x: x[0])
-        # Priorité aux matchs de type knockout (qui ont home/away team id à None dans matches.csv)
-        knockouts = [c for c in candidates if c[1]['home_team_id'] is None and c[1]['away_team_id'] is None]
+        # Priorité aux matchs de type knockout (qui ont un ID >= 73)
+        knockouts = [c for c in candidates if int(c[1]['id']) >= 73]
         if knockouts:
             return knockouts[0][1]
         return candidates[0][1]
@@ -158,6 +162,7 @@ def fetch_api_updates(api_key, local_matches, teams):
     
     updates = []
     matched_count = 0
+    matched_ids = set()
     
     for api_m in api_matches:
         status_val = api_m.get('MatchStatus')
@@ -170,7 +175,9 @@ def fetch_api_updates(api_key, local_matches, teams):
         else:
             status = 'Scheduled'
             
-        local_m = find_local_match(api_m, local_matches, teams)
+        local_m = find_local_match(api_m, local_matches, teams, matched_ids)
+        if local_m:
+            matched_ids.add(local_m['id'])
         if local_m:
             home_score = api_m.get('HomeTeamScore')
             away_score = api_m.get('AwayTeamScore')
