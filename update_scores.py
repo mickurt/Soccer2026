@@ -866,7 +866,7 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                                     "status": "0'",
                                     "matchStatusRawValue": status.lower(),
                                     "liveLabel": "LIVE",
-                                    "timerStartDate": time.time()
+                                    "timerStartDate": int(time.time())
                                 },
                                 "attributes-type": "LiveScoreAttributes",
                                 "attributes": {
@@ -955,7 +955,7 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                         "status": status_text,
                         "matchStatusRawValue": status.lower(),
                         "liveLabel": "LIVE" if status == "Live" else "FINISHED",
-                        "timerStartDate": timer_start_date
+                        "timerStartDate": int(timer_start_date) if timer_start_date is not None else None
                     }
                 }
             }
