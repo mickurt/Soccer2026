@@ -876,6 +876,10 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                                     "awayTeamName": away_name,
                                     "awayTeamEmoji": flag_emoji(away_code),
                                     "stage": stage
+                                },
+                                "alert": {
+                                    "title": "Match en Direct",
+                                    "body": f"Le match {home_name} vs {away_name} a commencé !"
                                 }
                             }
                         }
