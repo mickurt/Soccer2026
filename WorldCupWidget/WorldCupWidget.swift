@@ -753,14 +753,184 @@ struct LockScreenLiveScoreView: View {
 }
 #endif
 
+// MARK: - Private League Widget
+
+struct LeagueWidgetProvider: TimelineProvider {
+    func placeholder(in context: Context) -> LeagueEntry {
+        LeagueEntry(date: Date(), data: .mockLeague)
+    }
+
+    func getSnapshot(in context: Context, completion: @escaping (LeagueEntry) -> ()) {
+        let entry = LeagueEntry(date: Date(), data: loadLeagueData())
+        completion(entry)
+    }
+
+    func getTimeline(in context: Context, completion: @escaping (Timeline<LeagueEntry>) -> ()) {
+        let entry = LeagueEntry(date: Date(), data: loadLeagueData())
+        let nextUpdate = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date()
+        let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
+        completion(timeline)
+    }
+    
+    private func loadLeagueData() -> WidgetLeagueData {
+        if let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.mm.WorldCup2026") {
+            let fileURL = containerURL.appendingPathComponent("widget_league_data.json")
+            if let data = try? Data(contentsOf: fileURL) {
+                let decoder = JSONDecoder()
+                if let decoded = try? decoder.decode(WidgetLeagueData.self, from: data) {
+                    return decoded
+                }
+            }
+        }
+        return .mockLeague
+    }
+}
+
+struct LeagueEntry: TimelineEntry {
+    let date: Date
+    let data: WidgetLeagueData
+}
+
+extension WidgetLeagueData {
+    static var mockLeague: WidgetLeagueData {
+        WidgetLeagueData(
+            leagueName: "Ligue des Légendes",
+            inviteCode: "MOCK26",
+            members: [
+                WidgetLeagueMember(username: "Zinédine Zidane", score: 45, favoriteTeam: "FRA", rank: 1),
+                WidgetLeagueMember(username: "Pelé", score: 42, favoriteTeam: "BRA", rank: 2),
+                WidgetLeagueMember(username: "Diego Maradona", score: 38, favoriteTeam: "ARG", rank: 3),
+                WidgetLeagueMember(username: "Moi", score: 35, favoriteTeam: "FRA", rank: 4),
+                WidgetLeagueMember(username: "Lionel Messi", score: 25, favoriteTeam: "ARG", rank: 5)
+            ]
+        )
+    }
+}
+
+struct PrivateLeagueWidgetEntryView: View {
+    var entry: LeagueWidgetProvider.Entry
+    @Environment(\.widgetFamily) var family
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text(entry.data.leagueName)
+                    .font(.system(size: 13, weight: .black))
+                    .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.4))
+                    .lineLimit(1)
+                
+                Spacer()
+                
+                Text(entry.data.inviteCode)
+                    .font(.system(size: 9, weight: .bold, design: .rounded))
+                    .foregroundStyle(.white.opacity(0.6))
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 2)
+                    .background(Color.white.opacity(0.1))
+                    .cornerRadius(4)
+            }
+            
+            Divider().background(Color.white.opacity(0.2))
+            
+            VStack(spacing: 4) {
+                let limit = family == .systemSmall ? 3 : 5
+                ForEach(Array(entry.data.members.prefix(limit).enumerated()), id: \.offset) { idx, member in
+                    HStack(spacing: 8) {
+                        let rank = member.rank
+                        ZStack {
+                            if rank <= 3 {
+                                Circle()
+                                    .fill(rankColor(rank).opacity(0.2))
+                                    .frame(width: 14, height: 14)
+                            }
+                            Text("\(rank)")
+                                .font(.system(size: 9, weight: .bold))
+                                .foregroundStyle(rank <= 3 ? rankColor(rank) : .white.opacity(0.5))
+                        }
+                        .frame(width: 14, height: 14)
+                        
+                        Text(flagEmoji(for: member.favoriteTeam))
+                            .font(.system(size: 12))
+                        
+                        Text(member.username)
+                            .font(.system(size: 11, weight: .bold))
+                            .foregroundStyle(.white)
+                            .lineLimit(1)
+                        
+                        Spacer()
+                        
+                        Text("\(member.score)")
+                            .font(.system(size: 11, weight: .bold, design: .rounded))
+                            .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.4))
+                    }
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 3)
+                    .background(Color.white.opacity(0.04))
+                    .cornerRadius(6)
+                }
+            }
+        }
+        .padding(12)
+        .containerBackground(for: .widget) {
+            LinearGradient(
+                colors: [Color(red: 0.05, green: 0.08, blue: 0.15), Color(red: 0.02, green: 0.03, blue: 0.05)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+        }
+    }
+    
+    private func rankColor(_ rank: Int) -> Color {
+        switch rank {
+        case 1: return Color(red: 0.9, green: 0.8, blue: 0.4)
+        case 2: return Color(red: 0.8, green: 0.8, blue: 0.8)
+        case 3: return Color(red: 0.8, green: 0.6, blue: 0.4)
+        default: return .white.opacity(0.5)
+        }
+    }
+    
+    private func flagEmoji(for code: String) -> String {
+        let mappings: [String: String] = [
+            "MEX": "🇲🇽", "RSA": "🇿🇦", "KOR": "🇰🇷", "CAN": "🇨🇦",
+            "QAT": "🇶🇦", "SUI": "🇨🇭", "BRA": "🇧🇷", "MAR": "🇲🇦",
+            "HAI": "🇭🇹", "SCO": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "USA": "🇺🇸", "PAR": "🇵🇾",
+            "AUS": "🇦🇺", "GER": "🇩🇪", "CUR": "🇨🇼", "CIV": "🇨🇮",
+            "ECU": "🇪🇨", "NED": "🇳🇱", "JPN": "🇯🇵", "TUN": "🇹🇳",
+            "BEL": "🇧🇪", "EGY": "🇪🇬", "IRN": "🇮🇷", "NZL": "🇳🇿",
+            "ESP": "🇪🇸", "CPV": "🇨🇻", "KSA": "🇸🇦", "URU": "🇺🇾",
+            "FRA": "🇫🇷", "SEN": "🇸🇳", "NOR": "🇳🇴", "ARG": "🇦🇷",
+            "ALG": "🇩🇿", "AUT": "🇦🇹", "JOR": "🇯🇴", "POR": "🇵🇹",
+            "UZB": "🇺🇿", "COL": "🇨🇴", "ENG": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "CRO": "🇭🇷",
+            "GHA": "🇬🇭", "PAN": "🇵🇦", "BIH": "🇧🇦", "SWE": "🇸🇪",
+            "TUR": "🇹🇷", "CZE": "🇨🇿", "COD": "🇨🇩", "IRQ": "🇮🇶"
+        ]
+        return mappings[code] ?? "🏳️"
+    }
+}
+
+struct PrivateLeagueWidget: Widget {
+    let kind: String = "PrivateLeagueWidget"
+
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: LeagueWidgetProvider()) { entry in
+            PrivateLeagueWidgetEntryView(entry: entry)
+        }
+        .configurationDisplayName("Classement Ligue Privée")
+        .description("Affichez le classement en temps réel de votre ligue privée.")
+        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
 @main
 struct WorldCupWidgetBundle: WidgetBundle {
     var body: some Widget {
         MatchOfTheDayWidget()
         MyTeamWidget()
+        PrivateLeagueWidget()
         #if canImport(ActivityKit)
         LiveScoreActivityWidget()
         #endif
     }
 }
+
 

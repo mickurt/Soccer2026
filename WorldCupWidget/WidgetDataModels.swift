@@ -58,3 +58,18 @@ struct LiveScoreAttributes: ActivityAttributes {
 }
 #endif
 
+struct WidgetLeagueMember: Codable, Equatable, Identifiable {
+    var id: String { username }
+    let username: String
+    let score: Int
+    let favoriteTeam: String
+    let rank: Int
+}
+
+struct WidgetLeagueData: Codable, Equatable {
+    let leagueName: String
+    let inviteCode: String
+    let members: [WidgetLeagueMember]
+}
+
+
