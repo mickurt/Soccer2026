@@ -824,7 +824,7 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
             
         prev = previous_scores.get(u['id'])
         # Envoyer le push de démarrage dès que le match est Live (permet aux nouveaux appareils de démarrer l'activité en cours de route)
-        is_new_live = status == 'Live'
+        is_new_live = status == 'Live' and (not prev or prev.get('status') != 'Live')
         
         # 1. ENVOI DU PUSH DE DÉMARRAGE ("start") AU TOUT DEBUT DU MATCH (PUSH TO START)
         if is_new_live:
