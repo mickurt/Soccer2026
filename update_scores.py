@@ -151,7 +151,7 @@ def fetch_api_updates(api_key, local_matches, teams):
     req = urllib.request.Request(url, headers=headers)
     
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=10) as response:
             data = json.loads(response.read().decode('utf-8'))
     except Exception as e:
         print(f"Erreur lors de la requête API FIFA : {e}")
@@ -210,7 +210,7 @@ def fetch_api_updates(api_key, local_matches, teams):
                 timeline_url = f"https://api.fifa.com/api/v3/timelines/{id_comp}/{id_season}/{id_stage}/{id_match}?language=fr"
                 timeline_req = urllib.request.Request(timeline_url, headers=headers)
                 try:
-                    with urllib.request.urlopen(timeline_req) as t_resp:
+                    with urllib.request.urlopen(timeline_req, timeout=10) as t_resp:
                         t_data = json.loads(t_resp.read().decode('utf-8'))
                         for ev in t_data.get('Event', []):
                             t_type = ev.get('Type')
@@ -487,7 +487,7 @@ def fetch_api_standings(api_key):
     req.add_header("X-Auth-Token", api_key)
     
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=10) as response:
             data = json.loads(response.read().decode('utf-8'))
     except Exception as e:
         print(f"Erreur lors de la requête API classement : {e}")
