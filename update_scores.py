@@ -255,6 +255,7 @@ def fetch_api_updates(api_key, local_matches, teams):
                 'home_team_code': home_team_code,
                 'away_team_code': away_team_code,
                 'kickoff_utc': api_m.get('Date') or '',
+                'match_time': api_m.get('MatchTime') or '',
                 'events': events_base64
             })
             matched_count += 1
@@ -930,21 +931,64 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                     print(f"Erreur lors du parsing de la date de coup d'envoi pour le chrono : {e}")
                     
             if status == "Live":
-                if timer_start_date:
-                    elapsed = max(0, int((time.time() - timer_start_date) / 60))
-                    if elapsed <= 45:
-                        status_text = f"{elapsed}'"
-                    elif elapsed <= 60:
+                api_match_time = u.get('match_time')
+                if api_match_time:
+                    if any(x in api_match_time.upper() for x in ["HT", "MT", "HALF", "TEMP"]):
+                        elapsed = 45
                         status_text = "HT"
                         timer_start_date = None
-                    elif elapsed <= 105:
-                        status_text = f"{elapsed - 15}'"
-                        timer_start_date = time.time() - (elapsed - 15) * 60
+                    elif any(x in api_match_time.upper() for x in ["FIN", "END"]):
+                        elapsed = 90
+                        status_text = "Finished"
+                        timer_start_date = None
                     else:
-                        status_text = "90'"
-                        timer_start_date = time.time() - 90 * 60
+                        digits = re.findall(r'\d+', api_match_time)
+                        if digits:
+                            elapsed = int(digits[0])
+                            if "45" in api_match_time and "+" in api_match_time:
+                                elapsed = 45
+                            status_text = f"{elapsed}'"
+                            
+                            if u.get('kickoff_utc'):
+                                try:
+                                    utc_str = u['kickoff_utc']
+                                    if utc_str.endswith('Z'):
+                                        utc_str = utc_str[:-1] + '+00:00'
+                                    kickoff_ts = datetime.datetime.fromisoformat(utc_str).timestamp()
+                                    if elapsed <= 45:
+                                        timer_start_date = kickoff_ts
+                                    else:
+                                        timer_start_date = kickoff_ts + 60 * 60
+                                except Exception as e:
+                                    print(f"Erreur parsing kickoff_utc dans match_time: {e}")
+                                    timer_start_date = None
+                        else:
+                            elapsed = 0
+                            status_text = "Live"
+                            if u.get('kickoff_utc'):
+                                try:
+                                    utc_str = u['kickoff_utc']
+                                    if utc_str.endswith('Z'):
+                                        utc_str = utc_str[:-1] + '+00:00'
+                                    timer_start_date = datetime.datetime.fromisoformat(utc_str).timestamp()
+                                except:
+                                    timer_start_date = None
                 else:
-                    status_text = "Live"
+                    if timer_start_date:
+                        elapsed = max(0, int((time.time() - timer_start_date) / 60))
+                        if elapsed <= 45:
+                            status_text = f"{elapsed}'"
+                        elif elapsed <= 60:
+                            status_text = "HT"
+                            timer_start_date = None
+                        elif elapsed <= 105:
+                            status_text = f"{elapsed - 15}'"
+                            timer_start_date = time.time() - (elapsed - 15) * 60
+                        else:
+                            status_text = "90'"
+                            timer_start_date = time.time() - 90 * 60
+                    else:
+                        status_text = "Live"
             else:
                 status_text = "Finished"
                 timer_start_date = None
