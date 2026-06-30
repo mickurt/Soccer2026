@@ -622,11 +622,15 @@ struct MatchProgressBar: View {
     }
     
     var body: some View {
-        if let startDate = timerStartDate, status.lowercased() != "ht", !status.lowercased().contains("mi-temp"), !status.lowercased().contains("finished"), !status.lowercased().contains("termin") {
-            // Live match with a running timer
+        let isLive = status.lowercased() != "ht" && !status.lowercased().contains("mi-temp") && !status.lowercased().contains("finished") && !status.lowercased().contains("termin") && !status.lowercased().contains("scheduled") && elapsedMinutes > 0
+        
+        if isLive {
+            // Calculate a virtual start date based on the match minute so the progress bar matches the text exactly
+            let elapsedSecs = Double(elapsedMinutes * 60)
+            let calculatedStartDate = Date().addingTimeInterval(-elapsedSecs)
             let totalSeconds = Double(totalMinutes * 60)
             VStack(spacing: 6) {
-                ProgressView(timerInterval: startDate...startDate.addingTimeInterval(totalSeconds), countsDown: false, label: { EmptyView() }, currentValueLabel: { EmptyView() })
+                ProgressView(timerInterval: calculatedStartDate...calculatedStartDate.addingTimeInterval(totalSeconds), countsDown: false, label: { EmptyView() }, currentValueLabel: { EmptyView() })
                     .tint(.green)
                 
                 HStack {
