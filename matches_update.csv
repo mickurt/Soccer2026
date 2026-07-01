@@ -90,7 +90,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc,events
 89,Scheduled,0,0,CAN,MAR,2026-07-04T17:00:00Z,
 90,Scheduled,0,0,PAR,FRA,2026-07-04T21:00:00Z,
 91,Scheduled,0,0,BRA,NOR,2026-07-05T20:00:00Z,
-92,Scheduled,0,0,,,2026-07-06T00:00:00Z,
+92,Scheduled,0,0,MEX,,2026-07-06T00:00:00Z,
 93,Scheduled,0,0,,,2026-07-06T19:00:00Z,
 94,Scheduled,0,0,,,2026-07-07T00:00:00Z,
 95,Scheduled,0,0,,,2026-07-07T16:00:00Z,
