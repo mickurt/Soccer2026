@@ -996,7 +996,7 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
             payload = {
                 "aps": {
                     "timestamp": int(time.time()),
-                    "event": "update",
+                    "event": "update" if status == "Live" else "end",
                     "content-state": {
                         "homeScore": int(home_score),
                         "awayScore": int(away_score),
