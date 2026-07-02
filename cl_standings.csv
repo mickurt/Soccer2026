@@ -1,1 +1,37 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
+Champions League,1,Liverpool,40,8,7,0,1,21,17,5,12
+Champions League,2,Barcelona,529,8,6,1,1,19,28,13,15
+Champions League,3,Arsenal,42,8,6,1,1,19,16,3,13
+Champions League,4,Inter,505,8,6,1,1,19,11,1,10
+Champions League,5,Atletico Madrid,530,8,6,0,2,18,20,12,8
+Champions League,6,Bayer Leverkusen,168,8,5,1,2,16,15,7,8
+Champions League,7,Lille,79,8,5,1,2,16,17,10,7
+Champions League,8,Aston Villa,66,8,5,1,2,16,13,6,7
+Champions League,9,Atalanta,499,8,4,3,1,15,20,6,14
+Champions League,10,Borussia Dortmund,165,8,5,0,3,15,22,12,10
+Champions League,11,Real Madrid,541,8,5,0,3,15,20,12,8
+Champions League,12,Bayern München,157,8,5,0,3,15,20,12,8
+Champions League,13,AC Milan,489,8,5,0,3,15,14,11,3
+Champions League,14,PSV Eindhoven,197,8,4,2,2,14,16,12,4
+Champions League,15,Paris Saint Germain,85,8,4,1,3,13,14,9,5
+Champions League,16,Benfica,211,8,4,1,3,13,16,12,4
+Champions League,17,Monaco,91,8,4,1,3,13,13,13,0
+Champions League,18,Stade Brestois 29,106,8,4,1,3,13,10,11,-1
+Champions League,19,Feyenoord,209,8,4,1,3,13,18,21,-3
+Champions League,20,Juventus,496,8,3,3,2,12,9,7,2
+Champions League,21,Celtic,247,8,3,3,2,12,13,14,-1
+Champions League,22,Manchester City,50,8,3,2,3,11,18,14,4
+Champions League,23,Sporting CP,228,8,3,2,3,11,13,12,1
+Champions League,24,Club Brugge KV,569,8,3,2,3,11,7,11,-4
+Champions League,25,Dinamo Zagreb,620,8,3,2,3,11,12,19,-7
+Champions League,26,VfB Stuttgart,172,8,3,1,4,10,13,17,-4
+Champions League,27,Shakhtar Donetsk,550,8,2,1,5,7,8,16,-8
+Champions League,28,Bologna,500,8,1,3,4,6,4,9,-5
+Champions League,29,FK Crvena Zvezda,598,8,2,0,6,6,13,22,-9
+Champions League,30,Sturm Graz,637,8,2,0,6,6,5,14,-9
+Champions League,31,Sparta Praha,628,8,1,1,6,4,7,21,-14
+Champions League,32,RB Leipzig,173,8,1,0,7,3,8,15,-7
+Champions League,33,Girona,547,8,1,0,7,3,5,13,-8
+Champions League,34,Red Bull Salzburg,571,8,1,0,7,3,5,27,-22
+Champions League,35,Slovan Bratislava,656,8,0,0,8,0,7,27,-20
+Champions League,36,BSC Young Boys,565,8,0,0,8,0,3,24,-21
