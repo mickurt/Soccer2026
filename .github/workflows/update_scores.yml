@@ -56,3 +56,19 @@ jobs:
           # 4. Bundesliga
           git pull --rebase
           python3 update_scores.py --league BUNDESLIGA --live-loop
+          
+          # 5. Champions League
+          git pull --rebase
+          python3 update_scores.py --league CL --live-loop
+          
+          # 6. Premier League
+          git pull --rebase
+          python3 update_scores.py --league PL --live-loop
+          
+          # 7. Ligue 1
+          git pull --rebase
+          python3 update_scores.py --league L1 --live-loop
+          
+          # 8. Brasileirão
+          git pull --rebase
+          python3 update_scores.py --league BSA --live-loop

@@ -449,14 +449,25 @@ def get_team_emoji(team_name, league_id):
     overrides = {
         "Real Madrid": "⚪️", "Barcelona": "🔵🔴", "Atletico Madrid": "🔴⚪️",
         "Juventus": "⚪️⚫️", "AC Milan": "🔴⚫️", "Inter": "🔵⚫️",
-        "Bayern Munich": "🔴", "Borussia Dortmund": "🟡"
+        "Bayern Munich": "🔴", "Borussia Dortmund": "🟡",
+        "Paris Saint Germain": "🔵🔴", "Marseille": "🔵⚪️",
+        "Manchester City": "🔵", "Manchester United": "🔴", "Liverpool": "🔴",
+        "Arsenal": "🔴⚪️", "Chelsea": "🔵",
+        "Flamengo": "🔴⚫️", "Palmeiras": "🟢", "Sao Paulo": "🔴⚪️⚫️"
     }
     if team_name in overrides:
         return overrides[team_name]
-    if league_id == 140: return "🇪🇸"
-    if league_id == 135: return "🇮🇹"
-    if league_id == 78: return "🇩🇪"
-    return "⚽️"
+    
+    country_flags = {
+        140: "🇪🇸",
+        135: "🇮🇹",
+        78: "🇩🇪",
+        2: "🇪🇺",
+        39: "🦁",
+        61: "🇫🇷",
+        71: "🇧🇷"
+    }
+    return country_flags.get(league_id, "⚽️")
 
 def get_mapped_events(api_events, home_team_id):
     mapped = []
@@ -561,7 +572,16 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         venue_obj = fixture_obj.get("venue", {})
         venue_name = venue_obj.get("name") or "Stade"
         venue_city = venue_obj.get("city") or "Ville"
-        venue_country = "Espagne" if league_id == 140 else ("Italie" if league_id == 135 else "Allemagne")
+        country_map = {
+            140: "Espagne",
+            135: "Italie",
+            78: "Allemagne",
+            2: "Europe",
+            39: "Angleterre",
+            61: "France",
+            71: "Brésil"
+        }
+        venue_country = country_map.get(league_id, "International")
         
         league_obj = f.get("league", {})
         stage = league_obj.get("name") or "League"
@@ -629,7 +649,15 @@ def fetch_club_league_standings(api_key, league_id, season=2026):
         goals = all_stats.get("goals", {})
         
         standings.append({
-            "group": "La Liga" if league_id == 140 else ("Serie A" if league_id == 135 else "Bundesliga"),
+            "group": {
+                140: "La Liga",
+                135: "Serie A",
+                78: "Bundesliga",
+                2: "Champions League",
+                39: "Premier League",
+                61: "Ligue 1",
+                71: "Brasileirão Série A"
+            }.get(league_id, "League"),
             "position": s.get("rank") or 0,
             "team_name": team_name,
             "fifa_code": team_id,
@@ -1266,7 +1294,11 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
         configs = {
             "LALIGA": 140,
             "SERIEA": 135,
-            "BUNDESLIGA": 78
+            "BUNDESLIGA": 78,
+            "CL": 2,
+            "PL": 39,
+            "L1": 61,
+            "BSA": 71
         }
         league_id = configs.get(league)
         api_key = args.api_key or os.environ.get("FOOTBALL_API_KEY") or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
@@ -1326,7 +1358,11 @@ def main():
         "WC2026": "",
         "LALIGA": "laliga_",
         "SERIEA": "seriea_",
-        "BUNDESLIGA": "bundesliga_"
+        "BUNDESLIGA": "bundesliga_",
+        "CL": "cl_",
+        "PL": "pl_",
+        "L1": "l1_",
+        "BSA": "bsa_"
     }
     prefix = prefix_map.get(args.league, "")
     
