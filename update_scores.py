@@ -579,6 +579,8 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         home_emoji = get_team_emoji(home_name, league_id)
         away_name = away_team.get("name") or "Away"
         away_emoji = get_team_emoji(away_name, league_id)
+        home_logo = home_team.get("logo") or ""
+        away_logo = away_team.get("logo") or ""
         
         venue_obj = fixture_obj.get("venue", {})
         venue_name = venue_obj.get("name") or "Stade"
@@ -618,7 +620,9 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
             "group_or_label": group_or_label,
             "venue_name": venue_name,
             "venue_city": venue_city,
-            "venue_country": venue_country
+            "venue_country": venue_country,
+            "home_team_logo": home_logo,
+            "away_team_logo": away_logo
         })
         
     return updates
@@ -691,7 +695,7 @@ def write_updates_to_csv(updates, output_path):
         writer.writerow([
             'id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc', 'events',
             'home_team_name', 'home_team_emoji', 'away_team_name', 'away_team_emoji', 'stage', 'group_or_label',
-            'venue_name', 'venue_city', 'venue_country'
+            'venue_name', 'venue_city', 'venue_country', 'home_team_logo', 'away_team_logo'
         ])
         for u in updates:
             writer.writerow([
@@ -711,7 +715,9 @@ def write_updates_to_csv(updates, output_path):
                 u.get('group_or_label', ''),
                 u.get('venue_name', ''),
                 u.get('venue_city', ''),
-                u.get('venue_country', '')
+                u.get('venue_country', ''),
+                u.get('home_team_logo', ''),
+                u.get('away_team_logo', '')
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
