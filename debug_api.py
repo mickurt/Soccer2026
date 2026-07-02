@@ -18,6 +18,7 @@ def test_league(api_key, league_id, season):
         print(f"Failed {league_id}: {e}")
 
 def main():
+    print("Starting debug script...")
     api_key = os.environ.get("FOOTBALL_API_KEY") or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
     print("API Key length:", len(api_key))
     if not api_key:

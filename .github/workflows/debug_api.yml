@@ -1,7 +1,9 @@
 name: Debug API-Football
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - 'debug_api.py'
 
 jobs:
   debug:
