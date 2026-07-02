@@ -124,258 +124,258 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc,events
 71_1180477,Finished,0,1,136,134,2026-06-30T21:30:00+00:00,W10=,Vitoria,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 13,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
 71_1180484,Finished,1,1,140,119,2026-06-30T21:30:00+00:00,W10=,Criciuma,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 13,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
 71_1180480,Finished,2,0,121,131,2026-07-01T23:00:00+00:00,W10=,Palmeiras,🟢,Corinthians,🇧🇷,Serie A,Regular Season - 13,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180493,Scheduled,0,0,1193,120,2026-07-03T22:00:00+00:00,,Cuiaba,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 14,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180489,Scheduled,0,0,133,154,2026-07-03T23:00:00+00:00,,Vasco DA Gama,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 14,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180494,Scheduled,0,0,140,135,2026-07-03T23:00:00+00:00,,Criciuma,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 14,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180492,Scheduled,0,0,134,126,2026-07-04T00:30:00+00:00,,Atletico Paranaense,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 14,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180491,Scheduled,0,0,794,144,2026-07-04T00:30:00+00:00,,RB Bragantino,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 14,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180486,Scheduled,0,0,1062,127,2026-07-04T00:30:00+00:00,,Atletico-MG,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 14,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180487,Scheduled,0,0,118,152,2026-07-04T22:00:00+00:00,,Bahia,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 14,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180485,Scheduled,0,0,130,121,2026-07-04T22:00:00+00:00,,Gremio,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 14,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180488,Scheduled,0,0,124,119,2026-07-04T23:00:00+00:00,,Fluminense,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 14,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180490,Scheduled,0,0,131,136,2026-07-04T23:00:00+00:00,,Corinthians,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 14,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180501,Scheduled,0,0,126,794,2026-07-06T23:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,RB Bragantino,🇧🇷,Serie A,Regular Season - 15,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180498,Scheduled,0,0,127,1193,2026-07-06T23:00:00+00:00,,Flamengo,🔴⚫️,Cuiaba,🇧🇷,Serie A,Regular Season - 15,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180496,Scheduled,0,0,135,131,2026-07-07T19:00:00+00:00,,Cruzeiro,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 15,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180504,Scheduled,0,0,152,130,2026-07-07T19:00:00+00:00,,Juventude,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 15,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180502,Scheduled,0,0,154,124,2026-07-07T19:00:00+00:00,,Fortaleza EC,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 15,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180495,Scheduled,0,0,119,133,2026-07-07T21:00:00+00:00,,Internacional,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 15,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180500,Scheduled,0,0,121,118,2026-07-07T21:30:00+00:00,,Palmeiras,🟢,Bahia,🇧🇷,Serie A,Regular Season - 15,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180497,Scheduled,0,0,136,140,2026-07-07T21:30:00+00:00,,Vitoria,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 15,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180503,Scheduled,0,0,144,134,2026-07-07T21:30:00+00:00,,Atletico Goianiense,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 15,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180499,Scheduled,0,0,120,1062,2026-07-07T23:30:00+00:00,,Botafogo,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 15,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180505,Scheduled,0,0,130,135,2026-07-10T21:30:00+00:00,,Gremio,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 16,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180509,Scheduled,0,0,133,131,2026-07-10T22:00:00+00:00,,Vasco DA Gama,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 16,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180512,Scheduled,0,0,134,118,2026-07-10T22:00:00+00:00,,Atletico Paranaense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 16,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180510,Scheduled,0,0,121,144,2026-07-11T22:30:00+00:00,,Palmeiras,🟢,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 16,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180508,Scheduled,0,0,127,154,2026-07-11T23:00:00+00:00,,Flamengo,🔴⚫️,Fortaleza EC,🇧🇷,Serie A,Regular Season - 16,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180514,Scheduled,0,0,140,124,2026-07-11T23:00:00+00:00,,Criciuma,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 16,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180507,Scheduled,0,0,136,120,2026-07-12T00:30:00+00:00,,Vitoria,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 16,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180506,Scheduled,0,0,1062,126,2026-07-12T00:30:00+00:00,,Atletico-MG,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 16,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180517,Scheduled,0,0,118,1193,2026-07-13T19:00:00+00:00,,Bahia,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 17,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180516,Scheduled,0,0,135,794,2026-07-13T19:00:00+00:00,,Cruzeiro,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 17,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
-71_1180524,Scheduled,0,0,152,1062,2026-07-16T22:00:00+00:00,,Juventude,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 17,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180520,Scheduled,0,0,131,140,2026-07-17T00:00:00+00:00,,Corinthians,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 17,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180523,Scheduled,0,0,144,133,2026-07-17T22:00:00+00:00,,Atletico Goianiense,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 17,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180521,Scheduled,0,0,126,130,2026-07-17T23:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,Gremio,🇧🇷,Serie A,Regular Season - 17,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180519,Scheduled,0,0,120,121,2026-07-18T00:30:00+00:00,,Botafogo,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 17,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180522,Scheduled,0,0,154,136,2026-07-18T00:30:00+00:00,,Fortaleza EC,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 17,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180528,Scheduled,0,0,127,140,2026-07-20T19:00:00+00:00,,Flamengo,🔴⚫️,Criciuma,🇧🇷,Serie A,Regular Season - 18,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180529,Scheduled,0,0,120,119,2026-07-20T21:30:00+00:00,,Botafogo,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 18,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180530,Scheduled,0,0,121,135,2026-07-21T00:00:00+00:00,,Palmeiras,🟢,Cruzeiro,🇧🇷,Serie A,Regular Season - 18,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180525,Scheduled,0,0,130,136,2026-07-21T14:00:00+00:00,,Gremio,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 18,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180527,Scheduled,0,0,118,131,2026-07-21T19:00:00+00:00,,Bahia,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 18,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180526,Scheduled,0,0,1062,133,2026-07-21T19:00:00+00:00,,Atletico-MG,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 18,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180534,Scheduled,0,0,152,126,2026-07-21T21:30:00+00:00,,Juventude,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 18,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180532,Scheduled,0,0,154,144,2026-07-21T21:30:00+00:00,,Fortaleza EC,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 18,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180531,Scheduled,0,0,794,134,2026-07-21T21:30:00+00:00,,RB Bragantino,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 18,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180533,Scheduled,0,0,1193,124,2026-07-21T23:00:00+00:00,,Cuiaba,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 18,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180536,Scheduled,0,0,135,152,2026-07-24T22:00:00+00:00,,Cruzeiro,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 19,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180384,Scheduled,0,0,140,154,2026-07-24T22:00:00+00:00,,Criciuma,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 3,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180541,Scheduled,0,0,126,120,2026-07-24T22:30:00+00:00,,Sao Paulo,🔴⚪️⚫️,Botafogo,🇧🇷,Serie A,Regular Season - 19,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180537,Scheduled,0,0,136,127,2026-07-24T23:00:00+00:00,,Vitoria,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 19,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180538,Scheduled,0,0,124,121,2026-07-25T00:30:00+00:00,,Fluminense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 19,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180543,Scheduled,0,0,144,118,2026-07-25T00:30:00+00:00,,Atletico Goianiense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 19,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180540,Scheduled,0,0,131,130,2026-07-25T23:00:00+00:00,,Corinthians,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 19,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180550,Scheduled,0,0,121,136,2026-07-27T22:00:00+00:00,,Palmeiras,🟢,Vitoria,🇧🇷,Serie A,Regular Season - 20,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180554,Scheduled,0,0,152,140,2026-07-27T22:00:00+00:00,,Juventude,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 20,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180547,Scheduled,0,0,118,119,2026-07-27T23:00:00+00:00,,Bahia,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 20,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180549,Scheduled,0,0,120,135,2026-07-28T00:30:00+00:00,,Botafogo,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 20,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180552,Scheduled,0,0,154,126,2026-07-28T00:30:00+00:00,,Fortaleza EC,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 20,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180551,Scheduled,0,0,794,124,2026-07-28T14:00:00+00:00,,RB Bragantino,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 20,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180548,Scheduled,0,0,127,144,2026-07-28T19:00:00+00:00,,Flamengo,🔴⚫️,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 20,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180545,Scheduled,0,0,130,133,2026-07-28T22:00:00+00:00,,Gremio,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 20,Arena Condá,"Chapecó, Santa Catarina",Brésil
-71_1180546,Scheduled,0,0,1062,131,2026-07-28T22:00:00+00:00,,Atletico-MG,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 20,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180553,Scheduled,0,0,1193,134,2026-07-28T22:00:00+00:00,,Cuiaba,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 20,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180557,Scheduled,0,0,136,1193,2026-08-03T19:00:00+00:00,,Vitoria,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 21,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180559,Scheduled,0,0,133,794,2026-08-03T22:00:00+00:00,,Vasco DA Gama,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 21,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180564,Scheduled,0,0,140,1062,2026-08-03T23:00:00+00:00,,Criciuma,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 21,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180563,Scheduled,0,0,144,120,2026-08-03T23:00:00+00:00,,Atletico Goianiense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 21,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180561,Scheduled,0,0,126,127,2026-08-04T00:30:00+00:00,,Sao Paulo,🔴⚪️⚫️,Flamengo,🔴⚫️,Serie A,Regular Season - 21,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180558,Scheduled,0,0,124,118,2026-08-04T19:00:00+00:00,,Fluminense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 21,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180560,Scheduled,0,0,131,152,2026-08-04T19:00:00+00:00,,Corinthians,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 21,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180562,Scheduled,0,0,134,130,2026-08-04T19:00:00+00:00,,Atletico Paranaense,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 21,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180555,Scheduled,0,0,119,121,2026-08-04T20:00:00+00:00,,Internacional,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 21,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180556,Scheduled,0,0,135,154,2026-08-06T00:00:00+00:00,,Cruzeiro,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 21,Estádio Kleber José de Andrade,"Cariacica, Espírito Santo",Brésil
-71_1180572,Scheduled,0,0,154,140,2026-08-10T19:00:00+00:00,,Fortaleza EC,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 22,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180573,Scheduled,0,0,1193,130,2026-08-10T22:00:00+00:00,,Cuiaba,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 22,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180570,Scheduled,0,0,131,794,2026-08-11T00:30:00+00:00,,Corinthians,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 22,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180569,Scheduled,0,0,133,124,2026-08-11T00:30:00+00:00,,Vasco DA Gama,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 22,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180566,Scheduled,0,0,135,1062,2026-08-11T00:30:00+00:00,,Cruzeiro,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 22,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180574,Scheduled,0,0,152,120,2026-08-11T14:00:00+00:00,,Juventude,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 22,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180567,Scheduled,0,0,118,136,2026-08-11T19:00:00+00:00,,Bahia,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 22,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180571,Scheduled,0,0,126,144,2026-08-11T19:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 22,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180568,Scheduled,0,0,127,121,2026-08-11T19:00:00+00:00,,Flamengo,🔴⚫️,Palmeiras,🟢,Serie A,Regular Season - 22,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180565,Scheduled,0,0,119,134,2026-08-11T22:00:00+00:00,,Internacional,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 22,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180405,Scheduled,0,0,119,152,2026-08-14T22:30:00+00:00,,Internacional,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 6,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180575,Scheduled,0,0,130,118,2026-08-17T19:00:00+00:00,,Gremio,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 23,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180576,Scheduled,0,0,1062,1193,2026-08-17T19:00:00+00:00,,Atletico-MG,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 23,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180581,Scheduled,0,0,794,154,2026-08-17T21:30:00+00:00,,RB Bragantino,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 23,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180578,Scheduled,0,0,124,131,2026-08-18T00:00:00+00:00,,Fluminense,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 23,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180580,Scheduled,0,0,121,126,2026-08-18T19:00:00+00:00,,Palmeiras,🟢,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 23,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180584,Scheduled,0,0,140,133,2026-08-18T19:00:00+00:00,,Criciuma,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 23,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180583,Scheduled,0,0,144,119,2026-08-18T19:00:00+00:00,,Atletico Goianiense,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 23,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180579,Scheduled,0,0,120,127,2026-08-18T21:30:00+00:00,,Botafogo,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 23,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180582,Scheduled,0,0,134,152,2026-08-18T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 23,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180577,Scheduled,0,0,136,135,2026-08-19T23:00:00+00:00,,Vitoria,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 23,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180593,Scheduled,0,0,144,152,2026-08-24T19:00:00+00:00,,Atletico Goianiense,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 24,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180590,Scheduled,0,0,121,1193,2026-08-24T21:30:00+00:00,,Palmeiras,🟢,Cuiaba,🇧🇷,Serie A,Regular Season - 24,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
-71_1180586,Scheduled,0,0,1062,124,2026-08-25T00:00:00+00:00,,Atletico-MG,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 24,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180587,Scheduled,0,0,118,120,2026-08-25T19:00:00+00:00,,Bahia,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 24,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180594,Scheduled,0,0,140,130,2026-08-25T19:00:00+00:00,,Criciuma,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 24,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180592,Scheduled,0,0,154,131,2026-08-25T19:00:00+00:00,,Fortaleza EC,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 24,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180591,Scheduled,0,0,126,136,2026-08-25T21:30:00+00:00,,Sao Paulo,🔴⚪️⚫️,Vitoria,🇧🇷,Serie A,Regular Season - 24,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180585,Scheduled,0,0,119,135,2026-08-25T22:00:00+00:00,,Internacional,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 24,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180588,Scheduled,0,0,127,794,2026-08-25T23:00:00+00:00,,Flamengo,🔴⚫️,RB Bragantino,🇧🇷,Serie A,Regular Season - 24,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180589,Scheduled,0,0,133,134,2026-08-27T00:00:00+00:00,,Vasco DA Gama,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 24,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180396,Scheduled,0,0,135,119,2026-08-28T22:30:00+00:00,,Cruzeiro,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 5,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180544,Scheduled,0,0,140,794,2026-08-28T22:30:00+00:00,,Criciuma,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 19,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180603,Scheduled,0,0,1193,140,2026-08-31T21:30:00+00:00,,Cuiaba,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 25,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180599,Scheduled,0,0,120,154,2026-09-01T00:00:00+00:00,,Botafogo,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 25,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180595,Scheduled,0,0,130,1062,2026-09-01T14:00:00+00:00,,Gremio,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 25,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180596,Scheduled,0,0,135,144,2026-09-01T14:00:00+00:00,,Cruzeiro,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 25,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180600,Scheduled,0,0,131,127,2026-09-01T19:00:00+00:00,,Corinthians,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 25,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180598,Scheduled,0,0,124,126,2026-09-01T21:30:00+00:00,,Fluminense,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 25,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180602,Scheduled,0,0,134,121,2026-09-01T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 25,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180597,Scheduled,0,0,136,133,2026-09-01T21:30:00+00:00,,Vitoria,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 25,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180604,Scheduled,0,0,152,119,2026-09-01T21:30:00+00:00,,Juventude,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 25,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180601,Scheduled,0,0,794,118,2026-09-01T21:30:00+00:00,,RB Bragantino,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 25,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180513,Scheduled,0,0,1193,152,2026-09-05T23:00:00+00:00,,Cuiaba,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 16,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180535,Scheduled,0,0,119,154,2026-09-11T22:30:00+00:00,,Internacional,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 19,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180613,Scheduled,0,0,144,136,2026-09-14T19:00:00+00:00,,Atletico Goianiense,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 26,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180612,Scheduled,0,0,134,154,2026-09-14T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 26,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180609,Scheduled,0,0,120,131,2026-09-15T00:00:00+00:00,,Botafogo,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 26,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180610,Scheduled,0,0,121,140,2026-09-15T19:00:00+00:00,,Palmeiras,🟢,Criciuma,🇧🇷,Serie A,Regular Season - 26,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180614,Scheduled,0,0,152,124,2026-09-15T19:00:00+00:00,,Juventude,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 26,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180611,Scheduled,0,0,794,130,2026-09-15T19:00:00+00:00,,RB Bragantino,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 26,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180607,Scheduled,0,0,118,1062,2026-09-15T21:30:00+00:00,,Bahia,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 26,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180608,Scheduled,0,0,127,133,2026-09-15T21:30:00+00:00,,Flamengo,🔴⚫️,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 26,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180606,Scheduled,0,0,135,126,2026-09-15T21:30:00+00:00,,Cruzeiro,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 26,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180605,Scheduled,0,0,119,1193,2026-09-16T23:00:00+00:00,,Internacional,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 26,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180620,Scheduled,0,0,131,144,2026-09-21T19:00:00+00:00,,Corinthians,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 27,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180617,Scheduled,0,0,136,152,2026-09-21T19:00:00+00:00,,Vitoria,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 27,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180618,Scheduled,0,0,124,120,2026-09-21T21:30:00+00:00,,Fluminense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 27,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180622,Scheduled,0,0,154,118,2026-09-22T00:00:00+00:00,,Fortaleza EC,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 27,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180619,Scheduled,0,0,133,121,2026-09-22T19:00:00+00:00,,Vasco DA Gama,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 27,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180616,Scheduled,0,0,1062,794,2026-09-22T19:00:00+00:00,,Atletico-MG,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 27,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180621,Scheduled,0,0,126,119,2026-09-22T21:30:00+00:00,,Sao Paulo,🔴⚪️⚫️,Internacional,🇧🇷,Serie A,Regular Season - 27,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180615,Scheduled,0,0,130,127,2026-09-22T21:30:00+00:00,,Gremio,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 27,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180623,Scheduled,0,0,1193,135,2026-09-22T21:30:00+00:00,,Cuiaba,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 27,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180624,Scheduled,0,0,140,134,2026-09-23T21:30:00+00:00,,Criciuma,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 27,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180395,Scheduled,0,0,130,140,2026-09-25T22:00:00+00:00,,Gremio,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 5,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180511,Scheduled,0,0,794,119,2026-09-25T22:00:00+00:00,,RB Bragantino,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 16,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180630,Scheduled,0,0,121,1062,2026-09-28T21:30:00+00:00,,Palmeiras,🟢,Atletico-MG,🇧🇷,Serie A,Regular Season - 28,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
-71_1180629,Scheduled,0,0,120,130,2026-09-29T00:00:00+00:00,,Botafogo,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 28,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180634,Scheduled,0,0,152,794,2026-09-29T14:00:00+00:00,,Juventude,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 28,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180631,Scheduled,0,0,126,131,2026-09-29T19:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,Corinthians,🇧🇷,Serie A,Regular Season - 28,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
-71_1180633,Scheduled,0,0,144,124,2026-09-29T19:00:00+00:00,,Atletico Goianiense,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 28,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180632,Scheduled,0,0,154,1193,2026-09-29T19:00:00+00:00,,Fortaleza EC,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 28,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180627,Scheduled,0,0,118,140,2026-09-29T21:30:00+00:00,,Bahia,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 28,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180625,Scheduled,0,0,119,136,2026-09-29T21:30:00+00:00,,Internacional,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 28,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180626,Scheduled,0,0,135,133,2026-09-29T21:30:00+00:00,,Cruzeiro,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 28,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180628,Scheduled,0,0,127,134,2026-09-29T23:00:00+00:00,,Flamengo,🔴⚫️,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 28,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180644,Scheduled,0,0,140,144,2026-10-03T22:00:00+00:00,,Criciuma,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 29,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180638,Scheduled,0,0,124,135,2026-10-04T00:30:00+00:00,,Fluminense,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 29,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180635,Scheduled,0,0,130,154,2026-10-05T00:30:00+00:00,,Gremio,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 29,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180642,Scheduled,0,0,134,120,2026-10-05T19:30:00+00:00,,Atletico Paranaense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 29,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180641,Scheduled,0,0,794,121,2026-10-05T19:30:00+00:00,,RB Bragantino,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 29,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180636,Scheduled,0,0,1062,136,2026-10-05T19:30:00+00:00,,Atletico-MG,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 29,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180637,Scheduled,0,0,118,127,2026-10-05T22:00:00+00:00,,Bahia,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 29,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180640,Scheduled,0,0,131,119,2026-10-05T22:00:00+00:00,,Corinthians,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 29,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180643,Scheduled,0,0,1193,126,2026-10-05T22:00:00+00:00,,Cuiaba,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 29,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180639,Scheduled,0,0,133,152,2026-10-06T00:00:00+00:00,,Vasco DA Gama,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 29,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180406,Scheduled,0,0,1062,130,2026-10-09T22:30:00+00:00,,Atletico-MG,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 6,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180651,Scheduled,0,0,126,133,2026-10-17T00:45:00+00:00,,Sao Paulo,🔴⚪️⚫️,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 30,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
-71_1180652,Scheduled,0,0,154,1062,2026-10-17T00:45:00+00:00,,Fortaleza EC,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 30,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180648,Scheduled,0,0,127,124,2026-10-17T23:00:00+00:00,,Flamengo,🔴⚫️,Fluminense,🇧🇷,Serie A,Regular Season - 30,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180650,Scheduled,0,0,131,134,2026-10-17T23:00:00+00:00,,Corinthians,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 30,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180653,Scheduled,0,0,144,1193,2026-10-18T22:00:00+00:00,,Atletico Goianiense,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 30,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180649,Scheduled,0,0,120,140,2026-10-18T23:00:00+00:00,,Botafogo,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 30,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180646,Scheduled,0,0,135,118,2026-10-19T00:30:00+00:00,,Cruzeiro,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 30,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180645,Scheduled,0,0,119,130,2026-10-19T19:00:00+00:00,,Internacional,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 30,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180647,Scheduled,0,0,136,794,2026-10-19T19:00:00+00:00,,Vitoria,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 30,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180654,Scheduled,0,0,152,121,2026-10-20T23:00:00+00:00,,Juventude,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 30,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180518,Scheduled,0,0,124,134,2026-10-22T22:30:00+00:00,,Fluminense,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 17,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180539,Scheduled,0,0,133,1193,2026-10-25T22:00:00+00:00,,Vasco DA Gama,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 19,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180660,Scheduled,0,0,121,154,2026-10-26T19:30:00+00:00,,Palmeiras,🟢,Fortaleza EC,🇧🇷,Serie A,Regular Season - 31,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180658,Scheduled,0,0,127,152,2026-10-26T19:30:00+00:00,,Flamengo,🔴⚫️,Juventude,🇧🇷,Serie A,Regular Season - 31,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180655,Scheduled,0,0,130,144,2026-10-26T19:30:00+00:00,,Gremio,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 31,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180657,Scheduled,0,0,136,124,2026-10-26T19:30:00+00:00,,Vitoria,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 31,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180662,Scheduled,0,0,134,135,2026-10-26T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 31,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180661,Scheduled,0,0,794,120,2026-10-26T23:00:00+00:00,,RB Bragantino,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 31,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180656,Scheduled,0,0,1062,119,2026-10-26T23:00:00+00:00,,Atletico-MG,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 31,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180664,Scheduled,0,0,140,126,2026-10-27T01:00:00+00:00,,Criciuma,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 31,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180663,Scheduled,0,0,1193,131,2026-10-28T22:00:00+00:00,,Cuiaba,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 31,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180659,Scheduled,0,0,133,118,2026-10-29T00:00:00+00:00,,Vasco DA Gama,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 31,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180515,Scheduled,0,0,119,127,2026-10-30T22:00:00+00:00,,Internacional,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 17,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180668,Scheduled,0,0,124,130,2026-11-02T00:00:00+00:00,,Fluminense,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 32,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180671,Scheduled,0,0,794,1193,2026-11-02T19:00:00+00:00,,RB Bragantino,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 32,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180672,Scheduled,0,0,134,136,2026-11-02T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 32,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180674,Scheduled,0,0,152,154,2026-11-02T21:30:00+00:00,,Juventude,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 32,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180670,Scheduled,0,0,131,121,2026-11-04T23:00:00+00:00,,Corinthians,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 32,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180667,Scheduled,0,0,118,126,2026-11-06T00:30:00+00:00,,Bahia,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 32,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180665,Scheduled,0,0,119,140,2026-11-06T00:30:00+00:00,,Internacional,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 32,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180669,Scheduled,0,0,120,133,2026-11-06T00:30:00+00:00,,Botafogo,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 32,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180666,Scheduled,0,0,135,127,2026-11-07T00:00:00+00:00,,Cruzeiro,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 32,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
-71_1180673,Scheduled,0,0,144,1062,2026-11-07T00:00:00+00:00,,Atletico Goianiense,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 32,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180675,Scheduled,0,0,119,124,2026-11-08T22:00:00+00:00,,Internacional,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 33,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180680,Scheduled,0,0,121,130,2026-11-09T00:30:00+00:00,,Palmeiras,🟢,Gremio,🇧🇷,Serie A,Regular Season - 33,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180679,Scheduled,0,0,120,1193,2026-11-09T19:30:00+00:00,,Botafogo,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 33,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180677,Scheduled,0,0,136,131,2026-11-09T19:30:00+00:00,,Vitoria,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 33,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180676,Scheduled,0,0,135,140,2026-11-09T22:00:00+00:00,,Cruzeiro,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 33,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180683,Scheduled,0,0,144,794,2026-11-09T22:00:00+00:00,,Atletico Goianiense,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 33,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180684,Scheduled,0,0,152,118,2026-11-09T22:00:00+00:00,,Juventude,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 33,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180682,Scheduled,0,0,154,133,2026-11-09T22:00:00+00:00,,Fortaleza EC,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 33,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180681,Scheduled,0,0,126,134,2026-11-10T00:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 33,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180678,Scheduled,0,0,127,1062,2026-11-13T23:00:00+00:00,,Flamengo,🔴⚫️,Atletico-MG,🇧🇷,Serie A,Regular Season - 33,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180542,Scheduled,0,0,134,1062,2026-11-16T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 19,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180690,Scheduled,0,0,131,135,2026-11-20T14:00:00+00:00,,Corinthians,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 34,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180692,Scheduled,0,0,134,144,2026-11-20T19:30:00+00:00,,Atletico Paranaense,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 34,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180694,Scheduled,0,0,140,136,2026-11-20T19:30:00+00:00,,Criciuma,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 34,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180691,Scheduled,0,0,794,126,2026-11-20T19:30:00+00:00,,RB Bragantino,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 34,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180687,Scheduled,0,0,118,121,2026-11-20T21:00:00+00:00,,Bahia,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 34,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180685,Scheduled,0,0,130,152,2026-11-20T22:00:00+00:00,,Gremio,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 34,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180693,Scheduled,0,0,1193,127,2026-11-20T22:00:00+00:00,,Cuiaba,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 34,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180686,Scheduled,0,0,1062,120,2026-11-21T00:30:00+00:00,,Atletico-MG,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 34,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
-71_1180689,Scheduled,0,0,133,119,2026-11-21T23:00:00+00:00,,Vasco DA Gama,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 34,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180688,Scheduled,0,0,124,154,2026-11-23T00:30:00+00:00,,Fluminense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 34,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180699,Scheduled,0,0,120,136,2026-11-23T22:30:00+00:00,,Botafogo,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 35,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180703,Scheduled,0,0,144,121,2026-11-23T22:30:00+00:00,,Atletico Goianiense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 35,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180704,Scheduled,0,0,152,1193,2026-11-23T22:30:00+00:00,,Juventude,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 35,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180701,Scheduled,0,0,126,1062,2026-11-24T00:30:00+00:00,,Sao Paulo,🔴⚪️⚫️,Atletico-MG,🇧🇷,Serie A,Regular Season - 35,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180697,Scheduled,0,0,118,134,2026-11-24T19:00:00+00:00,,Bahia,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 35,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180695,Scheduled,0,0,119,794,2026-11-24T19:00:00+00:00,,Internacional,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 35,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180700,Scheduled,0,0,131,133,2026-11-24T19:00:00+00:00,,Corinthians,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 35,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180698,Scheduled,0,0,124,140,2026-11-26T22:00:00+00:00,,Fluminense,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 35,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180702,Scheduled,0,0,154,127,2026-11-26T23:00:00+00:00,,Fortaleza EC,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 35,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180710,Scheduled,0,0,121,120,2026-11-27T00:30:00+00:00,,Palmeiras,🟢,Botafogo,🇧🇷,Serie A,Regular Season - 36,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180706,Scheduled,0,0,1062,152,2026-11-27T00:30:00+00:00,,Atletico-MG,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 36,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
-71_1180696,Scheduled,0,0,135,130,2026-11-28T00:00:00+00:00,,Cruzeiro,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 35,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180714,Scheduled,0,0,140,131,2026-11-30T22:30:00+00:00,,Criciuma,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 36,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180713,Scheduled,0,0,1193,118,2026-11-30T22:30:00+00:00,,Cuiaba,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 36,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
-71_1180709,Scheduled,0,0,133,144,2026-12-01T00:30:00+00:00,,Vasco DA Gama,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 36,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180708,Scheduled,0,0,127,119,2026-12-01T19:00:00+00:00,,Flamengo,🔴⚫️,Internacional,🇧🇷,Serie A,Regular Season - 36,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180705,Scheduled,0,0,130,126,2026-12-01T19:00:00+00:00,,Gremio,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 36,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180712,Scheduled,0,0,134,124,2026-12-01T21:30:00+00:00,,Atletico Paranaense,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 36,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180707,Scheduled,0,0,136,154,2026-12-01T21:30:00+00:00,,Vitoria,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 36,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180711,Scheduled,0,0,794,135,2026-12-01T21:30:00+00:00,,RB Bragantino,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 36,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180720,Scheduled,0,0,131,118,2026-12-03T23:00:00+00:00,,Corinthians,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 37,Neo Química Arena,"São Paulo, São Paulo",Brésil
-71_1180719,Scheduled,0,0,133,1062,2026-12-04T22:00:00+00:00,,Vasco DA Gama,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 37,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180721,Scheduled,0,0,126,152,2026-12-04T23:00:00+00:00,,Sao Paulo,🔴⚪️⚫️,Juventude,🇧🇷,Serie A,Regular Season - 37,MorumBIS,"São Paulo, São Paulo",Brésil
-71_1180717,Scheduled,0,0,136,130,2026-12-04T23:00:00+00:00,,Vitoria,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 37,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
-71_1180724,Scheduled,0,0,140,127,2026-12-04T23:00:00+00:00,,Criciuma,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 37,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
-71_1180715,Scheduled,0,0,119,120,2026-12-05T00:30:00+00:00,,Internacional,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 37,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180716,Scheduled,0,0,135,121,2026-12-05T00:30:00+00:00,,Cruzeiro,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 37,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
-71_1180723,Scheduled,0,0,144,154,2026-12-05T00:30:00+00:00,,Atletico Goianiense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 37,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
-71_1180718,Scheduled,0,0,124,1193,2026-12-05T23:00:00+00:00,,Fluminense,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 37,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180722,Scheduled,0,0,134,794,2026-12-05T23:00:00+00:00,,Atletico Paranaense,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 37,Ligga Arena,"Curitiba, Paraná",Brésil
-71_1180727,Scheduled,0,0,118,144,2026-12-08T19:00:00+00:00,,Bahia,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 38,Arena Fonte Nova,"Salvador, Bahia",Brésil
-71_1180729,Scheduled,0,0,120,126,2026-12-08T19:00:00+00:00,,Botafogo,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 38,Estádio Nilton Santos,Rio de Janeiro,Brésil
-71_1180730,Scheduled,0,0,121,124,2026-12-08T19:00:00+00:00,,Palmeiras,🟢,Fluminense,🇧🇷,Serie A,Regular Season - 38,Allianz Parque,"São Paulo, São Paulo",Brésil
-71_1180728,Scheduled,0,0,127,136,2026-12-08T19:00:00+00:00,,Flamengo,🔴⚫️,Vitoria,🇧🇷,Serie A,Regular Season - 38,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
-71_1180725,Scheduled,0,0,130,131,2026-12-08T19:00:00+00:00,,Gremio,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 38,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
-71_1180734,Scheduled,0,0,152,135,2026-12-08T19:00:00+00:00,,Juventude,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 38,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
-71_1180732,Scheduled,0,0,154,119,2026-12-08T19:00:00+00:00,,Fortaleza EC,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 38,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
-71_1180731,Scheduled,0,0,794,140,2026-12-08T19:00:00+00:00,,RB Bragantino,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 38,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
-71_1180726,Scheduled,0,0,1062,134,2026-12-08T19:00:00+00:00,,Atletico-MG,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 38,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
-71_1180733,Scheduled,0,0,1193,133,2026-12-08T19:00:00+00:00,,Cuiaba,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 38,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180493,Scheduled,0,0,1193,120,2026-07-03T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 14,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180489,Scheduled,0,0,133,154,2026-07-03T23:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 14,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180494,Scheduled,0,0,140,135,2026-07-03T23:00:00+00:00,W10=,Criciuma,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 14,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180492,Scheduled,0,0,134,126,2026-07-04T00:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 14,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180491,Scheduled,0,0,794,144,2026-07-04T00:30:00+00:00,W10=,RB Bragantino,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 14,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180486,Scheduled,0,0,1062,127,2026-07-04T00:30:00+00:00,W10=,Atletico-MG,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 14,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180487,Scheduled,0,0,118,152,2026-07-04T22:00:00+00:00,W10=,Bahia,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 14,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180485,Scheduled,0,0,130,121,2026-07-04T22:00:00+00:00,W10=,Gremio,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 14,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180488,Scheduled,0,0,124,119,2026-07-04T23:00:00+00:00,W10=,Fluminense,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 14,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180490,Scheduled,0,0,131,136,2026-07-04T23:00:00+00:00,W10=,Corinthians,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 14,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180501,Scheduled,0,0,126,794,2026-07-06T23:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,RB Bragantino,🇧🇷,Serie A,Regular Season - 15,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180498,Scheduled,0,0,127,1193,2026-07-06T23:00:00+00:00,W10=,Flamengo,🔴⚫️,Cuiaba,🇧🇷,Serie A,Regular Season - 15,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180496,Scheduled,0,0,135,131,2026-07-07T19:00:00+00:00,W10=,Cruzeiro,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 15,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180504,Scheduled,0,0,152,130,2026-07-07T19:00:00+00:00,W10=,Juventude,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 15,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180502,Scheduled,0,0,154,124,2026-07-07T19:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 15,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180495,Scheduled,0,0,119,133,2026-07-07T21:00:00+00:00,W10=,Internacional,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 15,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180500,Scheduled,0,0,121,118,2026-07-07T21:30:00+00:00,W10=,Palmeiras,🟢,Bahia,🇧🇷,Serie A,Regular Season - 15,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180497,Scheduled,0,0,136,140,2026-07-07T21:30:00+00:00,W10=,Vitoria,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 15,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180503,Scheduled,0,0,144,134,2026-07-07T21:30:00+00:00,W10=,Atletico Goianiense,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 15,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180499,Scheduled,0,0,120,1062,2026-07-07T23:30:00+00:00,W10=,Botafogo,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 15,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180505,Scheduled,0,0,130,135,2026-07-10T21:30:00+00:00,W10=,Gremio,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 16,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180509,Scheduled,0,0,133,131,2026-07-10T22:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 16,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180512,Scheduled,0,0,134,118,2026-07-10T22:00:00+00:00,W10=,Atletico Paranaense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 16,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180510,Scheduled,0,0,121,144,2026-07-11T22:30:00+00:00,W10=,Palmeiras,🟢,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 16,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180508,Scheduled,0,0,127,154,2026-07-11T23:00:00+00:00,W10=,Flamengo,🔴⚫️,Fortaleza EC,🇧🇷,Serie A,Regular Season - 16,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180514,Scheduled,0,0,140,124,2026-07-11T23:00:00+00:00,W10=,Criciuma,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 16,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180507,Scheduled,0,0,136,120,2026-07-12T00:30:00+00:00,W10=,Vitoria,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 16,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180506,Scheduled,0,0,1062,126,2026-07-12T00:30:00+00:00,W10=,Atletico-MG,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 16,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180517,Scheduled,0,0,118,1193,2026-07-13T19:00:00+00:00,W10=,Bahia,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 17,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180516,Scheduled,0,0,135,794,2026-07-13T19:00:00+00:00,W10=,Cruzeiro,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 17,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
+71_1180524,Scheduled,0,0,152,1062,2026-07-16T22:00:00+00:00,W10=,Juventude,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 17,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180520,Scheduled,0,0,131,140,2026-07-17T00:00:00+00:00,W10=,Corinthians,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 17,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180523,Scheduled,0,0,144,133,2026-07-17T22:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 17,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180521,Scheduled,0,0,126,130,2026-07-17T23:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Gremio,🇧🇷,Serie A,Regular Season - 17,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180519,Scheduled,0,0,120,121,2026-07-18T00:30:00+00:00,W10=,Botafogo,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 17,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180522,Scheduled,0,0,154,136,2026-07-18T00:30:00+00:00,W10=,Fortaleza EC,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 17,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180528,Scheduled,0,0,127,140,2026-07-20T19:00:00+00:00,W10=,Flamengo,🔴⚫️,Criciuma,🇧🇷,Serie A,Regular Season - 18,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180529,Scheduled,0,0,120,119,2026-07-20T21:30:00+00:00,W10=,Botafogo,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 18,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180530,Scheduled,0,0,121,135,2026-07-21T00:00:00+00:00,W10=,Palmeiras,🟢,Cruzeiro,🇧🇷,Serie A,Regular Season - 18,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180525,Scheduled,0,0,130,136,2026-07-21T14:00:00+00:00,W10=,Gremio,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 18,Estádio Francisco Stédile,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180527,Scheduled,0,0,118,131,2026-07-21T19:00:00+00:00,W10=,Bahia,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 18,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180526,Scheduled,0,0,1062,133,2026-07-21T19:00:00+00:00,W10=,Atletico-MG,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 18,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180534,Scheduled,0,0,152,126,2026-07-21T21:30:00+00:00,W10=,Juventude,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 18,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180532,Scheduled,0,0,154,144,2026-07-21T21:30:00+00:00,W10=,Fortaleza EC,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 18,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180531,Scheduled,0,0,794,134,2026-07-21T21:30:00+00:00,W10=,RB Bragantino,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 18,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180533,Scheduled,0,0,1193,124,2026-07-21T23:00:00+00:00,W10=,Cuiaba,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 18,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180536,Scheduled,0,0,135,152,2026-07-24T22:00:00+00:00,W10=,Cruzeiro,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 19,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180384,Scheduled,0,0,140,154,2026-07-24T22:00:00+00:00,W10=,Criciuma,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 3,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180541,Scheduled,0,0,126,120,2026-07-24T22:30:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Botafogo,🇧🇷,Serie A,Regular Season - 19,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180537,Scheduled,0,0,136,127,2026-07-24T23:00:00+00:00,W10=,Vitoria,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 19,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180538,Scheduled,0,0,124,121,2026-07-25T00:30:00+00:00,W10=,Fluminense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 19,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180543,Scheduled,0,0,144,118,2026-07-25T00:30:00+00:00,W10=,Atletico Goianiense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 19,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180540,Scheduled,0,0,131,130,2026-07-25T23:00:00+00:00,W10=,Corinthians,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 19,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180550,Scheduled,0,0,121,136,2026-07-27T22:00:00+00:00,W10=,Palmeiras,🟢,Vitoria,🇧🇷,Serie A,Regular Season - 20,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180554,Scheduled,0,0,152,140,2026-07-27T22:00:00+00:00,W10=,Juventude,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 20,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180547,Scheduled,0,0,118,119,2026-07-27T23:00:00+00:00,W10=,Bahia,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 20,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180549,Scheduled,0,0,120,135,2026-07-28T00:30:00+00:00,W10=,Botafogo,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 20,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180552,Scheduled,0,0,154,126,2026-07-28T00:30:00+00:00,W10=,Fortaleza EC,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 20,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180551,Scheduled,0,0,794,124,2026-07-28T14:00:00+00:00,W10=,RB Bragantino,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 20,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180548,Scheduled,0,0,127,144,2026-07-28T19:00:00+00:00,W10=,Flamengo,🔴⚫️,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 20,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180545,Scheduled,0,0,130,133,2026-07-28T22:00:00+00:00,W10=,Gremio,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 20,Arena Condá,"Chapecó, Santa Catarina",Brésil
+71_1180546,Scheduled,0,0,1062,131,2026-07-28T22:00:00+00:00,W10=,Atletico-MG,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 20,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180553,Scheduled,0,0,1193,134,2026-07-28T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 20,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180557,Scheduled,0,0,136,1193,2026-08-03T19:00:00+00:00,W10=,Vitoria,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 21,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180559,Scheduled,0,0,133,794,2026-08-03T22:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 21,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180564,Scheduled,0,0,140,1062,2026-08-03T23:00:00+00:00,W10=,Criciuma,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 21,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180563,Scheduled,0,0,144,120,2026-08-03T23:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 21,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180561,Scheduled,0,0,126,127,2026-08-04T00:30:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Flamengo,🔴⚫️,Serie A,Regular Season - 21,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180558,Scheduled,0,0,124,118,2026-08-04T19:00:00+00:00,W10=,Fluminense,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 21,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180560,Scheduled,0,0,131,152,2026-08-04T19:00:00+00:00,W10=,Corinthians,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 21,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180562,Scheduled,0,0,134,130,2026-08-04T19:00:00+00:00,W10=,Atletico Paranaense,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 21,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180555,Scheduled,0,0,119,121,2026-08-04T20:00:00+00:00,W10=,Internacional,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 21,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180556,Scheduled,0,0,135,154,2026-08-06T00:00:00+00:00,W10=,Cruzeiro,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 21,Estádio Kleber José de Andrade,"Cariacica, Espírito Santo",Brésil
+71_1180572,Scheduled,0,0,154,140,2026-08-10T19:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 22,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180573,Scheduled,0,0,1193,130,2026-08-10T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 22,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180570,Scheduled,0,0,131,794,2026-08-11T00:30:00+00:00,W10=,Corinthians,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 22,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180569,Scheduled,0,0,133,124,2026-08-11T00:30:00+00:00,W10=,Vasco DA Gama,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 22,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180566,Scheduled,0,0,135,1062,2026-08-11T00:30:00+00:00,W10=,Cruzeiro,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 22,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180574,Scheduled,0,0,152,120,2026-08-11T14:00:00+00:00,W10=,Juventude,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 22,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180567,Scheduled,0,0,118,136,2026-08-11T19:00:00+00:00,W10=,Bahia,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 22,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180571,Scheduled,0,0,126,144,2026-08-11T19:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 22,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180568,Scheduled,0,0,127,121,2026-08-11T19:00:00+00:00,W10=,Flamengo,🔴⚫️,Palmeiras,🟢,Serie A,Regular Season - 22,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180565,Scheduled,0,0,119,134,2026-08-11T22:00:00+00:00,W10=,Internacional,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 22,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180405,Scheduled,0,0,119,152,2026-08-14T22:30:00+00:00,W10=,Internacional,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 6,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180575,Scheduled,0,0,130,118,2026-08-17T19:00:00+00:00,W10=,Gremio,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 23,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180576,Scheduled,0,0,1062,1193,2026-08-17T19:00:00+00:00,W10=,Atletico-MG,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 23,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180581,Scheduled,0,0,794,154,2026-08-17T21:30:00+00:00,W10=,RB Bragantino,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 23,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180578,Scheduled,0,0,124,131,2026-08-18T00:00:00+00:00,W10=,Fluminense,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 23,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180580,Scheduled,0,0,121,126,2026-08-18T19:00:00+00:00,W10=,Palmeiras,🟢,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 23,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180584,Scheduled,0,0,140,133,2026-08-18T19:00:00+00:00,W10=,Criciuma,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 23,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180583,Scheduled,0,0,144,119,2026-08-18T19:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 23,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180579,Scheduled,0,0,120,127,2026-08-18T21:30:00+00:00,W10=,Botafogo,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 23,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180582,Scheduled,0,0,134,152,2026-08-18T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 23,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180577,Scheduled,0,0,136,135,2026-08-19T23:00:00+00:00,W10=,Vitoria,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 23,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180593,Scheduled,0,0,144,152,2026-08-24T19:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 24,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180590,Scheduled,0,0,121,1193,2026-08-24T21:30:00+00:00,W10=,Palmeiras,🟢,Cuiaba,🇧🇷,Serie A,Regular Season - 24,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
+71_1180586,Scheduled,0,0,1062,124,2026-08-25T00:00:00+00:00,W10=,Atletico-MG,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 24,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180587,Scheduled,0,0,118,120,2026-08-25T19:00:00+00:00,W10=,Bahia,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 24,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180594,Scheduled,0,0,140,130,2026-08-25T19:00:00+00:00,W10=,Criciuma,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 24,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180592,Scheduled,0,0,154,131,2026-08-25T19:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 24,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180591,Scheduled,0,0,126,136,2026-08-25T21:30:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Vitoria,🇧🇷,Serie A,Regular Season - 24,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180585,Scheduled,0,0,119,135,2026-08-25T22:00:00+00:00,W10=,Internacional,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 24,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180588,Scheduled,0,0,127,794,2026-08-25T23:00:00+00:00,W10=,Flamengo,🔴⚫️,RB Bragantino,🇧🇷,Serie A,Regular Season - 24,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180589,Scheduled,0,0,133,134,2026-08-27T00:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 24,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180396,Scheduled,0,0,135,119,2026-08-28T22:30:00+00:00,W10=,Cruzeiro,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 5,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180544,Scheduled,0,0,140,794,2026-08-28T22:30:00+00:00,W10=,Criciuma,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 19,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180603,Scheduled,0,0,1193,140,2026-08-31T21:30:00+00:00,W10=,Cuiaba,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 25,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180599,Scheduled,0,0,120,154,2026-09-01T00:00:00+00:00,W10=,Botafogo,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 25,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180595,Scheduled,0,0,130,1062,2026-09-01T14:00:00+00:00,W10=,Gremio,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 25,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180596,Scheduled,0,0,135,144,2026-09-01T14:00:00+00:00,W10=,Cruzeiro,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 25,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180600,Scheduled,0,0,131,127,2026-09-01T19:00:00+00:00,W10=,Corinthians,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 25,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180598,Scheduled,0,0,124,126,2026-09-01T21:30:00+00:00,W10=,Fluminense,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 25,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180602,Scheduled,0,0,134,121,2026-09-01T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 25,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180597,Scheduled,0,0,136,133,2026-09-01T21:30:00+00:00,W10=,Vitoria,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 25,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180604,Scheduled,0,0,152,119,2026-09-01T21:30:00+00:00,W10=,Juventude,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 25,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180601,Scheduled,0,0,794,118,2026-09-01T21:30:00+00:00,W10=,RB Bragantino,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 25,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180513,Scheduled,0,0,1193,152,2026-09-05T23:00:00+00:00,W10=,Cuiaba,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 16,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180535,Scheduled,0,0,119,154,2026-09-11T22:30:00+00:00,W10=,Internacional,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 19,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180613,Scheduled,0,0,144,136,2026-09-14T19:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 26,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180612,Scheduled,0,0,134,154,2026-09-14T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 26,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180609,Scheduled,0,0,120,131,2026-09-15T00:00:00+00:00,W10=,Botafogo,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 26,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180610,Scheduled,0,0,121,140,2026-09-15T19:00:00+00:00,W10=,Palmeiras,🟢,Criciuma,🇧🇷,Serie A,Regular Season - 26,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180614,Scheduled,0,0,152,124,2026-09-15T19:00:00+00:00,W10=,Juventude,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 26,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180611,Scheduled,0,0,794,130,2026-09-15T19:00:00+00:00,W10=,RB Bragantino,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 26,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180607,Scheduled,0,0,118,1062,2026-09-15T21:30:00+00:00,W10=,Bahia,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 26,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180608,Scheduled,0,0,127,133,2026-09-15T21:30:00+00:00,W10=,Flamengo,🔴⚫️,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 26,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180606,Scheduled,0,0,135,126,2026-09-15T21:30:00+00:00,W10=,Cruzeiro,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 26,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180605,Scheduled,0,0,119,1193,2026-09-16T23:00:00+00:00,W10=,Internacional,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 26,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180620,Scheduled,0,0,131,144,2026-09-21T19:00:00+00:00,W10=,Corinthians,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 27,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180617,Scheduled,0,0,136,152,2026-09-21T19:00:00+00:00,W10=,Vitoria,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 27,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180618,Scheduled,0,0,124,120,2026-09-21T21:30:00+00:00,W10=,Fluminense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 27,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180622,Scheduled,0,0,154,118,2026-09-22T00:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 27,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180619,Scheduled,0,0,133,121,2026-09-22T19:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 27,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180616,Scheduled,0,0,1062,794,2026-09-22T19:00:00+00:00,W10=,Atletico-MG,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 27,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180621,Scheduled,0,0,126,119,2026-09-22T21:30:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Internacional,🇧🇷,Serie A,Regular Season - 27,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180615,Scheduled,0,0,130,127,2026-09-22T21:30:00+00:00,W10=,Gremio,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 27,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180623,Scheduled,0,0,1193,135,2026-09-22T21:30:00+00:00,W10=,Cuiaba,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 27,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180624,Scheduled,0,0,140,134,2026-09-23T21:30:00+00:00,W10=,Criciuma,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 27,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180395,Scheduled,0,0,130,140,2026-09-25T22:00:00+00:00,W10=,Gremio,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 5,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180511,Scheduled,0,0,794,119,2026-09-25T22:00:00+00:00,W10=,RB Bragantino,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 16,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180630,Scheduled,0,0,121,1062,2026-09-28T21:30:00+00:00,W10=,Palmeiras,🟢,Atletico-MG,🇧🇷,Serie A,Regular Season - 28,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
+71_1180629,Scheduled,0,0,120,130,2026-09-29T00:00:00+00:00,W10=,Botafogo,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 28,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180634,Scheduled,0,0,152,794,2026-09-29T14:00:00+00:00,W10=,Juventude,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 28,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180631,Scheduled,0,0,126,131,2026-09-29T19:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Corinthians,🇧🇷,Serie A,Regular Season - 28,Arena BRB Mané Garrincha,"Brasília, Distrito Federal",Brésil
+71_1180633,Scheduled,0,0,144,124,2026-09-29T19:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 28,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180632,Scheduled,0,0,154,1193,2026-09-29T19:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 28,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180627,Scheduled,0,0,118,140,2026-09-29T21:30:00+00:00,W10=,Bahia,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 28,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180625,Scheduled,0,0,119,136,2026-09-29T21:30:00+00:00,W10=,Internacional,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 28,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180626,Scheduled,0,0,135,133,2026-09-29T21:30:00+00:00,W10=,Cruzeiro,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 28,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180628,Scheduled,0,0,127,134,2026-09-29T23:00:00+00:00,W10=,Flamengo,🔴⚫️,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 28,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180644,Scheduled,0,0,140,144,2026-10-03T22:00:00+00:00,W10=,Criciuma,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 29,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180638,Scheduled,0,0,124,135,2026-10-04T00:30:00+00:00,W10=,Fluminense,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 29,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180635,Scheduled,0,0,130,154,2026-10-05T00:30:00+00:00,W10=,Gremio,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 29,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180642,Scheduled,0,0,134,120,2026-10-05T19:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 29,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180641,Scheduled,0,0,794,121,2026-10-05T19:30:00+00:00,W10=,RB Bragantino,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 29,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180636,Scheduled,0,0,1062,136,2026-10-05T19:30:00+00:00,W10=,Atletico-MG,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 29,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180637,Scheduled,0,0,118,127,2026-10-05T22:00:00+00:00,W10=,Bahia,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 29,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180640,Scheduled,0,0,131,119,2026-10-05T22:00:00+00:00,W10=,Corinthians,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 29,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180643,Scheduled,0,0,1193,126,2026-10-05T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 29,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180639,Scheduled,0,0,133,152,2026-10-06T00:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 29,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180406,Scheduled,0,0,1062,130,2026-10-09T22:30:00+00:00,W10=,Atletico-MG,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 6,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180651,Scheduled,0,0,126,133,2026-10-17T00:45:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 30,Estádio Brinco de Ouro da Princesa,"Campinas, São Paulo",Brésil
+71_1180652,Scheduled,0,0,154,1062,2026-10-17T00:45:00+00:00,W10=,Fortaleza EC,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 30,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180648,Scheduled,0,0,127,124,2026-10-17T23:00:00+00:00,W10=,Flamengo,🔴⚫️,Fluminense,🇧🇷,Serie A,Regular Season - 30,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180650,Scheduled,0,0,131,134,2026-10-17T23:00:00+00:00,W10=,Corinthians,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 30,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180653,Scheduled,0,0,144,1193,2026-10-18T22:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 30,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180649,Scheduled,0,0,120,140,2026-10-18T23:00:00+00:00,W10=,Botafogo,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 30,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180646,Scheduled,0,0,135,118,2026-10-19T00:30:00+00:00,W10=,Cruzeiro,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 30,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180645,Scheduled,0,0,119,130,2026-10-19T19:00:00+00:00,W10=,Internacional,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 30,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180647,Scheduled,0,0,136,794,2026-10-19T19:00:00+00:00,W10=,Vitoria,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 30,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180654,Scheduled,0,0,152,121,2026-10-20T23:00:00+00:00,W10=,Juventude,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 30,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180518,Scheduled,0,0,124,134,2026-10-22T22:30:00+00:00,W10=,Fluminense,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 17,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180539,Scheduled,0,0,133,1193,2026-10-25T22:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 19,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180660,Scheduled,0,0,121,154,2026-10-26T19:30:00+00:00,W10=,Palmeiras,🟢,Fortaleza EC,🇧🇷,Serie A,Regular Season - 31,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180658,Scheduled,0,0,127,152,2026-10-26T19:30:00+00:00,W10=,Flamengo,🔴⚫️,Juventude,🇧🇷,Serie A,Regular Season - 31,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180655,Scheduled,0,0,130,144,2026-10-26T19:30:00+00:00,W10=,Gremio,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 31,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180657,Scheduled,0,0,136,124,2026-10-26T19:30:00+00:00,W10=,Vitoria,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 31,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180662,Scheduled,0,0,134,135,2026-10-26T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 31,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180661,Scheduled,0,0,794,120,2026-10-26T23:00:00+00:00,W10=,RB Bragantino,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 31,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180656,Scheduled,0,0,1062,119,2026-10-26T23:00:00+00:00,W10=,Atletico-MG,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 31,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180664,Scheduled,0,0,140,126,2026-10-27T01:00:00+00:00,W10=,Criciuma,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 31,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180663,Scheduled,0,0,1193,131,2026-10-28T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 31,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180659,Scheduled,0,0,133,118,2026-10-29T00:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 31,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180515,Scheduled,0,0,119,127,2026-10-30T22:00:00+00:00,W10=,Internacional,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 17,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180668,Scheduled,0,0,124,130,2026-11-02T00:00:00+00:00,W10=,Fluminense,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 32,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180671,Scheduled,0,0,794,1193,2026-11-02T19:00:00+00:00,W10=,RB Bragantino,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 32,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180672,Scheduled,0,0,134,136,2026-11-02T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 32,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180674,Scheduled,0,0,152,154,2026-11-02T21:30:00+00:00,W10=,Juventude,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 32,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180670,Scheduled,0,0,131,121,2026-11-04T23:00:00+00:00,W10=,Corinthians,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 32,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180667,Scheduled,0,0,118,126,2026-11-06T00:30:00+00:00,W10=,Bahia,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 32,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180665,Scheduled,0,0,119,140,2026-11-06T00:30:00+00:00,W10=,Internacional,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 32,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180669,Scheduled,0,0,120,133,2026-11-06T00:30:00+00:00,W10=,Botafogo,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 32,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180666,Scheduled,0,0,135,127,2026-11-07T00:00:00+00:00,W10=,Cruzeiro,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 32,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
+71_1180673,Scheduled,0,0,144,1062,2026-11-07T00:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 32,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180675,Scheduled,0,0,119,124,2026-11-08T22:00:00+00:00,W10=,Internacional,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 33,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180680,Scheduled,0,0,121,130,2026-11-09T00:30:00+00:00,W10=,Palmeiras,🟢,Gremio,🇧🇷,Serie A,Regular Season - 33,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180679,Scheduled,0,0,120,1193,2026-11-09T19:30:00+00:00,W10=,Botafogo,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 33,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180677,Scheduled,0,0,136,131,2026-11-09T19:30:00+00:00,W10=,Vitoria,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 33,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180676,Scheduled,0,0,135,140,2026-11-09T22:00:00+00:00,W10=,Cruzeiro,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 33,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180683,Scheduled,0,0,144,794,2026-11-09T22:00:00+00:00,W10=,Atletico Goianiense,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 33,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180684,Scheduled,0,0,152,118,2026-11-09T22:00:00+00:00,W10=,Juventude,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 33,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180682,Scheduled,0,0,154,133,2026-11-09T22:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 33,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180681,Scheduled,0,0,126,134,2026-11-10T00:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 33,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180678,Scheduled,0,0,127,1062,2026-11-13T23:00:00+00:00,W10=,Flamengo,🔴⚫️,Atletico-MG,🇧🇷,Serie A,Regular Season - 33,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180542,Scheduled,0,0,134,1062,2026-11-16T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 19,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180690,Scheduled,0,0,131,135,2026-11-20T14:00:00+00:00,W10=,Corinthians,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 34,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180692,Scheduled,0,0,134,144,2026-11-20T19:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 34,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180694,Scheduled,0,0,140,136,2026-11-20T19:30:00+00:00,W10=,Criciuma,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 34,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180691,Scheduled,0,0,794,126,2026-11-20T19:30:00+00:00,W10=,RB Bragantino,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 34,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180687,Scheduled,0,0,118,121,2026-11-20T21:00:00+00:00,W10=,Bahia,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 34,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180685,Scheduled,0,0,130,152,2026-11-20T22:00:00+00:00,W10=,Gremio,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 34,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180693,Scheduled,0,0,1193,127,2026-11-20T22:00:00+00:00,W10=,Cuiaba,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 34,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180686,Scheduled,0,0,1062,120,2026-11-21T00:30:00+00:00,W10=,Atletico-MG,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 34,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
+71_1180689,Scheduled,0,0,133,119,2026-11-21T23:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 34,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180688,Scheduled,0,0,124,154,2026-11-23T00:30:00+00:00,W10=,Fluminense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 34,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180699,Scheduled,0,0,120,136,2026-11-23T22:30:00+00:00,W10=,Botafogo,🇧🇷,Vitoria,🇧🇷,Serie A,Regular Season - 35,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180703,Scheduled,0,0,144,121,2026-11-23T22:30:00+00:00,W10=,Atletico Goianiense,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 35,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180704,Scheduled,0,0,152,1193,2026-11-23T22:30:00+00:00,W10=,Juventude,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 35,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180701,Scheduled,0,0,126,1062,2026-11-24T00:30:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Atletico-MG,🇧🇷,Serie A,Regular Season - 35,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180697,Scheduled,0,0,118,134,2026-11-24T19:00:00+00:00,W10=,Bahia,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 35,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180695,Scheduled,0,0,119,794,2026-11-24T19:00:00+00:00,W10=,Internacional,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 35,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180700,Scheduled,0,0,131,133,2026-11-24T19:00:00+00:00,W10=,Corinthians,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 35,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180698,Scheduled,0,0,124,140,2026-11-26T22:00:00+00:00,W10=,Fluminense,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 35,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180702,Scheduled,0,0,154,127,2026-11-26T23:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 35,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180710,Scheduled,0,0,121,120,2026-11-27T00:30:00+00:00,W10=,Palmeiras,🟢,Botafogo,🇧🇷,Serie A,Regular Season - 36,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180706,Scheduled,0,0,1062,152,2026-11-27T00:30:00+00:00,W10=,Atletico-MG,🇧🇷,Juventude,🇧🇷,Serie A,Regular Season - 36,Estádio Raimundo Sampaio,"Belo Horizonte, Minas Gerais",Brésil
+71_1180696,Scheduled,0,0,135,130,2026-11-28T00:00:00+00:00,W10=,Cruzeiro,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 35,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180714,Scheduled,0,0,140,131,2026-11-30T22:30:00+00:00,W10=,Criciuma,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 36,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180713,Scheduled,0,0,1193,118,2026-11-30T22:30:00+00:00,W10=,Cuiaba,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 36,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
+71_1180709,Scheduled,0,0,133,144,2026-12-01T00:30:00+00:00,W10=,Vasco DA Gama,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 36,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180708,Scheduled,0,0,127,119,2026-12-01T19:00:00+00:00,W10=,Flamengo,🔴⚫️,Internacional,🇧🇷,Serie A,Regular Season - 36,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180705,Scheduled,0,0,130,126,2026-12-01T19:00:00+00:00,W10=,Gremio,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 36,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180712,Scheduled,0,0,134,124,2026-12-01T21:30:00+00:00,W10=,Atletico Paranaense,🇧🇷,Fluminense,🇧🇷,Serie A,Regular Season - 36,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180707,Scheduled,0,0,136,154,2026-12-01T21:30:00+00:00,W10=,Vitoria,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 36,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180711,Scheduled,0,0,794,135,2026-12-01T21:30:00+00:00,W10=,RB Bragantino,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 36,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180720,Scheduled,0,0,131,118,2026-12-03T23:00:00+00:00,W10=,Corinthians,🇧🇷,Bahia,🇧🇷,Serie A,Regular Season - 37,Neo Química Arena,"São Paulo, São Paulo",Brésil
+71_1180719,Scheduled,0,0,133,1062,2026-12-04T22:00:00+00:00,W10=,Vasco DA Gama,🇧🇷,Atletico-MG,🇧🇷,Serie A,Regular Season - 37,Estádio São Januário,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180721,Scheduled,0,0,126,152,2026-12-04T23:00:00+00:00,W10=,Sao Paulo,🔴⚪️⚫️,Juventude,🇧🇷,Serie A,Regular Season - 37,MorumBIS,"São Paulo, São Paulo",Brésil
+71_1180717,Scheduled,0,0,136,130,2026-12-04T23:00:00+00:00,W10=,Vitoria,🇧🇷,Gremio,🇧🇷,Serie A,Regular Season - 37,Estádio Manoel Barradas,"Salvador, Bahia",Brésil
+71_1180724,Scheduled,0,0,140,127,2026-12-04T23:00:00+00:00,W10=,Criciuma,🇧🇷,Flamengo,🔴⚫️,Serie A,Regular Season - 37,Estádio Heriberto Hülse,"Criciúma, Santa Catarina",Brésil
+71_1180715,Scheduled,0,0,119,120,2026-12-05T00:30:00+00:00,W10=,Internacional,🇧🇷,Botafogo,🇧🇷,Serie A,Regular Season - 37,Estádio José Pinheiro Borda,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180716,Scheduled,0,0,135,121,2026-12-05T00:30:00+00:00,W10=,Cruzeiro,🇧🇷,Palmeiras,🟢,Serie A,Regular Season - 37,Estádio Governador Magalhães Pinto,"Belo Horizonte, Minas Gerais",Brésil
+71_1180723,Scheduled,0,0,144,154,2026-12-05T00:30:00+00:00,W10=,Atletico Goianiense,🇧🇷,Fortaleza EC,🇧🇷,Serie A,Regular Season - 37,Estádio Antônio Accioly,"Goiânia, Goiás",Brésil
+71_1180718,Scheduled,0,0,124,1193,2026-12-05T23:00:00+00:00,W10=,Fluminense,🇧🇷,Cuiaba,🇧🇷,Serie A,Regular Season - 37,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180722,Scheduled,0,0,134,794,2026-12-05T23:00:00+00:00,W10=,Atletico Paranaense,🇧🇷,RB Bragantino,🇧🇷,Serie A,Regular Season - 37,Ligga Arena,"Curitiba, Paraná",Brésil
+71_1180727,Scheduled,0,0,118,144,2026-12-08T19:00:00+00:00,W10=,Bahia,🇧🇷,Atletico Goianiense,🇧🇷,Serie A,Regular Season - 38,Arena Fonte Nova,"Salvador, Bahia",Brésil
+71_1180729,Scheduled,0,0,120,126,2026-12-08T19:00:00+00:00,W10=,Botafogo,🇧🇷,Sao Paulo,🔴⚪️⚫️,Serie A,Regular Season - 38,Estádio Nilton Santos,Rio de Janeiro,Brésil
+71_1180730,Scheduled,0,0,121,124,2026-12-08T19:00:00+00:00,W10=,Palmeiras,🟢,Fluminense,🇧🇷,Serie A,Regular Season - 38,Allianz Parque,"São Paulo, São Paulo",Brésil
+71_1180728,Scheduled,0,0,127,136,2026-12-08T19:00:00+00:00,W10=,Flamengo,🔴⚫️,Vitoria,🇧🇷,Serie A,Regular Season - 38,Estadio Jornalista Mário Filho,"Rio de Janeiro, Rio de Janeiro",Brésil
+71_1180725,Scheduled,0,0,130,131,2026-12-08T19:00:00+00:00,W10=,Gremio,🇧🇷,Corinthians,🇧🇷,Serie A,Regular Season - 38,Arena do Grêmio,"Porto Alegre, Rio Grande do Sul",Brésil
+71_1180734,Scheduled,0,0,152,135,2026-12-08T19:00:00+00:00,W10=,Juventude,🇧🇷,Cruzeiro,🇧🇷,Serie A,Regular Season - 38,Estádio Alfredo Jaconi,"Caxias do Sul, Rio Grande do Sul",Brésil
+71_1180732,Scheduled,0,0,154,119,2026-12-08T19:00:00+00:00,W10=,Fortaleza EC,🇧🇷,Internacional,🇧🇷,Serie A,Regular Season - 38,Estádio Governador Plácido Aderaldo Castelo,"Fortaleza, Ceará",Brésil
+71_1180731,Scheduled,0,0,794,140,2026-12-08T19:00:00+00:00,W10=,RB Bragantino,🇧🇷,Criciuma,🇧🇷,Serie A,Regular Season - 38,Estádio Nabi Abi Chedid,"Bragança Paulista, São Paulo",Brésil
+71_1180726,Scheduled,0,0,1062,134,2026-12-08T19:00:00+00:00,W10=,Atletico-MG,🇧🇷,Atletico Paranaense,🇧🇷,Serie A,Regular Season - 38,Arena MRV,"Belo Horizonte, Minas Gerais",Brésil
+71_1180733,Scheduled,0,0,1193,133,2026-12-08T19:00:00+00:00,W10=,Cuiaba,🇧🇷,Vasco DA Gama,🇧🇷,Serie A,Regular Season - 38,Arena Pantanal,"Cuiabá, Mato Grosso",Brésil
