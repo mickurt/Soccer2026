@@ -45,30 +45,30 @@ jobs:
           # 1. Coupe du Monde
           python3 update_scores.py --league WC2026 --live-loop
           
-          # 2. La Liga
-          git pull --rebase
-          python3 update_scores.py --league LALIGA --live-loop
+          # # 2. La Liga (Désactivé temporairement pour préserver la limite gratuite de l'API)
+          # git pull --rebase
+          # python3 update_scores.py --league LALIGA --live-loop
           
-          # 3. Serie A
-          git pull --rebase
-          python3 update_scores.py --league SERIEA --live-loop
+          # # 3. Serie A (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league SERIEA --live-loop
           
-          # 4. Bundesliga
-          git pull --rebase
-          python3 update_scores.py --league BUNDESLIGA --live-loop
+          # # 4. Bundesliga (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league BUNDESLIGA --live-loop
           
-          # 5. Champions League
-          git pull --rebase
-          python3 update_scores.py --league CL --live-loop
+          # # 5. Champions League (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league CL --live-loop
           
-          # 6. Premier League
-          git pull --rebase
-          python3 update_scores.py --league PL --live-loop
+          # # 6. Premier League (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league PL --live-loop
           
-          # 7. Ligue 1
-          git pull --rebase
-          python3 update_scores.py --league L1 --live-loop
+          # # 7. Ligue 1 (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league L1 --live-loop
           
-          # 8. Brasileirão
-          git pull --rebase
-          python3 update_scores.py --league BSA --live-loop
+          # # 8. Brasileirão (Désactivé temporairement)
+          # git pull --rebase
+          # python3 update_scores.py --league BSA --live-loop

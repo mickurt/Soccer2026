@@ -560,6 +560,15 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         kickoff_utc = fixture_obj.get("date")
         if kickoff_utc:
             kickoff_utc = kickoff_utc.replace("2024-", "2026-").replace("2025-", "2027-")
+            
+        # Dynamically set future matches (after virtual date July 2, 2026) as Scheduled
+        if kickoff_utc and kickoff_utc > "2026-07-02T08:00:00":
+            status = "Scheduled"
+            home_score = 0
+            away_score = 0
+            events_base64 = ""
+            # If the match was marked as finished in the raw API response but is in the future in 2026,
+            # we want to ensure it is Scheduled so users can make predictions.
         
         # Mapped events
         events_list = f.get("events") or []
