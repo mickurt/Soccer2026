@@ -1,1 +1,21 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
+Brasileirão Série A,1,Botafogo,120,38,23,10,5,79,59,29,30
+Brasileirão Série A,2,Palmeiras,121,38,22,7,9,73,60,33,27
+Brasileirão Série A,3,Flamengo,127,38,20,10,8,70,61,42,19
+Brasileirão Série A,4,Fortaleza EC,154,38,19,11,8,68,53,39,14
+Brasileirão Série A,5,Internacional,119,38,18,11,9,65,53,36,17
+Brasileirão Série A,6,Sao Paulo,126,38,17,8,13,59,53,43,10
+Brasileirão Série A,7,Corinthians,131,38,15,11,12,56,54,45,9
+Brasileirão Série A,8,Bahia,118,38,15,8,15,53,49,49,0
+Brasileirão Série A,9,Cruzeiro,135,38,14,10,14,52,43,41,2
+Brasileirão Série A,10,Vasco DA Gama,133,38,14,8,16,50,43,56,-13
+Brasileirão Série A,11,Vitoria,136,38,13,8,17,47,45,52,-7
+Brasileirão Série A,12,Atletico-MG,1062,38,11,14,13,47,47,54,-7
+Brasileirão Série A,13,Fluminense,124,38,12,10,16,46,33,39,-6
+Brasileirão Série A,14,Gremio,130,38,12,9,17,45,44,50,-6
+Brasileirão Série A,15,Juventude,152,38,11,12,15,45,48,59,-11
+Brasileirão Série A,16,RB Bragantino,794,38,10,14,14,44,44,48,-4
+Brasileirão Série A,17,Atletico Paranaense,134,38,11,9,18,42,40,46,-6
+Brasileirão Série A,18,Criciuma,140,38,9,11,18,38,42,61,-19
+Brasileirão Série A,19,Atletico Goianiense,144,38,7,9,22,30,29,58,-29
+Brasileirão Série A,20,Cuiaba,1193,38,6,12,20,30,29,49,-20
