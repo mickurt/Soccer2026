@@ -1,1 +1,19 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
+Bundesliga,1,Bayern München,157,34,25,7,2,82,99,32,67
+Bundesliga,2,Bayer Leverkusen,168,34,19,12,3,69,72,43,29
+Bundesliga,3,Eintracht Frankfurt,169,34,17,9,8,60,68,46,22
+Bundesliga,4,Borussia Dortmund,165,34,17,6,11,57,71,51,20
+Bundesliga,5,SC Freiburg,160,34,16,7,11,55,49,53,-4
+Bundesliga,6,FSV Mainz 05,164,34,14,10,10,52,55,43,12
+Bundesliga,7,RB Leipzig,173,34,13,12,9,51,53,48,5
+Bundesliga,8,Werder Bremen,162,34,14,9,11,51,54,57,-3
+Bundesliga,9,VfB Stuttgart,172,34,14,8,12,50,64,53,11
+Bundesliga,10,Borussia Mönchengladbach,163,34,13,6,15,45,55,57,-2
+Bundesliga,11,VfL Wolfsburg,161,34,11,10,13,43,56,54,2
+Bundesliga,12,FC Augsburg,170,34,11,10,13,43,35,51,-16
+Bundesliga,13,Union Berlin,182,34,10,10,14,40,35,51,-16
+Bundesliga,14,FC St. Pauli,186,34,8,8,18,32,28,41,-13
+Bundesliga,15,1899 Hoffenheim,167,34,7,11,16,32,46,68,-22
+Bundesliga,16,1. FC Heidenheim,180,34,8,5,21,29,37,64,-27
+Bundesliga,17,Holstein Kiel,191,34,6,7,21,25,49,80,-31
+Bundesliga,18,VfL Bochum,176,34,6,7,21,25,33,67,-34
