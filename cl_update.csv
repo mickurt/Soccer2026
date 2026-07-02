@@ -1,280 +1,280 @@
 id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc,events,home_team_name,home_team_emoji,away_team_name,away_team_emoji,stage,group_or_label,venue_name,venue_city,venue_country
-2_1208418,Scheduled,0,0,3874,649,2026-07-09T15:30:00+00:00,,Panevėžys,🇪🇺,HJK Helsinki,🇪🇺,UEFA Champions League,1st Qualifying Round,Aukštaitija stadionas,Panevėžys,Europe
-2_1208410,Scheduled,0,0,4626,667,2026-07-09T16:45:00+00:00,,Hamrun Spartans,🇪🇺,Lincoln Red Imps FC,🇪🇺,UEFA Champions League,1st Qualifying Round,MFA Centenary Stadium,Ta'Qali,Europe
-2_1208406,Scheduled,0,0,354,3745,2026-07-09T18:00:00+00:00,,The New Saints,🇪🇺,Dečić,🇪🇺,UEFA Champions League,1st Qualifying Round,Park Hall Stadium,"Oswestry / Croesoswallt, Shropshire",Europe
-2_1208412,Scheduled,0,0,703,12733,2026-07-09T18:00:00+00:00,,UE Santa Coloma,🇪🇺,Ballkani,🇪🇺,UEFA Champions League,1st Qualifying Round,Estadi Nacional,Andorra la Vella,Europe
-2_1208422,Scheduled,0,0,278,652,2026-07-09T18:45:00+00:00,,Vikingur Reykjavik,🇪🇺,Shamrock Rovers,🇪🇺,UEFA Champions League,1st Qualifying Round,Víkingsvöllur,Reykjavík,Europe
-2_1208424,Scheduled,0,0,5308,559,2026-07-09T19:00:00+00:00,,Virtus,🇪🇺,FCSB,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadio Olimpico di Serravalle,Serravalle,Europe
-2_1208428,Scheduled,0,0,692,2271,2026-07-10T15:00:00+00:00,,Ordabasy,🇪🇺,Petrocub,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Qajimuqan Muñaytpasov,Shymkent,Europe
-2_1208414,Scheduled,0,0,687,4360,2026-07-10T16:00:00+00:00,,Flora Tallinn,🇪🇺,Celje,🇪🇺,UEFA Champions League,1st Qualifying Round,A. Le Coq Arena,Tallinn,Europe
-2_1208404,Scheduled,0,0,656,4346,2026-07-10T17:00:00+00:00,,Slovan Bratislava,🇪🇺,Struga,🇪🇺,UEFA Champions League,1st Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
-2_1208420,Scheduled,0,0,4160,5354,2026-07-10T17:00:00+00:00,,Rīgas FS,🇪🇺,Larne,🇪🇺,UEFA Champions League,1st Qualifying Round,LNK Sporta Parks,Riga,Europe
-2_1208426,Scheduled,0,0,566,705,2026-07-10T18:00:00+00:00,,Ludogorets,🇪🇺,Dinamo Batumi,🇪🇺,UEFA Champions League,1st Qualifying Round,Huvepharma Arena,Razgrad,Europe
-2_1208416,Scheduled,0,0,701,684,2026-07-10T18:00:00+00:00,,KI Klaksvik,🇪🇺,FC Differdange 03,🇪🇺,UEFA Champions League,1st Qualifying Round,Við Djúpumýrar,"Klaksvík, Borðoy",Europe
-2_1208430,Scheduled,0,0,394,709,2026-07-10T18:45:00+00:00,,Dinamo Minsk,🇪🇺,Pyunik Yerevan,🇪🇺,UEFA Champions League,1st Qualifying Round,Városi Stadion,Mezőkövesd,Europe
-2_1208408,Scheduled,0,0,3364,3327,2026-07-10T19:00:00+00:00,,Borac Banja Luka,🇪🇺,Egnatia Rrogozhinë,🇪🇺,UEFA Champions League,1st Qualifying Round,Gradski Stadion,Banja Luka,Europe
-2_1208413,Scheduled,0,0,12733,703,2026-07-16T14:30:00+00:00,,Ballkani,🇪🇺,UE Santa Coloma,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadiumi Zahir Pajaziti,"Besiana, Podujevo",Europe
-2_1208419,Scheduled,0,0,649,3874,2026-07-16T16:00:00+00:00,,HJK Helsinki,🇪🇺,Panevėžys,🇪🇺,UEFA Champions League,1st Qualifying Round,Bolt Arena,Helsinki,Europe
-2_1208411,Scheduled,0,0,667,4626,2026-07-16T16:00:00+00:00,,Lincoln Red Imps FC,🇪🇺,Hamrun Spartans,🇪🇺,UEFA Champions League,1st Qualifying Round,Europa Point Stadium,Gibraltar,Europe
-2_1208431,Scheduled,0,0,709,394,2026-07-16T16:00:00+00:00,,Pyunik Yerevan,🇪🇺,Dinamo Minsk,🇪🇺,UEFA Champions League,1st Qualifying Round,Vazgen Sargsyan anvan Hanrapetakan Marzadasht,Yerevan,Europe
-2_1208415,Scheduled,0,0,4360,687,2026-07-16T17:00:00+00:00,,Celje,🇪🇺,Flora Tallinn,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Z'dežele,Celje,Europe
-2_1208425,Scheduled,0,0,559,5308,2026-07-16T17:30:00+00:00,,FCSB,🇪🇺,Virtus,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadionul Steaua,București,Europe
-2_1208423,Scheduled,0,0,652,278,2026-07-16T19:00:00+00:00,,Shamrock Rovers,🇪🇺,Vikingur Reykjavik,🇪🇺,UEFA Champions League,1st Qualifying Round,Tallaght Stadium,Dublin,Europe
-2_1208407,Scheduled,0,0,3745,354,2026-07-16T19:00:00+00:00,,Dečić,🇪🇺,The New Saints,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Pod Goricom,Podgorica,Europe
-2_1208405,Scheduled,0,0,4346,656,2026-07-17T15:00:00+00:00,,Struga,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Biljanini Izvori,Ohrid,Europe
-2_1208417,Scheduled,0,0,684,701,2026-07-17T17:00:00+00:00,,FC Differdange 03,🇪🇺,KI Klaksvik,🇪🇺,UEFA Champions League,1st Qualifying Round,Stade Parc des Sports,Differdange,Europe
-2_1208427,Scheduled,0,0,705,566,2026-07-17T17:00:00+00:00,,Dinamo Batumi,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,1st Qualifying Round,Batumi Arena,Batumi,Europe
-2_1208429,Scheduled,0,0,2271,692,2026-07-17T17:00:00+00:00,,Petrocub,🇪🇺,Ordabasy,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadionul Zimbru,Chişinău,Europe
-2_1208409,Scheduled,0,0,3327,3364,2026-07-17T19:00:00+00:00,,Egnatia Rrogozhinë,🇪🇺,Borac Banja Luka,🇪🇺,UEFA Champions League,1st Qualifying Round,Elbasan Arena,Elbasan,Europe
-2_1208421,Scheduled,0,0,5354,4160,2026-07-17T19:00:00+00:00,,Larne,🇪🇺,Rīgas FS,🇪🇺,UEFA Champions League,1st Qualifying Round,Inver Park,Larne,Europe
-2_1250485,Scheduled,0,0,327,4160,2026-07-23T15:00:00+00:00,,Bodo/Glimt,🇪🇺,Rīgas FS,🇪🇺,UEFA Champions League,2nd Qualifying Round,Aspmyra Stadion,Bodø,Europe
-2_1245606,Scheduled,0,0,3874,336,2026-07-23T15:30:00+00:00,,Panevėžys,🇪🇺,Jagiellonia,🇪🇺,UEFA Champions League,2nd Qualifying Round,Aukštaitija stadionas,Panevėžys,Europe
-2_1245598,Scheduled,0,0,667,556,2026-07-23T16:00:00+00:00,,Lincoln Red Imps FC,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,2nd Qualifying Round,Europa Point Stadium,Gibraltar,Europe
-2_1250489,Scheduled,0,0,375,701,2026-07-23T17:00:00+00:00,,Malmo FF,🇪🇺,KI Klaksvik,🇪🇺,UEFA Champions League,2nd Qualifying Round,Eleda Stadion,Malmö,Europe
-2_1250487,Scheduled,0,0,2247,2271,2026-07-23T17:00:00+00:00,,Apoel Nicosia,🇪🇺,Petrocub,🇪🇺,UEFA Champions League,2nd Qualifying Round,Neo GSP,Levkosía,Europe
-2_1245604,Scheduled,0,0,559,604,2026-07-23T17:30:00+00:00,,FCSB,🇪🇺,Maccabi Tel Aviv,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadionul Steaua,București,Europe
-2_1209237,Scheduled,0,0,572,573,2026-07-23T18:00:00+00:00,,Dynamo Kyiv,🇪🇺,FK Partizan,🇪🇺,UEFA Champions League,2nd Qualifying Round,Arena Lublin,Lublin,Europe
-2_1245608,Scheduled,0,0,651,354,2026-07-23T18:00:00+00:00,,Ferencvarosi TC,🇪🇺,The New Saints,🇪🇺,UEFA Champions League,2nd Qualifying Round,Groupama Aréna,Budapest,Europe
-2_1245602,Scheduled,0,0,703,397,2026-07-23T18:00:00+00:00,,UE Santa Coloma,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,2nd Qualifying Round,Estadi Nacional,Andorra la Vella,Europe
-2_1209235,Scheduled,0,0,606,611,2026-07-23T18:30:00+00:00,,FC Lugano,🇪🇺,Fenerbahçe,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stockhorn Arena,Thun,Europe
-2_1245600,Scheduled,0,0,652,628,2026-07-23T19:00:00+00:00,,Shamrock Rovers,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,2nd Qualifying Round,Tallaght Stadium,Dublin,Europe
-2_1250491,Scheduled,0,0,619,3364,2026-07-24T17:30:00+00:00,,PAOK,🇪🇺,Borac Banja Luka,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadio Toumbas,Thessaloníki,Europe
-2_1250481,Scheduled,0,0,566,394,2026-07-24T18:00:00+00:00,,Ludogorets,🇪🇺,Dinamo Minsk,🇪🇺,UEFA Champions League,2nd Qualifying Round,Huvepharma Arena,Razgrad,Europe
-2_1250483,Scheduled,0,0,4360,656,2026-07-24T18:15:00+00:00,,Celje,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Z'dežele,Celje,Europe
-2_1245599,Scheduled,0,0,556,667,2026-07-30T16:00:00+00:00,,Qarabag,🇪🇺,Lincoln Red Imps FC,🇪🇺,UEFA Champions League,2nd Qualifying Round,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
-2_1209236,Scheduled,0,0,611,606,2026-07-30T17:00:00+00:00,,Fenerbahçe,🇪🇺,FC Lugano,🇪🇺,UEFA Champions League,2nd Qualifying Round,Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi,İstanbul,Europe
-2_1245601,Scheduled,0,0,628,652,2026-07-30T17:00:00+00:00,,Sparta Praha,🇪🇺,Shamrock Rovers,🇪🇺,UEFA Champions League,2nd Qualifying Round,epet ARENA,Praha,Europe
-2_1250488,Scheduled,0,0,2271,2247,2026-07-30T17:00:00+00:00,,Petrocub,🇪🇺,Apoel Nicosia,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadionul Zimbru,Chişinău,Europe
-2_1245609,Scheduled,0,0,354,651,2026-07-30T18:00:00+00:00,,The New Saints,🇪🇺,Ferencvarosi TC,🇪🇺,UEFA Champions League,2nd Qualifying Round,Park Hall Stadium,"Oswestry / Croesoswallt, Shropshire",Europe
-2_1250484,Scheduled,0,0,656,4360,2026-07-30T18:30:00+00:00,,Slovan Bratislava,🇪🇺,Celje,🇪🇺,UEFA Champions League,2nd Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
-2_1250490,Scheduled,0,0,701,375,2026-07-30T18:45:00+00:00,,KI Klaksvik,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,2nd Qualifying Round,Við Djúpumýrar,"Klaksvík, Borðoy",Europe
-2_1250486,Scheduled,0,0,4160,327,2026-07-31T17:00:00+00:00,,Rīgas FS,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,2nd Qualifying Round,LNK Sporta Parks,Riga,Europe
-2_1245603,Scheduled,0,0,397,703,2026-07-31T17:15:00+00:00,,FC Midtjylland,🇪🇺,UE Santa Coloma,🇪🇺,UEFA Champions League,2nd Qualifying Round,MCH Arena,Herning,Europe
-2_1209238,Scheduled,0,0,573,572,2026-07-31T18:00:00+00:00,,FK Partizan,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Partizana,Beograd,Europe
-2_1245605,Scheduled,0,0,604,559,2026-07-31T18:00:00+00:00,,Maccabi Tel Aviv,🇪🇺,FCSB,🇪🇺,UEFA Champions League,2nd Qualifying Round,Bozsik Aréna,Budapest,Europe
-2_1245607,Scheduled,0,0,336,3874,2026-07-31T18:30:00+00:00,,Jagiellonia,🇪🇺,Panevėžys,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Miejski,Białystok,Europe
-2_1250482,Scheduled,0,0,394,566,2026-07-31T18:45:00+00:00,,Dinamo Minsk,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,2nd Qualifying Round,Városi Stadion,Mezőkövesd,Europe
-2_1250492,Scheduled,0,0,3364,619,2026-07-31T19:00:00+00:00,,Borac Banja Luka,🇪🇺,PAOK,🇪🇺,UEFA Champions League,2nd Qualifying Round,Gradski Stadion,Banja Luka,Europe
-2_1273677,Scheduled,0,0,556,566,2026-08-06T16:00:00+00:00,,Qarabag,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,3rd Qualifying Round,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
-2_1273681,Scheduled,0,0,375,619,2026-08-06T17:00:00+00:00,,Malmo FF,🇪🇺,PAOK,🇪🇺,UEFA Champions League,3rd Qualifying Round,Eleda Stadion,Malmö,Europe
-2_1273683,Scheduled,0,0,397,651,2026-08-06T17:15:00+00:00,,FC Midtjylland,🇪🇺,Ferencvarosi TC,🇪🇺,UEFA Champions League,3rd Qualifying Round,MCH Arena,Herning,Europe
-2_1273687,Scheduled,0,0,572,257,2026-08-06T18:00:00+00:00,,Dynamo Kyiv,🇪🇺,Rangers,🇪🇺,UEFA Champions League,3rd Qualifying Round,Arena Lublin,Lublin,Europe
-2_1273679,Scheduled,0,0,628,559,2026-08-06T18:00:00+00:00,,Sparta Praha,🇪🇺,FCSB,🇪🇺,UEFA Champions League,3rd Qualifying Round,epet ARENA,Praha,Europe
-2_1271720,Scheduled,0,0,79,611,2026-08-06T18:30:00+00:00,,Lille,🇪🇺,Fenerbahçe,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stade du Hainaut,Valenciennes,Europe
-2_1253319,Scheduled,0,0,571,415,2026-08-06T18:45:00+00:00,,Red Bull Salzburg,🇪🇺,Twente,🇪🇺,UEFA Champions League,3rd Qualifying Round,Red Bull Arena,Wals-Siezenheim,Europe
-2_1253317,Scheduled,0,0,560,1393,2026-08-07T17:00:00+00:00,,Slavia Praha,🇪🇺,Union St. Gilloise,🇪🇺,UEFA Champions League,3rd Qualifying Round,Fortuna Arena,Praha,Europe
-2_1271718,Scheduled,0,0,656,2247,2026-08-07T18:30:00+00:00,,Slovan Bratislava,🇪🇺,Apoel Nicosia,🇪🇺,UEFA Champions League,3rd Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
-2_1273685,Scheduled,0,0,336,327,2026-08-07T18:45:00+00:00,,Jagiellonia,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadion Miejski,Białystok,Europe
-2_1273686,Scheduled,0,0,327,336,2026-08-13T17:00:00+00:00,,Bodo/Glimt,🇪🇺,Jagiellonia,🇪🇺,UEFA Champions League,3rd Qualifying Round,Aspmyra Stadion,Bodø,Europe
-2_1253320,Scheduled,0,0,415,571,2026-08-13T17:00:00+00:00,,Twente,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,3rd Qualifying Round,De Grolsch Veste,Enschede,Europe
-2_1271721,Scheduled,0,0,611,79,2026-08-13T17:00:00+00:00,,Fenerbahçe,🇪🇺,Lille,🇪🇺,UEFA Champions League,3rd Qualifying Round,Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi,İstanbul,Europe
-2_1271719,Scheduled,0,0,2247,656,2026-08-13T17:00:00+00:00,,Apoel Nicosia,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,3rd Qualifying Round,Neo GSP,Levkosía,Europe
-2_1273682,Scheduled,0,0,619,375,2026-08-13T17:30:00+00:00,,PAOK,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadio Toumbas,Thessaloníki,Europe
-2_1273678,Scheduled,0,0,566,556,2026-08-13T18:00:00+00:00,,Ludogorets,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,3rd Qualifying Round,Huvepharma Arena,Razgrad,Europe
-2_1273684,Scheduled,0,0,651,397,2026-08-13T18:00:00+00:00,,Ferencvarosi TC,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,3rd Qualifying Round,Groupama Aréna,Budapest,Europe
-2_1273680,Scheduled,0,0,559,628,2026-08-13T18:30:00+00:00,,FCSB,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadionul Steaua,București,Europe
-2_1253318,Scheduled,0,0,1393,560,2026-08-13T18:30:00+00:00,,Union St. Gilloise,🇪🇺,Slavia Praha,🇪🇺,UEFA Champions League,3rd Qualifying Round,Lotto Park,Brussel,Europe
-2_1273688,Scheduled,0,0,257,572,2026-08-13T18:45:00+00:00,,Rangers,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,3rd Qualifying Round,Hampden Park,Glasgow,Europe
-2_1286255,Scheduled,0,0,79,560,2026-08-20T19:00:00+00:00,,Lille,🇪🇺,Slavia Praha,🇪🇺,UEFA Champions League,Play-offs,Stade du Hainaut,Valenciennes,Europe
-2_1286251,Scheduled,0,0,327,598,2026-08-20T19:00:00+00:00,,Bodo/Glimt,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,Play-offs,Aspmyra Stadion,Bodø,Europe
-2_1286247,Scheduled,0,0,620,556,2026-08-20T19:00:00+00:00,,Dinamo Zagreb,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,Play-offs,Stadion Maksimir,Zagreb,Europe
-2_1286253,Scheduled,0,0,375,628,2026-08-21T19:00:00+00:00,,Malmo FF,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,Play-offs,Eleda Stadion,Malmö,Europe
-2_1286249,Scheduled,0,0,397,656,2026-08-21T19:00:00+00:00,,FC Midtjylland,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,Play-offs,MCH Arena,Herning,Europe
-2_1280666,Scheduled,0,0,565,645,2026-08-21T19:00:00+00:00,,BSC Young Boys,🇪🇺,Galatasaray,🇪🇺,UEFA Champions League,Play-offs,Stadion Wankdorf,Bern,Europe
-2_1286257,Scheduled,0,0,572,571,2026-08-21T19:00:00+00:00,,Dynamo Kyiv,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,Play-offs,Arena Lublin,Lublin,Europe
-2_1286258,Scheduled,0,0,571,572,2026-08-27T19:00:00+00:00,,Red Bull Salzburg,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,Play-offs,Red Bull Arena,Wals-Siezenheim,Europe
-2_1286254,Scheduled,0,0,628,375,2026-08-27T19:00:00+00:00,,Sparta Praha,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,Play-offs,epet ARENA,Praha,Europe
-2_1280667,Scheduled,0,0,645,565,2026-08-27T19:00:00+00:00,,Galatasaray,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,Play-offs,RAMS Park,İstanbul,Europe
-2_1286248,Scheduled,0,0,556,620,2026-08-28T16:45:00+00:00,,Qarabag,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,Play-offs,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
-2_1286256,Scheduled,0,0,560,79,2026-08-28T19:00:00+00:00,,Slavia Praha,🇪🇺,Lille,🇪🇺,UEFA Champions League,Play-offs,Fortuna Arena,Praha,Europe
-2_1286252,Scheduled,0,0,598,327,2026-08-28T19:00:00+00:00,,FK Crvena Zvezda,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,Play-offs,Stadion Rajko Mitić,Beograd,Europe
-2_1286250,Scheduled,0,0,656,397,2026-08-28T19:00:00+00:00,,Slovan Bratislava,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,Play-offs,Štadión Tehelné pole,Bratislava,Europe
-2_1298984,Scheduled,0,0,496,197,2026-09-17T16:45:00+00:00,,Juventus,⚪️⚫️,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 1,Allianz Stadium,Torino,Europe
-2_1298985,Scheduled,0,0,565,66,2026-09-17T16:45:00+00:00,,BSC Young Boys,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Wankdorf,Bern,Europe
-2_1298986,Scheduled,0,0,157,620,2026-09-17T19:00:00+00:00,,Bayern München,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 1,Allianz Arena,München,Europe
-2_1298988,Scheduled,0,0,228,79,2026-09-17T19:00:00+00:00,,Sporting CP,🇪🇺,Lille,🇪🇺,UEFA Champions League,League Stage - 1,Estádio José Alvalade,Lisboa,Europe
-2_1298987,Scheduled,0,0,489,40,2026-09-17T19:00:00+00:00,,AC Milan,🔴⚫️,Liverpool,🔴,UEFA Champions League,League Stage - 1,Stadio Giuseppe Meazza,Milano,Europe
-2_1298989,Scheduled,0,0,541,172,2026-09-17T19:00:00+00:00,,Real Madrid,⚪️,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 1,Estadio Santiago Bernabéu,Madrid,Europe
-2_1298990,Scheduled,0,0,500,550,2026-09-18T16:45:00+00:00,,Bologna,🇪🇺,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 1,Stadio Renato Dall'Ara,Bologna,Europe
-2_1298991,Scheduled,0,0,628,571,2026-09-18T16:45:00+00:00,,Sparta Praha,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 1,epet ARENA,Praha,Europe
-2_1298994,Scheduled,0,0,50,505,2026-09-18T19:00:00+00:00,,Manchester City,🔵,Inter,🔵⚫️,UEFA Champions League,League Stage - 1,Etihad Stadium,Manchester,Europe
-2_1298995,Scheduled,0,0,85,547,2026-09-18T19:00:00+00:00,,Paris Saint Germain,🔵🔴,Girona,🇪🇺,UEFA Champions League,League Stage - 1,Parc des Princes,Paris,Europe
-2_1298992,Scheduled,0,0,247,656,2026-09-18T19:00:00+00:00,,Celtic,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 1,Celtic Park,Glasgow,Europe
-2_1298993,Scheduled,0,0,569,165,2026-09-18T19:00:00+00:00,,Club Brugge KV,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 1,Jan Breydelstadion,Brugge,Europe
-2_1298997,Scheduled,0,0,209,168,2026-09-19T16:45:00+00:00,,Feyenoord,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Feijenoord,Rotterdam,Europe
-2_1298996,Scheduled,0,0,598,211,2026-09-19T16:45:00+00:00,,FK Crvena Zvezda,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Rajko Mitić,Beograd,Europe
-2_1299001,Scheduled,0,0,91,529,2026-09-19T19:00:00+00:00,,Monaco,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 1,Stade Louis-II,Monaco,Europe
-2_1299000,Scheduled,0,0,106,637,2026-09-19T19:00:00+00:00,,Stade Brestois 29,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 1,Stade du Roudourou,Guingamp,Europe
-2_1298998,Scheduled,0,0,499,42,2026-09-19T19:00:00+00:00,,Atalanta,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 1,Gewiss Stadium,Bergamo,Europe
-2_1298999,Scheduled,0,0,530,173,2026-09-19T19:00:00+00:00,,Atletico Madrid,🔴⚪️,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 1,Estádio Cívitas Metropolitano,Madrid,Europe
-2_1299003,Scheduled,0,0,172,628,2026-10-01T16:45:00+00:00,,VfB Stuttgart,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 2,MHPArena,Stuttgart,Europe
-2_1299002,Scheduled,0,0,571,106,2026-10-01T16:45:00+00:00,,Red Bull Salzburg,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 2,Red Bull Arena,Wals-Siezenheim,Europe
-2_1299010,Scheduled,0,0,42,85,2026-10-01T19:00:00+00:00,,Arsenal,🔴⚪️,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 2,Emirates Stadium,London,Europe
-2_1299006,Scheduled,0,0,165,247,2026-10-01T19:00:00+00:00,,Borussia Dortmund,🟡,Celtic,🇪🇺,UEFA Champions League,League Stage - 2,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1299005,Scheduled,0,0,168,489,2026-10-01T19:00:00+00:00,,Bayer Leverkusen,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 2,BayArena,Leverkusen,Europe
-2_1299008,Scheduled,0,0,197,228,2026-10-01T19:00:00+00:00,,PSV Eindhoven,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 2,Philips Stadion,Eindhoven,Europe
-2_1299007,Scheduled,0,0,505,598,2026-10-01T19:00:00+00:00,,Inter,🔵⚫️,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 2,Stadio Giuseppe Meazza,Milano,Europe
-2_1299004,Scheduled,0,0,529,565,2026-10-01T19:00:00+00:00,,Barcelona,🔵🔴,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 2,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1299009,Scheduled,0,0,656,50,2026-10-01T19:00:00+00:00,,Slovan Bratislava,🇪🇺,Manchester City,🔵,UEFA Champions League,League Stage - 2,Štadión Tehelné pole,Bratislava,Europe
-2_1299011,Scheduled,0,0,547,209,2026-10-02T16:45:00+00:00,,Girona,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 2,Estadi Municipal de Montilivi,Girona,Europe
-2_1299012,Scheduled,0,0,550,499,2026-10-02T16:45:00+00:00,,Shakhtar Donetsk,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 2,VELTINS-Arena,Gelsenkirchen,Europe
-2_1299017,Scheduled,0,0,40,500,2026-10-02T19:00:00+00:00,,Liverpool,🔴,Bologna,🇪🇺,UEFA Champions League,League Stage - 2,Anfield,Liverpool,Europe
-2_1299013,Scheduled,0,0,66,157,2026-10-02T19:00:00+00:00,,Aston Villa,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 2,Villa Park,Birmingham,Europe
-2_1299016,Scheduled,0,0,79,541,2026-10-02T19:00:00+00:00,,Lille,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 2,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
-2_1299018,Scheduled,0,0,173,496,2026-10-02T19:00:00+00:00,,RB Leipzig,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 2,Red Bull Arena,Leipzig,Europe
-2_1299014,Scheduled,0,0,211,530,2026-10-02T19:00:00+00:00,,Benfica,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 2,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1299015,Scheduled,0,0,620,91,2026-10-02T19:00:00+00:00,,Dinamo Zagreb,🇪🇺,Monaco,🇪🇺,UEFA Champions League,League Stage - 2,Stadion Maksimir,Zagreb,Europe
-2_1299019,Scheduled,0,0,637,569,2026-10-02T19:00:00+00:00,,Sturm Graz,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 2,28 Black Arena,Klagenfurt am Wörthersee,Europe
-2_1299021,Scheduled,0,0,91,598,2026-10-22T16:45:00+00:00,,Monaco,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 3,Stade Louis-II,Monaco,Europe
-2_1299020,Scheduled,0,0,489,569,2026-10-22T16:45:00+00:00,,AC Milan,🔴⚫️,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 3,Stadio Giuseppe Meazza,Milano,Europe
-2_1299027,Scheduled,0,0,42,550,2026-10-22T19:00:00+00:00,,Arsenal,🔴⚪️,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 3,Emirates Stadium,London,Europe
-2_1299022,Scheduled,0,0,66,500,2026-10-22T19:00:00+00:00,,Aston Villa,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 3,Villa Park,Birmingham,Europe
-2_1299025,Scheduled,0,0,85,197,2026-10-22T19:00:00+00:00,,Paris Saint Germain,🔵🔴,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 3,Parc des Princes,Paris,Europe
-2_1299024,Scheduled,0,0,496,172,2026-10-22T19:00:00+00:00,,Juventus,⚪️⚫️,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 3,Allianz Stadium,Torino,Europe
-2_1299028,Scheduled,0,0,541,165,2026-10-22T19:00:00+00:00,,Real Madrid,⚪️,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 3,Estadio Santiago Bernabéu,Madrid,Europe
-2_1299023,Scheduled,0,0,547,656,2026-10-22T19:00:00+00:00,,Girona,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 3,Estadi Municipal de Montilivi,Girona,Europe
-2_1299026,Scheduled,0,0,637,228,2026-10-22T19:00:00+00:00,,Sturm Graz,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 3,28 Black Arena,Klagenfurt am Wörthersee,Europe
-2_1299030,Scheduled,0,0,106,168,2026-10-23T16:45:00+00:00,,Stade Brestois 29,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 3,Stade du Roudourou,Guingamp,Europe
-2_1299029,Scheduled,0,0,499,247,2026-10-23T16:45:00+00:00,,Atalanta,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 3,Gewiss Stadium,Bergamo,Europe
-2_1299035,Scheduled,0,0,50,628,2026-10-23T19:00:00+00:00,,Manchester City,🔵,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 3,Etihad Stadium,Manchester,Europe
-2_1299036,Scheduled,0,0,173,40,2026-10-23T19:00:00+00:00,,RB Leipzig,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 3,Red Bull Arena,Leipzig,Europe
-2_1299033,Scheduled,0,0,211,209,2026-10-23T19:00:00+00:00,,Benfica,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 3,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1299032,Scheduled,0,0,529,157,2026-10-23T19:00:00+00:00,,Barcelona,🔵🔴,Bayern München,🇪🇺,UEFA Champions League,League Stage - 3,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1299031,Scheduled,0,0,530,79,2026-10-23T19:00:00+00:00,,Atletico Madrid,🔴⚪️,Lille,🇪🇺,UEFA Champions League,League Stage - 3,Riyadh Air Metropolitano,Madrid,Europe
-2_1299037,Scheduled,0,0,565,505,2026-10-23T19:00:00+00:00,,BSC Young Boys,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 3,Stadion Wankdorf,Bern,Europe
-2_1299034,Scheduled,0,0,571,620,2026-10-23T19:00:00+00:00,,Red Bull Salzburg,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 3,Red Bull Arena,Wals-Siezenheim,Europe
-2_1299038,Scheduled,0,0,197,547,2026-11-05T17:45:00+00:00,,PSV Eindhoven,🇪🇺,Girona,🇪🇺,UEFA Champions League,League Stage - 4,Philips Stadion,Eindhoven,Europe
-2_1299039,Scheduled,0,0,656,620,2026-11-05T17:45:00+00:00,,Slovan Bratislava,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 4,Štadión Tehelné pole,Bratislava,Europe
-2_1299044,Scheduled,0,0,40,168,2026-11-05T20:00:00+00:00,,Liverpool,🔴,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 4,Anfield,Liverpool,Europe
-2_1299043,Scheduled,0,0,79,496,2026-11-05T20:00:00+00:00,,Lille,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 4,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
-2_1299041,Scheduled,0,0,165,637,2026-11-05T20:00:00+00:00,,Borussia Dortmund,🟡,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 4,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1299045,Scheduled,0,0,228,50,2026-11-05T20:00:00+00:00,,Sporting CP,🇪🇺,Manchester City,🔵,UEFA Champions League,League Stage - 4,Estádio José Alvalade,Lisboa,Europe
-2_1299042,Scheduled,0,0,247,173,2026-11-05T20:00:00+00:00,,Celtic,🇪🇺,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 4,Celtic Park,Glasgow,Europe
-2_1299040,Scheduled,0,0,500,91,2026-11-05T20:00:00+00:00,,Bologna,🇪🇺,Monaco,🇪🇺,UEFA Champions League,League Stage - 4,Stadio Renato Dall'Ara,Bologna,Europe
-2_1299046,Scheduled,0,0,541,489,2026-11-05T20:00:00+00:00,,Real Madrid,⚪️,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 4,Estadio Santiago Bernabéu,Madrid,Europe
-2_1299048,Scheduled,0,0,550,565,2026-11-06T17:45:00+00:00,,Shakhtar Donetsk,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 4,VELTINS-Arena,Gelsenkirchen,Europe
-2_1299047,Scheduled,0,0,569,66,2026-11-06T17:45:00+00:00,,Club Brugge KV,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 4,Jan Breydelstadion,Brugge,Europe
-2_1299053,Scheduled,0,0,85,530,2026-11-06T20:00:00+00:00,,Paris Saint Germain,🔵🔴,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 4,Parc des Princes,Paris,Europe
-2_1299050,Scheduled,0,0,157,211,2026-11-06T20:00:00+00:00,,Bayern München,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 4,Allianz Arena,München,Europe
-2_1299055,Scheduled,0,0,172,499,2026-11-06T20:00:00+00:00,,VfB Stuttgart,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 4,MHPArena,Stuttgart,Europe
-2_1299051,Scheduled,0,0,209,571,2026-11-06T20:00:00+00:00,,Feyenoord,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 4,Stadion Feijenoord,Rotterdam,Europe
-2_1299052,Scheduled,0,0,505,42,2026-11-06T20:00:00+00:00,,Inter,🔵⚫️,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 4,Stadio Giuseppe Meazza,Milano,Europe
-2_1299049,Scheduled,0,0,598,529,2026-11-06T20:00:00+00:00,,FK Crvena Zvezda,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 4,Stadion Rajko Mitić,Beograd,Europe
-2_1299054,Scheduled,0,0,628,106,2026-11-06T20:00:00+00:00,,Sparta Praha,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 4,epet ARENA,Praha,Europe
-2_1299057,Scheduled,0,0,628,530,2026-11-26T17:45:00+00:00,,Sparta Praha,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 5,epet ARENA,Praha,Europe
-2_1299056,Scheduled,0,0,656,489,2026-11-26T17:45:00+00:00,,Slovan Bratislava,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 5,Štadión Tehelné pole,Bratislava,Europe
-2_1299062,Scheduled,0,0,50,209,2026-11-26T20:00:00+00:00,,Manchester City,🔵,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 5,Etihad Stadium,Manchester,Europe
-2_1299060,Scheduled,0,0,157,85,2026-11-26T20:00:00+00:00,,Bayern München,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 5,Allianz Arena,München,Europe
-2_1299059,Scheduled,0,0,168,571,2026-11-26T20:00:00+00:00,,Bayer Leverkusen,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 5,BayArena,Leverkusen,Europe
-2_1299063,Scheduled,0,0,228,42,2026-11-26T20:00:00+00:00,,Sporting CP,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 5,Estádio José Alvalade,Lisboa,Europe
-2_1299061,Scheduled,0,0,505,173,2026-11-26T20:00:00+00:00,,Inter,🔵⚫️,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 5,Stadio Giuseppe Meazza,Milano,Europe
-2_1299058,Scheduled,0,0,529,106,2026-11-26T20:00:00+00:00,,Barcelona,🔵🔴,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 5,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1299064,Scheduled,0,0,565,499,2026-11-26T20:00:00+00:00,,BSC Young Boys,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 5,Stadion Wankdorf,Bern,Europe
-2_1299065,Scheduled,0,0,598,172,2026-11-27T17:45:00+00:00,,FK Crvena Zvezda,🇪🇺,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 5,Stadion Rajko Mitić,Beograd,Europe
-2_1299066,Scheduled,0,0,637,547,2026-11-27T17:45:00+00:00,,Sturm Graz,🇪🇺,Girona,🇪🇺,UEFA Champions League,League Stage - 5,28 Black Arena,Klagenfurt am Wörthersee,Europe
-2_1299071,Scheduled,0,0,40,541,2026-11-27T20:00:00+00:00,,Liverpool,🔴,Real Madrid,⚪️,UEFA Champions League,League Stage - 5,Anfield,Liverpool,Europe
-2_1299067,Scheduled,0,0,66,496,2026-11-27T20:00:00+00:00,,Aston Villa,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 5,Villa Park,Birmingham,Europe
-2_1299072,Scheduled,0,0,91,211,2026-11-27T20:00:00+00:00,,Monaco,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 5,Stade Louis-II,Monaco,Europe
-2_1299073,Scheduled,0,0,197,550,2026-11-27T20:00:00+00:00,,PSV Eindhoven,🇪🇺,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 5,Philips Stadion,Eindhoven,Europe
-2_1299069,Scheduled,0,0,247,569,2026-11-27T20:00:00+00:00,,Celtic,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 5,Celtic Park,Glasgow,Europe
-2_1299068,Scheduled,0,0,500,79,2026-11-27T20:00:00+00:00,,Bologna,🇪🇺,Lille,🇪🇺,UEFA Champions League,League Stage - 5,Stadio Renato Dall'Ara,Bologna,Europe
-2_1299070,Scheduled,0,0,620,165,2026-11-27T20:00:00+00:00,,Dinamo Zagreb,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 5,Stadion Maksimir,Zagreb,Europe
-2_1299075,Scheduled,0,0,547,40,2026-12-10T17:45:00+00:00,,Girona,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 6,Estadi Municipal de Montilivi,Girona,Europe
-2_1299074,Scheduled,0,0,620,247,2026-12-10T17:45:00+00:00,,Dinamo Zagreb,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 6,Stadion Maksimir,Zagreb,Europe
-2_1299078,Scheduled,0,0,106,197,2026-12-10T20:00:00+00:00,,Stade Brestois 29,🇪🇺,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 6,Stade du Roudourou,Guingamp,Europe
-2_1299077,Scheduled,0,0,168,505,2026-12-10T20:00:00+00:00,,Bayer Leverkusen,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 6,BayArena,Leverkusen,Europe
-2_1299081,Scheduled,0,0,173,66,2026-12-10T20:00:00+00:00,,RB Leipzig,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 6,Red Bull Arena,Leipzig,Europe
-2_1299076,Scheduled,0,0,499,541,2026-12-10T20:00:00+00:00,,Atalanta,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 6,Gewiss Stadium,Bergamo,Europe
-2_1299082,Scheduled,0,0,550,157,2026-12-10T20:00:00+00:00,,Shakhtar Donetsk,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 6,VELTINS-Arena,Gelsenkirchen,Europe
-2_1299079,Scheduled,0,0,569,228,2026-12-10T20:00:00+00:00,,Club Brugge KV,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 6,Jan Breydelstadion,Brugge,Europe
-2_1299080,Scheduled,0,0,571,85,2026-12-10T20:00:00+00:00,,Red Bull Salzburg,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 6,Red Bull Arena,Wals-Siezenheim,Europe
-2_1299084,Scheduled,0,0,79,637,2026-12-11T17:45:00+00:00,,Lille,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 6,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
-2_1299083,Scheduled,0,0,530,656,2026-12-11T17:45:00+00:00,,Atletico Madrid,🔴⚪️,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 6,Riyadh Air Metropolitano,Madrid,Europe
-2_1299091,Scheduled,0,0,42,91,2026-12-11T20:00:00+00:00,,Arsenal,🔴⚪️,Monaco,🇪🇺,UEFA Champions League,League Stage - 6,Emirates Stadium,London,Europe
-2_1299086,Scheduled,0,0,165,529,2026-12-11T20:00:00+00:00,,Borussia Dortmund,🟡,Barcelona,🔵🔴,UEFA Champions League,League Stage - 6,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1299090,Scheduled,0,0,172,565,2026-12-11T20:00:00+00:00,,VfB Stuttgart,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 6,MHPArena,Stuttgart,Europe
-2_1299087,Scheduled,0,0,209,628,2026-12-11T20:00:00+00:00,,Feyenoord,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 6,Stadion Feijenoord,Rotterdam,Europe
-2_1299085,Scheduled,0,0,211,500,2026-12-11T20:00:00+00:00,,Benfica,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 6,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1299089,Scheduled,0,0,489,598,2026-12-11T20:00:00+00:00,,AC Milan,🔴⚫️,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 6,Stadio Giuseppe Meazza,Milano,Europe
-2_1299088,Scheduled,0,0,496,50,2026-12-11T20:00:00+00:00,,Juventus,⚪️⚫️,Manchester City,🔵,UEFA Champions League,League Stage - 6,Allianz Stadium,Torino,Europe
-2_1299093,Scheduled,0,0,91,66,2027-01-21T17:45:00+00:00,,Monaco,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 7,Stade Louis-II,Monaco,Europe
-2_1299092,Scheduled,0,0,499,637,2027-01-21T17:45:00+00:00,,Atalanta,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 7,Gewiss Stadium,Bergamo,Europe
-2_1299099,Scheduled,0,0,40,79,2027-01-21T20:00:00+00:00,,Liverpool,🔴,Lille,🇪🇺,UEFA Champions League,League Stage - 7,Anfield,Liverpool,Europe
-2_1299095,Scheduled,0,0,211,529,2027-01-21T20:00:00+00:00,,Benfica,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 7,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1299096,Scheduled,0,0,500,165,2027-01-21T20:00:00+00:00,,Bologna,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 7,Stadio Renato Dall'Ara,Bologna,Europe
-2_1299094,Scheduled,0,0,530,168,2027-01-21T20:00:00+00:00,,Atletico Madrid,🔴⚪️,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 7,Riyadh Air Metropolitano,Madrid,Europe
-2_1299097,Scheduled,0,0,569,496,2027-01-21T20:00:00+00:00,,Club Brugge KV,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 7,Jan Breydelstadion,Brugge,Europe
-2_1299098,Scheduled,0,0,598,197,2027-01-21T20:00:00+00:00,,FK Crvena Zvezda,🇪🇺,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 7,Stadion Rajko Mitić,Beograd,Europe
-2_1299100,Scheduled,0,0,656,172,2027-01-21T20:00:00+00:00,,Slovan Bratislava,🇪🇺,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 7,Štadión Tehelné pole,Bratislava,Europe
-2_1299101,Scheduled,0,0,173,228,2027-01-22T17:45:00+00:00,,RB Leipzig,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 7,Red Bull Arena,Leipzig,Europe
-2_1299102,Scheduled,0,0,550,106,2027-01-22T17:45:00+00:00,,Shakhtar Donetsk,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 7,VELTINS-Arena,Gelsenkirchen,Europe
-2_1299108,Scheduled,0,0,42,620,2027-01-22T20:00:00+00:00,,Arsenal,🔴⚪️,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 7,Emirates Stadium,London,Europe
-2_1299106,Scheduled,0,0,85,50,2027-01-22T20:00:00+00:00,,Paris Saint Germain,🔵🔴,Manchester City,🔵,UEFA Champions League,League Stage - 7,Parc des Princes,Paris,Europe
-2_1299104,Scheduled,0,0,209,157,2027-01-22T20:00:00+00:00,,Feyenoord,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 7,Stadion Feijenoord,Rotterdam,Europe
-2_1299103,Scheduled,0,0,247,565,2027-01-22T20:00:00+00:00,,Celtic,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 7,Celtic Park,Glasgow,Europe
-2_1299105,Scheduled,0,0,489,547,2027-01-22T20:00:00+00:00,,AC Milan,🔴⚫️,Girona,🇪🇺,UEFA Champions League,League Stage - 7,Stadio Giuseppe Meazza,Milano,Europe
-2_1299109,Scheduled,0,0,541,571,2027-01-22T20:00:00+00:00,,Real Madrid,⚪️,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 7,Estadio Santiago Bernabéu,Madrid,Europe
-2_1299107,Scheduled,0,0,628,505,2027-01-22T20:00:00+00:00,,Sparta Praha,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 7,epet ARENA,Praha,Europe
-2_1299122,Scheduled,0,0,50,569,2027-01-29T20:00:00+00:00,,Manchester City,🔵,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 8,Etihad Stadium,Manchester,Europe
-2_1299110,Scheduled,0,0,66,247,2027-01-29T20:00:00+00:00,,Aston Villa,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 8,Villa Park,Birmingham,Europe
-2_1299121,Scheduled,0,0,79,209,2027-01-29T20:00:00+00:00,,Lille,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 8,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
-2_1299114,Scheduled,0,0,106,541,2027-01-29T20:00:00+00:00,,Stade Brestois 29,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 8,Stade du Roudourou,Guingamp,Europe
-2_1299116,Scheduled,0,0,157,656,2027-01-29T20:00:00+00:00,,Bayern München,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 8,Allianz Arena,München,Europe
-2_1299113,Scheduled,0,0,165,550,2027-01-29T20:00:00+00:00,,Borussia Dortmund,🟡,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 8,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1299112,Scheduled,0,0,168,628,2027-01-29T20:00:00+00:00,,Bayer Leverkusen,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 8,BayArena,Leverkusen,Europe
-2_1299126,Scheduled,0,0,172,85,2027-01-29T20:00:00+00:00,,VfB Stuttgart,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 8,MHPArena,Stuttgart,Europe
-2_1299123,Scheduled,0,0,197,40,2027-01-29T20:00:00+00:00,,PSV Eindhoven,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 8,Philips Stadion,Eindhoven,Europe
-2_1299125,Scheduled,0,0,228,500,2027-01-29T20:00:00+00:00,,Sporting CP,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 8,Estádio José Alvalade,Lisboa,Europe
-2_1299120,Scheduled,0,0,496,211,2027-01-29T20:00:00+00:00,,Juventus,⚪️⚫️,Benfica,🇪🇺,UEFA Champions League,League Stage - 8,Allianz Stadium,Torino,Europe
-2_1299119,Scheduled,0,0,505,91,2027-01-29T20:00:00+00:00,,Inter,🔵⚫️,Monaco,🇪🇺,UEFA Champions League,League Stage - 8,Stadio Giuseppe Meazza,Milano,Europe
-2_1299111,Scheduled,0,0,529,499,2027-01-29T20:00:00+00:00,,Barcelona,🔵🔴,Atalanta,🇪🇺,UEFA Champions League,League Stage - 8,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1299118,Scheduled,0,0,547,42,2027-01-29T20:00:00+00:00,,Girona,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 8,Estadi Municipal de Montilivi,Girona,Europe
-2_1299127,Scheduled,0,0,565,598,2027-01-29T20:00:00+00:00,,BSC Young Boys,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 8,Stadion Wankdorf,Bern,Europe
-2_1299117,Scheduled,0,0,571,530,2027-01-29T20:00:00+00:00,,Red Bull Salzburg,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 8,Red Bull Arena,Wals-Siezenheim,Europe
-2_1299115,Scheduled,0,0,620,489,2027-01-29T20:00:00+00:00,,Dinamo Zagreb,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 8,Stadion Maksimir,Zagreb,Europe
-2_1299124,Scheduled,0,0,637,173,2027-01-29T20:00:00+00:00,,Sturm Graz,🇪🇺,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 8,28 Black Arena,Klagenfurt am Wörthersee,Europe
-2_1345737,Scheduled,0,0,106,85,2027-02-11T17:45:00+00:00,,Stade Brestois 29,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,Knockout Round Play-offs,Stade du Roudourou,Guingamp,Europe
-2_1345743,Scheduled,0,0,50,541,2027-02-11T20:00:00+00:00,,Manchester City,🔵,Real Madrid,⚪️,UEFA Champions League,Knockout Round Play-offs,Etihad Stadium,Manchester,Europe
-2_1345739,Scheduled,0,0,228,165,2027-02-11T20:00:00+00:00,,Sporting CP,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,Knockout Round Play-offs,Estádio José Alvalade,Lisboa,Europe
-2_1345741,Scheduled,0,0,496,197,2027-02-11T20:00:00+00:00,,Juventus,⚪️⚫️,PSV Eindhoven,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Allianz Stadium,Torino,Europe
-2_1345745,Scheduled,0,0,569,499,2027-02-12T17:45:00+00:00,,Club Brugge KV,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Jan Breydelstadion,Brugge,Europe
-2_1345749,Scheduled,0,0,91,211,2027-02-12T20:00:00+00:00,,Monaco,🇪🇺,Benfica,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Stade Louis-II,Monaco,Europe
-2_1345747,Scheduled,0,0,209,489,2027-02-12T20:00:00+00:00,,Feyenoord,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,Knockout Round Play-offs,Stadion Feijenoord,Rotterdam,Europe
-2_1345751,Scheduled,0,0,247,157,2027-02-12T20:00:00+00:00,,Celtic,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Celtic Park,Glasgow,Europe
-2_1345748,Scheduled,0,0,489,209,2027-02-18T17:45:00+00:00,,AC Milan,🔴⚫️,Feyenoord,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Stadio Giuseppe Meazza,Milano,Europe
-2_1345752,Scheduled,0,0,157,247,2027-02-18T20:00:00+00:00,,Bayern München,🇪🇺,Celtic,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Allianz Arena,München,Europe
-2_1345750,Scheduled,0,0,211,91,2027-02-18T20:00:00+00:00,,Benfica,🇪🇺,Monaco,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1345746,Scheduled,0,0,499,569,2027-02-18T20:00:00+00:00,,Atalanta,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Gewiss Stadium,Bergamo,Europe
-2_1345740,Scheduled,0,0,165,228,2027-02-19T17:45:00+00:00,,Borussia Dortmund,🟡,Sporting CP,🇪🇺,UEFA Champions League,Knockout Round Play-offs,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1345738,Scheduled,0,0,85,106,2027-02-19T20:00:00+00:00,,Paris Saint Germain,🔵🔴,Stade Brestois 29,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Parc des Princes,Paris,Europe
-2_1345742,Scheduled,0,0,197,496,2027-02-19T20:00:00+00:00,,PSV Eindhoven,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,Knockout Round Play-offs,Philips Stadion,Eindhoven,Europe
-2_1345744,Scheduled,0,0,541,50,2027-02-19T20:00:00+00:00,,Real Madrid,⚪️,Manchester City,🔵,UEFA Champions League,Knockout Round Play-offs,Estadio Santiago Bernabéu,Madrid,Europe
-2_1353166,Scheduled,0,0,569,66,2027-03-04T17:45:00+00:00,,Club Brugge KV,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,Round of 16,Jan Breydelstadion,Brugge,Europe
-2_1353168,Scheduled,0,0,165,79,2027-03-04T20:00:00+00:00,,Borussia Dortmund,🟡,Lille,🇪🇺,UEFA Champions League,Round of 16,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1353172,Scheduled,0,0,197,42,2027-03-04T20:00:00+00:00,,PSV Eindhoven,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,Round of 16,Philips Stadion,Eindhoven,Europe
-2_1353170,Scheduled,0,0,541,530,2027-03-04T20:00:00+00:00,,Real Madrid,⚪️,Atletico Madrid,🔴⚪️,UEFA Champions League,Round of 16,Estadio Santiago Bernabéu,Madrid,Europe
-2_1353174,Scheduled,0,0,209,505,2027-03-05T17:45:00+00:00,,Feyenoord,🇪🇺,Inter,🔵⚫️,UEFA Champions League,Round of 16,Stadion Feijenoord,Rotterdam,Europe
-2_1353178,Scheduled,0,0,85,40,2027-03-05T20:00:00+00:00,,Paris Saint Germain,🔵🔴,Liverpool,🔴,UEFA Champions League,Round of 16,Parc des Princes,Paris,Europe
-2_1353180,Scheduled,0,0,157,168,2027-03-05T20:00:00+00:00,,Bayern München,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,Round of 16,Allianz Arena,München,Europe
-2_1353176,Scheduled,0,0,211,529,2027-03-05T20:00:00+00:00,,Benfica,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,Round of 16,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
-2_1353177,Scheduled,0,0,529,211,2027-03-11T17:45:00+00:00,,Barcelona,🔵🔴,Benfica,🇪🇺,UEFA Champions League,Round of 16,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1353179,Scheduled,0,0,40,85,2027-03-11T20:00:00+00:00,,Liverpool,🔴,Paris Saint Germain,🔵🔴,UEFA Champions League,Round of 16,Anfield,Liverpool,Europe
-2_1353181,Scheduled,0,0,168,157,2027-03-11T20:00:00+00:00,,Bayer Leverkusen,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,Round of 16,BayArena,Leverkusen,Europe
-2_1353175,Scheduled,0,0,505,209,2027-03-11T20:00:00+00:00,,Inter,🔵⚫️,Feyenoord,🇪🇺,UEFA Champions League,Round of 16,Stadio Giuseppe Meazza,Milano,Europe
-2_1353169,Scheduled,0,0,79,165,2027-03-12T17:45:00+00:00,,Lille,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,Round of 16,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
-2_1353173,Scheduled,0,0,42,197,2027-03-12T20:00:00+00:00,,Arsenal,🔴⚪️,PSV Eindhoven,🇪🇺,UEFA Champions League,Round of 16,Emirates Stadium,London,Europe
-2_1353167,Scheduled,0,0,66,569,2027-03-12T20:00:00+00:00,,Aston Villa,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,Round of 16,Villa Park,Birmingham,Europe
-2_1353171,Scheduled,0,0,530,541,2027-03-12T20:00:00+00:00,,Atletico Madrid,🔴⚪️,Real Madrid,⚪️,UEFA Champions League,Round of 16,Riyadh Air Metropolitano,Madrid,Europe
-2_1360764,Scheduled,0,0,42,541,2027-04-08T19:00:00+00:00,,Arsenal,🔴⚪️,Real Madrid,⚪️,UEFA Champions League,Quarter-finals,Emirates Stadium,London,Europe
-2_1360333,Scheduled,0,0,157,505,2027-04-08T19:00:00+00:00,,Bayern München,🇪🇺,Inter,🔵⚫️,UEFA Champions League,Quarter-finals,Allianz Arena,München,Europe
-2_1360762,Scheduled,0,0,85,66,2027-04-09T19:00:00+00:00,,Paris Saint Germain,🔵🔴,Aston Villa,🇪🇺,UEFA Champions League,Quarter-finals,Parc des Princes,Paris,Europe
-2_1360766,Scheduled,0,0,529,165,2027-04-09T19:00:00+00:00,,Barcelona,🔵🔴,Borussia Dortmund,🟡,UEFA Champions League,Quarter-finals,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1360763,Scheduled,0,0,66,85,2027-04-15T19:00:00+00:00,,Aston Villa,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,Quarter-finals,Villa Park,Birmingham,Europe
-2_1360767,Scheduled,0,0,165,529,2027-04-15T19:00:00+00:00,,Borussia Dortmund,🟡,Barcelona,🔵🔴,UEFA Champions League,Quarter-finals,SIGNAL IDUNA PARK,Dortmund,Europe
-2_1360334,Scheduled,0,0,505,157,2027-04-16T19:00:00+00:00,,Inter,🔵⚫️,Bayern München,🇪🇺,UEFA Champions League,Quarter-finals,Stadio Giuseppe Meazza,Milano,Europe
-2_1360765,Scheduled,0,0,541,42,2027-04-16T19:00:00+00:00,,Real Madrid,⚪️,Arsenal,🔴⚪️,UEFA Champions League,Quarter-finals,Estadio Santiago Bernabéu,Madrid,Europe
-2_1371730,Scheduled,0,0,42,85,2027-04-29T19:00:00+00:00,,Arsenal,🔴⚪️,Paris Saint Germain,🔵🔴,UEFA Champions League,Semi-finals,Emirates Stadium,London,Europe
-2_1371732,Scheduled,0,0,529,505,2027-04-30T19:00:00+00:00,,Barcelona,🔵🔴,Inter,🔵⚫️,UEFA Champions League,Semi-finals,Estadi Olímpic Lluís Companys,Barcelona,Europe
-2_1371733,Scheduled,0,0,505,529,2027-05-06T19:00:00+00:00,,Inter,🔵⚫️,Barcelona,🔵🔴,UEFA Champions League,Semi-finals,Stadio Giuseppe Meazza,Milano,Europe
-2_1371731,Scheduled,0,0,85,42,2027-05-07T19:00:00+00:00,,Paris Saint Germain,🔵🔴,Arsenal,🔴⚪️,UEFA Champions League,Semi-finals,Parc des Princes,Paris,Europe
-2_1374812,Scheduled,0,0,85,505,2027-05-31T19:00:00+00:00,,Paris Saint Germain,🔵🔴,Inter,🔵⚫️,UEFA Champions League,Final,Allianz Arena,München,Europe
+2_1208418,Scheduled,0,0,3874,649,2026-07-09T15:30:00+00:00,W10=,Panevėžys,🇪🇺,HJK Helsinki,🇪🇺,UEFA Champions League,1st Qualifying Round,Aukštaitija stadionas,Panevėžys,Europe
+2_1208410,Scheduled,0,0,4626,667,2026-07-09T16:45:00+00:00,W10=,Hamrun Spartans,🇪🇺,Lincoln Red Imps FC,🇪🇺,UEFA Champions League,1st Qualifying Round,MFA Centenary Stadium,Ta'Qali,Europe
+2_1208406,Scheduled,0,0,354,3745,2026-07-09T18:00:00+00:00,W10=,The New Saints,🇪🇺,Dečić,🇪🇺,UEFA Champions League,1st Qualifying Round,Park Hall Stadium,"Oswestry / Croesoswallt, Shropshire",Europe
+2_1208412,Scheduled,0,0,703,12733,2026-07-09T18:00:00+00:00,W10=,UE Santa Coloma,🇪🇺,Ballkani,🇪🇺,UEFA Champions League,1st Qualifying Round,Estadi Nacional,Andorra la Vella,Europe
+2_1208422,Scheduled,0,0,278,652,2026-07-09T18:45:00+00:00,W10=,Vikingur Reykjavik,🇪🇺,Shamrock Rovers,🇪🇺,UEFA Champions League,1st Qualifying Round,Víkingsvöllur,Reykjavík,Europe
+2_1208424,Scheduled,0,0,5308,559,2026-07-09T19:00:00+00:00,W10=,Virtus,🇪🇺,FCSB,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadio Olimpico di Serravalle,Serravalle,Europe
+2_1208428,Scheduled,0,0,692,2271,2026-07-10T15:00:00+00:00,W10=,Ordabasy,🇪🇺,Petrocub,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Qajimuqan Muñaytpasov,Shymkent,Europe
+2_1208414,Scheduled,0,0,687,4360,2026-07-10T16:00:00+00:00,W10=,Flora Tallinn,🇪🇺,Celje,🇪🇺,UEFA Champions League,1st Qualifying Round,A. Le Coq Arena,Tallinn,Europe
+2_1208404,Scheduled,0,0,656,4346,2026-07-10T17:00:00+00:00,W10=,Slovan Bratislava,🇪🇺,Struga,🇪🇺,UEFA Champions League,1st Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
+2_1208420,Scheduled,0,0,4160,5354,2026-07-10T17:00:00+00:00,W10=,Rīgas FS,🇪🇺,Larne,🇪🇺,UEFA Champions League,1st Qualifying Round,LNK Sporta Parks,Riga,Europe
+2_1208426,Scheduled,0,0,566,705,2026-07-10T18:00:00+00:00,W10=,Ludogorets,🇪🇺,Dinamo Batumi,🇪🇺,UEFA Champions League,1st Qualifying Round,Huvepharma Arena,Razgrad,Europe
+2_1208416,Scheduled,0,0,701,684,2026-07-10T18:00:00+00:00,W10=,KI Klaksvik,🇪🇺,FC Differdange 03,🇪🇺,UEFA Champions League,1st Qualifying Round,Við Djúpumýrar,"Klaksvík, Borðoy",Europe
+2_1208430,Scheduled,0,0,394,709,2026-07-10T18:45:00+00:00,W10=,Dinamo Minsk,🇪🇺,Pyunik Yerevan,🇪🇺,UEFA Champions League,1st Qualifying Round,Városi Stadion,Mezőkövesd,Europe
+2_1208408,Scheduled,0,0,3364,3327,2026-07-10T19:00:00+00:00,W10=,Borac Banja Luka,🇪🇺,Egnatia Rrogozhinë,🇪🇺,UEFA Champions League,1st Qualifying Round,Gradski Stadion,Banja Luka,Europe
+2_1208413,Scheduled,0,0,12733,703,2026-07-16T14:30:00+00:00,W10=,Ballkani,🇪🇺,UE Santa Coloma,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadiumi Zahir Pajaziti,"Besiana, Podujevo",Europe
+2_1208419,Scheduled,0,0,649,3874,2026-07-16T16:00:00+00:00,W10=,HJK Helsinki,🇪🇺,Panevėžys,🇪🇺,UEFA Champions League,1st Qualifying Round,Bolt Arena,Helsinki,Europe
+2_1208411,Scheduled,0,0,667,4626,2026-07-16T16:00:00+00:00,W10=,Lincoln Red Imps FC,🇪🇺,Hamrun Spartans,🇪🇺,UEFA Champions League,1st Qualifying Round,Europa Point Stadium,Gibraltar,Europe
+2_1208431,Scheduled,0,0,709,394,2026-07-16T16:00:00+00:00,W10=,Pyunik Yerevan,🇪🇺,Dinamo Minsk,🇪🇺,UEFA Champions League,1st Qualifying Round,Vazgen Sargsyan anvan Hanrapetakan Marzadasht,Yerevan,Europe
+2_1208415,Scheduled,0,0,4360,687,2026-07-16T17:00:00+00:00,W10=,Celje,🇪🇺,Flora Tallinn,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Z'dežele,Celje,Europe
+2_1208425,Scheduled,0,0,559,5308,2026-07-16T17:30:00+00:00,W10=,FCSB,🇪🇺,Virtus,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadionul Steaua,București,Europe
+2_1208423,Scheduled,0,0,652,278,2026-07-16T19:00:00+00:00,W10=,Shamrock Rovers,🇪🇺,Vikingur Reykjavik,🇪🇺,UEFA Champions League,1st Qualifying Round,Tallaght Stadium,Dublin,Europe
+2_1208407,Scheduled,0,0,3745,354,2026-07-16T19:00:00+00:00,W10=,Dečić,🇪🇺,The New Saints,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Pod Goricom,Podgorica,Europe
+2_1208405,Scheduled,0,0,4346,656,2026-07-17T15:00:00+00:00,W10=,Struga,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadion Biljanini Izvori,Ohrid,Europe
+2_1208417,Scheduled,0,0,684,701,2026-07-17T17:00:00+00:00,W10=,FC Differdange 03,🇪🇺,KI Klaksvik,🇪🇺,UEFA Champions League,1st Qualifying Round,Stade Parc des Sports,Differdange,Europe
+2_1208427,Scheduled,0,0,705,566,2026-07-17T17:00:00+00:00,W10=,Dinamo Batumi,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,1st Qualifying Round,Batumi Arena,Batumi,Europe
+2_1208429,Scheduled,0,0,2271,692,2026-07-17T17:00:00+00:00,W10=,Petrocub,🇪🇺,Ordabasy,🇪🇺,UEFA Champions League,1st Qualifying Round,Stadionul Zimbru,Chişinău,Europe
+2_1208409,Scheduled,0,0,3327,3364,2026-07-17T19:00:00+00:00,W10=,Egnatia Rrogozhinë,🇪🇺,Borac Banja Luka,🇪🇺,UEFA Champions League,1st Qualifying Round,Elbasan Arena,Elbasan,Europe
+2_1208421,Scheduled,0,0,5354,4160,2026-07-17T19:00:00+00:00,W10=,Larne,🇪🇺,Rīgas FS,🇪🇺,UEFA Champions League,1st Qualifying Round,Inver Park,Larne,Europe
+2_1250485,Scheduled,0,0,327,4160,2026-07-23T15:00:00+00:00,W10=,Bodo/Glimt,🇪🇺,Rīgas FS,🇪🇺,UEFA Champions League,2nd Qualifying Round,Aspmyra Stadion,Bodø,Europe
+2_1245606,Scheduled,0,0,3874,336,2026-07-23T15:30:00+00:00,W10=,Panevėžys,🇪🇺,Jagiellonia,🇪🇺,UEFA Champions League,2nd Qualifying Round,Aukštaitija stadionas,Panevėžys,Europe
+2_1245598,Scheduled,0,0,667,556,2026-07-23T16:00:00+00:00,W10=,Lincoln Red Imps FC,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,2nd Qualifying Round,Europa Point Stadium,Gibraltar,Europe
+2_1250489,Scheduled,0,0,375,701,2026-07-23T17:00:00+00:00,W10=,Malmo FF,🇪🇺,KI Klaksvik,🇪🇺,UEFA Champions League,2nd Qualifying Round,Eleda Stadion,Malmö,Europe
+2_1250487,Scheduled,0,0,2247,2271,2026-07-23T17:00:00+00:00,W10=,Apoel Nicosia,🇪🇺,Petrocub,🇪🇺,UEFA Champions League,2nd Qualifying Round,Neo GSP,Levkosía,Europe
+2_1245604,Scheduled,0,0,559,604,2026-07-23T17:30:00+00:00,W10=,FCSB,🇪🇺,Maccabi Tel Aviv,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadionul Steaua,București,Europe
+2_1209237,Scheduled,0,0,572,573,2026-07-23T18:00:00+00:00,W10=,Dynamo Kyiv,🇪🇺,FK Partizan,🇪🇺,UEFA Champions League,2nd Qualifying Round,Arena Lublin,Lublin,Europe
+2_1245608,Scheduled,0,0,651,354,2026-07-23T18:00:00+00:00,W10=,Ferencvarosi TC,🇪🇺,The New Saints,🇪🇺,UEFA Champions League,2nd Qualifying Round,Groupama Aréna,Budapest,Europe
+2_1245602,Scheduled,0,0,703,397,2026-07-23T18:00:00+00:00,W10=,UE Santa Coloma,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,2nd Qualifying Round,Estadi Nacional,Andorra la Vella,Europe
+2_1209235,Scheduled,0,0,606,611,2026-07-23T18:30:00+00:00,W10=,FC Lugano,🇪🇺,Fenerbahçe,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stockhorn Arena,Thun,Europe
+2_1245600,Scheduled,0,0,652,628,2026-07-23T19:00:00+00:00,W10=,Shamrock Rovers,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,2nd Qualifying Round,Tallaght Stadium,Dublin,Europe
+2_1250491,Scheduled,0,0,619,3364,2026-07-24T17:30:00+00:00,W10=,PAOK,🇪🇺,Borac Banja Luka,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadio Toumbas,Thessaloníki,Europe
+2_1250481,Scheduled,0,0,566,394,2026-07-24T18:00:00+00:00,W10=,Ludogorets,🇪🇺,Dinamo Minsk,🇪🇺,UEFA Champions League,2nd Qualifying Round,Huvepharma Arena,Razgrad,Europe
+2_1250483,Scheduled,0,0,4360,656,2026-07-24T18:15:00+00:00,W10=,Celje,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Z'dežele,Celje,Europe
+2_1245599,Scheduled,0,0,556,667,2026-07-30T16:00:00+00:00,W10=,Qarabag,🇪🇺,Lincoln Red Imps FC,🇪🇺,UEFA Champions League,2nd Qualifying Round,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
+2_1209236,Scheduled,0,0,611,606,2026-07-30T17:00:00+00:00,W10=,Fenerbahçe,🇪🇺,FC Lugano,🇪🇺,UEFA Champions League,2nd Qualifying Round,Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi,İstanbul,Europe
+2_1245601,Scheduled,0,0,628,652,2026-07-30T17:00:00+00:00,W10=,Sparta Praha,🇪🇺,Shamrock Rovers,🇪🇺,UEFA Champions League,2nd Qualifying Round,epet ARENA,Praha,Europe
+2_1250488,Scheduled,0,0,2271,2247,2026-07-30T17:00:00+00:00,W10=,Petrocub,🇪🇺,Apoel Nicosia,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadionul Zimbru,Chişinău,Europe
+2_1245609,Scheduled,0,0,354,651,2026-07-30T18:00:00+00:00,W10=,The New Saints,🇪🇺,Ferencvarosi TC,🇪🇺,UEFA Champions League,2nd Qualifying Round,Park Hall Stadium,"Oswestry / Croesoswallt, Shropshire",Europe
+2_1250484,Scheduled,0,0,656,4360,2026-07-30T18:30:00+00:00,W10=,Slovan Bratislava,🇪🇺,Celje,🇪🇺,UEFA Champions League,2nd Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
+2_1250490,Scheduled,0,0,701,375,2026-07-30T18:45:00+00:00,W10=,KI Klaksvik,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,2nd Qualifying Round,Við Djúpumýrar,"Klaksvík, Borðoy",Europe
+2_1250486,Scheduled,0,0,4160,327,2026-07-31T17:00:00+00:00,W10=,Rīgas FS,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,2nd Qualifying Round,LNK Sporta Parks,Riga,Europe
+2_1245603,Scheduled,0,0,397,703,2026-07-31T17:15:00+00:00,W10=,FC Midtjylland,🇪🇺,UE Santa Coloma,🇪🇺,UEFA Champions League,2nd Qualifying Round,MCH Arena,Herning,Europe
+2_1209238,Scheduled,0,0,573,572,2026-07-31T18:00:00+00:00,W10=,FK Partizan,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Partizana,Beograd,Europe
+2_1245605,Scheduled,0,0,604,559,2026-07-31T18:00:00+00:00,W10=,Maccabi Tel Aviv,🇪🇺,FCSB,🇪🇺,UEFA Champions League,2nd Qualifying Round,Bozsik Aréna,Budapest,Europe
+2_1245607,Scheduled,0,0,336,3874,2026-07-31T18:30:00+00:00,W10=,Jagiellonia,🇪🇺,Panevėžys,🇪🇺,UEFA Champions League,2nd Qualifying Round,Stadion Miejski,Białystok,Europe
+2_1250482,Scheduled,0,0,394,566,2026-07-31T18:45:00+00:00,W10=,Dinamo Minsk,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,2nd Qualifying Round,Városi Stadion,Mezőkövesd,Europe
+2_1250492,Scheduled,0,0,3364,619,2026-07-31T19:00:00+00:00,W10=,Borac Banja Luka,🇪🇺,PAOK,🇪🇺,UEFA Champions League,2nd Qualifying Round,Gradski Stadion,Banja Luka,Europe
+2_1273677,Scheduled,0,0,556,566,2026-08-06T16:00:00+00:00,W10=,Qarabag,🇪🇺,Ludogorets,🇪🇺,UEFA Champions League,3rd Qualifying Round,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
+2_1273681,Scheduled,0,0,375,619,2026-08-06T17:00:00+00:00,W10=,Malmo FF,🇪🇺,PAOK,🇪🇺,UEFA Champions League,3rd Qualifying Round,Eleda Stadion,Malmö,Europe
+2_1273683,Scheduled,0,0,397,651,2026-08-06T17:15:00+00:00,W10=,FC Midtjylland,🇪🇺,Ferencvarosi TC,🇪🇺,UEFA Champions League,3rd Qualifying Round,MCH Arena,Herning,Europe
+2_1273687,Scheduled,0,0,572,257,2026-08-06T18:00:00+00:00,W10=,Dynamo Kyiv,🇪🇺,Rangers,🇪🇺,UEFA Champions League,3rd Qualifying Round,Arena Lublin,Lublin,Europe
+2_1273679,Scheduled,0,0,628,559,2026-08-06T18:00:00+00:00,W10=,Sparta Praha,🇪🇺,FCSB,🇪🇺,UEFA Champions League,3rd Qualifying Round,epet ARENA,Praha,Europe
+2_1271720,Scheduled,0,0,79,611,2026-08-06T18:30:00+00:00,W10=,Lille,🇪🇺,Fenerbahçe,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stade du Hainaut,Valenciennes,Europe
+2_1253319,Scheduled,0,0,571,415,2026-08-06T18:45:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Twente,🇪🇺,UEFA Champions League,3rd Qualifying Round,Red Bull Arena,Wals-Siezenheim,Europe
+2_1253317,Scheduled,0,0,560,1393,2026-08-07T17:00:00+00:00,W10=,Slavia Praha,🇪🇺,Union St. Gilloise,🇪🇺,UEFA Champions League,3rd Qualifying Round,Fortuna Arena,Praha,Europe
+2_1271718,Scheduled,0,0,656,2247,2026-08-07T18:30:00+00:00,W10=,Slovan Bratislava,🇪🇺,Apoel Nicosia,🇪🇺,UEFA Champions League,3rd Qualifying Round,Štadión Tehelné pole,Bratislava,Europe
+2_1273685,Scheduled,0,0,336,327,2026-08-07T18:45:00+00:00,W10=,Jagiellonia,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadion Miejski,Białystok,Europe
+2_1273686,Scheduled,0,0,327,336,2026-08-13T17:00:00+00:00,W10=,Bodo/Glimt,🇪🇺,Jagiellonia,🇪🇺,UEFA Champions League,3rd Qualifying Round,Aspmyra Stadion,Bodø,Europe
+2_1253320,Scheduled,0,0,415,571,2026-08-13T17:00:00+00:00,W10=,Twente,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,3rd Qualifying Round,De Grolsch Veste,Enschede,Europe
+2_1271721,Scheduled,0,0,611,79,2026-08-13T17:00:00+00:00,W10=,Fenerbahçe,🇪🇺,Lille,🇪🇺,UEFA Champions League,3rd Qualifying Round,Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi,İstanbul,Europe
+2_1271719,Scheduled,0,0,2247,656,2026-08-13T17:00:00+00:00,W10=,Apoel Nicosia,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,3rd Qualifying Round,Neo GSP,Levkosía,Europe
+2_1273682,Scheduled,0,0,619,375,2026-08-13T17:30:00+00:00,W10=,PAOK,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadio Toumbas,Thessaloníki,Europe
+2_1273678,Scheduled,0,0,566,556,2026-08-13T18:00:00+00:00,W10=,Ludogorets,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,3rd Qualifying Round,Huvepharma Arena,Razgrad,Europe
+2_1273684,Scheduled,0,0,651,397,2026-08-13T18:00:00+00:00,W10=,Ferencvarosi TC,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,3rd Qualifying Round,Groupama Aréna,Budapest,Europe
+2_1273680,Scheduled,0,0,559,628,2026-08-13T18:30:00+00:00,W10=,FCSB,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,3rd Qualifying Round,Stadionul Steaua,București,Europe
+2_1253318,Scheduled,0,0,1393,560,2026-08-13T18:30:00+00:00,W10=,Union St. Gilloise,🇪🇺,Slavia Praha,🇪🇺,UEFA Champions League,3rd Qualifying Round,Lotto Park,Brussel,Europe
+2_1273688,Scheduled,0,0,257,572,2026-08-13T18:45:00+00:00,W10=,Rangers,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,3rd Qualifying Round,Hampden Park,Glasgow,Europe
+2_1286255,Scheduled,0,0,79,560,2026-08-20T19:00:00+00:00,W10=,Lille,🇪🇺,Slavia Praha,🇪🇺,UEFA Champions League,Play-offs,Stade du Hainaut,Valenciennes,Europe
+2_1286251,Scheduled,0,0,327,598,2026-08-20T19:00:00+00:00,W10=,Bodo/Glimt,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,Play-offs,Aspmyra Stadion,Bodø,Europe
+2_1286247,Scheduled,0,0,620,556,2026-08-20T19:00:00+00:00,W10=,Dinamo Zagreb,🇪🇺,Qarabag,🇪🇺,UEFA Champions League,Play-offs,Stadion Maksimir,Zagreb,Europe
+2_1286253,Scheduled,0,0,375,628,2026-08-21T19:00:00+00:00,W10=,Malmo FF,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,Play-offs,Eleda Stadion,Malmö,Europe
+2_1286249,Scheduled,0,0,397,656,2026-08-21T19:00:00+00:00,W10=,FC Midtjylland,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,Play-offs,MCH Arena,Herning,Europe
+2_1280666,Scheduled,0,0,565,645,2026-08-21T19:00:00+00:00,W10=,BSC Young Boys,🇪🇺,Galatasaray,🇪🇺,UEFA Champions League,Play-offs,Stadion Wankdorf,Bern,Europe
+2_1286257,Scheduled,0,0,572,571,2026-08-21T19:00:00+00:00,W10=,Dynamo Kyiv,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,Play-offs,Arena Lublin,Lublin,Europe
+2_1286258,Scheduled,0,0,571,572,2026-08-27T19:00:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Dynamo Kyiv,🇪🇺,UEFA Champions League,Play-offs,Red Bull Arena,Wals-Siezenheim,Europe
+2_1286254,Scheduled,0,0,628,375,2026-08-27T19:00:00+00:00,W10=,Sparta Praha,🇪🇺,Malmo FF,🇪🇺,UEFA Champions League,Play-offs,epet ARENA,Praha,Europe
+2_1280667,Scheduled,0,0,645,565,2026-08-27T19:00:00+00:00,W10=,Galatasaray,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,Play-offs,RAMS Park,İstanbul,Europe
+2_1286248,Scheduled,0,0,556,620,2026-08-28T16:45:00+00:00,W10=,Qarabag,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,Play-offs,Tofiq Bəhramov adına Respublika stadionu,Baku,Europe
+2_1286256,Scheduled,0,0,560,79,2026-08-28T19:00:00+00:00,W10=,Slavia Praha,🇪🇺,Lille,🇪🇺,UEFA Champions League,Play-offs,Fortuna Arena,Praha,Europe
+2_1286252,Scheduled,0,0,598,327,2026-08-28T19:00:00+00:00,W10=,FK Crvena Zvezda,🇪🇺,Bodo/Glimt,🇪🇺,UEFA Champions League,Play-offs,Stadion Rajko Mitić,Beograd,Europe
+2_1286250,Scheduled,0,0,656,397,2026-08-28T19:00:00+00:00,W10=,Slovan Bratislava,🇪🇺,FC Midtjylland,🇪🇺,UEFA Champions League,Play-offs,Štadión Tehelné pole,Bratislava,Europe
+2_1298984,Scheduled,0,0,496,197,2026-09-17T16:45:00+00:00,W10=,Juventus,⚪️⚫️,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 1,Allianz Stadium,Torino,Europe
+2_1298985,Scheduled,0,0,565,66,2026-09-17T16:45:00+00:00,W10=,BSC Young Boys,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Wankdorf,Bern,Europe
+2_1298986,Scheduled,0,0,157,620,2026-09-17T19:00:00+00:00,W10=,Bayern München,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 1,Allianz Arena,München,Europe
+2_1298988,Scheduled,0,0,228,79,2026-09-17T19:00:00+00:00,W10=,Sporting CP,🇪🇺,Lille,🇪🇺,UEFA Champions League,League Stage - 1,Estádio José Alvalade,Lisboa,Europe
+2_1298987,Scheduled,0,0,489,40,2026-09-17T19:00:00+00:00,W10=,AC Milan,🔴⚫️,Liverpool,🔴,UEFA Champions League,League Stage - 1,Stadio Giuseppe Meazza,Milano,Europe
+2_1298989,Scheduled,0,0,541,172,2026-09-17T19:00:00+00:00,W10=,Real Madrid,⚪️,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 1,Estadio Santiago Bernabéu,Madrid,Europe
+2_1298990,Scheduled,0,0,500,550,2026-09-18T16:45:00+00:00,W10=,Bologna,🇪🇺,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 1,Stadio Renato Dall'Ara,Bologna,Europe
+2_1298991,Scheduled,0,0,628,571,2026-09-18T16:45:00+00:00,W10=,Sparta Praha,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 1,epet ARENA,Praha,Europe
+2_1298994,Scheduled,0,0,50,505,2026-09-18T19:00:00+00:00,W10=,Manchester City,🔵,Inter,🔵⚫️,UEFA Champions League,League Stage - 1,Etihad Stadium,Manchester,Europe
+2_1298995,Scheduled,0,0,85,547,2026-09-18T19:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Girona,🇪🇺,UEFA Champions League,League Stage - 1,Parc des Princes,Paris,Europe
+2_1298992,Scheduled,0,0,247,656,2026-09-18T19:00:00+00:00,W10=,Celtic,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 1,Celtic Park,Glasgow,Europe
+2_1298993,Scheduled,0,0,569,165,2026-09-18T19:00:00+00:00,W10=,Club Brugge KV,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 1,Jan Breydelstadion,Brugge,Europe
+2_1298997,Scheduled,0,0,209,168,2026-09-19T16:45:00+00:00,W10=,Feyenoord,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Feijenoord,Rotterdam,Europe
+2_1298996,Scheduled,0,0,598,211,2026-09-19T16:45:00+00:00,W10=,FK Crvena Zvezda,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 1,Stadion Rajko Mitić,Beograd,Europe
+2_1299001,Scheduled,0,0,91,529,2026-09-19T19:00:00+00:00,W10=,Monaco,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 1,Stade Louis-II,Monaco,Europe
+2_1299000,Scheduled,0,0,106,637,2026-09-19T19:00:00+00:00,W10=,Stade Brestois 29,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 1,Stade du Roudourou,Guingamp,Europe
+2_1298998,Scheduled,0,0,499,42,2026-09-19T19:00:00+00:00,W10=,Atalanta,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 1,Gewiss Stadium,Bergamo,Europe
+2_1298999,Scheduled,0,0,530,173,2026-09-19T19:00:00+00:00,W10=,Atletico Madrid,🔴⚪️,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 1,Estádio Cívitas Metropolitano,Madrid,Europe
+2_1299003,Scheduled,0,0,172,628,2026-10-01T16:45:00+00:00,W10=,VfB Stuttgart,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 2,MHPArena,Stuttgart,Europe
+2_1299002,Scheduled,0,0,571,106,2026-10-01T16:45:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 2,Red Bull Arena,Wals-Siezenheim,Europe
+2_1299010,Scheduled,0,0,42,85,2026-10-01T19:00:00+00:00,W10=,Arsenal,🔴⚪️,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 2,Emirates Stadium,London,Europe
+2_1299006,Scheduled,0,0,165,247,2026-10-01T19:00:00+00:00,W10=,Borussia Dortmund,🟡,Celtic,🇪🇺,UEFA Champions League,League Stage - 2,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1299005,Scheduled,0,0,168,489,2026-10-01T19:00:00+00:00,W10=,Bayer Leverkusen,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 2,BayArena,Leverkusen,Europe
+2_1299008,Scheduled,0,0,197,228,2026-10-01T19:00:00+00:00,W10=,PSV Eindhoven,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 2,Philips Stadion,Eindhoven,Europe
+2_1299007,Scheduled,0,0,505,598,2026-10-01T19:00:00+00:00,W10=,Inter,🔵⚫️,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 2,Stadio Giuseppe Meazza,Milano,Europe
+2_1299004,Scheduled,0,0,529,565,2026-10-01T19:00:00+00:00,W10=,Barcelona,🔵🔴,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 2,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1299009,Scheduled,0,0,656,50,2026-10-01T19:00:00+00:00,W10=,Slovan Bratislava,🇪🇺,Manchester City,🔵,UEFA Champions League,League Stage - 2,Štadión Tehelné pole,Bratislava,Europe
+2_1299011,Scheduled,0,0,547,209,2026-10-02T16:45:00+00:00,W10=,Girona,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 2,Estadi Municipal de Montilivi,Girona,Europe
+2_1299012,Scheduled,0,0,550,499,2026-10-02T16:45:00+00:00,W10=,Shakhtar Donetsk,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 2,VELTINS-Arena,Gelsenkirchen,Europe
+2_1299017,Scheduled,0,0,40,500,2026-10-02T19:00:00+00:00,W10=,Liverpool,🔴,Bologna,🇪🇺,UEFA Champions League,League Stage - 2,Anfield,Liverpool,Europe
+2_1299013,Scheduled,0,0,66,157,2026-10-02T19:00:00+00:00,W10=,Aston Villa,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 2,Villa Park,Birmingham,Europe
+2_1299016,Scheduled,0,0,79,541,2026-10-02T19:00:00+00:00,W10=,Lille,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 2,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
+2_1299018,Scheduled,0,0,173,496,2026-10-02T19:00:00+00:00,W10=,RB Leipzig,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 2,Red Bull Arena,Leipzig,Europe
+2_1299014,Scheduled,0,0,211,530,2026-10-02T19:00:00+00:00,W10=,Benfica,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 2,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1299015,Scheduled,0,0,620,91,2026-10-02T19:00:00+00:00,W10=,Dinamo Zagreb,🇪🇺,Monaco,🇪🇺,UEFA Champions League,League Stage - 2,Stadion Maksimir,Zagreb,Europe
+2_1299019,Scheduled,0,0,637,569,2026-10-02T19:00:00+00:00,W10=,Sturm Graz,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 2,28 Black Arena,Klagenfurt am Wörthersee,Europe
+2_1299021,Scheduled,0,0,91,598,2026-10-22T16:45:00+00:00,W10=,Monaco,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 3,Stade Louis-II,Monaco,Europe
+2_1299020,Scheduled,0,0,489,569,2026-10-22T16:45:00+00:00,W10=,AC Milan,🔴⚫️,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 3,Stadio Giuseppe Meazza,Milano,Europe
+2_1299027,Scheduled,0,0,42,550,2026-10-22T19:00:00+00:00,W10=,Arsenal,🔴⚪️,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 3,Emirates Stadium,London,Europe
+2_1299022,Scheduled,0,0,66,500,2026-10-22T19:00:00+00:00,W10=,Aston Villa,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 3,Villa Park,Birmingham,Europe
+2_1299025,Scheduled,0,0,85,197,2026-10-22T19:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 3,Parc des Princes,Paris,Europe
+2_1299024,Scheduled,0,0,496,172,2026-10-22T19:00:00+00:00,W10=,Juventus,⚪️⚫️,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 3,Allianz Stadium,Torino,Europe
+2_1299028,Scheduled,0,0,541,165,2026-10-22T19:00:00+00:00,W10=,Real Madrid,⚪️,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 3,Estadio Santiago Bernabéu,Madrid,Europe
+2_1299023,Scheduled,0,0,547,656,2026-10-22T19:00:00+00:00,W10=,Girona,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 3,Estadi Municipal de Montilivi,Girona,Europe
+2_1299026,Scheduled,0,0,637,228,2026-10-22T19:00:00+00:00,W10=,Sturm Graz,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 3,28 Black Arena,Klagenfurt am Wörthersee,Europe
+2_1299030,Scheduled,0,0,106,168,2026-10-23T16:45:00+00:00,W10=,Stade Brestois 29,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 3,Stade du Roudourou,Guingamp,Europe
+2_1299029,Scheduled,0,0,499,247,2026-10-23T16:45:00+00:00,W10=,Atalanta,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 3,Gewiss Stadium,Bergamo,Europe
+2_1299035,Scheduled,0,0,50,628,2026-10-23T19:00:00+00:00,W10=,Manchester City,🔵,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 3,Etihad Stadium,Manchester,Europe
+2_1299036,Scheduled,0,0,173,40,2026-10-23T19:00:00+00:00,W10=,RB Leipzig,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 3,Red Bull Arena,Leipzig,Europe
+2_1299033,Scheduled,0,0,211,209,2026-10-23T19:00:00+00:00,W10=,Benfica,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 3,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1299032,Scheduled,0,0,529,157,2026-10-23T19:00:00+00:00,W10=,Barcelona,🔵🔴,Bayern München,🇪🇺,UEFA Champions League,League Stage - 3,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1299031,Scheduled,0,0,530,79,2026-10-23T19:00:00+00:00,W10=,Atletico Madrid,🔴⚪️,Lille,🇪🇺,UEFA Champions League,League Stage - 3,Riyadh Air Metropolitano,Madrid,Europe
+2_1299037,Scheduled,0,0,565,505,2026-10-23T19:00:00+00:00,W10=,BSC Young Boys,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 3,Stadion Wankdorf,Bern,Europe
+2_1299034,Scheduled,0,0,571,620,2026-10-23T19:00:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 3,Red Bull Arena,Wals-Siezenheim,Europe
+2_1299038,Scheduled,0,0,197,547,2026-11-05T17:45:00+00:00,W10=,PSV Eindhoven,🇪🇺,Girona,🇪🇺,UEFA Champions League,League Stage - 4,Philips Stadion,Eindhoven,Europe
+2_1299039,Scheduled,0,0,656,620,2026-11-05T17:45:00+00:00,W10=,Slovan Bratislava,🇪🇺,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 4,Štadión Tehelné pole,Bratislava,Europe
+2_1299044,Scheduled,0,0,40,168,2026-11-05T20:00:00+00:00,W10=,Liverpool,🔴,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 4,Anfield,Liverpool,Europe
+2_1299043,Scheduled,0,0,79,496,2026-11-05T20:00:00+00:00,W10=,Lille,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 4,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
+2_1299041,Scheduled,0,0,165,637,2026-11-05T20:00:00+00:00,W10=,Borussia Dortmund,🟡,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 4,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1299045,Scheduled,0,0,228,50,2026-11-05T20:00:00+00:00,W10=,Sporting CP,🇪🇺,Manchester City,🔵,UEFA Champions League,League Stage - 4,Estádio José Alvalade,Lisboa,Europe
+2_1299042,Scheduled,0,0,247,173,2026-11-05T20:00:00+00:00,W10=,Celtic,🇪🇺,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 4,Celtic Park,Glasgow,Europe
+2_1299040,Scheduled,0,0,500,91,2026-11-05T20:00:00+00:00,W10=,Bologna,🇪🇺,Monaco,🇪🇺,UEFA Champions League,League Stage - 4,Stadio Renato Dall'Ara,Bologna,Europe
+2_1299046,Scheduled,0,0,541,489,2026-11-05T20:00:00+00:00,W10=,Real Madrid,⚪️,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 4,Estadio Santiago Bernabéu,Madrid,Europe
+2_1299048,Scheduled,0,0,550,565,2026-11-06T17:45:00+00:00,W10=,Shakhtar Donetsk,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 4,VELTINS-Arena,Gelsenkirchen,Europe
+2_1299047,Scheduled,0,0,569,66,2026-11-06T17:45:00+00:00,W10=,Club Brugge KV,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 4,Jan Breydelstadion,Brugge,Europe
+2_1299053,Scheduled,0,0,85,530,2026-11-06T20:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 4,Parc des Princes,Paris,Europe
+2_1299050,Scheduled,0,0,157,211,2026-11-06T20:00:00+00:00,W10=,Bayern München,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 4,Allianz Arena,München,Europe
+2_1299055,Scheduled,0,0,172,499,2026-11-06T20:00:00+00:00,W10=,VfB Stuttgart,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 4,MHPArena,Stuttgart,Europe
+2_1299051,Scheduled,0,0,209,571,2026-11-06T20:00:00+00:00,W10=,Feyenoord,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 4,Stadion Feijenoord,Rotterdam,Europe
+2_1299052,Scheduled,0,0,505,42,2026-11-06T20:00:00+00:00,W10=,Inter,🔵⚫️,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 4,Stadio Giuseppe Meazza,Milano,Europe
+2_1299049,Scheduled,0,0,598,529,2026-11-06T20:00:00+00:00,W10=,FK Crvena Zvezda,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 4,Stadion Rajko Mitić,Beograd,Europe
+2_1299054,Scheduled,0,0,628,106,2026-11-06T20:00:00+00:00,W10=,Sparta Praha,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 4,epet ARENA,Praha,Europe
+2_1299057,Scheduled,0,0,628,530,2026-11-26T17:45:00+00:00,W10=,Sparta Praha,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 5,epet ARENA,Praha,Europe
+2_1299056,Scheduled,0,0,656,489,2026-11-26T17:45:00+00:00,W10=,Slovan Bratislava,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 5,Štadión Tehelné pole,Bratislava,Europe
+2_1299062,Scheduled,0,0,50,209,2026-11-26T20:00:00+00:00,W10=,Manchester City,🔵,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 5,Etihad Stadium,Manchester,Europe
+2_1299060,Scheduled,0,0,157,85,2026-11-26T20:00:00+00:00,W10=,Bayern München,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 5,Allianz Arena,München,Europe
+2_1299059,Scheduled,0,0,168,571,2026-11-26T20:00:00+00:00,W10=,Bayer Leverkusen,🇪🇺,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 5,BayArena,Leverkusen,Europe
+2_1299063,Scheduled,0,0,228,42,2026-11-26T20:00:00+00:00,W10=,Sporting CP,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 5,Estádio José Alvalade,Lisboa,Europe
+2_1299061,Scheduled,0,0,505,173,2026-11-26T20:00:00+00:00,W10=,Inter,🔵⚫️,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 5,Stadio Giuseppe Meazza,Milano,Europe
+2_1299058,Scheduled,0,0,529,106,2026-11-26T20:00:00+00:00,W10=,Barcelona,🔵🔴,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 5,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1299064,Scheduled,0,0,565,499,2026-11-26T20:00:00+00:00,W10=,BSC Young Boys,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,League Stage - 5,Stadion Wankdorf,Bern,Europe
+2_1299065,Scheduled,0,0,598,172,2026-11-27T17:45:00+00:00,W10=,FK Crvena Zvezda,🇪🇺,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 5,Stadion Rajko Mitić,Beograd,Europe
+2_1299066,Scheduled,0,0,637,547,2026-11-27T17:45:00+00:00,W10=,Sturm Graz,🇪🇺,Girona,🇪🇺,UEFA Champions League,League Stage - 5,28 Black Arena,Klagenfurt am Wörthersee,Europe
+2_1299071,Scheduled,0,0,40,541,2026-11-27T20:00:00+00:00,W10=,Liverpool,🔴,Real Madrid,⚪️,UEFA Champions League,League Stage - 5,Anfield,Liverpool,Europe
+2_1299067,Scheduled,0,0,66,496,2026-11-27T20:00:00+00:00,W10=,Aston Villa,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 5,Villa Park,Birmingham,Europe
+2_1299072,Scheduled,0,0,91,211,2026-11-27T20:00:00+00:00,W10=,Monaco,🇪🇺,Benfica,🇪🇺,UEFA Champions League,League Stage - 5,Stade Louis-II,Monaco,Europe
+2_1299073,Scheduled,0,0,197,550,2026-11-27T20:00:00+00:00,W10=,PSV Eindhoven,🇪🇺,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 5,Philips Stadion,Eindhoven,Europe
+2_1299069,Scheduled,0,0,247,569,2026-11-27T20:00:00+00:00,W10=,Celtic,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 5,Celtic Park,Glasgow,Europe
+2_1299068,Scheduled,0,0,500,79,2026-11-27T20:00:00+00:00,W10=,Bologna,🇪🇺,Lille,🇪🇺,UEFA Champions League,League Stage - 5,Stadio Renato Dall'Ara,Bologna,Europe
+2_1299070,Scheduled,0,0,620,165,2026-11-27T20:00:00+00:00,W10=,Dinamo Zagreb,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 5,Stadion Maksimir,Zagreb,Europe
+2_1299075,Scheduled,0,0,547,40,2026-12-10T17:45:00+00:00,W10=,Girona,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 6,Estadi Municipal de Montilivi,Girona,Europe
+2_1299074,Scheduled,0,0,620,247,2026-12-10T17:45:00+00:00,W10=,Dinamo Zagreb,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 6,Stadion Maksimir,Zagreb,Europe
+2_1299078,Scheduled,0,0,106,197,2026-12-10T20:00:00+00:00,W10=,Stade Brestois 29,🇪🇺,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 6,Stade du Roudourou,Guingamp,Europe
+2_1299077,Scheduled,0,0,168,505,2026-12-10T20:00:00+00:00,W10=,Bayer Leverkusen,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 6,BayArena,Leverkusen,Europe
+2_1299081,Scheduled,0,0,173,66,2026-12-10T20:00:00+00:00,W10=,RB Leipzig,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 6,Red Bull Arena,Leipzig,Europe
+2_1299076,Scheduled,0,0,499,541,2026-12-10T20:00:00+00:00,W10=,Atalanta,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 6,Gewiss Stadium,Bergamo,Europe
+2_1299082,Scheduled,0,0,550,157,2026-12-10T20:00:00+00:00,W10=,Shakhtar Donetsk,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 6,VELTINS-Arena,Gelsenkirchen,Europe
+2_1299079,Scheduled,0,0,569,228,2026-12-10T20:00:00+00:00,W10=,Club Brugge KV,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 6,Jan Breydelstadion,Brugge,Europe
+2_1299080,Scheduled,0,0,571,85,2026-12-10T20:00:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 6,Red Bull Arena,Wals-Siezenheim,Europe
+2_1299084,Scheduled,0,0,79,637,2026-12-11T17:45:00+00:00,W10=,Lille,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 6,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
+2_1299083,Scheduled,0,0,530,656,2026-12-11T17:45:00+00:00,W10=,Atletico Madrid,🔴⚪️,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 6,Riyadh Air Metropolitano,Madrid,Europe
+2_1299091,Scheduled,0,0,42,91,2026-12-11T20:00:00+00:00,W10=,Arsenal,🔴⚪️,Monaco,🇪🇺,UEFA Champions League,League Stage - 6,Emirates Stadium,London,Europe
+2_1299086,Scheduled,0,0,165,529,2026-12-11T20:00:00+00:00,W10=,Borussia Dortmund,🟡,Barcelona,🔵🔴,UEFA Champions League,League Stage - 6,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1299090,Scheduled,0,0,172,565,2026-12-11T20:00:00+00:00,W10=,VfB Stuttgart,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 6,MHPArena,Stuttgart,Europe
+2_1299087,Scheduled,0,0,209,628,2026-12-11T20:00:00+00:00,W10=,Feyenoord,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 6,Stadion Feijenoord,Rotterdam,Europe
+2_1299085,Scheduled,0,0,211,500,2026-12-11T20:00:00+00:00,W10=,Benfica,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 6,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1299089,Scheduled,0,0,489,598,2026-12-11T20:00:00+00:00,W10=,AC Milan,🔴⚫️,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 6,Stadio Giuseppe Meazza,Milano,Europe
+2_1299088,Scheduled,0,0,496,50,2026-12-11T20:00:00+00:00,W10=,Juventus,⚪️⚫️,Manchester City,🔵,UEFA Champions League,League Stage - 6,Allianz Stadium,Torino,Europe
+2_1299093,Scheduled,0,0,91,66,2027-01-21T17:45:00+00:00,W10=,Monaco,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,League Stage - 7,Stade Louis-II,Monaco,Europe
+2_1299092,Scheduled,0,0,499,637,2027-01-21T17:45:00+00:00,W10=,Atalanta,🇪🇺,Sturm Graz,🇪🇺,UEFA Champions League,League Stage - 7,Gewiss Stadium,Bergamo,Europe
+2_1299099,Scheduled,0,0,40,79,2027-01-21T20:00:00+00:00,W10=,Liverpool,🔴,Lille,🇪🇺,UEFA Champions League,League Stage - 7,Anfield,Liverpool,Europe
+2_1299095,Scheduled,0,0,211,529,2027-01-21T20:00:00+00:00,W10=,Benfica,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,League Stage - 7,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1299096,Scheduled,0,0,500,165,2027-01-21T20:00:00+00:00,W10=,Bologna,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,League Stage - 7,Stadio Renato Dall'Ara,Bologna,Europe
+2_1299094,Scheduled,0,0,530,168,2027-01-21T20:00:00+00:00,W10=,Atletico Madrid,🔴⚪️,Bayer Leverkusen,🇪🇺,UEFA Champions League,League Stage - 7,Riyadh Air Metropolitano,Madrid,Europe
+2_1299097,Scheduled,0,0,569,496,2027-01-21T20:00:00+00:00,W10=,Club Brugge KV,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,League Stage - 7,Jan Breydelstadion,Brugge,Europe
+2_1299098,Scheduled,0,0,598,197,2027-01-21T20:00:00+00:00,W10=,FK Crvena Zvezda,🇪🇺,PSV Eindhoven,🇪🇺,UEFA Champions League,League Stage - 7,Stadion Rajko Mitić,Beograd,Europe
+2_1299100,Scheduled,0,0,656,172,2027-01-21T20:00:00+00:00,W10=,Slovan Bratislava,🇪🇺,VfB Stuttgart,🇪🇺,UEFA Champions League,League Stage - 7,Štadión Tehelné pole,Bratislava,Europe
+2_1299101,Scheduled,0,0,173,228,2027-01-22T17:45:00+00:00,W10=,RB Leipzig,🇪🇺,Sporting CP,🇪🇺,UEFA Champions League,League Stage - 7,Red Bull Arena,Leipzig,Europe
+2_1299102,Scheduled,0,0,550,106,2027-01-22T17:45:00+00:00,W10=,Shakhtar Donetsk,🇪🇺,Stade Brestois 29,🇪🇺,UEFA Champions League,League Stage - 7,VELTINS-Arena,Gelsenkirchen,Europe
+2_1299108,Scheduled,0,0,42,620,2027-01-22T20:00:00+00:00,W10=,Arsenal,🔴⚪️,Dinamo Zagreb,🇪🇺,UEFA Champions League,League Stage - 7,Emirates Stadium,London,Europe
+2_1299106,Scheduled,0,0,85,50,2027-01-22T20:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Manchester City,🔵,UEFA Champions League,League Stage - 7,Parc des Princes,Paris,Europe
+2_1299104,Scheduled,0,0,209,157,2027-01-22T20:00:00+00:00,W10=,Feyenoord,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,League Stage - 7,Stadion Feijenoord,Rotterdam,Europe
+2_1299103,Scheduled,0,0,247,565,2027-01-22T20:00:00+00:00,W10=,Celtic,🇪🇺,BSC Young Boys,🇪🇺,UEFA Champions League,League Stage - 7,Celtic Park,Glasgow,Europe
+2_1299105,Scheduled,0,0,489,547,2027-01-22T20:00:00+00:00,W10=,AC Milan,🔴⚫️,Girona,🇪🇺,UEFA Champions League,League Stage - 7,Stadio Giuseppe Meazza,Milano,Europe
+2_1299109,Scheduled,0,0,541,571,2027-01-22T20:00:00+00:00,W10=,Real Madrid,⚪️,Red Bull Salzburg,🇪🇺,UEFA Champions League,League Stage - 7,Estadio Santiago Bernabéu,Madrid,Europe
+2_1299107,Scheduled,0,0,628,505,2027-01-22T20:00:00+00:00,W10=,Sparta Praha,🇪🇺,Inter,🔵⚫️,UEFA Champions League,League Stage - 7,epet ARENA,Praha,Europe
+2_1299122,Scheduled,0,0,50,569,2027-01-29T20:00:00+00:00,W10=,Manchester City,🔵,Club Brugge KV,🇪🇺,UEFA Champions League,League Stage - 8,Etihad Stadium,Manchester,Europe
+2_1299110,Scheduled,0,0,66,247,2027-01-29T20:00:00+00:00,W10=,Aston Villa,🇪🇺,Celtic,🇪🇺,UEFA Champions League,League Stage - 8,Villa Park,Birmingham,Europe
+2_1299121,Scheduled,0,0,79,209,2027-01-29T20:00:00+00:00,W10=,Lille,🇪🇺,Feyenoord,🇪🇺,UEFA Champions League,League Stage - 8,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
+2_1299114,Scheduled,0,0,106,541,2027-01-29T20:00:00+00:00,W10=,Stade Brestois 29,🇪🇺,Real Madrid,⚪️,UEFA Champions League,League Stage - 8,Stade du Roudourou,Guingamp,Europe
+2_1299116,Scheduled,0,0,157,656,2027-01-29T20:00:00+00:00,W10=,Bayern München,🇪🇺,Slovan Bratislava,🇪🇺,UEFA Champions League,League Stage - 8,Allianz Arena,München,Europe
+2_1299113,Scheduled,0,0,165,550,2027-01-29T20:00:00+00:00,W10=,Borussia Dortmund,🟡,Shakhtar Donetsk,🇪🇺,UEFA Champions League,League Stage - 8,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1299112,Scheduled,0,0,168,628,2027-01-29T20:00:00+00:00,W10=,Bayer Leverkusen,🇪🇺,Sparta Praha,🇪🇺,UEFA Champions League,League Stage - 8,BayArena,Leverkusen,Europe
+2_1299126,Scheduled,0,0,172,85,2027-01-29T20:00:00+00:00,W10=,VfB Stuttgart,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,League Stage - 8,MHPArena,Stuttgart,Europe
+2_1299123,Scheduled,0,0,197,40,2027-01-29T20:00:00+00:00,W10=,PSV Eindhoven,🇪🇺,Liverpool,🔴,UEFA Champions League,League Stage - 8,Philips Stadion,Eindhoven,Europe
+2_1299125,Scheduled,0,0,228,500,2027-01-29T20:00:00+00:00,W10=,Sporting CP,🇪🇺,Bologna,🇪🇺,UEFA Champions League,League Stage - 8,Estádio José Alvalade,Lisboa,Europe
+2_1299120,Scheduled,0,0,496,211,2027-01-29T20:00:00+00:00,W10=,Juventus,⚪️⚫️,Benfica,🇪🇺,UEFA Champions League,League Stage - 8,Allianz Stadium,Torino,Europe
+2_1299119,Scheduled,0,0,505,91,2027-01-29T20:00:00+00:00,W10=,Inter,🔵⚫️,Monaco,🇪🇺,UEFA Champions League,League Stage - 8,Stadio Giuseppe Meazza,Milano,Europe
+2_1299111,Scheduled,0,0,529,499,2027-01-29T20:00:00+00:00,W10=,Barcelona,🔵🔴,Atalanta,🇪🇺,UEFA Champions League,League Stage - 8,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1299118,Scheduled,0,0,547,42,2027-01-29T20:00:00+00:00,W10=,Girona,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,League Stage - 8,Estadi Municipal de Montilivi,Girona,Europe
+2_1299127,Scheduled,0,0,565,598,2027-01-29T20:00:00+00:00,W10=,BSC Young Boys,🇪🇺,FK Crvena Zvezda,🇪🇺,UEFA Champions League,League Stage - 8,Stadion Wankdorf,Bern,Europe
+2_1299117,Scheduled,0,0,571,530,2027-01-29T20:00:00+00:00,W10=,Red Bull Salzburg,🇪🇺,Atletico Madrid,🔴⚪️,UEFA Champions League,League Stage - 8,Red Bull Arena,Wals-Siezenheim,Europe
+2_1299115,Scheduled,0,0,620,489,2027-01-29T20:00:00+00:00,W10=,Dinamo Zagreb,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,League Stage - 8,Stadion Maksimir,Zagreb,Europe
+2_1299124,Scheduled,0,0,637,173,2027-01-29T20:00:00+00:00,W10=,Sturm Graz,🇪🇺,RB Leipzig,🇪🇺,UEFA Champions League,League Stage - 8,28 Black Arena,Klagenfurt am Wörthersee,Europe
+2_1345737,Scheduled,0,0,106,85,2027-02-11T17:45:00+00:00,W10=,Stade Brestois 29,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,Knockout Round Play-offs,Stade du Roudourou,Guingamp,Europe
+2_1345743,Scheduled,0,0,50,541,2027-02-11T20:00:00+00:00,W10=,Manchester City,🔵,Real Madrid,⚪️,UEFA Champions League,Knockout Round Play-offs,Etihad Stadium,Manchester,Europe
+2_1345739,Scheduled,0,0,228,165,2027-02-11T20:00:00+00:00,W10=,Sporting CP,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,Knockout Round Play-offs,Estádio José Alvalade,Lisboa,Europe
+2_1345741,Scheduled,0,0,496,197,2027-02-11T20:00:00+00:00,W10=,Juventus,⚪️⚫️,PSV Eindhoven,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Allianz Stadium,Torino,Europe
+2_1345745,Scheduled,0,0,569,499,2027-02-12T17:45:00+00:00,W10=,Club Brugge KV,🇪🇺,Atalanta,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Jan Breydelstadion,Brugge,Europe
+2_1345749,Scheduled,0,0,91,211,2027-02-12T20:00:00+00:00,W10=,Monaco,🇪🇺,Benfica,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Stade Louis-II,Monaco,Europe
+2_1345747,Scheduled,0,0,209,489,2027-02-12T20:00:00+00:00,W10=,Feyenoord,🇪🇺,AC Milan,🔴⚫️,UEFA Champions League,Knockout Round Play-offs,Stadion Feijenoord,Rotterdam,Europe
+2_1345751,Scheduled,0,0,247,157,2027-02-12T20:00:00+00:00,W10=,Celtic,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Celtic Park,Glasgow,Europe
+2_1345748,Scheduled,0,0,489,209,2027-02-18T17:45:00+00:00,W10=,AC Milan,🔴⚫️,Feyenoord,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Stadio Giuseppe Meazza,Milano,Europe
+2_1345752,Scheduled,0,0,157,247,2027-02-18T20:00:00+00:00,W10=,Bayern München,🇪🇺,Celtic,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Allianz Arena,München,Europe
+2_1345750,Scheduled,0,0,211,91,2027-02-18T20:00:00+00:00,W10=,Benfica,🇪🇺,Monaco,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1345746,Scheduled,0,0,499,569,2027-02-18T20:00:00+00:00,W10=,Atalanta,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Gewiss Stadium,Bergamo,Europe
+2_1345740,Scheduled,0,0,165,228,2027-02-19T17:45:00+00:00,W10=,Borussia Dortmund,🟡,Sporting CP,🇪🇺,UEFA Champions League,Knockout Round Play-offs,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1345738,Scheduled,0,0,85,106,2027-02-19T20:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Stade Brestois 29,🇪🇺,UEFA Champions League,Knockout Round Play-offs,Parc des Princes,Paris,Europe
+2_1345742,Scheduled,0,0,197,496,2027-02-19T20:00:00+00:00,W10=,PSV Eindhoven,🇪🇺,Juventus,⚪️⚫️,UEFA Champions League,Knockout Round Play-offs,Philips Stadion,Eindhoven,Europe
+2_1345744,Scheduled,0,0,541,50,2027-02-19T20:00:00+00:00,W10=,Real Madrid,⚪️,Manchester City,🔵,UEFA Champions League,Knockout Round Play-offs,Estadio Santiago Bernabéu,Madrid,Europe
+2_1353166,Scheduled,0,0,569,66,2027-03-04T17:45:00+00:00,W10=,Club Brugge KV,🇪🇺,Aston Villa,🇪🇺,UEFA Champions League,Round of 16,Jan Breydelstadion,Brugge,Europe
+2_1353168,Scheduled,0,0,165,79,2027-03-04T20:00:00+00:00,W10=,Borussia Dortmund,🟡,Lille,🇪🇺,UEFA Champions League,Round of 16,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1353172,Scheduled,0,0,197,42,2027-03-04T20:00:00+00:00,W10=,PSV Eindhoven,🇪🇺,Arsenal,🔴⚪️,UEFA Champions League,Round of 16,Philips Stadion,Eindhoven,Europe
+2_1353170,Scheduled,0,0,541,530,2027-03-04T20:00:00+00:00,W10=,Real Madrid,⚪️,Atletico Madrid,🔴⚪️,UEFA Champions League,Round of 16,Estadio Santiago Bernabéu,Madrid,Europe
+2_1353174,Scheduled,0,0,209,505,2027-03-05T17:45:00+00:00,W10=,Feyenoord,🇪🇺,Inter,🔵⚫️,UEFA Champions League,Round of 16,Stadion Feijenoord,Rotterdam,Europe
+2_1353178,Scheduled,0,0,85,40,2027-03-05T20:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Liverpool,🔴,UEFA Champions League,Round of 16,Parc des Princes,Paris,Europe
+2_1353180,Scheduled,0,0,157,168,2027-03-05T20:00:00+00:00,W10=,Bayern München,🇪🇺,Bayer Leverkusen,🇪🇺,UEFA Champions League,Round of 16,Allianz Arena,München,Europe
+2_1353176,Scheduled,0,0,211,529,2027-03-05T20:00:00+00:00,W10=,Benfica,🇪🇺,Barcelona,🔵🔴,UEFA Champions League,Round of 16,Estádio do Sport Lisboa e Benfica,Lisboa,Europe
+2_1353177,Scheduled,0,0,529,211,2027-03-11T17:45:00+00:00,W10=,Barcelona,🔵🔴,Benfica,🇪🇺,UEFA Champions League,Round of 16,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1353179,Scheduled,0,0,40,85,2027-03-11T20:00:00+00:00,W10=,Liverpool,🔴,Paris Saint Germain,🔵🔴,UEFA Champions League,Round of 16,Anfield,Liverpool,Europe
+2_1353181,Scheduled,0,0,168,157,2027-03-11T20:00:00+00:00,W10=,Bayer Leverkusen,🇪🇺,Bayern München,🇪🇺,UEFA Champions League,Round of 16,BayArena,Leverkusen,Europe
+2_1353175,Scheduled,0,0,505,209,2027-03-11T20:00:00+00:00,W10=,Inter,🔵⚫️,Feyenoord,🇪🇺,UEFA Champions League,Round of 16,Stadio Giuseppe Meazza,Milano,Europe
+2_1353169,Scheduled,0,0,79,165,2027-03-12T17:45:00+00:00,W10=,Lille,🇪🇺,Borussia Dortmund,🟡,UEFA Champions League,Round of 16,Decathlon Arena - Stade Pierre-Mauroy,Villeneuve d'Ascq,Europe
+2_1353173,Scheduled,0,0,42,197,2027-03-12T20:00:00+00:00,W10=,Arsenal,🔴⚪️,PSV Eindhoven,🇪🇺,UEFA Champions League,Round of 16,Emirates Stadium,London,Europe
+2_1353167,Scheduled,0,0,66,569,2027-03-12T20:00:00+00:00,W10=,Aston Villa,🇪🇺,Club Brugge KV,🇪🇺,UEFA Champions League,Round of 16,Villa Park,Birmingham,Europe
+2_1353171,Scheduled,0,0,530,541,2027-03-12T20:00:00+00:00,W10=,Atletico Madrid,🔴⚪️,Real Madrid,⚪️,UEFA Champions League,Round of 16,Riyadh Air Metropolitano,Madrid,Europe
+2_1360764,Scheduled,0,0,42,541,2027-04-08T19:00:00+00:00,W10=,Arsenal,🔴⚪️,Real Madrid,⚪️,UEFA Champions League,Quarter-finals,Emirates Stadium,London,Europe
+2_1360333,Scheduled,0,0,157,505,2027-04-08T19:00:00+00:00,W10=,Bayern München,🇪🇺,Inter,🔵⚫️,UEFA Champions League,Quarter-finals,Allianz Arena,München,Europe
+2_1360762,Scheduled,0,0,85,66,2027-04-09T19:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Aston Villa,🇪🇺,UEFA Champions League,Quarter-finals,Parc des Princes,Paris,Europe
+2_1360766,Scheduled,0,0,529,165,2027-04-09T19:00:00+00:00,W10=,Barcelona,🔵🔴,Borussia Dortmund,🟡,UEFA Champions League,Quarter-finals,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1360763,Scheduled,0,0,66,85,2027-04-15T19:00:00+00:00,W10=,Aston Villa,🇪🇺,Paris Saint Germain,🔵🔴,UEFA Champions League,Quarter-finals,Villa Park,Birmingham,Europe
+2_1360767,Scheduled,0,0,165,529,2027-04-15T19:00:00+00:00,W10=,Borussia Dortmund,🟡,Barcelona,🔵🔴,UEFA Champions League,Quarter-finals,SIGNAL IDUNA PARK,Dortmund,Europe
+2_1360334,Scheduled,0,0,505,157,2027-04-16T19:00:00+00:00,W10=,Inter,🔵⚫️,Bayern München,🇪🇺,UEFA Champions League,Quarter-finals,Stadio Giuseppe Meazza,Milano,Europe
+2_1360765,Scheduled,0,0,541,42,2027-04-16T19:00:00+00:00,W10=,Real Madrid,⚪️,Arsenal,🔴⚪️,UEFA Champions League,Quarter-finals,Estadio Santiago Bernabéu,Madrid,Europe
+2_1371730,Scheduled,0,0,42,85,2027-04-29T19:00:00+00:00,W10=,Arsenal,🔴⚪️,Paris Saint Germain,🔵🔴,UEFA Champions League,Semi-finals,Emirates Stadium,London,Europe
+2_1371732,Scheduled,0,0,529,505,2027-04-30T19:00:00+00:00,W10=,Barcelona,🔵🔴,Inter,🔵⚫️,UEFA Champions League,Semi-finals,Estadi Olímpic Lluís Companys,Barcelona,Europe
+2_1371733,Scheduled,0,0,505,529,2027-05-06T19:00:00+00:00,W10=,Inter,🔵⚫️,Barcelona,🔵🔴,UEFA Champions League,Semi-finals,Stadio Giuseppe Meazza,Milano,Europe
+2_1371731,Scheduled,0,0,85,42,2027-05-07T19:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Arsenal,🔴⚪️,UEFA Champions League,Semi-finals,Parc des Princes,Paris,Europe
+2_1374812,Scheduled,0,0,85,505,2027-05-31T19:00:00+00:00,W10=,Paris Saint Germain,🔵🔴,Inter,🔵⚫️,UEFA Champions League,Final,Allianz Arena,München,Europe
