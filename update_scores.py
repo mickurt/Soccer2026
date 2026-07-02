@@ -444,10 +444,216 @@ def run_simulation(sim_date_str, local_matches, base_dir=None):
             
     return updates
 
+
+def get_team_emoji(team_name, league_id):
+    overrides = {
+        "Real Madrid": "⚪️", "Barcelona": "🔵🔴", "Atletico Madrid": "🔴⚪️",
+        "Juventus": "⚪️⚫️", "AC Milan": "🔴⚫️", "Inter": "🔵⚫️",
+        "Bayern Munich": "🔴", "Borussia Dortmund": "🟡"
+    }
+    if team_name in overrides:
+        return overrides[team_name]
+    if league_id == 140: return "🇪🇸"
+    if league_id == 135: return "🇮🇹"
+    if league_id == 78: return "🇩🇪"
+    return "⚽️"
+
+def get_mapped_events(api_events, home_team_id):
+    mapped = []
+    for ev in api_events:
+        ev_type = ev.get('type')
+        if not ev_type:
+            continue
+            
+        detail = ev.get('detail') or ""
+        t_type = ""
+        if ev_type.lower() == 'goal':
+            t_type = 'goal'
+        elif ev_type.lower() == 'card':
+            if 'yellow' in detail.lower():
+                t_type = 'yellow_card'
+            elif 'red' in detail.lower():
+                t_type = 'red_card'
+                
+        if not t_type:
+            continue
+            
+        minute = str(ev.get('time', {}).get('elapsed') or 0)
+        extra = ev.get('time', {}).get('extra')
+        if extra:
+            minute = f"{minute}+{extra}"
+        minute += "'"
+        
+        player_name = ev.get('player', {}).get('name') or "Joueur"
+        team_id = ev.get('team', {}).get('id')
+        team_side = 'home' if team_id == home_team_id else 'away'
+        
+        mapped.append({
+            'minute': minute,
+            'type': t_type,
+            'player': player_name,
+            'team': team_side
+        })
+    
+    # Return as base64 encoded json string
+    json_str = json.dumps(mapped)
+    return base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
+
+def fetch_club_league_updates(api_key, league_id, season=2026):
+    print(f"Fetching club league updates from API-Football for league {league_id}, season {season}...")
+    url = f"https://v3.football.api-sports.io/fixtures?league={league_id}&season={season}"
+    headers = {
+        "x-apisports-key": api_key,
+        "User-Agent": "Mozilla/5.0"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = json.loads(response.read().decode('utf-8'))
+    except Exception as e:
+        print(f"Erreur lors de la requête API-Football : {e}")
+        return None
+        
+    fixtures = data.get("response", [])
+    print(f"Reçu {len(fixtures)} matchs de API-Football.")
+    
+    updates = []
+    for f in fixtures:
+        fixture_obj = f.get("fixture", {})
+        status_obj = fixture_obj.get("status", {})
+        status_short = status_obj.get("short") or ""
+        
+        # Map status
+        if status_short in ["FT", "AET", "PEN"]:
+            status = "Finished"
+        elif status_short in ["1H", "HT", "2H", "ET", "BT", "P", "INT"]:
+            status = "Live"
+        else:
+            status = "Scheduled"
+            
+        teams_obj = f.get("teams", {})
+        home_team = teams_obj.get("home", {})
+        away_team = teams_obj.get("away", {})
+        
+        home_id = str(home_team.get("id") or "")
+        away_id = str(away_team.get("id") or "")
+        
+        goals_obj = f.get("goals", {})
+        home_score = goals_obj.get("home")
+        away_score = goals_obj.get("away")
+        if home_score is None: home_score = 0
+        if away_score is None: away_score = 0
+        
+        # Date conversion
+        kickoff_utc = fixture_obj.get("date")
+        
+        # Mapped events
+        events_list = f.get("events") or []
+        events_base64 = get_mapped_events(events_list, home_team.get("id"))
+        
+        # Extra fields for on-the-fly client creation
+        home_name = home_team.get("name") or "Home"
+        home_emoji = get_team_emoji(home_name, league_id)
+        away_name = away_team.get("name") or "Away"
+        away_emoji = get_team_emoji(away_name, league_id)
+        
+        venue_obj = fixture_obj.get("venue", {})
+        venue_name = venue_obj.get("name") or "Stade"
+        venue_city = venue_obj.get("city") or "Ville"
+        venue_country = "Espagne" if league_id == 140 else ("Italie" if league_id == 135 else "Allemagne")
+        
+        league_obj = f.get("league", {})
+        stage = league_obj.get("name") or "League"
+        group_or_label = league_obj.get("round") or "Journée"
+        
+        # Unique match ID prefixed with league_id
+        match_id = f"{league_id}_{fixture_obj.get('id')}"
+        
+        updates.append({
+            "id": match_id,
+            "status": status,
+            "home_score": home_score,
+            "away_score": away_score,
+            "home_team_code": home_id,
+            "away_team_code": away_id,
+            "kickoff_utc": kickoff_utc,
+            "events": events_base64,
+            "home_team_name": home_name,
+            "home_team_emoji": home_emoji,
+            "away_team_name": away_name,
+            "away_team_emoji": away_emoji,
+            "stage": stage,
+            "group_or_label": group_or_label,
+            "venue_name": venue_name,
+            "venue_city": venue_city,
+            "venue_country": venue_country
+        })
+        
+    return updates
+
+def fetch_club_league_standings(api_key, league_id, season=2026):
+    print(f"Fetching club league standings from API-Football for league {league_id}, season {season}...")
+    url = f"https://v3.football.api-sports.io/standings?league={league_id}&season={season}"
+    headers = {
+        "x-apisports-key": api_key,
+        "User-Agent": "Mozilla/5.0"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = json.loads(response.read().decode('utf-8'))
+    except Exception as e:
+        print(f"Erreur lors de la requête API-Football standings : {e}")
+        return []
+        
+    response_list = data.get("response", [])
+    if not response_list:
+        return []
+        
+    league_data = response_list[0].get("league", {})
+    standings_groups = league_data.get("standings", [])
+    if not standings_groups:
+        return []
+        
+    api_standings = standings_groups[0]
+    
+    standings = []
+    for s in api_standings:
+        team_obj = s.get("team", {})
+        team_name = team_obj.get("name") or "Team"
+        team_id = str(team_obj.get("id") or "")
+        
+        all_stats = s.get("all", {})
+        goals = all_stats.get("goals", {})
+        
+        standings.append({
+            "group": "La Liga" if league_id == 140 else ("Serie A" if league_id == 135 else "Bundesliga"),
+            "position": s.get("rank") or 0,
+            "team_name": team_name,
+            "fifa_code": team_id,
+            "played": all_stats.get("played") or 0,
+            "won": all_stats.get("win") or 0,
+            "draw": all_stats.get("draw") or 0,
+            "lost": all_stats.get("lose") or 0,
+            "points": s.get("points") or 0,
+            "goals_for": goals.get("for") or 0,
+            "goals_against": goals.get("against") or 0,
+            "goal_difference": s.get("goalsDiff") or 0
+        })
+        
+    return standings
+
+
 def write_updates_to_csv(updates, output_path):
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc', 'events'])
+        writer.writerow([
+            'id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc', 'events',
+            'home_team_name', 'home_team_emoji', 'away_team_name', 'away_team_emoji', 'stage', 'group_or_label',
+            'venue_name', 'venue_city', 'venue_country'
+        ])
         for u in updates:
             writer.writerow([
                 u['id'],
@@ -457,7 +663,16 @@ def write_updates_to_csv(updates, output_path):
                 u.get('home_team_code', ''),
                 u.get('away_team_code', ''),
                 u.get('kickoff_utc', ''),
-                u.get('events', '')
+                u.get('events', ''),
+                u.get('home_team_name', ''),
+                u.get('home_team_emoji', ''),
+                u.get('away_team_name', ''),
+                u.get('away_team_emoji', ''),
+                u.get('stage', ''),
+                u.get('group_or_label', ''),
+                u.get('venue_name', ''),
+                u.get('venue_city', ''),
+                u.get('venue_country', '')
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
@@ -660,14 +875,18 @@ def commit_and_push(base_dir):
     try:
         subprocess.run(["git", "config", "--global", "user.name", "GitHub Actions Bot"], check=True)
         subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"], check=True)
-        
-        subprocess.run(["git", "add", "matches_update.csv", "standings.csv"], check=True)
+        files_to_add = []
+        for f in os.listdir(base_dir):
+            if f.endswith('update.csv') or f.endswith('standings.csv') or f == 'matches_update.csv':
+                files_to_add.append(f)
+        for f in files_to_add:
+            subprocess.run(["git", "add", os.path.join(base_dir, f)], check=True)
         
         res = subprocess.run(["git", "diff", "--quiet"]) # check if modified
         res2 = subprocess.run(["git", "diff", "--cached", "--quiet"])
         if res.returncode != 0 or res2.returncode != 0:
-            # Stage again to be safe
-            subprocess.run(["git", "add", "matches_update.csv", "standings.csv"], check=True)
+            for f in files_to_add:
+                subprocess.run(["git", "add", os.path.join(base_dir, f)], check=True)
             subprocess.run(["git", "commit", "-m", "Auto-update matches scores and standings [skip ci]"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("Scores et classements committés et pushés avec succès sur GitHub.")
@@ -1027,20 +1246,44 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
     # Charger les scores précédents pour détecter les changements
     previous_scores = load_previous_scores(output_path)
     
-    # 1. Obtenir les scores de match
-    if args.simulate:
-        updates = run_simulation(args.sim_date, local_matches, base_dir)
-    else:
-        api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
-        fetched = fetch_api_updates(api_key, local_matches, teams)
-        if fetched is not None:
-            updates = fetched
+    league = getattr(args, "league", "WC2026")
+    
+    # 1. Obtenir les scores de match et standings selon la ligue
+    if league == "WC2026":
+        if args.simulate:
+            updates = run_simulation(args.sim_date, local_matches, base_dir)
         else:
-            print("Erreur de récupération API.")
-            return False
-            
-    # 2. Obtenir les classements
-    standings = calculate_standings(local_matches, updates, teams_metadata)
+            api_key = args.api_key or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
+            fetched = fetch_api_updates(api_key, local_matches, teams)
+            if fetched is not None:
+                updates = fetched
+            else:
+                print("Erreur de récupération API.")
+                return False
+        standings = calculate_standings(local_matches, updates, teams_metadata)
+    else:
+        # Configuration club leagues
+        configs = {
+            "LALIGA": 140,
+            "SERIEA": 135,
+            "BUNDESLIGA": 78
+        }
+        league_id = configs.get(league)
+        api_key = args.api_key or os.environ.get("FOOTBALL_API_KEY") or os.environ.get("FOOTBALL_DATA_API_KEY") or ""
+        if not api_key:
+            print("Attention : FOOTBALL_API_KEY non fournie. Utilisation d'un mock vide.")
+            updates = []
+            standings = []
+        else:
+            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2026)
+            if fetched_updates is not None:
+                updates = fetched_updates
+            else:
+                print("Erreur API-Football updates.")
+                return False
+                
+            fetched_standings = fetch_club_league_standings(api_key, league_id, season=2026)
+            standings = fetched_standings
             
     # Détecter les changements
     changed_matches = []
@@ -1070,14 +1313,25 @@ def main():
     parser.add_argument('--simulate', action='store_true', help="Activer le mode de simulation")
     parser.add_argument('--sim-date', type=str, default=None, help="Date virtuelle de simulation (Ex: 2026-06-15)")
     parser.add_argument('--live-loop', action='store_true', help="Activer la boucle haute fréquence d'une minute en cas de match en cours")
+    parser.add_argument('--league', type=str, default="WC2026", help="Ligue à mettre à jour (WC2026, LALIGA, SERIEA, BUNDESLIGA)")
     
     args = parser.parse_args()
     
     base_dir = os.path.dirname(os.path.abspath(__file__))
     teams_path = os.path.join(base_dir, 'teams.csv')
     matches_path = os.path.join(base_dir, 'matches.csv')
-    output_path = os.path.join(base_dir, 'matches_update.csv')
-    standings_path = os.path.join(base_dir, 'standings.csv')
+    
+    # Adapt output paths dynamically based on selected league
+    prefix_map = {
+        "WC2026": "",
+        "LALIGA": "laliga_",
+        "SERIEA": "seriea_",
+        "BUNDESLIGA": "bundesliga_"
+    }
+    prefix = prefix_map.get(args.league, "")
+    
+    output_path = os.path.join(base_dir, f'{prefix}matches_update.csv' if args.league == "WC2026" else f'{prefix}update.csv')
+    standings_path = os.path.join(base_dir, f'{prefix}standings.csv')
     
     teams = load_teams(teams_path)
     teams_metadata = load_teams_metadata(teams_path)

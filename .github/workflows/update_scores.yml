@@ -33,6 +33,7 @@ jobs:
       - name: Run update script
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY || secrets.FOOTBALL_DATA_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           APNS_KEY_ID: ${{ secrets.APNS_KEY_ID }}
           APNS_TEAM_ID: ${{ secrets.APNS_TEAM_ID }}
@@ -41,6 +42,17 @@ jobs:
           PYTHONUNBUFFERED: 1
           APNS_SANDBOX: "false"
         run: |
-          # Exécute le script avec la boucle haute fréquence.
-          # S'il y a un match en direct, le script bouclera 5 fois (1 fois par minute).
-          python3 update_scores.py --live-loop
+          # 1. Coupe du Monde
+          python3 update_scores.py --league WC2026 --live-loop
+          
+          # 2. La Liga
+          git pull --rebase
+          python3 update_scores.py --league LALIGA --live-loop
+          
+          # 3. Serie A
+          git pull --rebase
+          python3 update_scores.py --league SERIEA --live-loop
+          
+          # 4. Bundesliga
+          git pull --rebase
+          python3 update_scores.py --league BUNDESLIGA --live-loop
