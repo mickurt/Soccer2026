@@ -556,8 +556,10 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         if home_score is None: home_score = 0
         if away_score is None: away_score = 0
         
-        # Date conversion
+        # Date conversion and shifting (+2 years to match 2026 simulation)
         kickoff_utc = fixture_obj.get("date")
+        if kickoff_utc:
+            kickoff_utc = kickoff_utc.replace("2024-", "2026-").replace("2025-", "2027-")
         
         # Mapped events
         events_list = f.get("events") or []
@@ -1307,14 +1309,14 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
             updates = []
             standings = []
         else:
-            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2026)
+            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2024)
             if fetched_updates is not None:
                 updates = fetched_updates
             else:
                 print("Erreur API-Football updates.")
                 return False
                 
-            fetched_standings = fetch_club_league_standings(api_key, league_id, season=2026)
+            fetched_standings = fetch_club_league_standings(api_key, league_id, season=2024)
             standings = fetched_standings
             
     # Détecter les changements
