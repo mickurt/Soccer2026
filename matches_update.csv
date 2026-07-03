@@ -93,7 +93,7 @@ id,status,home_score,away_score,home_team_code,away_team_code,kickoff_utc,events
 92,Scheduled,0,0,MEX,ENG,2026-07-06T00:00:00Z,,,,,,,,,,,,
 93,Scheduled,0,0,POR,ESP,2026-07-06T19:00:00Z,,,,,,,,,,,,
 94,Scheduled,0,0,USA,BEL,2026-07-07T00:00:00Z,,,,,,,,,,,,
-95,Scheduled,0,0,,,2026-07-07T16:00:00Z,,,,,,,,,,,,
+95,Scheduled,0,0,,EGY,2026-07-07T16:00:00Z,,,,,,,,,,,,
 96,Scheduled,0,0,SUI,,2026-07-07T20:00:00Z,,,,,,,,,,,,
 97,Scheduled,0,0,,,2026-07-09T20:00:00Z,,,,,,,,,,,,
 98,Scheduled,0,0,,,2026-07-10T19:00:00Z,,,,,,,,,,,,
