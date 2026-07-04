@@ -43,7 +43,7 @@ jobs:
           APNS_SANDBOX: "false"
         run: |
           # 1. Coupe du Monde
-          python3 update_scores.py --league WC2026 --live-loop
+          python3 update_scores.py --league WC2026 --live-loop --simulate
           
           # 2. La Liga
           git pull --rebase

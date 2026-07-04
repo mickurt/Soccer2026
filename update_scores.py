@@ -214,10 +214,12 @@ def fetch_api_updates(api_key, local_matches, teams):
                         t_data = json.loads(t_resp.read().decode('utf-8'))
                         for ev in t_data.get('Event', []):
                             t_type = ev.get('Type')
-                            # 0: Goal (But!), 2: Yellow Card, 3: Red Card
-                            if t_type in [0, 2, 3]:
-                                ev_type = "goal" if t_type == 0 else ("yellow_card" if t_type == 2 else "red_card")
-                                minute = ev.get('MatchMinute') or ""
+                            minute = ev.get('MatchMinute') or ""
+                            # 0: Goal, 34: Own Goal, 41: Penalty, 2: Yellow Card, 3: Red Card
+                            if t_type in [0, 2, 3, 34, 41]:
+                                if t_type == 41 and not minute:
+                                    continue
+                                ev_type = "goal" if t_type in [0, 34, 41] else ("yellow_card" if t_type == 2 else "red_card")
                                 ev_team_id = ev.get('IdTeam')
                                 
                                 team_mapping = "unknown"
@@ -231,6 +233,8 @@ def fetch_api_updates(api_key, local_matches, teams):
                                 if desc_list:
                                     description = desc_list[0].get('Description') or ""
                                     player_name = extract_player_name(description, t_type)
+                                    if t_type == 34:
+                                        player_name += " (CSC)"
                                     
                                 events_list.append({
                                     'minute': minute,
@@ -247,6 +251,9 @@ def fetch_api_updates(api_key, local_matches, teams):
                 events_json = json.dumps(events_list)
                 events_base64 = base64.b64encode(events_json.encode('utf-8')).decode('utf-8')
             
+            home_penalty_score = api_m.get('HomeTeamPenaltyScore')
+            away_penalty_score = api_m.get('AwayTeamPenaltyScore')
+            
             updates.append({
                 'id': local_m['id'],
                 'status': status,
@@ -256,7 +263,9 @@ def fetch_api_updates(api_key, local_matches, teams):
                 'away_team_code': away_team_code,
                 'kickoff_utc': api_m.get('Date') or '',
                 'match_time': api_m.get('MatchTime') or '',
-                'events': events_base64
+                'events': events_base64,
+                'home_penalty_score': home_penalty_score if home_penalty_score is not None else '',
+                'away_penalty_score': away_penalty_score if away_penalty_score is not None else ''
             })
             matched_count += 1
         else:
@@ -387,6 +396,16 @@ def run_simulation(sim_date_str, local_matches, base_dir=None):
             home_score = random.randint(0, 4)
             away_score = random.randint(0, 3)
             
+            home_penalty_score = ''
+            away_penalty_score = ''
+            if int(m['id']) >= 73 and home_score == away_score:
+                home_pen = random.randint(3, 5)
+                away_pen = random.randint(3, 5)
+                while home_pen == away_pen:
+                    away_pen = random.randint(3, 5)
+                home_penalty_score = home_pen
+                away_penalty_score = away_pen
+            
             # Générer les évènements de match simulés
             sim_events = []
             if home_score > 0 or away_score > 0:
@@ -406,7 +425,9 @@ def run_simulation(sim_date_str, local_matches, base_dir=None):
                 'home_team_code': home_code,
                 'away_team_code': away_code,
                 'kickoff_utc': kickoff_utc_str,
-                'events': events_base64
+                'events': events_base64,
+                'home_penalty_score': home_penalty_score,
+                'away_penalty_score': away_penalty_score
             })
         elif kickoff <= sim_dt < end_time:
             # Match en cours (Live) : score progressif changeant toutes les 5 minutes réelles
@@ -439,7 +460,23 @@ def run_simulation(sim_date_str, local_matches, base_dir=None):
                 'home_team_code': home_code,
                 'away_team_code': away_code,
                 'kickoff_utc': kickoff_utc_str,
-                'events': events_base64
+                'events': events_base64,
+                'home_penalty_score': '',
+                'away_penalty_score': ''
+            })
+        else:
+            # Match futur (Scheduled)
+            updates.append({
+                'id': m['id'],
+                'status': 'Scheduled',
+                'home_score': 0,
+                'away_score': 0,
+                'home_team_code': home_code,
+                'away_team_code': away_code,
+                'kickoff_utc': kickoff_utc_str,
+                'events': '',
+                'home_penalty_score': '',
+                'away_penalty_score': ''
             })
             
     return updates
@@ -550,23 +587,31 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         home_id = str(home_team.get("id") or "")
         away_id = str(away_team.get("id") or "")
         
-        goals_obj = f.get("goals", {})
+        goals_obj = f.get("goals", {}) or {}
         home_score = goals_obj.get("home")
         away_score = goals_obj.get("away")
         if home_score is None: home_score = 0
         if away_score is None: away_score = 0
+        
+        score_obj = f.get("score") or {}
+        penalty_obj = score_obj.get("penalty") or {}
+        home_penalty_score = penalty_obj.get("home") if penalty_obj.get("home") is not None else ''
+        away_penalty_score = penalty_obj.get("away") if penalty_obj.get("away") is not None else ''
         
         # Date conversion and shifting (+2 years to match 2026 simulation)
         kickoff_utc = fixture_obj.get("date")
         if kickoff_utc:
             kickoff_utc = kickoff_utc.replace("2024-", "2026-").replace("2025-", "2027-")
             
-        # Dynamically set future matches (after virtual date July 2, 2026) as Scheduled
-        if kickoff_utc and kickoff_utc > "2026-07-02T08:00:00":
+        # Dynamically set future matches (after current UTC time) as Scheduled
+        now_utc_str = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        if kickoff_utc and kickoff_utc > now_utc_str:
             status = "Scheduled"
             home_score = 0
             away_score = 0
             events_base64 = ""
+            home_penalty_score = ""
+            away_penalty_score = ""
             # If the match was marked as finished in the raw API response but is in the future in 2026,
             # we want to ensure it is Scheduled so users can make predictions.
         
@@ -622,7 +667,9 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
             "venue_city": venue_city,
             "venue_country": venue_country,
             "home_team_logo": home_logo,
-            "away_team_logo": away_logo
+            "away_team_logo": away_logo,
+            "home_penalty_score": home_penalty_score,
+            "away_penalty_score": away_penalty_score
         })
         
     return updates
@@ -695,7 +742,8 @@ def write_updates_to_csv(updates, output_path):
         writer.writerow([
             'id', 'status', 'home_score', 'away_score', 'home_team_code', 'away_team_code', 'kickoff_utc', 'events',
             'home_team_name', 'home_team_emoji', 'away_team_name', 'away_team_emoji', 'stage', 'group_or_label',
-            'venue_name', 'venue_city', 'venue_country', 'home_team_logo', 'away_team_logo'
+            'venue_name', 'venue_city', 'venue_country', 'home_team_logo', 'away_team_logo',
+            'home_penalty_score', 'away_penalty_score'
         ])
         for u in updates:
             writer.writerow([
@@ -717,7 +765,9 @@ def write_updates_to_csv(updates, output_path):
                 u.get('venue_city', ''),
                 u.get('venue_country', ''),
                 u.get('home_team_logo', ''),
-                u.get('away_team_logo', '')
+                u.get('away_team_logo', ''),
+                u.get('home_penalty_score', ''),
+                u.get('away_penalty_score', '')
             ])
     print(f"Succès : {len(updates)} matchs écrits dans {output_path}")
 
