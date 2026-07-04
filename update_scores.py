@@ -992,6 +992,7 @@ def commit_and_push(base_dir):
             for f in files_to_add:
                 subprocess.run(["git", "add", os.path.join(base_dir, f)], check=True)
             subprocess.run(["git", "commit", "-m", "Auto-update matches scores and standings [skip ci]"], check=True)
+            subprocess.run(["git", "pull", "--rebase", "-X", "theirs"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("Scores et classements committés et pushés avec succès sur GitHub.")
         else:
