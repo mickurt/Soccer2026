@@ -614,7 +614,13 @@ struct MatchProgressBar: View {
             return 90
         }
         let clean = status.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-        return Int(clean) ?? 0
+        if let val = Int(clean) {
+            return val
+        }
+        if let timerStartDate = timerStartDate {
+            return max(0, Int(Date().timeIntervalSince(timerStartDate) / 60))
+        }
+        return 0
     }
     
     private var totalMinutes: Int {
