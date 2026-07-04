@@ -555,15 +555,9 @@ struct LiveScoreActivityWidget: Widget {
                             .font(.system(size: 26, weight: .black))
                             .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5)) // Gold
                         
-                        if let timerStartDate = context.state.timerStartDate, context.state.matchStatusRawValue == "Live" {
-                            Text(timerStartDate, style: .timer)
-                                .font(.system(size: 11, weight: .bold))
-                                .foregroundStyle(.red)
-                        } else {
-                            Text(context.state.status.uppercased())
-                                .font(.system(size: 11, weight: .bold))
-                                .foregroundStyle(.red)
-                        }
+                        Text(context.state.status.uppercased())
+                            .font(.system(size: 11, weight: .bold))
+                            .foregroundStyle(.red)
                     }
                 }
                 
@@ -640,16 +634,9 @@ struct MatchProgressBar: View {
                     .tint(.green)
                 
                 HStack {
-                    if let timerStartDate = timerStartDate {
-                        Text(timerStartDate, style: .timer)
-                            .font(.system(size: 9, weight: .semibold))
-                            .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
-                            .multilineTextAlignment(.leading)
-                    } else {
-                        Text(status)
-                            .font(.system(size: 9, weight: .semibold))
-                            .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
-                    }
+                    Text(status)
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
                     Spacer()
                     Text("\(totalMinutes) min")
                         .font(.system(size: 9, weight: .medium))
