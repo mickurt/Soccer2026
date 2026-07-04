@@ -223,10 +223,11 @@ def fetch_api_updates(api_key, local_matches, teams):
                                 ev_team_id = ev.get('IdTeam')
                                 
                                 team_mapping = "unknown"
+                                is_own_goal = (t_type == 34)
                                 if ev_team_id == home_team_id:
-                                    team_mapping = "home"
+                                    team_mapping = "away" if is_own_goal else "home"
                                 elif ev_team_id == away_team_id:
-                                    team_mapping = "away"
+                                    team_mapping = "home" if is_own_goal else "away"
                                     
                                 player_name = "Joueur"
                                 desc_list = ev.get('EventDescription') or []
@@ -533,8 +534,16 @@ def get_mapped_events(api_events, home_team_id):
         minute += "'"
         
         player_name = ev.get('player', {}).get('name') or "Joueur"
+        detail = ev.get('detail') or ""
+        is_own_goal = ev_type.lower() == 'goal' and 'own goal' in detail.lower()
+        if is_own_goal:
+            player_name += ' (CSC)'
+            
         team_id = ev.get('team', {}).get('id')
-        team_side = 'home' if team_id == home_team_id else 'away'
+        if team_id == home_team_id:
+            team_side = 'away' if is_own_goal else 'home'
+        else:
+            team_side = 'home' if is_own_goal else 'away'
         
         mapped.append({
             'minute': minute,
