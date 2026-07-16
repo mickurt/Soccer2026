@@ -1120,6 +1120,22 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
         print("Firebase non initialisé. Impossible de récupérer les tokens push.")
         return
         
+    def get_league_raw_value(m_id):
+        if "_" in m_id:
+            league_id_str = m_id.split("_")[0]
+            mapping = {
+                "140": "LALIGA",
+                "135": "SERIEA",
+                "78": "BUNDESLIGA",
+                "2": "CL",
+                "39": "PL",
+                "61": "L1",
+                "71": "BSA"
+            }
+            return mapping.get(league_id_str, "WC2026")
+        else:
+            return "WC2026"
+        
     key_id = os.environ.get("APNS_KEY_ID", "").strip()
     team_id = os.environ.get("APNS_TEAM_ID", "").strip()
     private_key_pem = os.environ.get("APNS_PRIVATE_KEY", "").strip()
@@ -1158,65 +1174,77 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
                 if local_m:
                     home_code = u.get('home_team_code') or ''
                     away_code = u.get('away_team_code') or ''
-                    
                     home_name = teams_metadata.get(local_m.get('home_team_id', 0), {}).get('name') or home_code or "TBD"
                     away_name = teams_metadata.get(local_m.get('away_team_id', 0), {}).get('name') or away_code or "TBD"
                     stage = local_m.get('match_label', 'Knockout')
+                else:
+                    home_code = u.get('home_team_code') or ''
+                    away_code = u.get('away_team_code') or ''
+                    home_name = u.get('home_team_name') or home_code or "Home"
+                    away_name = u.get('away_team_name') or away_code or "Away"
+                    stage = u.get('stage') or 'League'
+                
+                home_emoji = u.get('home_team_emoji') or flag_emoji(home_code)
+                away_emoji = u.get('away_team_emoji') or flag_emoji(away_code)
+                
+                # Récupérer les tokens de démarrage des appareils
+                start_tokens_ref = db.collection("device_start_tokens")
+                start_docs = start_tokens_ref.stream()
+                current_league_raw = get_league_raw_value(match_id)
+                
+                start_targets = []
+                for doc in start_docs:
+                    data = doc.to_dict()
+                    token = data.get("pushToStartToken")
+                    t_bundle_id = data.get("bundleId") or bundle_id
+                    followed_leagues = data.get("followedLeagues")
                     
-                    # Récupérer les tokens de démarrage des appareils
-                    start_tokens_ref = db.collection("device_start_tokens")
-                    start_docs = start_tokens_ref.stream()
+                    if followed_leagues is None:
+                        is_followed = True
+                    else:
+                        is_followed = current_league_raw in followed_leagues
+                        
+                    if token and is_followed:
+                        start_targets.append((token, t_bundle_id))
+                            
+                if start_targets:
+                    print(f"{len(start_targets)} appareil(s) éligible(s) pour le Push to Start du match {match_id} (ligue: {current_league_raw}).")
                     
-                    start_targets = []
-                    for doc in start_docs:
-                        data = doc.to_dict()
-                        token = data.get("pushToStartToken")
-                        fav_team = data.get("favoriteTeamId") or ""
-                        t_bundle_id = data.get("bundleId") or bundle_id
-                        
-                        # Cible : tous les appareils enregistrés pour tous les matchs en direct
-                        if token:
-                            start_targets.append((token, t_bundle_id))
-                                
-                    if start_targets:
-                        print(f"{len(start_targets)} appareil(s) éligible(s) pour le Push to Start du match {match_id}.")
-                        
-                        start_payload = {
-                            "aps": {
-                                "timestamp": int(time.time()),
-                                "event": "start",
-                                "content-state": {
-                                    "homeScore": int(home_score),
-                                    "awayScore": int(away_score),
-                                    "status": "0'",
-                                    "matchStatusRawValue": status,
-                                    "liveLabel": "LIVE",
-                                    "timerStartDate": int(time.time())
-                                },
-                                "attributes-type": "LiveScoreAttributes",
-                                "attributes": {
-                                    "matchId": match_id,
-                                    "homeTeamName": home_name,
-                                    "homeTeamEmoji": flag_emoji(home_code),
-                                    "awayTeamName": away_name,
-                                    "awayTeamEmoji": flag_emoji(away_code),
-                                    "stage": stage
-                                },
-                                "alert": {
-                                    "title": "Match en Direct",
-                                    "body": f"Le match {home_name} vs {away_name} a commencé !"
-                                }
+                    start_payload = {
+                        "aps": {
+                            "timestamp": int(time.time()),
+                            "event": "start",
+                            "content-state": {
+                                "homeScore": int(home_score),
+                                "awayScore": int(away_score),
+                                "status": "0'",
+                                "matchStatusRawValue": status,
+                                "liveLabel": "LIVE",
+                                "timerStartDate": int(time.time())
+                            },
+                            "attributes-type": "LiveScoreAttributes",
+                            "attributes": {
+                                "matchId": match_id,
+                                "homeTeamName": home_name,
+                                "homeTeamEmoji": home_emoji,
+                                "awayTeamName": away_name,
+                                "awayTeamEmoji": away_emoji,
+                                "stage": stage
+                            },
+                            "alert": {
+                                "title": "Match en Direct",
+                                "body": f"Le match {home_name} vs {away_name} a commencé !"
                             }
                         }
-                        
-                        for t, t_bundle_id in start_targets:
-                            # Assurer que le topic ne contient pas de doublon de suffixe
-                            topic = t_bundle_id
-                            if not topic.endswith(".push-type.liveactivity"):
-                                topic = f"{topic}.push-type.liveactivity"
-                            send_apns_push(apns_token, t, topic, start_payload)
-                    else:
-                        print(f"Aucun appareil abonné (Push to Start) pour le match {match_id}.")
+                    }
+                    for t, t_bundle_id in start_targets:
+                        # Assurer que le topic ne contient pas de doublon de suffixe
+                        topic = t_bundle_id
+                        if not topic.endswith(".push-type.liveactivity"):
+                            topic = f"{topic}.push-type.liveactivity"
+                        send_apns_push(apns_token, t, topic, start_payload)
+                else:
+                    print(f"Aucun appareil abonné (Push to Start) pour le match {match_id}.")
             except Exception as ex:
                 print(f"Erreur d'envoi du Push to Start pour le match {match_id} : {ex}")
         
