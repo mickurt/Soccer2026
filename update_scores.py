@@ -556,7 +556,23 @@ def get_mapped_events(api_events, home_team_id):
     json_str = json.dumps(mapped)
     return base64.b64encode(json_str.encode('utf-8')).decode('utf-8')
 
-def fetch_club_league_updates(api_key, league_id, season=2026):
+def fetch_fixture_events(api_key, fixture_id):
+    print(f"Fetching events from API-Football for fixture {fixture_id}...")
+    url = f"https://v3.football.api-sports.io/fixtures/events?fixture={fixture_id}"
+    headers = {
+        "x-apisports-key": api_key,
+        "User-Agent": "Mozilla/5.0"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = json.loads(response.read().decode('utf-8'))
+            return data.get("response", [])
+    except Exception as e:
+        print(f"Erreur lors de la requête des évènements pour {fixture_id} : {e}")
+        return []
+
+def fetch_club_league_updates(api_key, league_id, season=2026, events_cache=None, stats=None):
     print(f"Fetching club league updates from API-Football for league {league_id}, season {season}...")
     url = f"https://v3.football.api-sports.io/fixtures?league={league_id}&season={season}"
     headers = {
@@ -610,7 +626,24 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         # Real-time kickoff date from API-Football (2026 season)
         kickoff_utc = fixture_obj.get("date")
             
-        events_list = f.get("events") or []
+        fixture_id = str(fixture_obj.get('id') or "")
+        events_list = []
+        if fixture_id and events_cache is not None:
+            if fixture_id in events_cache:
+                events_list = events_cache[fixture_id]
+            elif status in ["Live", "Finished"] and api_key:
+                api_requests_count = stats.get("api_requests_count", 0) if stats else 0
+                if api_requests_count < 30:
+                    fetched_ev = fetch_fixture_events(api_key, fixture_id)
+                    if fetched_ev is not None:
+                        events_list = fetched_ev
+                        events_cache[fixture_id] = fetched_ev
+                        if stats is not None:
+                            stats["api_requests_count"] = api_requests_count + 1
+                        time.sleep(0.2) # small delay to avoid rate limit
+        else:
+            events_list = f.get("events") or []
+            
         events_base64 = get_mapped_events(events_list, home_team.get("id"))
         
         # Extra fields for on-the-fly client creation
@@ -966,7 +999,7 @@ def commit_and_push(base_dir):
         subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"], check=True)
         files_to_add = []
         for f in os.listdir(base_dir):
-            if f.endswith('update.csv') or f.endswith('standings.csv') or f == 'matches_update.csv':
+            if f.endswith('update.csv') or f.endswith('standings.csv') or f == 'matches_update.csv' or f == 'events_cache.json':
                 files_to_add.append(f)
         for f in files_to_add:
             subprocess.run(["git", "add", os.path.join(base_dir, f)], check=True)
@@ -1080,6 +1113,28 @@ def load_previous_scores(output_path):
         except Exception as e:
             print(f"Erreur lors du chargement des scores précédents : {e}")
     return previous
+
+def load_events_cache(base_dir):
+    if not base_dir:
+        return {}
+    cache_path = os.path.join(base_dir, 'events_cache.json')
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Erreur lors du chargement du cache d'évènements : {e}")
+    return {}
+
+def save_events_cache(cache, base_dir):
+    if not base_dir:
+        return
+    cache_path = os.path.join(base_dir, 'events_cache.json')
+    try:
+        with open(cache_path, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Erreur lors de la sauvegarde du cache d'évènements : {e}")
 
 def flag_emoji(code):
     mappings = {
@@ -1397,9 +1452,12 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
             updates = []
             standings = []
         else:
-            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2026)
+            events_cache = load_events_cache(base_dir)
+            stats = {"api_requests_count": 0}
+            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2026, events_cache=events_cache, stats=stats)
             if fetched_updates is not None:
                 updates = fetched_updates
+                save_events_cache(events_cache, base_dir)
             else:
                 print("Erreur API-Football updates.")
                 return False
