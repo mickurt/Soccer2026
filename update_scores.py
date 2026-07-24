@@ -607,74 +607,11 @@ def fetch_club_league_updates(api_key, league_id, season=2026):
         home_penalty_score = penalty_obj.get("home") if penalty_obj.get("home") is not None else ''
         away_penalty_score = penalty_obj.get("away") if penalty_obj.get("away") is not None else ''
         
-        # Date conversion and shifting (+2 years to match 2026 simulation)
+        # Real-time kickoff date from API-Football (2026 season)
         kickoff_utc = fixture_obj.get("date")
-        if kickoff_utc:
-            kickoff_utc = kickoff_utc.replace("2024-", "2026-").replace("2025-", "2027-")
             
         events_list = f.get("events") or []
-        
-        # Dynamically set match status and scores based on shifted kickoff time in 2026
-        if kickoff_utc:
-            try:
-                temp_kickoff = kickoff_utc
-                if temp_kickoff.endswith('Z'):
-                    temp_kickoff = temp_kickoff[:-1] + '+00:00'
-                kickoff_dt = datetime.datetime.fromisoformat(temp_kickoff)
-                if kickoff_dt.tzinfo is None:
-                    kickoff_dt = kickoff_dt.replace(tzinfo=datetime.timezone.utc)
-                else:
-                    kickoff_dt = kickoff_dt.astimezone(datetime.timezone.utc)
-                
-                now_dt = datetime.datetime.now(datetime.timezone.utc)
-                
-                if kickoff_dt > now_dt:
-                    status = "Scheduled"
-                    home_score = 0
-                    away_score = 0
-                    events_base64 = ""
-                    home_penalty_score = ""
-                    away_penalty_score = ""
-                elif now_dt - kickoff_dt < datetime.timedelta(hours=2):
-                    status = "Live"
-                    elapsed_minutes = int((now_dt - kickoff_dt).total_seconds() / 60)
-                    elapsed_minutes_capped = min(90, max(1, elapsed_minutes))
-                    
-                    filtered_events = []
-                    current_home_score = 0
-                    current_away_score = 0
-                    
-                    for ev in events_list:
-                        ev_time = ev.get('time', {}).get('elapsed') or 0
-                        if ev_time <= elapsed_minutes_capped:
-                            filtered_events.append(ev)
-                            if ev.get('type', '').lower() == 'goal':
-                                detail = ev.get('detail') or ""
-                                is_own_goal = 'own goal' in detail.lower()
-                                team_id = ev.get('team', {}).get('id')
-                                if team_id == home_team.get("id"):
-                                    if is_own_goal:
-                                        current_away_score += 1
-                                    else:
-                                        current_home_score += 1
-                                else:
-                                    if is_own_goal:
-                                        current_home_score += 1
-                                    else:
-                                        current_away_score += 1
-                                        
-                    home_score = current_home_score
-                    away_score = current_away_score
-                    events_base64 = get_mapped_events(filtered_events, home_team.get("id"))
-                    home_penalty_score = ""
-                    away_penalty_score = ""
-                else:
-                    events_base64 = get_mapped_events(events_list, home_team.get("id"))
-            except Exception as e:
-                print(f"Erreur lors de la gestion dynamique du statut du match : {e}")
-                events_base64 = get_mapped_events(events_list, home_team.get("id"))
-        else:
-            events_base64 = get_mapped_events(events_list, home_team.get("id"))
+        events_base64 = get_mapped_events(events_list, home_team.get("id"))
         
         # Extra fields for on-the-fly client creation
         home_name = home_team.get("name") or "Home"
@@ -1460,14 +1397,14 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
             updates = []
             standings = []
         else:
-            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2024)
+            fetched_updates = fetch_club_league_updates(api_key, league_id, season=2026)
             if fetched_updates is not None:
                 updates = fetched_updates
             else:
                 print("Erreur API-Football updates.")
                 return False
                 
-            fetched_standings = fetch_club_league_standings(api_key, league_id, season=2024)
+            fetched_standings = fetch_club_league_standings(api_key, league_id, season=2026)
             standings = fetched_standings
             
     # Détecter les changements
