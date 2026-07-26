@@ -89432,6 +89432,7 @@
   "1492308": [],
   "1492300": [],
   "1492309": [],
+  "1492303": [],
   "1492301": [
     {
       "time": {
@@ -89476,7 +89477,28 @@
       "type": "Var",
       "detail": "Goal Disallowed - offside",
       "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 17,
+        "extra": null
+      },
+      "team": {
+        "id": 131,
+        "name": "Corinthians",
+        "logo": "https://media.api-sports.io/football/teams/131.png"
+      },
+      "player": {
+        "id": 5987,
+        "name": "F. Angileri"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
     }
-  ],
-  "1492303": []
+  ]
 }
