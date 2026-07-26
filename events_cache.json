@@ -89521,6 +89521,28 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 28,
+        "extra": null
+      },
+      "team": {
+        "id": 118,
+        "name": "Bahia",
+        "logo": "https://media.api-sports.io/football/teams/118.png"
+      },
+      "player": {
+        "id": 411433,
+        "name": "Ze Guilherme"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
     }
   ]
 }
