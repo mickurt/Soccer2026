@@ -89546,6 +89546,7 @@
     }
   ],
   "1492304": [],
+  "1492302": [],
   "1492305": [
     {
       "time": {
@@ -89612,30 +89613,6 @@
       "type": "subst",
       "detail": "Substitution 1",
       "comments": null
-    }
-  ],
-  "1492302": [
-    {
-      "time": {
-        "elapsed": 20,
-        "extra": null
-      },
-      "team": {
-        "id": 794,
-        "name": "RB Bragantino",
-        "logo": "https://media.api-sports.io/football/teams/794.png"
-      },
-      "player": {
-        "id": 279811,
-        "name": "Lucas Barbosa"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Holding"
     }
   ]
 }
