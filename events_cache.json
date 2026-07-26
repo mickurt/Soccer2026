@@ -89432,6 +89432,51 @@
   "1492308": [],
   "1492300": [],
   "1492309": [],
-  "1492301": [],
+  "1492301": [
+    {
+      "time": {
+        "elapsed": 8,
+        "extra": null
+      },
+      "team": {
+        "id": 131,
+        "name": "Corinthians",
+        "logo": "https://media.api-sports.io/football/teams/131.png"
+      },
+      "player": {
+        "id": 5987,
+        "name": "F. Angileri"
+      },
+      "assist": {
+        "id": 544679,
+        "name": "Andre"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 11,
+        "extra": null
+      },
+      "team": {
+        "id": 118,
+        "name": "Bahia",
+        "logo": "https://media.api-sports.io/football/teams/118.png"
+      },
+      "player": {
+        "id": 311344,
+        "name": "A. Veliz"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Var",
+      "detail": "Goal Disallowed - offside",
+      "comments": null
+    }
+  ],
   "1492303": []
 }
