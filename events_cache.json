@@ -89546,51 +89546,6 @@
     }
   ],
   "1492304": [],
-  "1492305": [
-    {
-      "time": {
-        "elapsed": 12,
-        "extra": null
-      },
-      "team": {
-        "id": 124,
-        "name": "Fluminense",
-        "logo": "https://media.api-sports.io/football/teams/124.png"
-      },
-      "player": {
-        "id": 266267,
-        "name": "Hercules"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 13,
-        "extra": null
-      },
-      "team": {
-        "id": 124,
-        "name": "Fluminense",
-        "logo": "https://media.api-sports.io/football/teams/124.png"
-      },
-      "player": {
-        "id": 9874,
-        "name": "Guga"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    }
-  ],
+  "1492305": [],
   "1492302": []
 }
