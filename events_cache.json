@@ -89546,6 +89546,96 @@
     }
   ],
   "1492304": [],
-  "1492305": [],
-  "1492302": []
+  "1492305": [
+    {
+      "time": {
+        "elapsed": 12,
+        "extra": null
+      },
+      "team": {
+        "id": 124,
+        "name": "Fluminense",
+        "logo": "https://media.api-sports.io/football/teams/124.png"
+      },
+      "player": {
+        "id": 266267,
+        "name": "Hercules"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 13,
+        "extra": null
+      },
+      "team": {
+        "id": 124,
+        "name": "Fluminense",
+        "logo": "https://media.api-sports.io/football/teams/124.png"
+      },
+      "player": {
+        "id": 9874,
+        "name": "Guga"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 21,
+        "extra": null
+      },
+      "team": {
+        "id": 124,
+        "name": "Fluminense",
+        "logo": "https://media.api-sports.io/football/teams/124.png"
+      },
+      "player": {
+        "id": 2038,
+        "name": "Guilherme Arana"
+      },
+      "assist": {
+        "id": 10163,
+        "name": "Rene"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    }
+  ],
+  "1492302": [
+    {
+      "time": {
+        "elapsed": 20,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 279811,
+        "name": "Lucas Barbosa"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Holding"
+    }
+  ]
 }
