@@ -519,6 +519,26 @@ struct MyTeamWidget: Widget {
 #if canImport(ActivityKit)
 import ActivityKit
 
+private func leagueLogoName(for matchId: String) -> String {
+    if matchId.hasPrefix("140_") {
+        return "league_logo_laliga"
+    } else if matchId.hasPrefix("135_") {
+        return "league_logo_seriea"
+    } else if matchId.hasPrefix("78_") {
+        return "league_logo_bundesliga"
+    } else if matchId.hasPrefix("2_") {
+        return "league_logo_cl"
+    } else if matchId.hasPrefix("39_") {
+        return "league_logo_pl"
+    } else if matchId.hasPrefix("61_") {
+        return "league_logo_l1"
+    } else if matchId.hasPrefix("71_") {
+        return "league_logo_bsa"
+    } else {
+        return "league_logo_wc2026"
+    }
+}
+
 struct LiveScoreActivityWidget: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: LiveScoreAttributes.self) { context in
@@ -562,7 +582,12 @@ struct LiveScoreActivityWidget: Widget {
                 }
                 
                 DynamicIslandExpandedRegion(.bottom) {
-                    HStack {
+                    HStack(spacing: 6) {
+                        Image(leagueLogoName(for: context.attributes.matchId))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 12)
+                        
                         Text(context.attributes.stage)
                             .font(.system(size: 10, weight: .semibold))
                             .foregroundStyle(.white.opacity(0.6))
@@ -710,6 +735,11 @@ struct LockScreenLiveScoreView: View {
                 
                 // Score Info
                 VStack(spacing: 4) {
+                    Image(leagueLogoName(for: context.attributes.matchId))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 18)
+                    
                     Text(context.attributes.stage)
                         .font(.system(size: 9, weight: .semibold))
                         .foregroundStyle(.white.opacity(0.6))
