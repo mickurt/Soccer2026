@@ -89480,7 +89480,7 @@
     },
     {
       "time": {
-        "elapsed": 17,
+        "elapsed": 16,
         "extra": null
       },
       "team": {
@@ -89491,6 +89491,28 @@
       "player": {
         "id": 5987,
         "name": "F. Angileri"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 19,
+        "extra": null
+      },
+      "team": {
+        "id": 118,
+        "name": "Bahia",
+        "logo": "https://media.api-sports.io/football/teams/118.png"
+      },
+      "player": {
+        "id": 10351,
+        "name": "David Duarte"
       },
       "assist": {
         "id": null,
