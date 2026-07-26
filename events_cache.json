@@ -89549,53 +89549,5 @@
   "1492305": [],
   "1492302": [],
   "1492306": [],
-  "1492307": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 10310,
-        "name": "Ze Ricardo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    }
-  ],
-  "1492306": [],
-  "1492307": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 10310,
-        "name": "Ze Ricardo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    }
-  ]
+  "1492307": []
 }
