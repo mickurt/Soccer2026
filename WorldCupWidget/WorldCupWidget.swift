@@ -539,6 +539,42 @@ private func leagueLogoName(for matchId: String) -> String {
     }
 }
 
+private func sanitizeTeamName(_ name: String) -> String {
+    let folder = name.lowercased().folding(options: .diacriticInsensitive, locale: .current)
+    var sanitized = ""
+    for char in folder {
+        if char.isLetter || char.isNumber {
+            sanitized.append(char)
+        } else if char == " " || char == "-" || char == "." || char == "_" {
+            sanitized.append("_")
+        }
+    }
+    while sanitized.contains("__") {
+        sanitized = sanitized.replacingOccurrences(of: "__", with: "_")
+    }
+    let trimmed = sanitized.trimmingCharacters(in: CharacterSet(charactersIn: "_"))
+    return "team_logo_" + trimmed
+}
+
+struct LiveActivityTeamLogoView: View {
+    let name: String
+    let emoji: String
+    let size: CGFloat
+    
+    var body: some View {
+        let logoName = sanitizeTeamName(name)
+        if UIImage(named: logoName) != nil {
+            Image(logoName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: size, height: size)
+        } else {
+            Text(emoji)
+                .font(.system(size: size))
+        }
+    }
+}
+
 struct LiveScoreActivityWidget: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: LiveScoreAttributes.self) { context in
@@ -549,8 +585,7 @@ struct LiveScoreActivityWidget: Widget {
                 // Expanded UI
                 DynamicIslandExpandedRegion(.leading) {
                     HStack(spacing: 8) {
-                        Text(context.attributes.homeTeamEmoji)
-                            .font(.system(size: 28))
+                        LiveActivityTeamLogoView(name: context.attributes.homeTeamName, emoji: context.attributes.homeTeamEmoji, size: 28)
                         Text(context.attributes.homeTeamName)
                             .font(.system(size: 14, weight: .bold))
                             .foregroundStyle(.white)
@@ -563,8 +598,7 @@ struct LiveScoreActivityWidget: Widget {
                         Text(context.attributes.awayTeamName)
                             .font(.system(size: 14, weight: .bold))
                             .foregroundStyle(.white)
-                        Text(context.attributes.awayTeamEmoji)
-                            .font(.system(size: 28))
+                        LiveActivityTeamLogoView(name: context.attributes.awayTeamName, emoji: context.attributes.awayTeamEmoji, size: 28)
                     }
                     .padding(.trailing, 8)
                 }
@@ -606,7 +640,7 @@ struct LiveScoreActivityWidget: Widget {
                 }
             } compactLeading: {
                 HStack(spacing: 4) {
-                    Text(context.attributes.homeTeamEmoji)
+                    LiveActivityTeamLogoView(name: context.attributes.homeTeamName, emoji: context.attributes.homeTeamEmoji, size: 16)
                     Text("\(context.state.homeScore)")
                         .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
@@ -616,7 +650,7 @@ struct LiveScoreActivityWidget: Widget {
                     Text("\(context.state.awayScore)")
                         .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(Color(red: 0.9, green: 0.8, blue: 0.5))
-                    Text(context.attributes.awayTeamEmoji)
+                    LiveActivityTeamLogoView(name: context.attributes.awayTeamName, emoji: context.attributes.awayTeamEmoji, size: 16)
                 }
             } minimal: {
                 Text(context.state.status == "LIVE" ? "⚽️" : "\(context.state.homeScore)-\(context.state.awayScore)")
@@ -724,8 +758,7 @@ struct LockScreenLiveScoreView: View {
             HStack(spacing: 12) {
                 // Home Team
                 VStack(spacing: 4) {
-                    Text(context.attributes.homeTeamEmoji)
-                        .font(.system(size: 34))
+                    LiveActivityTeamLogoView(name: context.attributes.homeTeamName, emoji: context.attributes.homeTeamEmoji, size: 34)
                     Text(context.attributes.homeTeamName)
                         .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
@@ -766,8 +799,7 @@ struct LockScreenLiveScoreView: View {
                 
                 // Away Team
                 VStack(spacing: 4) {
-                    Text(context.attributes.awayTeamEmoji)
-                        .font(.system(size: 34))
+                    LiveActivityTeamLogoView(name: context.attributes.awayTeamName, emoji: context.attributes.awayTeamEmoji, size: 34)
                     Text(context.attributes.awayTeamName)
                         .font(.system(size: 12, weight: .bold))
                         .foregroundStyle(.white)
