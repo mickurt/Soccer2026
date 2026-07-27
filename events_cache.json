@@ -89889,5 +89889,337 @@
       "detail": "Yellow Card",
       "comments": "Foul"
     }
+  ],
+  "1492302": [
+    {
+      "time": {
+        "elapsed": 20,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 279811,
+        "name": "Lucas Barbosa"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Holding"
+    },
+    {
+      "time": {
+        "elapsed": 29,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 304827,
+        "name": "Gustavo Marques"
+      },
+      "assist": {
+        "id": 460491,
+        "name": "Pedro Henrique"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 58,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 309499,
+        "name": "Vini Paulista"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 62,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 309499,
+        "name": "Vini Paulista"
+      },
+      "assist": {
+        "id": 631684,
+        "name": "Tissi"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 65,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 354791,
+        "name": "J. Herrera"
+      },
+      "assist": {
+        "id": 350927,
+        "name": "H. Mosquera"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 65,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 279811,
+        "name": "Lucas Barbosa"
+      },
+      "assist": {
+        "id": 70670,
+        "name": "I. Pitta"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 72,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 53966,
+        "name": "Breno Lopes"
+      },
+      "assist": {
+        "id": 16847,
+        "name": "Keno"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 72,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 410449,
+        "name": "Lucas Ronier"
+      },
+      "assist": {
+        "id": 315569,
+        "name": "J. Lavega"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 83,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 10106,
+        "name": "Pedro Rocha"
+      },
+      "assist": {
+        "id": 631685,
+        "name": "Paulo Roberto"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 83,
+        "extra": null
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 10416,
+        "name": "Bruno Melo"
+      },
+      "assist": {
+        "id": 9989,
+        "name": "Felipe Jonatan"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 84,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 688,
+        "name": "Fernando Santos"
+      },
+      "assist": {
+        "id": 310307,
+        "name": "I. Sosa"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 84,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 10004,
+        "name": "Eduardo Sasha"
+      },
+      "assist": {
+        "id": 431417,
+        "name": "Vinicinho"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 86,
+        "extra": null
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 310307,
+        "name": "I. Sosa"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": 1
+      },
+      "team": {
+        "id": 147,
+        "name": "Coritiba",
+        "logo": "https://media.api-sports.io/football/teams/147.png"
+      },
+      "player": {
+        "id": 631685,
+        "name": "Paulo Roberto"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": 6
+      },
+      "team": {
+        "id": 794,
+        "name": "RB Bragantino",
+        "logo": "https://media.api-sports.io/football/teams/794.png"
+      },
+      "player": {
+        "id": 152410,
+        "name": "G. Rodriguez"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    }
   ]
 }
