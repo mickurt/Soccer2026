@@ -1,21 +1,21 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
-Brasileirão Série A,1,Palmeiras,121,19,13,5,1,44,33,14,19
-Brasileirão Série A,2,Flamengo,127,18,11,4,3,37,35,16,19
+Brasileirão Série A,1,Palmeiras,121,20,13,5,2,44,34,16,18
+Brasileirão Série A,2,Flamengo,127,19,11,5,3,38,36,17,19
 Brasileirão Série A,3,Atletico Paranaense,134,20,11,3,6,36,28,19,9
-Brasileirão Série A,4,Fluminense,124,19,9,5,5,32,29,24,5
-Brasileirão Série A,5,Bahia,118,20,8,7,5,31,29,25,4
-Brasileirão Série A,6,RB Bragantino,794,19,9,3,7,30,26,20,6
+Brasileirão Série A,4,Fluminense,124,20,9,6,5,33,30,25,5
+Brasileirão Série A,5,RB Bragantino,794,20,9,4,7,31,26,20,6
+Brasileirão Série A,6,Bahia,118,20,8,7,5,31,29,25,4
 Brasileirão Série A,7,Botafogo,120,20,8,5,7,29,34,32,2
-Brasileirão Série A,8,Corinthians,131,20,7,7,6,28,22,20,2
-Brasileirão Série A,9,Cruzeiro,135,20,7,6,7,27,26,30,-4
-Brasileirão Série A,10,Coritiba,147,19,7,5,7,26,25,27,-2
-Brasileirão Série A,11,Vitoria,136,19,7,5,7,26,22,25,-3
-Brasileirão Série A,12,Sao Paulo,126,19,7,4,8,25,24,22,2
-Brasileirão Série A,13,Atletico-MG,1062,19,7,4,8,25,23,24,-1
+Brasileirão Série A,8,Atletico-MG,1062,20,8,4,8,28,25,25,0
+Brasileirão Série A,9,Corinthians,131,20,7,7,6,28,22,20,2
+Brasileirão Série A,10,Coritiba,147,20,7,6,7,27,25,27,-2
+Brasileirão Série A,11,Cruzeiro,135,20,7,6,7,27,26,30,-4
+Brasileirão Série A,12,Sao Paulo,126,20,7,5,8,26,25,23,2
+Brasileirão Série A,13,Vitoria,136,20,7,5,8,26,22,27,-5
 Brasileirão Série A,14,Santos,128,20,5,7,8,22,29,33,-4
-Brasileirão Série A,15,Internacional,119,20,5,6,9,21,22,26,-4
-Brasileirão Série A,16,Gremio,130,19,5,6,8,21,21,25,-4
+Brasileirão Série A,15,Gremio,130,20,5,7,8,22,22,26,-4
+Brasileirão Série A,16,Internacional,119,20,5,6,9,21,22,26,-4
 Brasileirão Série A,17,Vasco DA Gama,133,20,5,6,9,21,23,31,-8
-Brasileirão Série A,18,Mirassol,7848,19,5,5,9,20,21,26,-5
-Brasileirão Série A,19,Remo,1198,19,4,6,9,18,21,32,-11
-Brasileirão Série A,20,Chapecoense-sc,132,20,1,7,12,10,19,41,-22
+Brasileirão Série A,18,Remo,1198,20,5,6,9,21,23,32,-9
+Brasileirão Série A,19,Mirassol,7848,19,5,5,9,20,21,26,-5
+Brasileirão Série A,20,Chapecoense B,22722,20,1,7,12,10,19,41,-22
