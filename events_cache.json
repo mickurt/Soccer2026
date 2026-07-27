@@ -89547,349 +89547,6 @@
   ],
   "1492304": [],
   "1492305": [],
-  "1492302": [],
-  "1492306": [
-    {
-      "time": {
-        "elapsed": 31,
-        "extra": null
-      },
-      "team": {
-        "id": 1062,
-        "name": "Atletico-MG",
-        "logo": "https://media.api-sports.io/football/teams/1062.png"
-      },
-      "player": {
-        "id": 2583,
-        "name": "A. Preciado"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ],
-  "1492307": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 10310,
-        "name": "Ze Ricardo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 39,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 54894,
-        "name": "Jaja"
-      },
-      "assist": {
-        "id": 80484,
-        "name": "Mayk"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 41,
-        "extra": null
-      },
-      "team": {
-        "id": 136,
-        "name": "Vitoria",
-        "logo": "https://media.api-sports.io/football/teams/136.png"
-      },
-      "player": {
-        "id": 10085,
-        "name": "Caca"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 42,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 160101,
-        "name": "Matheus Felipe"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    }
-  ],
-  "1492306": [
-    {
-      "time": {
-        "elapsed": 31,
-        "extra": null
-      },
-      "team": {
-        "id": 1062,
-        "name": "Atletico-MG",
-        "logo": "https://media.api-sports.io/football/teams/1062.png"
-      },
-      "player": {
-        "id": 2583,
-        "name": "A. Preciado"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ],
-  "1492307": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 10310,
-        "name": "Ze Ricardo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 39,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 54894,
-        "name": "Jaja"
-      },
-      "assist": {
-        "id": 80484,
-        "name": "Mayk"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 41,
-        "extra": null
-      },
-      "team": {
-        "id": 136,
-        "name": "Vitoria",
-        "logo": "https://media.api-sports.io/football/teams/136.png"
-      },
-      "player": {
-        "id": 10085,
-        "name": "Caca"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 42,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 160101,
-        "name": "Matheus Felipe"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    }
-  ],
-  "1492306": [
-    {
-      "time": {
-        "elapsed": 31,
-        "extra": null
-      },
-      "team": {
-        "id": 1062,
-        "name": "Atletico-MG",
-        "logo": "https://media.api-sports.io/football/teams/1062.png"
-      },
-      "player": {
-        "id": 2583,
-        "name": "A. Preciado"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ],
-  "1492307": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 10310,
-        "name": "Ze Ricardo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 39,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 54894,
-        "name": "Jaja"
-      },
-      "assist": {
-        "id": 80484,
-        "name": "Mayk"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 41,
-        "extra": null
-      },
-      "team": {
-        "id": 136,
-        "name": "Vitoria",
-        "logo": "https://media.api-sports.io/football/teams/136.png"
-      },
-      "player": {
-        "id": 10085,
-        "name": "Caca"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 42,
-        "extra": null
-      },
-      "team": {
-        "id": 1198,
-        "name": "Remo",
-        "logo": "https://media.api-sports.io/football/teams/1198.png"
-      },
-      "player": {
-        "id": 160101,
-        "name": "Matheus Felipe"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    }
-  ],
   "1492302": [
     {
       "time": {
@@ -90220,6 +89877,120 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": null
+    }
+  ],
+  "1492306": [
+    {
+      "time": {
+        "elapsed": 31,
+        "extra": null
+      },
+      "team": {
+        "id": 1062,
+        "name": "Atletico-MG",
+        "logo": "https://media.api-sports.io/football/teams/1062.png"
+      },
+      "player": {
+        "id": 2583,
+        "name": "A. Preciado"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    }
+  ],
+  "1492307": [
+    {
+      "time": {
+        "elapsed": 4,
+        "extra": null
+      },
+      "team": {
+        "id": 1198,
+        "name": "Remo",
+        "logo": "https://media.api-sports.io/football/teams/1198.png"
+      },
+      "player": {
+        "id": 10310,
+        "name": "Ze Ricardo"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 39,
+        "extra": null
+      },
+      "team": {
+        "id": 1198,
+        "name": "Remo",
+        "logo": "https://media.api-sports.io/football/teams/1198.png"
+      },
+      "player": {
+        "id": 54894,
+        "name": "Jaja"
+      },
+      "assist": {
+        "id": 80484,
+        "name": "Mayk"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 41,
+        "extra": null
+      },
+      "team": {
+        "id": 136,
+        "name": "Vitoria",
+        "logo": "https://media.api-sports.io/football/teams/136.png"
+      },
+      "player": {
+        "id": 10085,
+        "name": "Caca"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 42,
+        "extra": null
+      },
+      "team": {
+        "id": 1198,
+        "name": "Remo",
+        "logo": "https://media.api-sports.io/football/teams/1198.png"
+      },
+      "player": {
+        "id": 160101,
+        "name": "Matheus Felipe"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
     }
   ]
 }
