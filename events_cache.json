@@ -89876,30 +89876,6 @@
       },
       "type": "Card",
       "detail": "Yellow Card",
-      "comments": null
-    }
-  ],
-  "1492306": [
-    {
-      "time": {
-        "elapsed": 31,
-        "extra": null
-      },
-      "team": {
-        "id": 1062,
-        "name": "Atletico-MG",
-        "logo": "https://media.api-sports.io/football/teams/1062.png"
-      },
-      "player": {
-        "id": 2583,
-        "name": "A. Preciado"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
       "comments": "Tripping"
     }
   ],
