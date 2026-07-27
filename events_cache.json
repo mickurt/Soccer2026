@@ -89614,20 +89614,20 @@
       "comments": null
     }
   ],
-  "1492302": [
+  "1492306": [
     {
       "time": {
-        "elapsed": 20,
+        "elapsed": 31,
         "extra": null
       },
       "team": {
-        "id": 794,
-        "name": "RB Bragantino",
-        "logo": "https://media.api-sports.io/football/teams/794.png"
+        "id": 1062,
+        "name": "Atletico-MG",
+        "logo": "https://media.api-sports.io/football/teams/1062.png"
       },
       "player": {
-        "id": 279811,
-        "name": "Lucas Barbosa"
+        "id": 2583,
+        "name": "A. Preciado"
       },
       "assist": {
         "id": null,
@@ -89635,10 +89635,9 @@
       },
       "type": "Card",
       "detail": "Yellow Card",
-      "comments": "Holding"
+      "comments": null
     }
   ],
-  "1492306": [],
   "1492307": [
     {
       "time": {
