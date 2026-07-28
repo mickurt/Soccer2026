@@ -90545,52 +90545,7 @@
   ],
   "1589423": [],
   "1589424": [],
-  "1556505": [
-    {
-      "time": {
-        "elapsed": 4,
-        "extra": null
-      },
-      "team": {
-        "id": 1012,
-        "name": "FC Thun",
-        "logo": "https://media.api-sports.io/football/teams/1012.png"
-      },
-      "player": {
-        "id": 21775,
-        "name": "B. Labeau"
-      },
-      "assist": {
-        "id": 335988,
-        "name": "N. Zoukit"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ],
-  "1591937": [
-    {
-      "time": {
-        "elapsed": 21,
-        "extra": null
-      },
-      "team": {
-        "id": 3327,
-        "name": "Egnatia Rrogozhinë",
-        "logo": "https://media.api-sports.io/football/teams/3327.png"
-      },
-      "player": {
-        "id": 110057,
-        "name": "D. Hrka"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Own Goal",
-      "comments": null
-    }
-  ]
+  "1556505": [],
+  "1591937": [],
+  "1556507": []
 }
