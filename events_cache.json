@@ -90557,12 +90557,12 @@
         "logo": "https://media.api-sports.io/football/teams/1012.png"
       },
       "player": {
-        "id": null,
-        "name": null
+        "id": 21775,
+        "name": "B. Labeau"
       },
       "assist": {
-        "id": null,
-        "name": null
+        "id": 335988,
+        "name": "N. Zoukit"
       },
       "type": "Goal",
       "detail": "Normal Goal",
