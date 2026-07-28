@@ -90545,7 +90545,31 @@
   ],
   "1589423": [],
   "1589424": [],
-  "1556505": [],
+  "1556505": [
+    {
+      "time": {
+        "elapsed": 4,
+        "extra": null
+      },
+      "team": {
+        "id": 1012,
+        "name": "FC Thun",
+        "logo": "https://media.api-sports.io/football/teams/1012.png"
+      },
+      "player": {
+        "id": 21775,
+        "name": "B. Labeau"
+      },
+      "assist": {
+        "id": 335988,
+        "name": "N. Zoukit"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ],
   "1591937": [],
-  "1556507": []
+  "1556507": [],
+  "1589425": []
 }
