@@ -90571,31 +90571,5 @@
       "detail": "Normal Goal",
       "comments": null
     }
-  ],
-  "1591937": [],
-  "1556507": [],
-  "1589425": [
-    {
-      "time": {
-        "elapsed": 11,
-        "extra": null
-      },
-      "team": {
-        "id": 652,
-        "name": "Shamrock Rovers",
-        "logo": "https://media.api-sports.io/football/teams/652.png"
-      },
-      "player": {
-        "id": 290999,
-        "name": "M. Healy"
-      },
-      "assist": {
-        "id": 69272,
-        "name": "A. Greene"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
   ]
 }
