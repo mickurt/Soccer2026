@@ -90571,5 +90571,77 @@
       "detail": "Normal Goal",
       "comments": null
     }
+  ],
+  "1591937": [
+    {
+      "time": {
+        "elapsed": 21,
+        "extra": null
+      },
+      "team": {
+        "id": 3327,
+        "name": "Egnatia Rrogozhinë",
+        "logo": "https://media.api-sports.io/football/teams/3327.png"
+      },
+      "player": {
+        "id": 110057,
+        "name": "D. Hrka"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Own Goal",
+      "comments": null
+    }
+  ],
+  "1556507": [
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 216761,
+        "name": "S. Jatta"
+      },
+      "assist": {
+        "id": 343211,
+        "name": "E. Soglo"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ],
+  "1589425": [
+    {
+      "time": {
+        "elapsed": 11,
+        "extra": null
+      },
+      "team": {
+        "id": 652,
+        "name": "Shamrock Rovers",
+        "logo": "https://media.api-sports.io/football/teams/652.png"
+      },
+      "player": {
+        "id": 290999,
+        "name": "M. Healy"
+      },
+      "assist": {
+        "id": 69272,
+        "name": "A. Greene"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
   ]
 }
