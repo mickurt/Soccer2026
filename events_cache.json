@@ -90569,29 +90569,5 @@
       "detail": "Own Goal",
       "comments": null
     }
-  ],
-  "1556507": [
-    {
-      "time": {
-        "elapsed": 26,
-        "extra": null
-      },
-      "team": {
-        "id": 637,
-        "name": "Sturm Graz",
-        "logo": "https://media.api-sports.io/football/teams/637.png"
-      },
-      "player": {
-        "id": 216761,
-        "name": "S. Jatta"
-      },
-      "assist": {
-        "id": 343211,
-        "name": "E. Soglo"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
   ]
 }
