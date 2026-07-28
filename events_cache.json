@@ -90569,7 +90569,53 @@
       "comments": null
     }
   ],
-  "1591937": [],
+  "1591937": [
+    {
+      "time": {
+        "elapsed": 21,
+        "extra": null
+      },
+      "team": {
+        "id": 3327,
+        "name": "Egnatia Rrogozhinë",
+        "logo": "https://media.api-sports.io/football/teams/3327.png"
+      },
+      "player": {
+        "id": 110057,
+        "name": "D. Hrka"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Own Goal",
+      "comments": null
+    }
+  ],
   "1556507": [],
-  "1589425": []
+  "1589425": [
+    {
+      "time": {
+        "elapsed": 12,
+        "extra": null
+      },
+      "team": {
+        "id": 652,
+        "name": "Shamrock Rovers",
+        "logo": "https://media.api-sports.io/football/teams/652.png"
+      },
+      "player": {
+        "id": null,
+        "name": null
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ]
 }
