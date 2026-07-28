@@ -90594,28 +90594,5 @@
     }
   ],
   "1556507": [],
-  "1589425": [
-    {
-      "time": {
-        "elapsed": 12,
-        "extra": null
-      },
-      "team": {
-        "id": 652,
-        "name": "Shamrock Rovers",
-        "logo": "https://media.api-sports.io/football/teams/652.png"
-      },
-      "player": {
-        "id": null,
-        "name": null
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ]
+  "1589425": []
 }
