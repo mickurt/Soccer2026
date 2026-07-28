@@ -90928,29 +90928,7 @@
     {
       "time": {
         "elapsed": 90,
-        "extra": 5
-      },
-      "team": {
-        "id": 3683,
-        "name": "Ararat-Armenia",
-        "logo": "https://media.api-sports.io/football/teams/3683.png"
-      },
-      "player": {
-        "id": 294599,
-        "name": "H. Oliveira"
-      },
-      "assist": {
-        "id": 271956,
-        "name": "Luis Felipe"
-      },
-      "type": "subst",
-      "detail": "Substitution 4",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 90,
-        "extra": 5
+        "extra": 4
       },
       "team": {
         "id": 3683,
@@ -90964,6 +90942,28 @@
       "assist": {
         "id": 57449,
         "name": "A. Ndour"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": 4
+      },
+      "team": {
+        "id": 3683,
+        "name": "Ararat-Armenia",
+        "logo": "https://media.api-sports.io/football/teams/3683.png"
+      },
+      "player": {
+        "id": 294599,
+        "name": "H. Oliveira"
+      },
+      "assist": {
+        "id": 271956,
+        "name": "Luis Felipe"
       },
       "type": "subst",
       "detail": "Substitution 5",
