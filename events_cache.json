@@ -90586,11 +90586,297 @@
         "name": "S. Jatta"
       },
       "assist": {
-        "id": 343211,
-        "name": "E. Soglo"
+        "id": null,
+        "name": null
+      },
+      "type": "Var",
+      "detail": "Goal Disallowed - Foul",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 45,
+        "extra": 2
+      },
+      "team": {
+        "id": 254,
+        "name": "Heart Of Midlothian",
+        "logo": "https://media.api-sports.io/football/teams/254.png"
+      },
+      "player": {
+        "id": 19412,
+        "name": "S. Kingsley"
+      },
+      "assist": {
+        "id": 44781,
+        "name": "S. Findlay"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 461977,
+        "name": "L. Weinhandl"
+      },
+      "assist": {
+        "id": 335069,
+        "name": "R. Fosso"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 61,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 1088,
+        "name": "A. Vallci"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 64,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 176023,
+        "name": "S. Seidl"
+      },
+      "assist": {
+        "id": 19041,
+        "name": "J. Gorenc Stankovic"
       },
       "type": "Goal",
       "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 68,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 343211,
+        "name": "E. Soglo"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 69,
+        "extra": null
+      },
+      "team": {
+        "id": 254,
+        "name": "Heart Of Midlothian",
+        "logo": "https://media.api-sports.io/football/teams/254.png"
+      },
+      "player": {
+        "id": 45220,
+        "name": "B. Spittal"
+      },
+      "assist": {
+        "id": 128341,
+        "name": "T. Renaud"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 69,
+        "extra": null
+      },
+      "team": {
+        "id": 254,
+        "name": "Heart Of Midlothian",
+        "logo": "https://media.api-sports.io/football/teams/254.png"
+      },
+      "player": {
+        "id": 191415,
+        "name": "S. Guendouz"
+      },
+      "assist": {
+        "id": 175133,
+        "name": "A. Ba-Sy"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 69,
+        "extra": null
+      },
+      "team": {
+        "id": 254,
+        "name": "Heart Of Midlothian",
+        "logo": "https://media.api-sports.io/football/teams/254.png"
+      },
+      "player": {
+        "id": 45155,
+        "name": "C. Miller"
+      },
+      "assist": {
+        "id": 214282,
+        "name": "P. Kabore"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 72,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 158614,
+        "name": "S. Wlodarczyk"
+      },
+      "assist": {
+        "id": 357424,
+        "name": "B. Beganovic"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 76,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 343211,
+        "name": "E. Soglo"
+      },
+      "assist": {
+        "id": 409670,
+        "name": "A. Malic"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 77,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 451425,
+        "name": "J. Hodl"
+      },
+      "assist": {
+        "id": 273295,
+        "name": "G. Mamageishvili"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 80,
+        "extra": null
+      },
+      "team": {
+        "id": 254,
+        "name": "Heart Of Midlothian",
+        "logo": "https://media.api-sports.io/football/teams/254.png"
+      },
+      "player": {
+        "id": 68213,
+        "name": "A. Kyziridis"
+      },
+      "assist": {
+        "id": 45128,
+        "name": "J. McCart"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 81,
+        "extra": null
+      },
+      "team": {
+        "id": 637,
+        "name": "Sturm Graz",
+        "logo": "https://media.api-sports.io/football/teams/637.png"
+      },
+      "player": {
+        "id": 19041,
+        "name": "J. Gorenc Stankovic"
+      },
+      "assist": {
+        "id": 322987,
+        "name": "J. Halwachs"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
       "comments": null
     }
   ],
