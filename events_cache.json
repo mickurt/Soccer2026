@@ -91328,67 +91328,20 @@
       "comments": null
     }
   ],
-  "1556506": [],
-  "1589421": [
+  "1591940": [
     {
       "time": {
-        "elapsed": 3,
+        "elapsed": 9,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
       },
       "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": 2821,
-        "name": "M. Veljkovic"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ],
-  "1589426": [
-    {
-      "time": {
-        "elapsed": 26,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 41574,
-        "name": "S. Cruz"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 37,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 2975,
-        "name": "C. Blackman"
+        "id": 137072,
+        "name": "N. Serafimov"
       },
       "assist": {
         "id": null,
@@ -91713,6 +91666,74 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Tripping"
+    }
+  ],
+  "1589426": [
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 41574,
+        "name": "S. Cruz"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 37,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 2975,
+        "name": "C. Blackman"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 44,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 208398,
+        "name": "M. Kukharevych"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
     }
   ]
 }
