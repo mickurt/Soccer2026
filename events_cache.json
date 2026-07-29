@@ -91326,6 +91326,140 @@
       "type": "subst",
       "detail": "Substitution 2",
       "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 36,
+        "extra": null
+      },
+      "team": {
+        "id": 563,
+        "name": "Hapoel Beer Sheva",
+        "logo": "https://media.api-sports.io/football/teams/563.png"
+      },
+      "player": {
+        "id": 554375,
+        "name": "D. T. Diop"
+      },
+      "assist": {
+        "id": 162269,
+        "name": "I. Rotman"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    }
+  ],
+  "1591940": [
+    {
+      "time": {
+        "elapsed": 9,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 137072,
+        "name": "N. Serafimov"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 13,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "assist": {
+        "id": 279580,
+        "name": "Serginho"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 16,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
+      },
+      "assist": {
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 33,
+        "extra": null
+      },
+      "team": {
+        "id": 632,
+        "name": "Universitatea Craiova",
+        "logo": "https://media.api-sports.io/football/teams/632.png"
+      },
+      "player": {
+        "id": 119077,
+        "name": "S. Baiaram"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
     }
   ],
   "1556506": [
@@ -91477,6 +91611,74 @@
       "player": {
         "id": 18830,
         "name": "M. Arnautovic"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ],
+  "1589426": [
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 41574,
+        "name": "S. Cruz"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 37,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 2975,
+        "name": "C. Blackman"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 44,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 208398,
+        "name": "M. Kukharevych"
       },
       "assist": {
         "id": null,
