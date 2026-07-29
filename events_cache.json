@@ -91256,5 +91256,28 @@
       "comments": null
     }
   ],
-  "1591938": []
+  "1591938": [
+    {
+      "time": {
+        "elapsed": 24,
+        "extra": null
+      },
+      "team": {
+        "id": 664,
+        "name": "Kairat Almaty",
+        "logo": "https://media.api-sports.io/football/teams/664.png"
+      },
+      "player": {
+        "id": 264531,
+        "name": "O. Jukkola"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    }
+  ]
 }
