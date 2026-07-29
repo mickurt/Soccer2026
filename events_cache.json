@@ -91460,297 +91460,6 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Tripping"
-    }
-  ],
-  "1556506": [],
-  "1589421": [
-    {
-      "time": {
-        "elapsed": 3,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": 2821,
-        "name": "M. Veljkovic"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 16,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Var",
-      "detail": "Goal Disallowed - offside",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 45,
-        "extra": 4
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 18830,
-        "name": "M. Arnautovic"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ],
-  "1589426": [
-    {
-      "time": {
-        "elapsed": 25,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 41574,
-        "name": "S. Cruz"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 36,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 2975,
-        "name": "C. Blackman"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    },
-    {
-      "time": {
-        "elapsed": 44,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 208398,
-        "name": "M. Kukharevych"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 51,
-        "extra": null
-      },
-      "team": {
-        "id": 3502,
-        "name": "Saburtalo",
-        "logo": "https://media.api-sports.io/football/teams/3502.png"
-      },
-      "player": {
-        "id": 540542,
-        "name": "N. Sikharulashvili"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 52,
-        "extra": null
-      },
-      "team": {
-        "id": 3502,
-        "name": "Saburtalo",
-        "logo": "https://media.api-sports.io/football/teams/3502.png"
-      },
-      "player": {
-        "id": 543954,
-        "name": "Z. Natchkebia"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 55,
-        "extra": null
-      },
-      "team": {
-        "id": 3502,
-        "name": "Saburtalo",
-        "logo": "https://media.api-sports.io/football/teams/3502.png"
-      },
-      "player": {
-        "id": 24609,
-        "name": "B. Kardava"
-      },
-      "assist": {
-        "id": 41467,
-        "name": "I. Alhassan"
-      },
-      "type": "subst",
-      "detail": "Substitution 1",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 55,
-        "extra": null
-      },
-      "team": {
-        "id": 3502,
-        "name": "Saburtalo",
-        "logo": "https://media.api-sports.io/football/teams/3502.png"
-      },
-      "player": {
-        "id": 24676,
-        "name": "G. Kutsia"
-      },
-      "assist": {
-        "id": 560516,
-        "name": "A. Bartishvili"
-      },
-      "type": "subst",
-      "detail": "Substitution 2",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 63,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 554208,
-        "name": "C. Martinez"
-      },
-      "assist": {
-        "id": 309011,
-        "name": "R. Ibrahim"
-      },
-      "type": "subst",
-      "detail": "Substitution 1",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 63,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 457339,
-        "name": "A. Yirajang"
-      },
-      "assist": {
-        "id": 131516,
-        "name": "S. Zuberu"
-      },
-      "type": "subst",
-      "detail": "Substitution 2",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 64,
-        "extra": null
-      },
-      "team": {
-        "id": 3502,
-        "name": "Saburtalo",
-        "logo": "https://media.api-sports.io/football/teams/3502.png"
-      },
-      "player": {
-        "id": 292336,
-        "name": "Lucas Cafe"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
     },
     {
       "time": {
@@ -91905,6 +91614,166 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Holding"
+    }
+  ],
+  "1556506": [
+    {
+      "time": {
+        "elapsed": 11,
+        "extra": null
+      },
+      "team": {
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
+      },
+      "player": {
+        "id": 66102,
+        "name": "L. Sadilek"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Holding"
+    },
+    {
+      "time": {
+        "elapsed": 12,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 12724,
+        "name": "Talisca"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Penalty",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 29,
+        "extra": null
+      },
+      "team": {
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
+      },
+      "player": {
+        "id": 14299,
+        "name": "E. Janza"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Unsportsmanlike conduct"
+    }
+  ],
+  "1589421": [
+    {
+      "time": {
+        "elapsed": 3,
+        "extra": null
+      },
+      "team": {
+        "id": 598,
+        "name": "FK Crvena Zvezda",
+        "logo": "https://media.api-sports.io/football/teams/598.png"
+      },
+      "player": {
+        "id": 50910,
+        "name": "A. Katai"
+      },
+      "assist": {
+        "id": 2821,
+        "name": "M. Veljkovic"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 16,
+        "extra": null
+      },
+      "team": {
+        "id": 598,
+        "name": "FK Crvena Zvezda",
+        "logo": "https://media.api-sports.io/football/teams/598.png"
+      },
+      "player": {
+        "id": 50910,
+        "name": "A. Katai"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Var",
+      "detail": "Goal Disallowed - offside",
+      "comments": null
+    }
+  ],
+  "1589426": [
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 41574,
+        "name": "S. Cruz"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 37,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 2975,
+        "name": "C. Blackman"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
     }
   ]
 }
