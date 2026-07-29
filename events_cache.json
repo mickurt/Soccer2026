@@ -91281,30 +91281,77 @@
     }
   ],
   "1591939": [],
-  "1556508": [
+  "1556508": [],
+  "1591940": [],
+  "1589422": [
     {
       "time": {
-        "elapsed": 32,
+        "elapsed": 9,
         "extra": null
       },
       "team": {
-        "id": 406,
-        "name": "Aarhus",
-        "logo": "https://media.api-sports.io/football/teams/406.png"
+        "id": 278,
+        "name": "Vikingur Reykjavik",
+        "logo": "https://media.api-sports.io/football/teams/278.png"
       },
       "player": {
-        "id": 15964,
-        "name": "T. Bech"
+        "id": 199311,
+        "name": "T. Ibrahimagic"
       },
       "assist": {
-        "id": 277745,
-        "name": "K. Arnstad"
+        "id": 72711,
+        "name": "S. Hauksson"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 15,
+        "extra": null
+      },
+      "team": {
+        "id": 278,
+        "name": "Vikingur Reykjavik",
+        "logo": "https://media.api-sports.io/football/teams/278.png"
+      },
+      "player": {
+        "id": 283261,
+        "name": "O. Borgthorsson"
+      },
+      "assist": {
+        "id": 324645,
+        "name": "S. Thordarson"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    }
+  ],
+  "1556506": [],
+  "1589421": [
+    {
+      "time": {
+        "elapsed": 3,
+        "extra": null
+      },
+      "team": {
+        "id": 598,
+        "name": "FK Crvena Zvezda",
+        "logo": "https://media.api-sports.io/football/teams/598.png"
+      },
+      "player": {
+        "id": 50910,
+        "name": "A. Katai"
+      },
+      "assist": {
+        "id": 2821,
+        "name": "M. Veljkovic"
       },
       "type": "Goal",
       "detail": "Normal Goal",
       "comments": null
     }
-  ],
-  "1589422": [],
-  "1591940": []
+  ]
 }
