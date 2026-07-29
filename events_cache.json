@@ -91282,22 +91282,66 @@
   ],
   "1591939": [],
   "1556508": [],
-  "1589422": [],
-  "1591940": [],
-  "1556506": [
+  "1589422": [
     {
       "time": {
-        "elapsed": 11,
+        "elapsed": 9,
         "extra": null
       },
       "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
+        "id": 278,
+        "name": "Vikingur Reykjavik",
+        "logo": "https://media.api-sports.io/football/teams/278.png"
       },
       "player": {
-        "id": 66102,
-        "name": "L. Sadilek"
+        "id": 199311,
+        "name": "T. Ibrahimagic"
+      },
+      "assist": {
+        "id": 72711,
+        "name": "S. Hauksson"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 15,
+        "extra": null
+      },
+      "team": {
+        "id": 278,
+        "name": "Vikingur Reykjavik",
+        "logo": "https://media.api-sports.io/football/teams/278.png"
+      },
+      "player": {
+        "id": 283261,
+        "name": "O. Borgthorsson"
+      },
+      "assist": {
+        "id": 324645,
+        "name": "S. Thordarson"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    }
+  ],
+  "1591940": [
+    {
+      "time": {
+        "elapsed": 9,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 137072,
+        "name": "N. Serafimov"
       },
       "assist": {
         "id": null,
@@ -91305,31 +91349,98 @@
       },
       "type": "Card",
       "detail": "Yellow Card",
-      "comments": "Holding"
+      "comments": "Tripping"
     },
     {
       "time": {
-        "elapsed": 12,
+        "elapsed": 13,
         "extra": null
       },
       "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
       },
       "player": {
-        "id": 12724,
-        "name": "Talisca"
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "assist": {
+        "id": 279580,
+        "name": "Serginho"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 16,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
+      },
+      "assist": {
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
       },
       "assist": {
         "id": null,
         "name": null
       },
-      "type": "Goal",
-      "detail": "Penalty",
-      "comments": null
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 34,
+        "extra": null
+      },
+      "team": {
+        "id": 632,
+        "name": "Universitatea Craiova",
+        "logo": "https://media.api-sports.io/football/teams/632.png"
+      },
+      "player": {
+        "id": 119077,
+        "name": "S. Baiaram"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
     }
   ],
+  "1556506": [],
   "1589421": [
     {
       "time": {
@@ -91346,35 +91457,12 @@
         "name": "A. Katai"
       },
       "assist": {
-        "id": 2821,
-        "name": "M. Veljkovic"
+        "id": 31054,
+        "name": "R. Krunic"
       },
       "type": "Goal",
       "detail": "Normal Goal",
       "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 16,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Var",
-      "detail": "Goal Disallowed - offside",
-      "comments": null
     }
-  ],
-  "1589426": []
+  ]
 }
