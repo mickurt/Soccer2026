@@ -91621,29 +91621,5 @@
       "detail": "Yellow Card",
       "comments": null
     }
-  ],
-  "1589426": [
-    {
-      "time": {
-        "elapsed": 26,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 41574,
-        "name": "S. Cruz"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": null
-    }
   ]
 }
