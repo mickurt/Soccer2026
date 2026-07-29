@@ -91347,27 +91347,93 @@
         "id": null,
         "name": null
       },
-      "type": "Var",
-      "detail": "Goal Disallowed - offside",
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Holding"
+    },
+    {
+      "time": {
+        "elapsed": 12,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 12724,
+        "name": "Talisca"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Penalty",
       "comments": null
     },
     {
       "time": {
-        "elapsed": 45,
-        "extra": 4
+        "elapsed": 28,
+        "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 18830,
-        "name": "M. Arnautovic"
+        "id": 14299,
+        "name": "E. Janza"
       },
       "assist": {
-        "id": 2821,
-        "name": "M. Veljkovic"
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Unsportsmanlike conduct"
+    },
+    {
+      "time": {
+        "elapsed": 41,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 272721,
+        "name": "J. Oosterwolde"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 45,
+        "extra": 10
+      },
+      "team": {
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
+      },
+      "player": {
+        "id": 66023,
+        "name": "M. Sacek"
+      },
+      "assist": {
+        "id": 105726,
+        "name": "E. Prekop"
       },
       "type": "Goal",
       "detail": "Normal Goal",
@@ -91379,17 +91445,17 @@
         "extra": null
       },
       "team": {
-        "id": 5354,
-        "name": "Larne",
-        "logo": "https://media.api-sports.io/football/teams/5354.png"
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
       },
       "player": {
-        "id": 553377,
-        "name": "K. O'Hara"
+        "id": 746,
+        "name": "M. Asensio"
       },
       "assist": {
-        "id": 128075,
-        "name": "P. O'Neill"
+        "id": 214463,
+        "name": "I. Yuksek"
       },
       "type": "subst",
       "detail": "Substitution 1",
@@ -91397,90 +91463,24 @@
     },
     {
       "time": {
-        "elapsed": 49,
+        "elapsed": 46,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
       },
       "player": {
-        "id": 68106,
-        "name": "L. Loizou"
+        "id": 49857,
+        "name": "I. Kahveci"
       },
       "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 60,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 18830,
-        "name": "M. Arnautovic"
-      },
-      "assist": {
-        "id": 197985,
-        "name": "Seol Young-Woo"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 60,
-        "extra": null
-      },
-      "team": {
-        "id": 5354,
-        "name": "Larne",
-        "logo": "https://media.api-sports.io/football/teams/5354.png"
-      },
-      "player": {
-        "id": 535526,
-        "name": "R. Doherty"
-      },
-      "assist": {
-        "id": 456222,
-        "name": "J. Simpson"
+        "id": 897,
+        "name": "M. Greenwood"
       },
       "type": "subst",
       "detail": "Substitution 2",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 60,
-        "extra": null
-      },
-      "team": {
-        "id": 5354,
-        "name": "Larne",
-        "logo": "https://media.api-sports.io/football/teams/5354.png"
-      },
-      "player": {
-        "id": 138782,
-        "name": "J. McEneff"
-      },
-      "assist": {
-        "id": 498396,
-        "name": "L. Wallace"
-      },
-      "type": "subst",
-      "detail": "Substitution 3",
       "comments": null
     },
     {
@@ -91489,17 +91489,17 @@
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 68106,
-        "name": "L. Loizou"
+        "id": 202774,
+        "name": "M. Dietz"
       },
       "assist": {
-        "id": 61418,
-        "name": "O. Bukari"
+        "id": 264699,
+        "name": "M. Khlan"
       },
       "type": "subst",
       "detail": "Substitution 1",
@@ -91507,21 +91507,21 @@
     },
     {
       "time": {
-        "elapsed": 64,
+        "elapsed": 63,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 610938,
-        "name": "M. Strika"
+        "id": 105726,
+        "name": "E. Prekop"
       },
       "assist": {
-        "id": 841,
-        "name": "N. Tiknizyan"
+        "id": 39199,
+        "name": "S. Liseth"
       },
       "type": "subst",
       "detail": "Substitution 2",
@@ -91529,21 +91529,65 @@
     },
     {
       "time": {
-        "elapsed": 64,
+        "elapsed": 66,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 31054,
-        "name": "R. Krunic"
+        "id": 40548,
+        "name": "R. Janicki"
       },
       "assist": {
-        "id": 17789,
-        "name": "T. Elsnik"
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Unsportsmanlike conduct"
+    },
+    {
+      "time": {
+        "elapsed": 70,
+        "extra": null
+      },
+      "team": {
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
+      },
+      "player": {
+        "id": 47222,
+        "name": "Josema"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
+    },
+    {
+      "time": {
+        "elapsed": 70,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 142959,
+        "name": "K. Akturkoglu"
+      },
+      "assist": {
+        "id": 37380,
+        "name": "A. Musaba"
       },
       "type": "subst",
       "detail": "Substitution 3",
@@ -91551,21 +91595,43 @@
     },
     {
       "time": {
-        "elapsed": 70,
+        "elapsed": 73,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 197985,
-        "name": "Seol Young-Woo"
+        "id": 349167,
+        "name": "Y. Ikia Dimi"
       },
       "assist": {
-        "id": 284098,
-        "name": "N. Stankovic"
+        "id": 270516,
+        "name": "Peter Federico"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 80,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 12724,
+        "name": "Talisca"
+      },
+      "assist": {
+        "id": 134590,
+        "name": "O. Aydin"
       },
       "type": "subst",
       "detail": "Substitution 4",
@@ -91573,21 +91639,21 @@
     },
     {
       "time": {
-        "elapsed": 70,
+        "elapsed": 81,
         "extra": null
       },
       "team": {
-        "id": 5354,
-        "name": "Larne",
-        "logo": "https://media.api-sports.io/football/teams/5354.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 316087,
-        "name": "D. Sloan"
+        "id": 66102,
+        "name": "L. Sadilek"
       },
       "assist": {
-        "id": 143643,
-        "name": "C. McKendry"
+        "id": 448466,
+        "name": "B. Durdov"
       },
       "type": "subst",
       "detail": "Substitution 4",
@@ -91595,21 +91661,43 @@
     },
     {
       "time": {
-        "elapsed": 77,
+        "elapsed": 86,
         "extra": null
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
       },
       "player": {
-        "id": 108017,
-        "name": "M. Abu Fani"
+        "id": 130,
+        "name": "N. Semedo"
       },
       "assist": {
-        "id": 353,
-        "name": "M. Ivanic"
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 88,
+        "extra": null
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 130,
+        "name": "N. Semedo"
+      },
+      "assist": {
+        "id": 1719,
+        "name": "M. Muldur"
       },
       "type": "subst",
       "detail": "Substitution 5",
@@ -91617,47 +91705,69 @@
     },
     {
       "time": {
-        "elapsed": 79,
-        "extra": null
+        "elapsed": 90,
+        "extra": 1
       },
       "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
       },
       "player": {
-        "id": 61418,
-        "name": "O. Bukari"
+        "id": 897,
+        "name": "M. Greenwood"
       },
       "assist": {
-        "id": 50910,
-        "name": "A. Katai"
+        "id": null,
+        "name": null
       },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Roughing"
     },
     {
       "time": {
-        "elapsed": 79,
-        "extra": null
+        "elapsed": 90,
+        "extra": 2
       },
       "team": {
-        "id": 5354,
-        "name": "Larne",
-        "logo": "https://media.api-sports.io/football/teams/5354.png"
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
       },
       "player": {
-        "id": 125139,
-        "name": "S. Graham"
+        "id": 905,
+        "name": "Fred"
       },
       "assist": {
-        "id": 82299,
-        "name": "M. Gibson"
+        "id": null,
+        "name": null
       },
-      "type": "subst",
-      "detail": "Substitution 5",
-      "comments": null
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Unsportsmanlike conduct"
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": 3
+      },
+      "team": {
+        "id": 611,
+        "name": "Fenerbahçe",
+        "logo": "https://media.api-sports.io/football/teams/611.png"
+      },
+      "player": {
+        "id": 1454,
+        "name": "M. Guendouzi"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Delay of game"
     }
   ],
   "1591940": [
@@ -92476,448 +92586,6 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Holding"
-    }
-  ],
-  "1556506": [
-    {
-      "time": {
-        "elapsed": 11,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 66102,
-        "name": "L. Sadilek"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Holding"
-    },
-    {
-      "time": {
-        "elapsed": 12,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 12724,
-        "name": "Talisca"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Penalty",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 28,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 14299,
-        "name": "E. Janza"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Unsportsmanlike conduct"
-    },
-    {
-      "time": {
-        "elapsed": 41,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 272721,
-        "name": "J. Oosterwolde"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    },
-    {
-      "time": {
-        "elapsed": 45,
-        "extra": 10
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 66023,
-        "name": "M. Sacek"
-      },
-      "assist": {
-        "id": 105726,
-        "name": "E. Prekop"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 46,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 746,
-        "name": "M. Asensio"
-      },
-      "assist": {
-        "id": 214463,
-        "name": "I. Yuksek"
-      },
-      "type": "subst",
-      "detail": "Substitution 1",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 46,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 49857,
-        "name": "I. Kahveci"
-      },
-      "assist": {
-        "id": 897,
-        "name": "M. Greenwood"
-      },
-      "type": "subst",
-      "detail": "Substitution 2",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 63,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 202774,
-        "name": "M. Dietz"
-      },
-      "assist": {
-        "id": 264699,
-        "name": "M. Khlan"
-      },
-      "type": "subst",
-      "detail": "Substitution 1",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 63,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 105726,
-        "name": "E. Prekop"
-      },
-      "assist": {
-        "id": 39199,
-        "name": "S. Liseth"
-      },
-      "type": "subst",
-      "detail": "Substitution 2",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 66,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 40548,
-        "name": "R. Janicki"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Unsportsmanlike conduct"
-    },
-    {
-      "time": {
-        "elapsed": 70,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 47222,
-        "name": "Josema"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 70,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 142959,
-        "name": "K. Akturkoglu"
-      },
-      "assist": {
-        "id": 37380,
-        "name": "A. Musaba"
-      },
-      "type": "subst",
-      "detail": "Substitution 3",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 73,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 349167,
-        "name": "Y. Ikia Dimi"
-      },
-      "assist": {
-        "id": 270516,
-        "name": "Peter Federico"
-      },
-      "type": "subst",
-      "detail": "Substitution 3",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 80,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 12724,
-        "name": "Talisca"
-      },
-      "assist": {
-        "id": 134590,
-        "name": "O. Aydin"
-      },
-      "type": "subst",
-      "detail": "Substitution 4",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 81,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 66102,
-        "name": "L. Sadilek"
-      },
-      "assist": {
-        "id": 448466,
-        "name": "B. Durdov"
-      },
-      "type": "subst",
-      "detail": "Substitution 4",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 86,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 130,
-        "name": "N. Semedo"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    },
-    {
-      "time": {
-        "elapsed": 88,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 130,
-        "name": "N. Semedo"
-      },
-      "assist": {
-        "id": 1719,
-        "name": "M. Muldur"
-      },
-      "type": "subst",
-      "detail": "Substitution 5",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 90,
-        "extra": 1
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 897,
-        "name": "M. Greenwood"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 90,
-        "extra": 2
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 905,
-        "name": "Fred"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Unsportsmanlike conduct"
-    },
-    {
-      "time": {
-        "elapsed": 90,
-        "extra": 3
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 1454,
-        "name": "M. Guendouzi"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Delay of game"
     }
   ]
 }
