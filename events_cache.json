@@ -91416,53 +91416,8 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Foul"
-    },
-    {
-      "time": {
-        "elapsed": 34,
-        "extra": null
-      },
-      "team": {
-        "id": 632,
-        "name": "Universitatea Craiova",
-        "logo": "https://media.api-sports.io/football/teams/632.png"
-      },
-      "player": {
-        "id": 119077,
-        "name": "S. Baiaram"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
     }
   ],
   "1556506": [],
-  "1589421": [
-    {
-      "time": {
-        "elapsed": 3,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": 31054,
-        "name": "R. Krunic"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ]
+  "1589421": []
 }
