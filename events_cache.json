@@ -91416,120 +91416,9 @@
       "type": "subst",
       "detail": "Substitution 2",
       "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 36,
-        "extra": null
-      },
-      "team": {
-        "id": 563,
-        "name": "Hapoel Beer Sheva",
-        "logo": "https://media.api-sports.io/football/teams/563.png"
-      },
-      "player": {
-        "id": 554375,
-        "name": "D. T. Diop"
-      },
-      "assist": {
-        "id": 162269,
-        "name": "I. Rotman"
-      },
-      "type": "subst",
-      "detail": "Substitution 1",
-      "comments": null
     }
   ],
-  "1556506": [
-    {
-      "time": {
-        "elapsed": 11,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 66102,
-        "name": "L. Sadilek"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Holding"
-    },
-    {
-      "time": {
-        "elapsed": 12,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 12724,
-        "name": "Talisca"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Penalty",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 29,
-        "extra": null
-      },
-      "team": {
-        "id": 340,
-        "name": "Gornik Zabrze",
-        "logo": "https://media.api-sports.io/football/teams/340.png"
-      },
-      "player": {
-        "id": 14299,
-        "name": "E. Janza"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Unsportsmanlike conduct"
-    },
-    {
-      "time": {
-        "elapsed": 41,
-        "extra": null
-      },
-      "team": {
-        "id": 611,
-        "name": "Fenerbahçe",
-        "logo": "https://media.api-sports.io/football/teams/611.png"
-      },
-      "player": {
-        "id": 272721,
-        "name": "J. Oosterwolde"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ],
+  "1556506": [],
   "1589421": [
     {
       "time": {
@@ -91557,31 +91446,7 @@
   "1589426": [
     {
       "time": {
-        "elapsed": 45,
-        "extra": 4
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 18830,
-        "name": "M. Arnautovic"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    }
-  ],
-  "1556506": [
-    {
-      "time": {
-        "elapsed": 11,
+        "elapsed": 26,
         "extra": null
       },
       "team": {
