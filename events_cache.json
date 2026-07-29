@@ -92999,15 +92999,15 @@
         "logo": "https://media.api-sports.io/football/teams/7848.png"
       },
       "player": {
-        "id": 357888,
-        "name": "Gabriel Knesowitsch"
+        "id": 10232,
+        "name": "Marllon"
       },
       "assist": {
         "id": null,
         "name": null
       },
       "type": "Goal",
-      "detail": "Normal Goal",
+      "detail": "Own Goal",
       "comments": null
     }
   ]
