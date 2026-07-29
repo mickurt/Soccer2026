@@ -92943,28 +92943,5 @@
     }
   ],
   "1492316": [],
-  "1492317": [
-    {
-      "time": {
-        "elapsed": 17,
-        "extra": null
-      },
-      "team": {
-        "id": 7848,
-        "name": "Mirassol",
-        "logo": "https://media.api-sports.io/football/teams/7848.png"
-      },
-      "player": {
-        "id": 156191,
-        "name": "Igor Formiga"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ]
+  "1492317": []
 }
