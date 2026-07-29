@@ -91505,27 +91505,51 @@
         "id": null,
         "name": null
       },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
+      "type": "Goal",
+      "detail": "Penalty",
+      "comments": null
     },
     {
       "time": {
-        "elapsed": 44,
+        "elapsed": 29,
         "extra": null
       },
       "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
+        "id": 340,
+        "name": "Gornik Zabrze",
+        "logo": "https://media.api-sports.io/football/teams/340.png"
       },
       "player": {
-        "id": 208398,
-        "name": "M. Kukharevych"
+        "id": 14299,
+        "name": "E. Janza"
       },
       "assist": {
         "id": null,
         "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Unsportsmanlike conduct"
+    }
+  ],
+  "1589421": [
+    {
+      "time": {
+        "elapsed": 3,
+        "extra": null
+      },
+      "team": {
+        "id": 598,
+        "name": "FK Crvena Zvezda",
+        "logo": "https://media.api-sports.io/football/teams/598.png"
+      },
+      "player": {
+        "id": 50910,
+        "name": "A. Katai"
+      },
+      "assist": {
+        "id": 2821,
+        "name": "M. Veljkovic"
       },
       "type": "Goal",
       "detail": "Normal Goal",
@@ -91554,28 +91578,5 @@
       "comments": null
     }
   ],
-  "1589426": [
-    {
-      "time": {
-        "elapsed": 26,
-        "extra": null
-      },
-      "team": {
-        "id": 656,
-        "name": "Slovan Bratislava",
-        "logo": "https://media.api-sports.io/football/teams/656.png"
-      },
-      "player": {
-        "id": 41574,
-        "name": "S. Cruz"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": null
-    }
-  ]
+  "1589426": []
 }
