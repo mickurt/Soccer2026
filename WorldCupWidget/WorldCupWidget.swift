@@ -815,6 +815,25 @@ struct LockScreenLiveScoreView: View {
             if context.state.matchStatusRawValue == "Live" || context.state.matchStatusRawValue == "Finished" {
                 MatchProgressBar(status: context.state.status, timerStartDate: context.state.timerStartDate)
             }
+            
+            // Diagnostic Logs
+            VStack(alignment: .leading, spacing: 2) {
+                let homeLogo = sanitizeTeamName(context.attributes.homeTeamName)
+                let awayLogo = sanitizeTeamName(context.attributes.awayTeamName)
+                let bundle = Bundle(for: WidgetBundleFinder.self)
+                let homeExists = UIImage(named: homeLogo, in: bundle, compatibleWith: nil) != nil
+                let awayExists = UIImage(named: awayLogo, in: bundle, compatibleWith: nil) != nil
+                let clExists = UIImage(named: "league_logo_cl", in: bundle, compatibleWith: nil) != nil
+                let matchId = context.attributes.matchId
+                
+                Text("Dbg: \(homeLogo) (ok:\(homeExists ? 1 : 0)) | \(awayLogo) (ok:\(awayExists ? 1 : 0))")
+                    .font(.system(size: 7))
+                    .foregroundStyle(.white.opacity(0.3))
+                Text("Dbg: CL:\(clExists ? 1 : 0) | ID:\(matchId)")
+                    .font(.system(size: 7))
+                    .foregroundStyle(.white.opacity(0.3))
+            }
+            .padding(.top, 2)
         }
         .padding()
         .background(
