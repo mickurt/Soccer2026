@@ -91530,6 +91530,52 @@
       "type": "Goal",
       "detail": "Normal Goal",
       "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 16,
+        "extra": null
+      },
+      "team": {
+        "id": 598,
+        "name": "FK Crvena Zvezda",
+        "logo": "https://media.api-sports.io/football/teams/598.png"
+      },
+      "player": {
+        "id": 50910,
+        "name": "A. Katai"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Var",
+      "detail": "Goal Disallowed - offside",
+      "comments": null
+    }
+  ],
+  "1589426": [
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 656,
+        "name": "Slovan Bratislava",
+        "logo": "https://media.api-sports.io/football/teams/656.png"
+      },
+      "player": {
+        "id": 41574,
+        "name": "S. Cruz"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
     }
   ]
 }
