@@ -556,6 +556,8 @@ private func sanitizeTeamName(_ name: String) -> String {
     return "team_logo_" + trimmed
 }
 
+private class WidgetBundleFinder {}
+
 struct LiveActivityTeamLogoView: View {
     let name: String
     let emoji: String
@@ -563,8 +565,9 @@ struct LiveActivityTeamLogoView: View {
     
     var body: some View {
         let logoName = sanitizeTeamName(name)
-        if UIImage(named: logoName) != nil {
-            Image(logoName)
+        let bundle = Bundle(for: WidgetBundleFinder.self)
+        if UIImage(named: logoName, in: bundle, compatibleWith: nil) != nil {
+            Image(logoName, bundle: bundle)
                 .resizable()
                 .scaledToFit()
                 .frame(width: size, height: size)
@@ -617,7 +620,7 @@ struct LiveScoreActivityWidget: Widget {
                 
                 DynamicIslandExpandedRegion(.bottom) {
                     HStack(spacing: 6) {
-                        Image(leagueLogoName(for: context.attributes.matchId))
+                        Image(leagueLogoName(for: context.attributes.matchId), bundle: Bundle(for: WidgetBundleFinder.self))
                             .resizable()
                             .scaledToFit()
                             .frame(height: 12)
@@ -768,7 +771,7 @@ struct LockScreenLiveScoreView: View {
                 
                 // Score Info
                 VStack(spacing: 4) {
-                    Image(leagueLogoName(for: context.attributes.matchId))
+                    Image(leagueLogoName(for: context.attributes.matchId), bundle: Bundle(for: WidgetBundleFinder.self))
                         .resizable()
                         .scaledToFit()
                         .frame(height: 18)
