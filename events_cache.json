@@ -91370,53 +91370,6 @@
         "id": null,
         "name": null
       },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Tripping"
-    }
-  ],
-  "1556506": [],
-  "1589421": [
-    {
-      "time": {
-        "elapsed": 3,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": 2821,
-        "name": "M. Veljkovic"
-      },
-      "type": "Goal",
-      "detail": "Normal Goal",
-      "comments": null
-    },
-    {
-      "time": {
-        "elapsed": 16,
-        "extra": null
-      },
-      "team": {
-        "id": 598,
-        "name": "FK Crvena Zvezda",
-        "logo": "https://media.api-sports.io/football/teams/598.png"
-      },
-      "player": {
-        "id": 50910,
-        "name": "A. Katai"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
       "type": "Var",
       "detail": "Goal Disallowed - offside",
       "comments": null
