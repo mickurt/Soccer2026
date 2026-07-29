@@ -91281,28 +91281,6 @@
     }
   ],
   "1591939": [],
-  "1556508": [
-    {
-      "time": {
-        "elapsed": 19,
-        "extra": null
-      },
-      "team": {
-        "id": 406,
-        "name": "Aarhus",
-        "logo": "https://media.api-sports.io/football/teams/406.png"
-      },
-      "player": {
-        "id": 309875,
-        "name": "J. Jensen-Abbew"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Handling"
-    }
-  ]
+  "1556508": [],
+  "1591940": []
 }
