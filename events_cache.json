@@ -91349,9 +91349,76 @@
       },
       "type": "Card",
       "detail": "Yellow Card",
+      "comments": "Tripping"
+    },
+    {
+      "time": {
+        "elapsed": 13,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "assist": {
+        "id": 279580,
+        "name": "Serginho"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
       "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 16,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
+      },
+      "assist": {
+        "id": 160077,
+        "name": "Everton Bala"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 26,
+        "extra": null
+      },
+      "team": {
+        "id": 646,
+        "name": "Levski Sofia",
+        "logo": "https://media.api-sports.io/football/teams/646.png"
+      },
+      "player": {
+        "id": 286910,
+        "name": "A. Neves"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
     }
   ],
+  "1556506": [],
   "1589421": [
     {
       "time": {
