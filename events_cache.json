@@ -93014,7 +93014,7 @@
   "1492315": [
     {
       "time": {
-        "elapsed": 11,
+        "elapsed": 12,
         "extra": null
       },
       "team": {
@@ -93032,31 +93032,8 @@
       },
       "type": "Card",
       "detail": "Yellow Card",
-      "comments": "Tripping"
+      "comments": null
     }
   ],
-  "1492319": [
-    {
-      "time": {
-        "elapsed": 14,
-        "extra": null
-      },
-      "team": {
-        "id": 121,
-        "name": "Palmeiras",
-        "logo": "https://media.api-sports.io/football/teams/121.png"
-      },
-      "player": {
-        "id": 9218,
-        "name": "Marlon Freitas"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Roughing"
-    }
-  ]
+  "1492319": []
 }
