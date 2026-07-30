@@ -93057,28 +93057,6 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Roughing"
-    },
-    {
-      "time": {
-        "elapsed": 27,
-        "extra": null
-      },
-      "team": {
-        "id": 121,
-        "name": "Palmeiras",
-        "logo": "https://media.api-sports.io/football/teams/121.png"
-      },
-      "player": {
-        "id": 106485,
-        "name": "Mauricio"
-      },
-      "assist": {
-        "id": null,
-        "name": null
-      },
-      "type": "Card",
-      "detail": "Yellow Card",
-      "comments": "Elbowing"
     }
   ]
 }
