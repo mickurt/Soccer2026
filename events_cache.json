@@ -93079,6 +93079,28 @@
       "type": "Card",
       "detail": "Yellow Card",
       "comments": "Elbowing"
+    },
+    {
+      "time": {
+        "elapsed": 32,
+        "extra": null
+      },
+      "team": {
+        "id": 136,
+        "name": "Vitoria",
+        "logo": "https://media.api-sports.io/football/teams/136.png"
+      },
+      "player": {
+        "id": 16637,
+        "name": "Emmanuel Martinez"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Tripping"
     }
   ]
 }
