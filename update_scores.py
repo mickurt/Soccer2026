@@ -1103,7 +1103,7 @@ def load_previous_scores(output_path):
                 reader = csv.DictReader(f)
                 for row in reader:
                     try:
-                        previous[int(row['id'])] = {
+                        previous[str(row['id']).strip()] = {
                             'status': row['status'],
                             'home_score': int(row['home_score']),
                             'away_score': int(row['away_score'])
@@ -1202,7 +1202,7 @@ def send_apns_for_updates(changed_matches, local_matches, teams_metadata, previo
         if status not in ['Live', 'Finished']:
             continue
             
-        prev = previous_scores.get(u['id'])
+        prev = previous_scores.get(str(u['id']).strip())
         # Envoyer le push de démarrage dès que le match est Live (permet aux nouveaux appareils de démarrer l'activité en cours de route)
         is_new_live = status == 'Live' and (not prev or prev.get('status') != 'Live')
         
@@ -1469,7 +1469,7 @@ def run_single_iteration(args, local_matches, teams, teams_metadata, output_path
     changed_matches = []
     for u in updates:
         match_id = u['id']
-        prev = previous_scores.get(match_id)
+        prev = previous_scores.get(str(match_id).strip())
         if (not prev or 
             prev['status'] != u['status'] or 
             prev['home_score'] != u['home_score'] or 
