@@ -1,13 +1,13 @@
 group,position,team_name,fifa_code,played,won,draw,lost,points,goals_for,goals_against,goal_difference
 Brasileirão Série A,1,Palmeiras,121,21,14,5,2,47,38,16,22
 Brasileirão Série A,2,Flamengo,127,20,11,6,3,39,37,18,19
-Brasileirão Série A,3,Atletico Paranaense,134,20,11,3,6,36,28,19,9
+Brasileirão Série A,3,Atletico Paranaense,134,21,11,4,6,37,28,19,9
 Brasileirão Série A,4,Fluminense,124,21,9,7,5,34,30,25,5
 Brasileirão Série A,5,Bahia,118,21,8,8,5,32,29,25,4
 Brasileirão Série A,6,RB Bragantino,794,20,9,4,7,31,26,20,6
 Brasileirão Série A,7,Botafogo,120,20,8,5,7,29,34,32,2
-Brasileirão Série A,8,Atletico-MG,1062,20,8,4,8,28,25,25,0
-Brasileirão Série A,9,Corinthians,131,20,7,7,6,28,22,20,2
+Brasileirão Série A,8,Corinthians,131,21,7,8,6,29,22,20,2
+Brasileirão Série A,9,Atletico-MG,1062,20,8,4,8,28,25,25,0
 Brasileirão Série A,10,Coritiba,147,20,7,6,7,27,25,27,-2
 Brasileirão Série A,11,Cruzeiro,135,20,7,6,7,27,26,30,-4
 Brasileirão Série A,12,Sao Paulo,126,20,7,5,8,26,25,23,2
